@@ -1,0 +1,6 @@
+{
+  "name": "Đề Cương Ôn Tập Giữa Kì 1 Tiếng Anh 8",
+  "description": "Ứng dụng trắc nghiệm tương tác ôn tập đề cương giữa học kì 1 Tiếng Anh 8 (Units 1, 2, 3) trường THCS Nghĩa Tân, tự động chấm điểm, giải thích chi tiết và chống học vẹt đảo đáp án.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

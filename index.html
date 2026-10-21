@@ -1,0 +1,2350 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đề Cương Ôn Tập Giữa Kì 1 - Tiếng Anh 8 (2026 - 2027)</title>
+  <meta name="description" content="Ứng dụng trắc nghiệm ôn tập đề cương giữa học kì 1 Tiếng Anh 8 trường THCS Nghĩa Tân với giải thích chi tiết và đảo đáp án chống học vẹt." />
+  <meta property="og:title" content="Đề Cương Ôn Tập Giữa Kì 1 - Tiếng Anh 8 (2026 - 2027)" />
+  <meta property="og:description" content="Hệ thống luyện thi trắc nghiệm tiếng Anh lớp 8 đầy đủ 10 dạng bài tập kèm giải thích ngữ pháp chi tiết." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            },
+            edu: {
+              blue: '#2563eb',
+              indigo: '#4f46e5',
+              purple: '#7c3aed',
+              amber: '#d97706',
+              rose: '#e11d48',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <!-- MathJax CDN -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+    .custom-underline {
+      text-decoration-line: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 4px;
+      font-weight: 700;
+    }
+    @keyframes pulse-subtle {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+    }
+    .animate-pulse-subtle {
+      animation: pulse-subtle 2s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col selection:bg-indigo-500 selection:text-white">
+
+  <!-- TOP BANNER & STREAK HEADER -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs transition-all">
+    <div class="max-w-6xl mx-auto px-4 py-3 sm:px-6 flex flex-wrap items-center justify-between gap-3">
+      <!-- Title & School Badge -->
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-indigo-600 via-blue-600 to-emerald-500 flex items-center justify-center text-white shadow-md shadow-indigo-100 flex-shrink-0">
+          <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-1 text-[11px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200/60">
+              <i data-lucide="award" class="w-3 h-3"></i> THCS Nghĩa Tân
+            </span>
+            <span class="text-xs text-slate-400 font-medium">Lớp 8 • Units 1, 2, 3</span>
+          </div>
+          <h1 class="text-base sm:text-lg font-extrabold text-slate-900 tracking-tight leading-tight">
+            Đề Cương Ôn Tập Giữa Kì 1 (2026 - 2027)
+          </h1>
+        </div>
+      </div>
+
+      <!-- Streaks & Actions -->
+      <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
+        <!-- Streak Counter (LocalStorage) -->
+        <div id="streak-container" class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200/80 text-amber-900 shadow-xs">
+          <div class="relative flex items-center justify-center">
+            <i data-lucide="flame" class="w-5 h-5 text-orange-500 fill-orange-500 animate-bounce"></i>
+            <span id="streak-fire-effect" class="absolute -top-1 -right-1 flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+            </span>
+          </div>
+          <div class="text-xs font-semibold leading-tight">
+            <div class="text-[10px] text-amber-600 uppercase font-bold tracking-wider">Chuỗi Điểm 10</div>
+            <span id="streak-count" class="font-extrabold text-amber-900 text-sm">0</span> <span class="text-xs font-medium text-amber-700">lần liên tiếp</span>
+          </div>
+        </div>
+
+        <!-- Shuffle / Reset Button -->
+        <button id="btn-shuffle-restart" onclick="restartWithShuffle()" title="Đảo toàn bộ đáp án và làm mới" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 active:scale-95 text-slate-700 text-xs font-semibold transition border border-slate-200">
+          <i data-lucide="shuffle" class="w-4 h-4 text-indigo-600"></i>
+          <span class="hidden sm:inline">Làm bài khác</span>
+          <span>(Đảo đề)</span>
+        </button>
+
+        <!-- TTS Toggle / Audio Test -->
+        <button id="btn-tts-toggle" onclick="toggleAudioSpeech()" class="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition border border-slate-200" title="Bật/Tắt phát âm giọng đọc tiếng Anh">
+          <i id="tts-icon" data-lucide="volume-2" class="w-4 h-4 text-emerald-600"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- PROGRESS BAR -->
+    <div class="w-full bg-slate-100 h-1.5 relative overflow-hidden">
+      <div id="progress-bar-fill" class="h-full bg-gradient-to-r from-blue-500 via-indigo-500 to-emerald-500 transition-all duration-300 ease-out" style="width: 0%"></div>
+    </div>
+  </header>
+
+  <!-- MAIN WRAPPER -->
+  <main class="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 py-6 space-y-6">
+
+    <!-- EXERCISE FILTER / TOP NAVIGATION TABS -->
+    <section class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/80 shadow-xs space-y-3">
+      <div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-slate-100">
+        <div class="flex items-center gap-2">
+          <div class="p-1.5 rounded-lg bg-indigo-50 text-indigo-600">
+            <i data-lucide="layers" class="w-4 h-4"></i>
+          </div>
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Chuyên mục ôn tập theo Đề Cương:</span>
+        </div>
+        <div class="flex items-center gap-3 text-xs font-medium">
+          <span class="text-slate-500">Đã làm: <strong id="stats-answered" class="text-slate-800">0</strong>/<span id="stats-total">83</span></span>
+          <span class="inline-block w-1 h-1 rounded-full bg-slate-300"></span>
+          <span class="text-emerald-600 font-semibold">Đúng: <strong id="stats-correct">0</strong></span>
+          <span class="inline-block w-1 h-1 rounded-full bg-slate-300"></span>
+          <span class="text-rose-600 font-semibold">Sai: <strong id="stats-wrong">0</strong></span>
+        </div>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs font-semibold no-scrollbar" id="exercise-tabs">
+        <button onclick="setFilter('all')" data-tab="all" class="tab-btn px-3 py-1.5 rounded-xl transition whitespace-nowrap bg-indigo-600 text-white shadow-xs">
+          Tất cả (83 câu)
+        </button>
+        <button onclick="setFilter('ex1')" data-tab="ex1" class="tab-btn px-3 py-1.5 rounded-xl transition whitespace-nowrap bg-slate-100 hover:bg-slate-200 text-slate-700">
+          Ex 1: Phát âm (10)
+        </button>
+        <button onclick="setFilter('ex2')" data-tab="ex2" class="tab-btn px-3 py-1.5 rounded-xl transition whitespace-nowrap bg-slate-100 hover:bg-slate-200 text-slate-700">
+          Ex 2: Trọng âm (5)
+        </button>
+        <button onclick="setFilter('ex3')" data-tab="ex3" class="tab-btn px-3 py-1.5 rounded-xl transition whitespace-nowrap bg-slate-100 hover:bg-slate-200 text-slate-700">
+          Ex 3: Từ vựng & Ngữ pháp (25)
+        </button>
+        <button onclick="setFilter('ex4')" data-tab="ex4" class="tab-btn px-3 py-1.5 rounded-xl transition whitespace-nowrap bg-slate-100 hover:bg-slate-200 text-slate-700">
+          Ex 4: Đọc điền từ (10)
+        </button>
+        <button onclick="setFilter('ex5')" data-tab="ex5" class="tab-btn px-3 py-1.5 rounded-xl transition whitespace-nowrap bg-slate-100 hover:bg-slate-200 text-slate-700">
+          Ex 5: Đọc hiểu (5)
+        </button>
+        <button onclick="setFilter('ex6')" data-tab="ex6" class="tab-btn px-3 py-1.5 rounded-xl transition whitespace-nowrap bg-slate-100 hover:bg-slate-200 text-slate-700">
+          Ex 6: Biển báo & Thông báo (5)
+        </button>
+        <button onclick="setFilter('ex7')" data-tab="ex7" class="tab-btn px-3 py-1.5 rounded-xl transition whitespace-nowrap bg-slate-100 hover:bg-slate-200 text-slate-700">
+          Ex 7: Điền câu vào bài (4)
+        </button>
+        <button onclick="setFilter('ex8')" data-tab="ex8" class="tab-btn px-3 py-1.5 rounded-xl transition whitespace-nowrap bg-slate-100 hover:bg-slate-200 text-slate-700">
+          Ex 8: Sắp xếp đoạn văn (4)
+        </button>
+        <button onclick="setFilter('ex9')" data-tab="ex9" class="tab-btn px-3 py-1.5 rounded-xl transition whitespace-nowrap bg-slate-100 hover:bg-slate-200 text-slate-700">
+          Ex 9: Viết lại câu (10)
+        </button>
+        <button onclick="setFilter('ex10')" data-tab="ex10" class="tab-btn px-3 py-1.5 rounded-xl transition whitespace-nowrap bg-slate-100 hover:bg-slate-200 text-slate-700">
+          Ex 10: Viết câu gợi ý (5)
+        </button>
+      </div>
+    </section>
+
+    <!-- ANTI-CRAMMING NOTIFICATION / TIP -->
+    <div class="flex items-center justify-between gap-3 px-4 py-2.5 rounded-xl bg-blue-50/70 border border-blue-100 text-blue-900 text-xs">
+      <div class="flex items-center gap-2">
+        <i data-lucide="shield-check" class="w-4 h-4 text-blue-600 flex-shrink-0"></i>
+        <span><strong>Chế độ chống học vẹt:</strong> Các đáp án đã được tự động đảo ngẫu nhiên. Mỗi lần bấm <em>"Làm bài khác (Đảo đề)"</em> thứ tự A-B-C-D sẽ thay đổi mới hoàn toàn!</span>
+      </div>
+      <button onclick="scrollToSummary()" class="hidden md:inline-flex items-center gap-1 font-semibold text-blue-700 hover:underline">
+        Xem tổng kết <i data-lucide="arrow-down" class="w-3.5 h-3.5"></i>
+      </button>
+    </div>
+
+    <!-- QUESTIONS CONTAINER -->
+    <div id="questions-list" class="space-y-6">
+      <!-- Dynamic Question Cards Rendered By JS -->
+    </div>
+
+    <!-- SUMMARY CARD (AT BOTTOM) -->
+    <section id="summary-section" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm transition-all space-y-6">
+      <div class="text-center max-w-lg mx-auto space-y-2">
+        <div class="inline-flex p-3 rounded-2xl bg-amber-50 text-amber-600 border border-amber-200 mb-1">
+          <i data-lucide="trophy" class="w-8 h-8"></i>
+        </div>
+        <h2 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">Kết Quả Ôn Tập Đề Cương</h2>
+        <p class="text-sm text-slate-500">Hoàn thành bài tập để ghi danh chuỗi điểm 10 liên tiếp và củng cố kiến thức vững vàng trước kì thi!</p>
+      </div>
+
+      <!-- Scoreboard Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto">
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-center">
+          <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Điểm số (Hệ 10)</div>
+          <div id="summary-score-10" class="text-2xl sm:text-3xl font-black text-indigo-600 mt-1">0.0</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-center">
+          <div class="text-xs font-semibold text-emerald-700 uppercase tracking-wider">Số câu đúng</div>
+          <div id="summary-correct" class="text-2xl sm:text-3xl font-black text-emerald-600 mt-1">0</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-rose-50 border border-rose-200 text-center">
+          <div class="text-xs font-semibold text-rose-700 uppercase tracking-wider">Số câu sai</div>
+          <div id="summary-wrong" class="text-2xl sm:text-3xl font-black text-rose-600 mt-1">0</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 text-center">
+          <div class="text-xs font-semibold text-amber-700 uppercase tracking-wider">Tỷ lệ chính xác</div>
+          <div id="summary-accuracy" class="text-2xl sm:text-3xl font-black text-amber-600 mt-1">0%</div>
+        </div>
+      </div>
+
+      <!-- Special Milestone Callout -->
+      <div id="streak-callout" class="max-w-xl mx-auto p-4 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 text-white text-center shadow-lg shadow-orange-100 hidden">
+        <div class="flex items-center justify-center gap-2 font-black text-base sm:text-lg">
+          <i data-lucide="sparkles" class="w-5 h-5"></i>
+          <span>XUẤT SẮC! BẠN ĐÃ ĐẠT ĐIỂM 10 TUYỆT ĐỐI!</span>
+        </div>
+        <p id="streak-callout-text" class="text-xs text-amber-100 mt-1 font-medium">Chuỗi thành tích của bạn đã được ghi nhận vào LocalStorage.</p>
+      </div>
+
+      <!-- Actions -->
+      <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+        <button onclick="restartWithShuffle()" class="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white font-bold text-sm shadow-md shadow-indigo-200 active:scale-95 transition">
+          <i data-lucide="refresh-cw" class="w-4 h-4"></i> Làm bài khác (Đảo ngẫu nhiên đề)
+        </button>
+        <button onclick="retryIncorrectQuestions()" id="btn-retry-wrong" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 font-bold text-sm active:scale-95 transition disabled:opacity-50 disabled:cursor-not-allowed">
+          <i data-lucide="rotate-ccw" class="w-4 h-4"></i> Làm lại các câu sai
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-auto border-t border-slate-200 bg-white py-6 text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+        <span>Đề cương ôn tập Giữa Học Kì 1 - Tiếng Anh 8 (Global Success / THCS Nghĩa Tân)</span>
+      </div>
+      <div>Xây dựng theo chuẩn Giáo dục & Frontend Hiện đại • Tự động lưu tiến độ & giải thích tức thì</div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT ENGINE -->
+  <script>
+    /* =========================================================================
+       COMPLETE QUESTION DATABASE (100% Exact from Attachment PDF)
+       Total: 83 questions covering Exercises 1 to 10
+       ========================================================================= */
+    const RAW_DATABASE = [
+      // -----------------------------------------------------------------------
+      // EXERCISE 1: PRONUNCIATION (10 questions)
+      // -----------------------------------------------------------------------
+      {
+        id: 'ex1_1',
+        exKey: 'ex1',
+        exTitle: 'Exercise 1: Pronunciation (Phát âm)',
+        prompt: 'Choose the word whose underlined part is pronounced differently from that of the others.',
+        questionText: 'Which word has the underlined part pronounced differently?',
+        options: [
+          { text: 'f<u>oo</u>d', raw: 'food', isCorrect: true },
+          { text: 'f<u>oo</u>t', raw: 'foot', isCorrect: false },
+          { text: 'h<u>oo</u>k', raw: 'hook', isCorrect: false },
+          { text: 'w<u>oo</u>d', raw: 'wood', isCorrect: false }
+        ],
+        explanation: `
+          <div class="space-y-1.5 text-xs">
+            <p><strong>Đáp án đúng: A. food</strong></p>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong>food</strong> phát âm là <code>/fuːd/</code> (âm <strong>u dài /uː/</strong>)</li>
+              <li><strong>foot</strong> phát âm là <code>/fʊt/</code> (âm <strong>u ngắn /ʊ/</strong>)</li>
+              <li><strong>hook</strong> phát âm là <code>/hʊk/</code> (âm <strong>u ngắn /ʊ/</strong>)</li>
+              <li><strong>wood</strong> phát âm là <code>/wʊd/</code> (âm <strong>u ngắn /ʊ/</strong>)</li>
+            </ul>
+            <p class="text-emerald-700 font-medium">💡 Ghi nhớ Unit 1: Các từ <em>foot, hook, wood, book, look</em> phát âm là /ʊ/; trong khi <em>food, cool, spoon</em> phát âm là /uː/.</p>
+          </div>
+        `
+      },
+      {
+        id: 'ex1_2',
+        exKey: 'ex1',
+        exTitle: 'Exercise 1: Pronunciation (Phát âm)',
+        prompt: 'Choose the word whose underlined part is pronounced differently from that of the others.',
+        questionText: 'Which word has the underlined part pronounced differently?',
+        options: [
+          { text: 'ent<u>er</u>', raw: 'enter', isCorrect: false },
+          { text: 'gath<u>er</u>', raw: 'gather', isCorrect: false },
+          { text: 'pref<u>er</u>', raw: 'prefer', isCorrect: true },
+          { text: 'diff<u>er</u>', raw: 'differ', isCorrect: false }
+        ],
+        explanation: `
+          <div class="space-y-1.5 text-xs">
+            <p><strong>Đáp án đúng: C. prefer</strong></p>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong>prefer</strong> phát âm là <code>/prɪˈfɜːr/</code> (đuôi -er nhận trọng âm chính nên phát âm là <strong>/ɜː/</strong>)</li>
+              <li><strong>enter</strong> phát âm là <code>/ˈentər/</code> (âm <strong>/ə/</strong> schwa không nhấn trọng âm)</li>
+              <li><strong>gather</strong> phát âm là <code>/ˈɡæðər/</code> (âm <strong>/ə/</strong> schwa)</li>
+              <li><strong>differ</strong> phát âm là <code>/ˈdɪfər/</code> (âm <strong>/ə/</strong> schwa)</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 'ex1_3',
+        exKey: 'ex1',
+        exTitle: 'Exercise 1: Pronunciation (Phát âm)',
+        prompt: 'Choose the word whose underlined part is pronounced differently from that of the others.',
+        questionText: 'Which word has the underlined part pronounced differently?',
+        options: [
+          { text: 'gr<u>ou</u>p', raw: 'group', isCorrect: true },
+          { text: 'sh<u>ou</u>ld', raw: 'should', isCorrect: false },
+          { text: 'w<u>ou</u>ld', raw: 'would', isCorrect: false },
+          { text: 'c<u>ou</u>ld', raw: 'could', isCorrect: false }
+        ],
+        explanation: `
+          <div class="space-y-1.5 text-xs">
+            <p><strong>Đáp án đúng: A. group</strong></p>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong>group</strong>: <code>/ɡruːp/</code> (âm <strong>/uː/</strong> dài)</li>
+              <li><strong>should</strong>: <code>/ʃʊd/</code> (âm <strong>/ʊ/</strong> ngắn, âm "l" là âm câm)</li>
+              <li><strong>would</strong>: <code>/wʊd/</code> (âm <strong>/ʊ/</strong> ngắn, âm "l" là âm câm)</li>
+              <li><strong>could</strong>: <code>/kʊd/</code> (âm <strong>/ʊ/</strong> ngắn, âm "l" là âm câm)</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 'ex1_4',
+        exKey: 'ex1',
+        exTitle: 'Exercise 1: Pronunciation (Phát âm)',
+        prompt: 'Choose the word whose underlined part is pronounced differently from that of the others.',
+        questionText: 'Which word has the underlined part pronounced differently?',
+        options: [
+          { text: '<u>e</u>xciting', raw: 'exciting', isCorrect: false },
+          { text: 'conv<u>e</u>nient', raw: 'convenient', isCorrect: true },
+          { text: 'rack<u>e</u>t', raw: 'racket', isCorrect: false },
+          { text: 'b<u>e</u>gin', raw: 'begin', isCorrect: false }
+        ],
+        explanation: `
+          <div class="space-y-1.5 text-xs">
+            <p><strong>Đáp án đúng: B. convenient</strong></p>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong>convenient</strong>: <code>/kənˈviːniənt/</code> (chữ "e" được gạch chân phát âm là <strong>/iː/</strong>)</li>
+              <li><strong>exciting</strong>: <code>/ɪkˈsaɪtɪŋ/</code> (phát âm là <strong>/ɪ/</strong>)</li>
+              <li><strong>racket</strong>: <code>/ˈrækɪt/</code> (phát âm là <strong>/ɪ/</strong>)</li>
+              <li><strong>begin</strong>: <code>/bɪˈɡɪn/</code> (phát âm là <strong>/ɪ/</strong>)</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 'ex1_5',
+        exKey: 'ex1',
+        exTitle: 'Exercise 1: Pronunciation (Phát âm)',
+        prompt: 'Choose the word whose underlined part is pronounced differently from that of the others.',
+        questionText: 'Which word has the underlined part pronounced differently?',
+        options: [
+          { text: 'fr<u>ui</u>t', raw: 'fruit', isCorrect: false },
+          { text: 's<u>ui</u>t', raw: 'suit', isCorrect: false },
+          { text: 'j<u>ui</u>ce', raw: 'juice', isCorrect: false },
+          { text: 'b<u>ui</u>ld', raw: 'build', isCorrect: true }
+        ],
+        explanation: `
+          <div class="space-y-1.5 text-xs">
+            <p><strong>Đáp án đúng: D. build</strong></p>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong>build</strong>: <code>/bɪld/</code> ("ui" phát âm là <strong>/ɪ/</strong>)</li>
+              <li><strong>fruit</strong>: <code>/fruːt/</code> ("ui" phát âm là <strong>/uː/</strong>)</li>
+              <li><strong>suit</strong>: <code>/suːt/</code> ("ui" phát âm là <strong>/uː/</strong>)</li>
+              <li><strong>juice</strong>: <code>/dʒuːs/</code> ("ui" phát âm là <strong>/uː/</strong>)</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 'ex1_6',
+        exKey: 'ex1',
+        exTitle: 'Exercise 1: Pronunciation (Phát âm)',
+        prompt: 'Choose the word whose underlined part is pronounced differently from that of the others.',
+        questionText: 'Which word has the underlined part pronounced differently?',
+        options: [
+          { text: 'l<u>o</u>se', raw: 'lose', isCorrect: false },
+          { text: 'impr<u>o</u>ve', raw: 'improve', isCorrect: false },
+          { text: 'm<u>o</u>vie', raw: 'movie', isCorrect: false },
+          { text: 'd<u>o</u>ve', raw: 'dove', isCorrect: true }
+        ],
+        explanation: `
+          <div class="space-y-1.5 text-xs">
+            <p><strong>Đáp án đúng: D. dove</strong></p>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong>dove</strong>: <code>/dʌv/</code> (chữ "o" phát âm là <strong>/ʌ/</strong>)</li>
+              <li><strong>lose</strong>: <code>/luːz/</code> (phát âm là <strong>/uː/</strong>)</li>
+              <li><strong>improve</strong>: <code>/ɪmˈpruːv/</code> (phát âm là <strong>/uː/</strong>)</li>
+              <li><strong>movie</strong>: <code>/ˈmuːvi/</code> (phát âm là <strong>/uː/</strong>)</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 'ex1_7',
+        exKey: 'ex1',
+        exTitle: 'Exercise 1: Pronunciation (Phát âm)',
+        prompt: 'Choose the word whose underlined part is pronounced differently from that of the others.',
+        questionText: 'Which word has the underlined part pronounced differently?',
+        options: [
+          { text: 'p<u>u</u>ll', raw: 'pull', isCorrect: false },
+          { text: 'l<u>u</u>nar', raw: 'lunar', isCorrect: true },
+          { text: 'f<u>u</u>ll', raw: 'full', isCorrect: false },
+          { text: 'p<u>u</u>t', raw: 'put', isCorrect: false }
+        ],
+        explanation: `
+          <div class="space-y-1.5 text-xs">
+            <p><strong>Đáp án đúng: B. lunar</strong></p>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong>lunar</strong>: <code>/ˈluːnər/</code> (chữ "u" phát âm là <strong>/uː/</strong> dài)</li>
+              <li><strong>pull</strong>: <code>/pʊl/</code> (phát âm là <strong>/ʊ/</strong> ngắn)</li>
+              <li><strong>full</strong>: <code>/fʊl/</code> (phát âm là <strong>/ʊ/</strong> ngắn)</li>
+              <li><strong>put</strong>: <code>/pʊt/</code> (phát âm là <strong>/ʊ/</strong> ngắn)</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 'ex1_8',
+        exKey: 'ex1',
+        exTitle: 'Exercise 1: Pronunciation (Phát âm)',
+        prompt: 'Choose the word whose underlined part is pronounced differently from that of the others.',
+        questionText: 'Which word has the underlined part pronounced differently?',
+        options: [
+          { text: 'ch<u>oi</u>ce', raw: 'choice', isCorrect: false },
+          { text: 'p<u>oi</u>nt', raw: 'point', isCorrect: false },
+          { text: 'tort<u>oi</u>se', raw: 'tortoise', isCorrect: true },
+          { text: 'n<u>oi</u>se', raw: 'noise', isCorrect: false }
+        ],
+        explanation: `
+          <div class="space-y-1.5 text-xs">
+            <p><strong>Đáp án đúng: C. tortoise</strong></p>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong>tortoise</strong>: <code>/ˈtɔːtəs/</code> hoặc <code>/ˈtɔːrtɪs/</code> (phần "oi" phát âm là <strong>/ə/</strong> hoặc <strong>/ɪ/</strong>)</li>
+              <li><strong>choice</strong>: <code>/tʃɔɪs/</code> (nguyên âm đôi <strong>/ɔɪ/</strong>)</li>
+              <li><strong>point</strong>: <code>/pɔɪnt/</code> (nguyên âm đôi <strong>/ɔɪ/</strong>)</li>
+              <li><strong>noise</strong>: <code>/nɔɪz/</code> (nguyên âm đôi <strong>/ɔɪ/</strong>)</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 'ex1_9',
+        exKey: 'ex1',
+        exTitle: 'Exercise 1: Pronunciation (Phát âm)',
+        prompt: 'Choose the word whose underlined part is pronounced differently from that of the others.',
+        questionText: 'Which word has the underlined part pronounced differently?',
+        options: [
+          { text: 'j<u>our</u>ney', raw: 'journey', isCorrect: true },
+          { text: 't<u>our</u>ist', raw: 'tourist', isCorrect: false },
+          { text: 't<u>our</u>nament', raw: 'tournament', isCorrect: false },
+          { text: 't<u>our</u>', raw: 'tour', isCorrect: false }
+        ],
+        explanation: `
+          <div class="space-y-1.5 text-xs">
+            <p><strong>Đáp án đúng: A. journey</strong></p>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong>journey</strong>: <code>/ˈdʒɜːni/</code> (phát âm là <strong>/ɜː/</strong>)</li>
+              <li><strong>tourist</strong>: <code>/ˈtʊərɪst/</code> (phát âm là <strong>/ʊə/</strong>)</li>
+              <li><strong>tournament</strong>: <code>/ˈtʊənəmənt/</code> (phát âm là <strong>/ʊə/</strong>)</li>
+              <li><strong>tour</strong>: <code>/tʊər/</code> (phát âm là <strong>/ʊə/</strong>)</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 'ex1_10',
+        exKey: 'ex1',
+        exTitle: 'Exercise 1: Pronunciation (Phát âm)',
+        prompt: 'Choose the word whose underlined part is pronounced differently from that of the others.',
+        questionText: 'Which word has the underlined part pronounced differently?',
+        options: [
+          { text: '<u>a</u>gain', raw: 'again', isCorrect: false },
+          { text: 'c<u>a</u>mera', raw: 'camera', isCorrect: false },
+          { text: 'vill<u>a</u>ge', raw: 'village', isCorrect: true },
+          { text: 'wom<u>a</u>n', raw: 'woman', isCorrect: false }
+        ],
+        explanation: `
+          <div class="space-y-1.5 text-xs">
+            <p><strong>Đáp án đúng: C. village</strong></p>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong>village</strong>: <code>/ˈvɪlɪdʒ/</code> (chữ "a" phát âm là <strong>/ɪ/</strong>)</li>
+              <li><strong>again</strong>: <code>/əˈɡen/</code> (chữ "a" đầu phát âm là <strong>/ə/</strong>)</li>
+              <li><strong>camera</strong>: <code>/ˈkæmərə/</code> (chữ "a" thứ hai phát âm là <strong>/ə/</strong>)</li>
+              <li><strong>woman</strong>: <code>/ˈwʊmən/</code> (chữ "a" phát âm là <strong>/ə/</strong>)</li>
+            </ul>
+            <p class="text-indigo-700">💡 Đây là cặp âm trọng tâm /ə/ và /ɪ/ trong SGK Tiếng Anh 8.</p>
+          </div>
+        `
+      },
+
+      // -----------------------------------------------------------------------
+      // EXERCISE 2: WORD STRESS (5 questions)
+      // -----------------------------------------------------------------------
+      {
+        id: 'ex2_1',
+        exKey: 'ex2',
+        exTitle: 'Exercise 2: Word Stress (Trọng âm)',
+        prompt: 'Choose the word that is stressed differently from that of the other words.',
+        questionText: 'Which word has a different stress pattern?',
+        options: [
+          { text: 'enjoyment', raw: 'enjoyment', isCorrect: true },
+          { text: 'concentrate', raw: 'concentrate', isCorrect: false },
+          { text: 'practical', raw: 'practical', isCorrect: false },
+          { text: 'media', raw: 'media', isCorrect: false }
+        ],
+        explanation: `
+          <div class="space-y-1 text-xs">
+            <p><strong>Đáp án: A. enjoyment</strong></p>
+            <ul class="list-disc pl-4 space-y-0.5">
+              <li><strong>en'joyment</strong>: trọng âm rơi vào âm tiết thứ <strong>2</strong> (hậu tố -ment không làm thay đổi trọng âm gốc của en'joy)</li>
+              <li><strong>'concentrate</strong>: trọng âm rơi vào âm tiết thứ <strong>1</strong></li>
+              <li><strong>'practical</strong>: trọng âm rơi vào âm tiết thứ <strong>1</strong></li>
+              <li><strong>'media</strong>: trọng âm rơi vào âm tiết thứ <strong>1</strong></li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 'ex2_2',
+        exKey: 'ex2',
+        exTitle: 'Exercise 2: Word Stress (Trọng âm)',
+        prompt: 'Choose the word that is stressed differently from that of the other words.',
+        questionText: 'Which word has a different stress pattern?',
+        options: [
+          { text: 'account', raw: 'account', isCorrect: false },
+          { text: 'bully', raw: 'bully', isCorrect: true },
+          { text: 'discuss', raw: 'discuss', isCorrect: false },
+          { text: 'upload', raw: 'upload', isCorrect: false }
+        ],
+        explanation: `
+          <div class="space-y-1 text-xs">
+            <p><strong>Đáp án: B. bully</strong></p>
+            <ul class="list-disc pl-4 space-y-0.5">
+              <li><strong>'bully</strong>: trọng âm rơi vào âm tiết thứ <strong>1</strong> (<code>/ˈbʊli/</code>)</li>
+              <li><strong>ac'count</strong>: trọng âm rơi vào âm tiết thứ <strong>2</strong> (<code>/əˈkaʊnt/</code>)</li>
+              <li><strong>dis'cuss</strong>: trọng âm rơi vào âm tiết thứ <strong>2</strong> (<code>/dɪˈskʌs/</code>)</li>
+              <li><strong>up'load</strong>: động từ trọng âm thường rơi vào âm tiết thứ <strong>2</strong> (<code>/ˌʌpˈləʊd/</code>)</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 'ex2_3',
+        exKey: 'ex2',
+        exTitle: 'Exercise 2: Word Stress (Trọng âm)',
+        prompt: 'Choose the word that is stressed differently from that of the other words.',
+        questionText: 'Which word has a different stress pattern?',
+        options: [
+          { text: 'harmful', raw: 'harmful', isCorrect: false },
+          { text: 'data', raw: 'data', isCorrect: false },
+          { text: 'effect', raw: 'effect', isCorrect: true },
+          { text: 'leisure', raw: 'leisure', isCorrect: false }
+        ],
+        explanation: `
+          <div class="space-y-1 text-xs">
+            <p><strong>Đáp án: C. effect</strong></p>
+            <ul class="list-disc pl-4 space-y-0.5">
+              <li><strong>ef'fect</strong>: trọng âm rơi vào âm tiết thứ <strong>2</strong> (<code>/ɪˈfekt/</code>)</li>
+              <li><strong>'harmful</strong>: trọng âm rơi vào âm tiết thứ <strong>1</strong> (<code>/ˈhɑːmfəl/</code>)</li>
+              <li><strong>'data</strong>: trọng âm rơi vào âm tiết thứ <strong>1</strong> (<code>/ˈdeɪtə/</code>)</li>
+              <li><strong>'leisure</strong>: trọng âm rơi vào âm tiết thứ <strong>1</strong> (<code>/ˈleʒər/</code>)</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 'ex2_4',
+        exKey: 'ex2',
+        exTitle: 'Exercise 2: Word Stress (Trọng âm)',
+        prompt: 'Choose the word that is stressed differently from that of the other words.',
+        questionText: 'Which word has a different stress pattern?',
+        options: [
+          { text: 'improve', raw: 'improve', isCorrect: true },
+          { text: 'forum', raw: 'forum', isCorrect: false },
+          { text: 'message', raw: 'message', isCorrect: false },
+          { text: 'website', raw: 'website', isCorrect: false }
+        ],
+        explanation: `
+          <div class="space-y-1 text-xs">
+            <p><strong>Đáp án: A. improve</strong></p>
+            <ul class="list-disc pl-4 space-y-0.5">
+              <li><strong>im'prove</strong>: trọng âm rơi vào âm tiết thứ <strong>2</strong> (<code>/ɪmˈpruːv/</code>)</li>
+              <li><strong>'forum</strong>: trọng âm rơi vào âm tiết thứ <strong>1</strong> (<code>/ˈfɔːrəm/</code>)</li>
+              <li><strong>'message</strong>: trọng âm rơi vào âm tiết thứ <strong>1</strong> (<code>/ˈmesɪdʒ/</code>)</li>
+              <li><strong>'website</strong>: trọng âm rơi vào âm tiết thứ <strong>1</strong> (<code>/ˈwebsaɪt/</code>)</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 'ex2_5',
+        exKey: 'ex2',
+        exTitle: 'Exercise 2: Word Stress (Trọng âm)',
+        prompt: 'Choose the word that is stressed differently from that of the other words.',
+        questionText: 'Which word has a different stress pattern?',
+        options: [
+          { text: 'snowboarding', raw: 'snowboarding', isCorrect: false },
+          { text: 'positive', raw: 'positive', isCorrect: false },
+          { text: 'harvester', raw: 'harvester', isCorrect: false },
+          { text: 'picturesque', raw: 'picturesque', isCorrect: true }
+        ],
+        explanation: `
+          <div class="space-y-1 text-xs">
+            <p><strong>Đáp án: D. picturesque</strong></p>
+            <ul class="list-disc pl-4 space-y-0.5">
+              <li><strong>pictur'esque</strong>: trọng âm rơi vào âm tiết thứ <strong>3</strong> (<code>/ˌpɪktʃərˈesk/</code>, đuôi <em>-esque</em> luôn nhận trọng âm chính)</li>
+              <li><strong>'snowboarding</strong>: trọng âm rơi vào âm tiết thứ <strong>1</strong></li>
+              <li><strong>'positive</strong>: trọng âm rơi vào âm tiết thứ <strong>1</strong></li>
+              <li><strong>'harvester</strong>: trọng âm rơi vào âm tiết thứ <strong>1</strong></li>
+            </ul>
+          </div>
+        `
+      },
+
+      // -----------------------------------------------------------------------
+      // EXERCISE 3: VOCABULARY & GRAMMAR (25 questions)
+      // -----------------------------------------------------------------------
+      {
+        id: 'ex3_1',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'Many young people don’t _________ walking to school or playing outdoor games.',
+        options: [
+          { text: 'need', isCorrect: false },
+          { text: 'enjoy', isCorrect: true },
+          { text: 'suggest', isCorrect: false },
+          { text: 'want', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: B. enjoy</strong></p>
+          <p class="text-xs mt-1">Cấu trúc: <code>enjoy + V-ing</code> (thích làm gì). Phía sau có "walking" và "playing" nên ta dùng động từ <em>enjoy</em>. Các động từ <em>need</em> và <em>want</em> theo sau bởi <code>to V</code>; <em>suggest</em> không phù hợp về ngữ nghĩa câu này.</p>
+        `
+      },
+      {
+        id: 'ex3_2',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'Daisy is _________ social media. She spends lots of time on Facebook and Instagram.',
+        options: [
+          { text: 'tired of', isCorrect: false },
+          { text: 'bored with', isCorrect: false },
+          { text: 'addicted to', isCorrect: true },
+          { text: 'afraid of', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: C. addicted to</strong></p>
+          <p class="text-xs mt-1">Cụm từ cố định: <code>be addicted to something</code> = nghiện cái gì. Câu sau giải thích: <em>"Cô ấy dành rất nhiều thời gian trên Facebook và Instagram"</em>, chứng tỏ cô ấy bị nghiện mạng xã hội.</p>
+        `
+      },
+      {
+        id: 'ex3_3',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: '_________ leisure time is free from compulsory activities, it is often referred to as “free time”.',
+        options: [
+          { text: 'Because', isCorrect: true },
+          { text: 'Although', isCorrect: false },
+          { text: 'When', isCorrect: false },
+          { text: 'As long as', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: A. Because</strong></p>
+          <p class="text-xs mt-1">Mệnh đề chỉ nguyên nhân: <code>Because + clause</code> (Bởi vì). Dịch nghĩa: <em>"Bởi vì thời gian rảnh rỗi không bị ràng buộc bởi các hoạt động bắt buộc, nên nó thường được gọi là thời gian tự do."</em></p>
+        `
+      },
+      {
+        id: 'ex3_4',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'On YouTube you can find many videos on _________ all aspects of your English.',
+        options: [
+          { text: 'surfing', isCorrect: false },
+          { text: 'working', isCorrect: false },
+          { text: 'taking', isCorrect: false },
+          { text: 'improving', isCorrect: true }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: D. improving</strong></p>
+          <p class="text-xs mt-1">Collocation: <code>improve all aspects of your English</code> = nâng cao / cải thiện toàn diện các khía cạnh tiếng Anh của bạn.</p>
+        `
+      },
+      {
+        id: 'ex3_5',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'It’s not always true that rich people donate _________ than poor people do.',
+        options: [
+          { text: 'generously', isCorrect: false },
+          { text: 'more generously', isCorrect: true },
+          { text: 'most generously', isCorrect: false },
+          { text: 'more generous', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: B. more generously</strong></p>
+          <p class="text-xs mt-1">Ngữ pháp: "donate" là động từ thường nên cần bổ nghĩa bằng một <strong>trạng từ</strong> (generously). Trong cấu trúc so sánh hơn với "than", trạng từ dài đi với <code>more + adv + than</code> -> <em>more generously than</em>.</p>
+        `
+      },
+      {
+        id: 'ex3_6',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: '_________ times have you seen this film? - I have seen it twice.',
+        options: [
+          { text: 'How much', isCorrect: false },
+          { text: 'How often', isCorrect: false },
+          { text: 'How many', isCorrect: true },
+          { text: 'How long', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: C. How many</strong></p>
+          <p class="text-xs mt-1">Cấu trúc: <code>How many times</code> = bao nhiêu lần (vì "times" là danh từ đếm được số nhiều mang nghĩa số lần). Trả lời là "twice" (2 lần).</p>
+        `
+      },
+      {
+        id: 'ex3_7',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'Farmers are extremely busy _________ harvest time.',
+        options: [
+          { text: 'on', isCorrect: false },
+          { text: 'in', isCorrect: false },
+          { text: 'to', isCorrect: false },
+          { text: 'at', isCorrect: true }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: D. at</strong></p>
+          <p class="text-xs mt-1">Cụm giới từ chỉ thời gian trong Unit 2: <code>at harvest time</code> = vào thời điểm mùa gặt / mùa thu hoạch.</p>
+        `
+      },
+      {
+        id: 'ex3_8',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'I went with the village children to _________ the buffaloes.',
+        options: [
+          { text: 'bring', isCorrect: false },
+          { text: 'herd', isCorrect: true },
+          { text: 'play', isCorrect: false },
+          { text: 'take', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: B. herd</strong></p>
+          <p class="text-xs mt-1">Từ vựng Unit 2 (Life in the countryside): <code>herd the buffaloes</code> / <code>herd cattle</code> = chăn trâu / chăn thả gia súc.</p>
+        `
+      },
+      {
+        id: 'ex3_9',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'My cousin rode the bike _________ through the narrow soil paths.',
+        options: [
+          { text: 'clearly', isCorrect: false },
+          { text: 'skillfully', isCorrect: true },
+          { text: 'exactly', isCorrect: false },
+          { text: 'hardly', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: B. skillfully</strong></p>
+          <p class="text-xs mt-1">Từ vựng & Ngữ nghĩa: <em>skillfully</em> (adv) = một cách điêu luyện, khéo léo. <em>"Anh họ tôi đạp xe một cách khéo léo qua những con đường đất hẹp."</em></p>
+        `
+      },
+      {
+        id: 'ex3_10',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'The farm has a _________ expanse of grassland for us to play football.',
+        options: [
+          { text: 'vast', isCorrect: true },
+          { text: 'short', isCorrect: false },
+          { text: 'limited', isCorrect: false },
+          { text: 'strong', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: A. vast</strong></p>
+          <p class="text-xs mt-1">Collocation: <code>vast expanse of grassland</code> = một dải đồng cỏ rộng lớn, bao la bát ngát.</p>
+        `
+      },
+      {
+        id: 'ex3_11',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'We _________ the farmers herd cattle.',
+        options: [
+          { text: 'helped', isCorrect: true },
+          { text: 'improved', isCorrect: false },
+          { text: 'unloaded', isCorrect: false },
+          { text: 'raised', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: A. helped</strong></p>
+          <p class="text-xs mt-1">Cấu trúc: <code>help somebody (to) do something</code> = giúp ai đó làm việc gì. Dịch: <em>"Chúng tôi đã giúp các bác nông dân chăn gia súc."</em></p>
+        `
+      },
+      {
+        id: 'ex3_12',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'Mai dances _________ than Hoa does.',
+        options: [
+          { text: 'beautifully', isCorrect: false },
+          { text: 'more beautiful', isCorrect: false },
+          { text: 'more beautifully', isCorrect: true },
+          { text: 'beautiful', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: C. more beautifully</strong></p>
+          <p class="text-xs mt-1">So sánh hơn của trạng từ: "dance" là động từ chỉ hành động -> cần trạng từ "beautifully". Dạng so sánh hơn của trạng từ dài là <code>more + adv + than</code> -> <em>more beautifully than</em>.</p>
+        `
+      },
+      {
+        id: 'ex3_13',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'Please write _________. I can’t read it.',
+        options: [
+          { text: 'clearer', isCorrect: false },
+          { text: 'more clear', isCorrect: false },
+          { text: 'more clearly than', isCorrect: false },
+          { text: 'more clearly', isCorrect: true }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: D. more clearly</strong></p>
+          <p class="text-xs mt-1">"Write" là động từ thường -> cần trạng từ "clearly". Ở đây mang nghĩa <em>"Làm ơn hãy viết rõ ràng hơn"</em> (so sánh hơn ngầm định không có "than") -> <code>more clearly</code>.</p>
+        `
+      },
+      {
+        id: 'ex3_14',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'She is a smart student, _________ she is an active member of our club.',
+        options: [
+          { text: 'and', isCorrect: true },
+          { text: 'or', isCorrect: false },
+          { text: 'but', isCorrect: false },
+          { text: 'for', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: A. and</strong></p>
+          <p class="text-xs mt-1">Liên từ kết hợp (Coordinating conjunctions - FANBOYS): <code>and</code> dùng để bổ sung thông tin tích cực đồng đẳng (cô ấy vừa là học sinh thông minh, VÀ vừa là thành viên năng nổ).</p>
+        `
+      },
+      {
+        id: 'ex3_15',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'My friend and I _________ a sports competition last year.',
+        options: [
+          { text: 'provided', isCorrect: false },
+          { text: 'took part', isCorrect: false },
+          { text: 'participated', isCorrect: false },
+          { text: 'joined', isCorrect: true }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: D. joined</strong></p>
+          <p class="text-xs mt-1">Ngữ pháp giới từ: <code>join something</code> (không cần giới từ in). Còn nếu dùng <em>participate</em> hoặc <em>take part</em> thì bắt buộc phải có "in" (<code>participate in</code>, <code>take part in</code>).</p>
+        `
+      },
+      {
+        id: 'ex3_16',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'Lan wants to join the school music club; _________, she can’t sing or play any instruments.',
+        options: [
+          { text: 'however', isCorrect: true },
+          { text: 'and', isCorrect: false },
+          { text: 'otherwise', isCorrect: false },
+          { text: 'so', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: A. however</strong></p>
+          <p class="text-xs mt-1">Trạng từ liên kết (Conjunctive adverb): <code>; however,</code> thể hiện sự tương phản, đối lập giữa hai mệnh đề (Lan muốn vào CLB âm nhạc; tuy nhiên, cô ấy không biết hát hay chơi nhạc cụ).</p>
+        `
+      },
+      {
+        id: 'ex3_17',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'She wanted to prepare for the exam; _________, she turned off her mobile phone.',
+        options: [
+          { text: 'however', isCorrect: false },
+          { text: 'otherwise', isCorrect: false },
+          { text: 'therefore', isCorrect: true },
+          { text: 'although', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: C. therefore</strong></p>
+          <p class="text-xs mt-1">Trạng từ liên kết: <code>; therefore,</code> = do đó / vì vậy (chỉ kết quả: muốn tập trung chuẩn bị cho kỳ thi, do đó cô ấy tắt điện thoại).</p>
+        `
+      },
+      {
+        id: 'ex3_18',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'The company has spent thousands of pounds _________ their computer systems.',
+        options: [
+          { text: 'updated', isCorrect: false },
+          { text: 'updating', isCorrect: true },
+          { text: 'to update', isCorrect: false },
+          { text: 'update', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: B. updating</strong></p>
+          <p class="text-xs mt-1">Cấu trúc: <code>spend + time/money + (on) V-ing</code> = dành thời gian/tiền bạc làm việc gì.</p>
+        `
+      },
+      {
+        id: 'ex3_19',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'My brother is a real DIY _________.',
+        options: [
+          { text: 'enthusiasm', isCorrect: false },
+          { text: 'enthusiastically', isCorrect: false },
+          { text: 'enthusiastic', isCorrect: false },
+          { text: 'enthusiast', isCorrect: true }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: D. enthusiast</strong></p>
+          <p class="text-xs mt-1">Từ loại: Sau mạo từ "a" và tính từ "real", ta cần một danh từ chỉ người. <code>enthusiast</code> (danh từ) = người đam mê, người nhiệt huyết. Cụm <em>DIY enthusiast</em> = người đam mê tự làm đồ.</p>
+        `
+      },
+      {
+        id: 'ex3_20',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'Would you like _________ to the cinema this Sunday?',
+        options: [
+          { text: 'to go', isCorrect: true },
+          { text: 'going', isCorrect: false },
+          { text: 'go', isCorrect: false },
+          { text: 'goes', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: A. to go</strong></p>
+          <p class="text-xs mt-1">Cấu trúc mời lịch sự: <code>Would you like + to V?</code> (Bạn có muốn đi xem phim vào Chủ nhật này không?). Chú ý phân biệt với <code>like + V-ing</code>.</p>
+        `
+      },
+      {
+        id: 'ex3_21',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'Hollum is one of the ancient villages on the island of Ameland, _________ Netherlands.',
+        options: [
+          { text: 'a', isCorrect: false },
+          { text: 'an', isCorrect: false },
+          { text: 'the', isCorrect: true },
+          { text: '∅', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: C. the</strong></p>
+          <p class="text-xs mt-1">Quy tắc mạo từ: Tên các quốc gia có đuôi số nhiều như <strong>the Netherlands</strong> (Hà Lan), <strong>the Philippines</strong>, hoặc tên dạng liên bang/vương quốc như <strong>the UK</strong>, <strong>the USA</strong> luôn phải có mạo từ <em>the</em>.</p>
+        `
+      },
+      {
+        id: 'ex3_22',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'I _________ the school website and found pictures of school activities.',
+        options: [
+          { text: 'messaged', isCorrect: false },
+          { text: 'posted', isCorrect: false },
+          { text: 'uploaded', isCorrect: false },
+          { text: 'browsed', isCorrect: true }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: D. browsed</strong></p>
+          <p class="text-xs mt-1">Từ vựng Unit 1 & 3: <code>browse the website</code> = lướt xem trang web.</p>
+        `
+      },
+      {
+        id: 'ex3_23',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: 'Willy _________ playing football and doing exercise, so he looks sporty.',
+        options: [
+          { text: 'dislikes', isCorrect: false },
+          { text: 'hates', isCorrect: false },
+          { text: 'fancies', isCorrect: true },
+          { text: 'detests', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: C. fancies</strong></p>
+          <p class="text-xs mt-1">Ngữ nghĩa: Vế sau nói <em>"so he looks sporty"</em> (vì vậy trông cậu ấy rất khỏe khoắn/thể thao) -> chứng tỏ cậu ấy thích thể thao. <code>fancy + V-ing</code> = thích làm gì. Ba từ còn lại (dislike, hate, detest) đều mang nghĩa ghét/không thích.</p>
+        `
+      },
+      {
+        id: 'ex3_24',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: '- John: “What a beautiful kite you have, Mai!” - Mai: “_________”',
+        options: [
+          { text: 'It’s a kite.', isCorrect: false },
+          { text: 'Thank you, John.', isCorrect: true },
+          { text: 'Never mind.', isCorrect: false },
+          { text: 'I’d love to.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: B. Thank you, John.</strong></p>
+          <p class="text-xs mt-1">Giao tiếp xã hội: Khi nhận được lời khen ngợi (Compliment: <em>"What a beautiful kite you have!"</em>), cách đáp lại chuẩn mực và lịch sự nhất là cảm ơn (<em>"Thank you, John."</em>).</p>
+        `
+      },
+      {
+        id: 'ex3_25',
+        exKey: 'ex3',
+        exTitle: 'Exercise 3: Vocabulary & Grammar (Từ vựng & Ngữ pháp)',
+        prompt: 'Choose the best answer to fill in the blank.',
+        questionText: '- Hannah: “Can you tell me how to go to the music club, please?” - Mary: “_________”',
+        options: [
+          { text: 'Certainly. Go past this block, then turn left. It’s on your right.', isCorrect: true },
+          { text: 'The music club is full of students who love music and art.', isCorrect: false },
+          { text: 'Remember not to eat or drink during music lessons.', isCorrect: false },
+          { text: 'Keep going straight ahead, and you will see the canteen on your right.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: A. Certainly. Go past this block, then turn left. It’s on your right.</strong></p>
+          <p class="text-xs mt-1">Giao tiếp: Câu hỏi đường đến CLB âm nhạc (<em>"Can you tell me how to go to the music club...?"</em>). Phương án A chỉ đường chính xác và đúng địa điểm.</p>
+        `
+      },
+
+      // -----------------------------------------------------------------------
+      // EXERCISE 4: READING CLOZE (10 questions across 2 passages)
+      // -----------------------------------------------------------------------
+      {
+        id: 'ex4_1',
+        exKey: 'ex4',
+        exTitle: 'Exercise 4: Cloze Reading (Đọc điền từ - Bài 1: Country & City)',
+        prompt: 'Read the passage and choose the answer that best fits gap (1).',
+        passageContext: `
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs leading-relaxed font-normal text-slate-700">
+            <strong>Passage 1:</strong><br>
+            The country and the city have both advantages and <strong>(1) _________</strong>. People in the country enjoy beautiful surroundings, <strong>(2) _________</strong> and quietness, and can work at their own pace because no one is in a hurry. They often live in larger, more comfortable houses, and their neighbors are friendly and always ready to lend a hand. Life in the countryside, however, can be boring, and people may feel isolated. This can be a serious problem if they become ill or need <strong>(3) _________</strong> their children to school, especially when essential services are far away.<br><br>
+            Cities offer many services that may not be available in the countryside, <strong>(4) _________</strong> they also have disadvantages. They are often polluted, with both poor air quality and noisy streets. City life is usually fast-paced, so people may have <strong>(5) _________</strong> time to get to know their neighbors and make friends.
+          </div>
+        `,
+        questionText: 'Gap (1): The country and the city have both advantages and _________.',
+        options: [
+          { text: 'benefits', isCorrect: false },
+          { text: 'enjoyment', isCorrect: false },
+          { text: 'happiness', isCorrect: false },
+          { text: 'disadvantages', isCorrect: true }
+        ],
+        explanation: `<p class="text-xs"><strong>Đáp án: D. disadvantages</strong><br>Cụm từ quen thuộc: <code>advantages and disadvantages</code> = ưu điểm và nhược điểm.</p>`
+      },
+      {
+        id: 'ex4_2',
+        exKey: 'ex4',
+        exTitle: 'Exercise 4: Cloze Reading (Đọc điền từ - Bài 1: Country & City)',
+        prompt: 'Read the passage and choose the answer that best fits gap (2).',
+        passageContext: `The country and the city have both advantages and disadvantages. People in the country enjoy beautiful surroundings, <strong>(2) _________</strong> and quietness...`,
+        questionText: 'Gap (2): People in the country enjoy beautiful surroundings, _________ and quietness...',
+        options: [
+          { text: 'peace-loving', isCorrect: false },
+          { text: 'peace', isCorrect: true },
+          { text: 'peaceful', isCorrect: false },
+          { text: 'peacefully', isCorrect: false }
+        ],
+        explanation: `<p class="text-xs"><strong>Đáp án: B. peace</strong><br>Ngữ pháp về sự song hành (Parallel structure): "surroundings" (danh từ) và "quietness" (danh từ) nên ở giữa cũng phải là một danh từ: <code>peace</code> (sự yên bình).</p>`
+      },
+      {
+        id: 'ex4_3',
+        exKey: 'ex4',
+        exTitle: 'Exercise 4: Cloze Reading (Đọc điền từ - Bài 1: Country & City)',
+        prompt: 'Read the passage and choose the answer that best fits gap (3).',
+        passageContext: `This can be a serious problem if they become ill or need <strong>(3) _________</strong> their children to school...`,
+        questionText: 'Gap (3): ...if they become ill or need _________ their children to school...',
+        options: [
+          { text: 'to take', isCorrect: true },
+          { text: 'taking', isCorrect: false },
+          { text: 'took', isCorrect: false },
+          { text: 'take', isCorrect: false }
+        ],
+        explanation: `<p class="text-xs"><strong>Đáp án: A. to take</strong><br>Cấu trúc: <code>need + to V</code> (cần làm gì) -> <em>need to take</em>.</p>`
+      },
+      {
+        id: 'ex4_4',
+        exKey: 'ex4',
+        exTitle: 'Exercise 4: Cloze Reading (Đọc điền từ - Bài 1: Country & City)',
+        prompt: 'Read the passage and choose the answer that best fits gap (4).',
+        passageContext: `Cities offer many services that may not be available in the countryside, <strong>(4) _________</strong> they also have disadvantages.`,
+        questionText: 'Gap (4): Cities offer many services that may not be available in the countryside, _________ they also have disadvantages.',
+        options: [
+          { text: 'although', isCorrect: false },
+          { text: 'because', isCorrect: false },
+          { text: 'but', isCorrect: true },
+          { text: 'so', isCorrect: false }
+        ],
+        explanation: `<p class="text-xs"><strong>Đáp án: C. but</strong><br>Liên từ chỉ sự đối lập giữa hai mệnh đề độc lập: <em>"Thành phố cung cấp nhiều dịch vụ... NHƯNG chúng cũng có những nhược điểm."</em></p>`
+      },
+      {
+        id: 'ex4_5',
+        exKey: 'ex4',
+        exTitle: 'Exercise 4: Cloze Reading (Đọc điền từ - Bài 1: Country & City)',
+        prompt: 'Read the passage and choose the answer that best fits gap (5).',
+        passageContext: `City life is usually fast-paced, so people may have <strong>(5) _________</strong> time to get to know their neighbors and make friends.`,
+        questionText: 'Gap (5): ...so people may have _________ time to get to know their neighbors...',
+        options: [
+          { text: 'few', isCorrect: false },
+          { text: 'a lot', isCorrect: false },
+          { text: 'many', isCorrect: false },
+          { text: 'little', isCorrect: true }
+        ],
+        explanation: `<p class="text-xs"><strong>Đáp án: D. little</strong><br>Ngữ pháp: "time" là danh từ không đếm được. Do nhịp sống hối hả, mọi người có <strong>rất ít thời gian</strong> để làm quen hàng xóm. Dùng <code>little</code> (mang nghĩa phủ định/ít ỏi).</p>`
+      },
+      {
+        id: 'ex4_6',
+        exKey: 'ex4',
+        exTitle: 'Exercise 4: Cloze Reading (Đọc điền từ - Bài 2: British Free Time)',
+        prompt: 'Read the passage and choose the answer that best fits gap (1).',
+        passageContext: `
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs leading-relaxed font-normal text-slate-700">
+            <strong>Passage 2:</strong><br>
+            The British spend their free time in different ways, mainly to relax and enjoy themselves. Many people also take part <strong>(1) _________</strong> voluntary work, especially for charities.<br><br>
+            People spend a lot of their free time at home, where <strong>(2) _________</strong> popular leisure activity is watching television. They often watch TV for about 25 hours a week. People often <strong>(3) _________</strong> TV programs so that they can watch them later.<br><br>
+            Reading is also a favorite way of spending leisure time. The British <strong>(4) _________</strong> a lot of time reading newspapers and magazines. Gardening is popular in summer, while in winter, people often turn to “Do-it-yourself” (DIY) activities, in which they improve or repair their homes. Many people also have <strong>(5) _________</strong> to look after, and walking the dog every day is part of their daily routine.
+          </div>
+        `,
+        questionText: 'Gap (1): Many people also take part _________ voluntary work, especially for charities.',
+        options: [
+          { text: 'on', isCorrect: false },
+          { text: 'in', isCorrect: true },
+          { text: 'at', isCorrect: false },
+          { text: 'for', isCorrect: false }
+        ],
+        explanation: `<p class="text-xs"><strong>Đáp án: B. in</strong><br>Cụm từ cố định: <code>take part in something</code> = tham gia vào việc gì.</p>`
+      },
+      {
+        id: 'ex4_7',
+        exKey: 'ex4',
+        exTitle: 'Exercise 4: Cloze Reading (Đọc điền từ - Bài 2: British Free Time)',
+        prompt: 'Read the passage and choose the answer that best fits gap (2).',
+        passageContext: `People spend a lot of their free time at home, where <strong>(2) _________</strong> popular leisure activity is watching television.`,
+        questionText: 'Gap (2): ...where _________ popular leisure activity is watching television.',
+        options: [
+          { text: 'more than', isCorrect: false },
+          { text: 'most', isCorrect: false },
+          { text: 'more', isCorrect: false },
+          { text: 'the most', isCorrect: true }
+        ],
+        explanation: `<p class="text-xs"><strong>Đáp án: D. the most</strong><br>So sánh nhất: <code>the most + adj + noun</code> -> <em>the most popular leisure activity</em> (hoạt động giải trí phổ biến nhất).</p>`
+      },
+      {
+        id: 'ex4_8',
+        exKey: 'ex4',
+        exTitle: 'Exercise 4: Cloze Reading (Đọc điền từ - Bài 2: British Free Time)',
+        prompt: 'Read the passage and choose the answer that best fits gap (3).',
+        passageContext: `People often <strong>(3) _________</strong> TV programs so that they can watch them later.`,
+        questionText: 'Gap (3): People often _________ TV programs so that they can watch them later.',
+        options: [
+          { text: 'record', isCorrect: true },
+          { text: 'scan', isCorrect: false },
+          { text: 'print', isCorrect: false },
+          { text: 'power', isCorrect: false }
+        ],
+        explanation: `<p class="text-xs"><strong>Đáp án: A. record</strong><br>Từ vựng phù hợp ngữ cảnh: <code>record TV programs</code> = ghi lại / thu lại các chương trình truyền hình để xem sau.</p>`
+      },
+      {
+        id: 'ex4_9',
+        exKey: 'ex4',
+        exTitle: 'Exercise 4: Cloze Reading (Đọc điền từ - Bài 2: British Free Time)',
+        prompt: 'Read the passage and choose the answer that best fits gap (4).',
+        passageContext: `The British <strong>(4) _________</strong> a lot of time reading newspapers and magazines.`,
+        questionText: 'Gap (4): The British _________ a lot of time reading newspapers and magazines.',
+        options: [
+          { text: 'spend', isCorrect: true },
+          { text: 'spends', isCorrect: false },
+          { text: 'are spending', isCorrect: false },
+          { text: 'will spend', isCorrect: false }
+        ],
+        explanation: `<p class="text-xs"><strong>Đáp án: A. spend</strong><br>Chủ ngữ <em>"The British"</em> (The + Quốc tịch) là danh từ số nhiều chỉ người dân nước Anh. Diễn tả một sự thật/thói quen ở hiện tại đơn nên động từ giữ nguyên mẫu: <code>spend</code>.</p>`
+      },
+      {
+        id: 'ex4_10',
+        exKey: 'ex4',
+        exTitle: 'Exercise 4: Cloze Reading (Đọc điền từ - Bài 2: British Free Time)',
+        prompt: 'Read the passage and choose the answer that best fits gap (5).',
+        passageContext: `Many people also have <strong>(5) _________</strong> to look after, and walking the dog every day is part of their daily routine.`,
+        questionText: 'Gap (5): Many people also have _________ to look after, and walking the dog...',
+        options: [
+          { text: 'worms', isCorrect: false },
+          { text: 'bugs', isCorrect: false },
+          { text: 'pets', isCorrect: true },
+          { text: 'insects', isCorrect: false }
+        ],
+        explanation: `<p class="text-xs"><strong>Đáp án: C. pets</strong><br>Ngữ cảnh câu sau nói về <em>"walking the dog"</em> (dắt chó đi dạo), chứng tỏ họ nuôi thú cưng (<code>pets</code>).</p>`
+      },
+
+      // -----------------------------------------------------------------------
+      // EXERCISE 5: READING COMPREHENSION (5 questions)
+      // -----------------------------------------------------------------------
+      {
+        id: 'ex5_1',
+        exKey: 'ex5',
+        exTitle: 'Exercise 5: Reading Comprehension (Đọc hiểu văn bản)',
+        prompt: 'Read the text carefully, and then choose the correct answer.',
+        passageContext: `
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs leading-relaxed text-slate-700">
+            <strong>The British Countryside:</strong><br>
+            Besides its beauty, the countryside of Britain is well known for many contrasts: its bare mountains and moorland, its lakes, rivers and woods, and its long, often wild coastline. National parks which are protected from development by the government have the most beautiful and picturesque scenery. British people often associate the countryside with farmland, open spaces like fields of wheat and barley, green fields enclosed by hedges or stone walls in which cows or sheep are raised. Most farmland is now owned by individual people or independent companies. However, the government has built a network of public footpaths across the farmland.<br><br>
+            Many British people enjoy the peace and relaxation of life in the countryside where they can spend their free time walking, cycling, or going for a picnic or a pub lunch. In summer they can pick strawberries and other fruit in fruit farms. Nowadays, few rural people work on farms. Many of them commute to work in towns. Many others wish to live in the countryside so that they would have a better and healthier lifestyle.
+          </div>
+        `,
+        questionText: '1. The countryside of Britain is NOT famous for its _________.',
+        options: [
+          { text: 'farmland', isCorrect: true },
+          { text: 'moorland', isCorrect: false },
+          { text: 'bare mountains', isCorrect: false },
+          { text: 'lakes, rivers, and woods', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: A. farmland</strong></p>
+          <p class="text-xs mt-1">Dẫn chứng đoạn 1: <em>"the countryside of Britain is well known for many contrasts: its bare mountains and moorland, its lakes, rivers and woods..."</em> ("well known for" đồng nghĩa với "famous for"). Còn "farmland" chỉ là điều người dân thường liên tưởng tới (<em>"associate the countryside with farmland"</em>) chứ không nằm trong danh sách các nét tương phản nổi tiếng.</p>
+        `
+      },
+      {
+        id: 'ex5_2',
+        exKey: 'ex5',
+        exTitle: 'Exercise 5: Reading Comprehension (Đọc hiểu văn bản)',
+        prompt: 'Read the text carefully, and then choose the correct answer.',
+        passageContext: `Most farmland is now owned by individual people or independent companies. However, the government has built a network of public footpaths across the farmland.`,
+        questionText: '2. Individual people or independent companies own _________.',
+        options: [
+          { text: 'some of the farmland in Britain', isCorrect: false },
+          { text: 'most farmland in Britain', isCorrect: true },
+          { text: 'footpaths across the farmland', isCorrect: false },
+          { text: 'a network of public footpaths', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: B. most farmland in Britain</strong></p>
+          <p class="text-xs mt-1">Dẫn chứng trực tiếp trong bài: <em>"Most farmland is now owned by individual people or independent companies."</em></p>
+        `
+      },
+      {
+        id: 'ex5_3',
+        exKey: 'ex5',
+        exTitle: 'Exercise 5: Reading Comprehension (Đọc hiểu văn bản)',
+        prompt: 'Read the text carefully, and then choose the correct answer.',
+        passageContext: `Many British people enjoy the peace and relaxation of life in the countryside where they can spend their free time walking, cycling...`,
+        questionText: '3. Many British people think the countryside goes with _________.',
+        options: [
+          { text: 'work in towns', isCorrect: false },
+          { text: 'work on farms', isCorrect: false },
+          { text: 'peace and relaxation', isCorrect: true },
+          { text: 'public farmland', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: C. peace and relaxation</strong></p>
+          <p class="text-xs mt-1">Dẫn chứng: <em>"Many British people enjoy the peace and relaxation of life in the countryside..."</em></p>
+        `
+      },
+      {
+        id: 'ex5_4',
+        exKey: 'ex5',
+        exTitle: 'Exercise 5: Reading Comprehension (Đọc hiểu văn bản)',
+        prompt: 'Read the text carefully, and then choose the correct answer.',
+        passageContext: `Nowadays, few rural people work on farms. Many of them <strong>commute</strong> to work in towns.`,
+        questionText: '4. The word "commute" in the passage is CLOSEST in meaning to _________.',
+        options: [
+          { text: 'go on foot', isCorrect: false },
+          { text: 'travel a long distance to get to work', isCorrect: true },
+          { text: 'go by bicycle', isCorrect: false },
+          { text: 'travel or move around an area', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: B. travel a long distance to get to work</strong></p>
+          <p class="text-xs mt-1">Định nghĩa: Động từ <code>commute</code> có nghĩa là di chuyển đều đặn quãng đường xa từ nhà đến nơi làm việc (từ vùng nông thôn vào các thị trấn/thành phố để đi làm).</p>
+        `
+      },
+      {
+        id: 'ex5_5',
+        exKey: 'ex5',
+        exTitle: 'Exercise 5: Reading Comprehension (Đọc hiểu văn bản)',
+        prompt: 'Read the text carefully, and then choose the correct answer.',
+        passageContext: `Many others wish to live in the countryside so that <strong>they</strong> would have a better and healthier lifestyle.`,
+        questionText: '5. What does the word "they" in the passage refer to?',
+        options: [
+          { text: 'Those who commute to work in towns', isCorrect: false },
+          { text: 'Those who go to the countryside for a picnic', isCorrect: false },
+          { text: 'Those who go to fruit farms in summer', isCorrect: false },
+          { text: 'Those who dream of living in the countryside', isCorrect: true }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: D. Those who dream of living in the countryside</strong></p>
+          <p class="text-xs mt-1">Dẫn chứng: <em>"Many others wish to live in the countryside so that they..."</em> ("wish to live" = "dream of living"). Từ "they" thay thế cho "Many others" (những người mong ước sống ở vùng nông thôn).</p>
+        `
+      },
+
+      // -----------------------------------------------------------------------
+      // EXERCISE 6: SIGNS AND NOTICES (5 questions)
+      // -----------------------------------------------------------------------
+      {
+        id: 'ex6_1',
+        exKey: 'ex6',
+        exTitle: 'Exercise 6: Signs and Notices (Biển báo & Thông báo thực tế)',
+        prompt: 'Read the following signs and notices, and then choose the correct answers.',
+        visualComponent: `
+          <div class="max-w-md mx-auto p-4 rounded-xl bg-amber-50 border-2 border-dashed border-amber-300 font-mono text-xs shadow-xs">
+            <div class="border-b border-amber-200 pb-2 mb-2 font-bold text-slate-800 flex justify-between items-center">
+              <span>MEMO / MESSAGE</span>
+              <span class="text-[10px] bg-amber-200 px-1.5 py-0.5 rounded text-amber-900">Urgent</span>
+            </div>
+            <div class="space-y-1 text-slate-700">
+              <p><strong>To:</strong> Linda</p>
+              <p><strong>From:</strong> Adam</p>
+              <p><strong>Re:</strong> geography book</p>
+              <div class="p-2.5 mt-2 rounded bg-white border border-amber-200 text-slate-900 leading-relaxed font-sans">
+                "Hi, Linda. I need my geography book back. Big test on Tuesday! Can you bring it with you to the gym tomorrow? Thanks!"
+              </div>
+            </div>
+          </div>
+        `,
+        questionText: '1. What does the notice say?',
+        options: [
+          { text: 'Linda wants to study in the fitness center.', isCorrect: false },
+          { text: "Adam requests to take Linda's book.", isCorrect: false },
+          { text: 'On Tuesday, Adam has a geography exam.', isCorrect: true },
+          { text: 'The book belongs to Linda.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: C. On Tuesday, Adam has a geography exam.</strong></p>
+          <p class="text-xs mt-1">Phân tích: Adam viết: <em>"I need my geography book back. Big test on Tuesday!"</em> (Tớ cần lấy lại cuốn sách địa lý của tớ. Có bài kiểm tra lớn vào thứ Ba!). Như vậy cuốn sách là của Adam mượn cho Linda, và vào thứ Ba Adam có bài kiểm tra địa lý.</p>
+        `
+      },
+      {
+        id: 'ex6_2',
+        exKey: 'ex6',
+        exTitle: 'Exercise 6: Signs and Notices (Biển báo & Thông báo thực tế)',
+        prompt: 'Read the following signs and notices, and then choose the correct answers.',
+        visualComponent: `
+          <div class="flex flex-col items-center justify-center p-4">
+            <div class="w-36 h-36 rounded-2xl bg-white border-4 border-rose-600 flex flex-col items-center justify-center p-2 text-center shadow-md">
+              <div class="relative w-16 h-16 flex items-center justify-center">
+                <!-- Prohibition circle -->
+                <div class="w-14 h-14 rounded-full border-4 border-rose-600 relative flex items-center justify-center">
+                  <div class="w-full h-1 bg-rose-600 absolute rotate-45"></div>
+                  <!-- Push icon -->
+                  <i data-lucide="hand" class="w-6 h-6 text-slate-800"></i>
+                </div>
+              </div>
+              <div class="mt-2 bg-rose-600 text-white font-black text-xs px-2 py-0.5 rounded tracking-wider uppercase">
+                NO! Pushing
+              </div>
+            </div>
+          </div>
+        `,
+        questionText: '2. What does the sign say?',
+        options: [
+          { text: 'You must not run near the water.', isCorrect: false },
+          { text: 'You must not push other people.', isCorrect: true },
+          { text: 'You must not swim in this area.', isCorrect: false },
+          { text: 'You must not climb the stairs.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: B. You must not push other people.</strong></p>
+          <p class="text-xs mt-1">Biển báo có dòng chữ <em>"NO! Pushing"</em> có nghĩa là cấm xô đẩy người khác (<code>You must not push other people</code>).</p>
+        `
+      },
+      {
+        id: 'ex6_3',
+        exKey: 'ex6',
+        exTitle: 'Exercise 6: Signs and Notices (Biển báo & Thông báo thực tế)',
+        prompt: 'Read the following signs and notices, and then choose the correct answers.',
+        visualComponent: `
+          <div class="flex flex-col items-center justify-center p-4">
+            <div class="w-48 rounded-xl bg-white border-2 border-blue-600 overflow-hidden shadow-md text-center">
+              <div class="bg-blue-600 text-white font-black py-1 px-3 text-sm tracking-widest uppercase">
+                NOTICE
+              </div>
+              <div class="p-4 space-y-2">
+                <i data-lucide="bell-ring" class="w-10 h-10 mx-auto text-blue-600 animate-pulse-subtle"></i>
+                <div class="font-extrabold text-xs text-slate-900 leading-tight">
+                  RING BELL<br>FOR SERVICE
+                </div>
+              </div>
+            </div>
+          </div>
+        `,
+        questionText: '3. What does the notice say?',
+        options: [
+          { text: 'You have to ring the bell to ask for help.', isCorrect: true },
+          { text: 'The bell will ring when you come in.', isCorrect: false },
+          { text: 'The bell will ring when you go out.', isCorrect: false },
+          { text: 'The staff will ring the bell for you.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: A. You have to ring the bell to ask for help.</strong></p>
+          <p class="text-xs mt-1">Thông báo: <em>"RING BELL FOR SERVICE"</em> = Hãy bấm chuông để được phục vụ / yêu cầu sự giúp đỡ.</p>
+        `
+      },
+      {
+        id: 'ex6_4',
+        exKey: 'ex6',
+        exTitle: 'Exercise 6: Signs and Notices (Biển báo & Thông báo thực tế)',
+        prompt: 'Read the following signs and notices, and then choose the correct answers.',
+        visualComponent: `
+          <div class="flex flex-col items-center justify-center p-4">
+            <div class="max-w-xs w-full rounded-xl bg-slate-100 border border-slate-300 p-4 shadow-sm text-center">
+              <div class="text-xs font-black uppercase tracking-wider text-indigo-700 mb-2">NEW STUDENTS</div>
+              <p class="text-xs font-semibold text-slate-800 leading-relaxed bg-white p-3 rounded-lg border border-slate-200">
+                Go to Reception to collect your coursebooks before seeing your teacher
+              </p>
+            </div>
+          </div>
+        `,
+        questionText: '4. What does the notice say?',
+        options: [
+          { text: 'Wait at Reception until the teacher arrives.', isCorrect: false },
+          { text: 'Collect their coursebooks from their teacher.', isCorrect: false },
+          { text: 'See their teacher before going to Reception.', isCorrect: false },
+          { text: 'Collect their coursebooks from Reception.', isCorrect: true }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: D. Collect their coursebooks from Reception.</strong></p>
+          <p class="text-xs mt-1">Nội dung thông báo: Học sinh mới hãy đến phòng Lễ tân (Reception) để nhận sách giáo trình trước khi gặp giáo viên -> Hành động cần làm là lấy sách tại Reception.</p>
+        `
+      },
+      {
+        id: 'ex6_5',
+        exKey: 'ex6',
+        exTitle: 'Exercise 6: Signs and Notices (Biển báo & Thông báo thực tế)',
+        prompt: 'Read the following signs and notices, and then choose the correct answers.',
+        visualComponent: `
+          <div class="flex flex-col items-center justify-center p-4">
+            <div class="w-32 h-32 rounded-full border-8 border-rose-600 bg-white relative flex items-center justify-center shadow-md">
+              <div class="w-full h-2 bg-rose-600 absolute rotate-45 z-10"></div>
+              <i data-lucide="volume-x" class="w-14 h-14 text-slate-800"></i>
+            </div>
+            <span class="text-[11px] font-bold text-slate-500 mt-2">Biển báo giao thông cấm</span>
+          </div>
+        `,
+        questionText: '5. What does the sign say?',
+        options: [
+          { text: 'You must not play music here.', isCorrect: false },
+          { text: 'You must not sound your horn here.', isCorrect: true },
+          { text: 'You must not shout here.', isCorrect: false },
+          { text: 'You must not use your camera here.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: B. You must not sound your horn here.</strong></p>
+          <p class="text-xs mt-1">Biển báo có hình chiếc còi bị gạch chéo đỏ là biển cấm bóp còi (<code>You must not sound your horn here</code> - horn = còi xe).</p>
+        `
+      },
+
+      // -----------------------------------------------------------------------
+      // EXERCISE 7: SENTENCE INSERTION INTO PASSAGE (4 questions)
+      // -----------------------------------------------------------------------
+      {
+        id: 'ex7_all',
+        exKey: 'ex7',
+        isGroupHeader: true,
+        headerHtml: `
+          <div class="p-4 rounded-2xl bg-indigo-50/60 border border-indigo-100 text-xs text-slate-700 space-y-2">
+            <p class="font-bold text-indigo-900">Văn bản cho Bài tập 7 (Four phrases/sentences removed from the text):</p>
+            <p class="leading-relaxed bg-white p-3.5 rounded-xl border border-indigo-200/60">
+              Life in the countryside is often peaceful and quiet. Unlike cities, the pace of life is slower, and <strong>(1) [.........]</strong>. In addition, people living in rural areas are surrounded by nature, which helps reduce stress. It is also safer since the crime rate is much lower. <strong>(2) [.........]</strong>, it also has its challenges. Access to healthcare, education, and job opportunities may be limited compared to urban areas. <strong>(3) [.........]</strong>. Public transport is often lacking, making it difficult for people to commute or access services that are readily available in cities. <strong>(4) [.........]</strong>, the countryside provides a strong sense of community, which appeals to many people. Many find the peace and connection to nature. For those seeking a simpler lifestyle, the countryside offers a refreshing alternative to the chaos of the city.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] font-semibold text-slate-600 pt-1">
+              <span class="bg-indigo-100/50 px-2.5 py-1 rounded-lg">A. Despite these drawbacks</span>
+              <span class="bg-indigo-100/50 px-2.5 py-1 rounded-lg">B. it is easier to find fresh, locally-grown food</span>
+              <span class="bg-indigo-100/50 px-2.5 py-1 rounded-lg">C. Another difficulty is transportation</span>
+              <span class="bg-indigo-100/50 px-2.5 py-1 rounded-lg">D. While the countryside offers many benefits</span>
+            </div>
+          </div>
+        `
+      },
+      {
+        id: 'ex7_1',
+        exKey: 'ex7',
+        exTitle: 'Exercise 7: Sentence Insertion (Điền câu vào bài đọc)',
+        prompt: 'Choose the letter A, B, C, or D that best fits blank (1).',
+        questionText: 'Blank (1): Unlike cities, the pace of life is slower, and _________.',
+        options: [
+          { text: 'Despite these drawbacks', isCorrect: false },
+          { text: 'it is easier to find fresh, locally-grown food', isCorrect: true },
+          { text: 'Another difficulty is transportation', isCorrect: false },
+          { text: 'While the countryside offers many benefits', isCorrect: false }
+        ],
+        explanation: `<p class="text-xs"><strong>Đáp án: B. it is easier to find fresh, locally-grown food</strong><br>Vị trí (1) nằm trong câu liệt kê các mặt tích cực của cuộc sống thôn quê (nhịp sống chậm hơn và dễ tìm thấy thực phẩm tươi ngon).</p>`
+      },
+      {
+        id: 'ex7_2',
+        exKey: 'ex7',
+        exTitle: 'Exercise 7: Sentence Insertion (Điền câu vào bài đọc)',
+        prompt: 'Choose the letter A, B, C, or D that best fits blank (2).',
+        questionText: 'Blank (2): It is also safer since the crime rate is much lower. _________, it also has its challenges.',
+        options: [
+          { text: 'Despite these drawbacks', isCorrect: false },
+          { text: 'it is easier to find fresh, locally-grown food', isCorrect: false },
+          { text: 'Another difficulty is transportation', isCorrect: false },
+          { text: 'While the countryside offers many benefits', isCorrect: true }
+        ],
+        explanation: `<p class="text-xs"><strong>Đáp án: D. While the countryside offers many benefits</strong><br>Câu chuyển đoạn từ mặt tích cực sang khó khăn: <em>"Trong khi nông thôn mang lại nhiều lợi ích, nó cũng có những thách thức."</em></p>`
+      },
+      {
+        id: 'ex7_3',
+        exKey: 'ex7',
+        exTitle: 'Exercise 7: Sentence Insertion (Điền câu vào bài đọc)',
+        prompt: 'Choose the letter A, B, C, or D that best fits blank (3).',
+        questionText: 'Blank (3): Access to healthcare... may be limited. _________. Public transport is often lacking...',
+        options: [
+          { text: 'Despite these drawbacks', isCorrect: false },
+          { text: 'it is easier to find fresh, locally-grown food', isCorrect: false },
+          { text: 'Another difficulty is transportation', isCorrect: true },
+          { text: 'While the countryside offers many benefits', isCorrect: false }
+        ],
+        explanation: `<p class="text-xs"><strong>Đáp án: C. Another difficulty is transportation</strong><br>Câu sau giải thích: <em>"Public transport is often lacking..."</em> (Phương tiện công cộng thường thiếu thốn), do đó câu dẫn đầu đoạn là <em>"Another difficulty is transportation"</em> (Một khó khăn khác là giao thông).</p>`
+      },
+      {
+        id: 'ex7_4',
+        exKey: 'ex7',
+        exTitle: 'Exercise 7: Sentence Insertion (Điền câu vào bài đọc)',
+        prompt: 'Choose the letter A, B, C, or D that best fits blank (4).',
+        questionText: 'Blank (4): ...services that are readily available in cities. _________, the countryside provides a strong sense of community...',
+        options: [
+          { text: 'Despite these drawbacks', isCorrect: true },
+          { text: 'it is easier to find fresh, locally-grown food', isCorrect: false },
+          { text: 'Another difficulty is transportation', isCorrect: false },
+          { text: 'While the countryside offers many benefits', isCorrect: false }
+        ],
+        explanation: `<p class="text-xs"><strong>Đáp án: A. Despite these drawbacks</strong><br><em>"Despite these drawbacks"</em> = Mặc dù có những mặt hạn chế này, nông thôn vẫn mang lại cảm giác gắn kết cộng đồng mạnh mẽ.</p>`
+      },
+
+      // -----------------------------------------------------------------------
+      // EXERCISE 8: SENTENCE ORDERING & ENDINGS (4 questions)
+      // -----------------------------------------------------------------------
+      {
+        id: 'ex8_1a',
+        exKey: 'ex8',
+        exTitle: 'Exercise 8: Sentence Ordering (Sắp xếp câu & Câu kết đoạn)',
+        prompt: '1a. Put the sentences (a-c) in the correct order, then fill in the blank to make a logical text.',
+        passageContext: `
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 leading-relaxed">
+            <em>After a busy week of work, I always look forward to my leisure time. It’s the perfect opportunity to unwind. _________</em><br><br>
+            <strong>a.</strong> No matter how I choose to spend my free time, these moments help me keep a balance between work and relaxation.<br>
+            <strong>b.</strong> On some weekends, I love gathering with friends for a movie night or taking a short trip out of the city.<br>
+            <strong>c.</strong> On other occasions, I enjoy reading quietly in a park, letting the peaceful surroundings help me relax and clear my mind.
+          </div>
+        `,
+        questionText: 'What is the logical order of sentences (a-c)?',
+        options: [
+          { text: 'b – c – a', isCorrect: true },
+          { text: 'c – a – b', isCorrect: false },
+          { text: 'c – b – a', isCorrect: false },
+          { text: 'b – a – c', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: A. b – c – a</strong></p>
+          <p class="text-xs mt-1">Mạch văn logic: Đầu tiên nêu ví dụ <em>"On some weekends..."</em> (b), tiếp theo đối chiếu <em>"On other occasions..."</em> (c), và kết thúc bằng câu tổng kết <em>"No matter how I choose to spend my free time..."</em> (a).</p>
+        `
+      },
+      {
+        id: 'ex8_1b',
+        exKey: 'ex8',
+        exTitle: 'Exercise 8: Sentence Ordering (Sắp xếp câu & Câu kết đoạn)',
+        prompt: '1b. Choose the sentence that can end the text (in Question 1a) most appropriately.',
+        questionText: 'Which sentence best concludes Text 1?',
+        options: [
+          { text: 'By the time the weekend is over, I feel recharged and ready for another week.', isCorrect: true },
+          { text: 'On Monday, I feel overwhelmed and wish for the weekend to come fast.', isCorrect: false },
+          { text: 'By the time the weekend is over, I can’t wait to work again.', isCorrect: false },
+          { text: 'Nevertheless, leisure activities are more of a distraction than a benefit.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: A. By the time the weekend is over, I feel recharged and ready for another week.</strong></p>
+          <p class="text-xs mt-1">Câu kết đoạn mang ý nghĩa tích cực, thể hiện đúng mục đích giải trí và nạp lại năng lượng: <em>"Khi cuối tuần kết thúc, tôi cảm thấy tràn đầy năng lượng và sẵn sàng cho một tuần mới."</em></p>
+        `
+      },
+      {
+        id: 'ex8_2a',
+        exKey: 'ex8',
+        exTitle: 'Exercise 8: Sentence Ordering (Sắp xếp câu & Câu kết đoạn)',
+        prompt: '2a. Put the sentences (a-c) in the correct order, then fill in the blank to make a logical text.',
+        passageContext: `
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 leading-relaxed">
+            <em>Our school held a special art exhibition last week. Everyone was keen to see the artworks. _________</em><br><br>
+            <strong>a.</strong> The students created amazing pieces, and we were proud of their creativity.<br>
+            <strong>b.</strong> The exhibition was a great success, and many parents came to see the art.<br>
+            <strong>c.</strong> Each class contributed their best artworks, and they were displayed in the school hall.
+          </div>
+        `,
+        questionText: 'What is the logical order of sentences (a-c)?',
+        options: [
+          { text: 'c – b – a', isCorrect: false },
+          { text: 'c – a – b', isCorrect: true },
+          { text: 'b – c – a', isCorrect: false },
+          { text: 'a – c – b', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: B. c – a – b</strong></p>
+          <p class="text-xs mt-1">Mạch diễn đạt: Đầu tiên nói các lớp đóng góp tranh trưng bày ở hội trường (c), tiếp theo khen ngợi các tác phẩm tuyệt vời và niềm tự hào (a), cuối cùng nêu kết quả triển lãm thành công tốt đẹp với nhiều phụ huynh tham quan (b).</p>
+        `
+      },
+      {
+        id: 'ex8_2b',
+        exKey: 'ex8',
+        exTitle: 'Exercise 8: Sentence Ordering (Sắp xếp câu & Câu kết đoạn)',
+        prompt: '2b. Choose the sentence that you can end the text (in Question 2a) most appropriately.',
+        questionText: 'Which sentence best concludes Text 2?',
+        options: [
+          { text: 'The art exhibition was canceled due to a scheduling conflict.', isCorrect: false },
+          { text: 'The students were excited to receive awards for their work.', isCorrect: false },
+          { text: 'We all enjoyed seeing the artworks and had a wonderful time at the exhibition.', isCorrect: true },
+          { text: 'The hall was decorated with colorful banners and balloons', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án: C. We all enjoyed seeing the artworks and had a wonderful time at the exhibition.</strong></p>
+          <p class="text-xs mt-1">Câu kết luận cảm xúc trọn vẹn của toàn bộ sự kiện: <em>"Tất cả chúng tôi đều thích thú khi ngắm nhìn các tác phẩm nghệ thuật và đã có một khoảng thời gian tuyệt vời tại buổi triển lãm."</em></p>
+        `
+      },
+
+      // -----------------------------------------------------------------------
+      // EXERCISE 9: SENTENCE REWRITING (10 questions)
+      // -----------------------------------------------------------------------
+      {
+        id: 'ex9_1',
+        exKey: 'ex9',
+        exTitle: 'Exercise 9: Sentence Rewriting (Viết lại câu không đổi nghĩa)',
+        prompt: 'Rewrite the sentence without changing its original meaning, using the word in brackets: (adore)',
+        questionText: 'My sister and I fancy reading novels when we have free time. (adore)',
+        options: [
+          { text: 'My sister and I adore reading novels when we have free time.', isCorrect: true },
+          { text: 'My sister and I adore to read novels when we have free time.', isCorrect: false },
+          { text: 'My sister and I are adore reading novels when we have free time.', isCorrect: false },
+          { text: 'My sister and I adore read novels when we have free time.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án đúng: My sister and I adore reading novels when we have free time.</strong></p>
+          <p class="text-xs mt-1">Cấu trúc: <code>adore + V-ing</code> (rất thích/mê làm gì) tương đương với <code>fancy + V-ing</code>.</p>
+        `
+      },
+      {
+        id: 'ex9_2',
+        exKey: 'ex9',
+        exTitle: 'Exercise 9: Sentence Rewriting (Viết lại câu không đổi nghĩa)',
+        prompt: 'Rewrite the sentence without changing its original meaning, using the word in brackets: (well)',
+        questionText: 'She is good at playing the guitar. (well)',
+        options: [
+          { text: 'She plays the guitar well.', isCorrect: true },
+          { text: 'She is playing the guitar well.', isCorrect: false },
+          { text: 'She plays well the guitar.', isCorrect: false },
+          { text: 'She can plays the guitar well.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án đúng: She plays the guitar well.</strong></p>
+          <p class="text-xs mt-1">Cấu trúc: <code>be good at doing sth</code> = <code>do sth well</code>. Chuyển tính từ "good" thành trạng từ "well" bổ nghĩa cho động từ "plays".</p>
+        `
+      },
+      {
+        id: 'ex9_3',
+        exKey: 'ex9',
+        exTitle: 'Exercise 9: Sentence Rewriting (Viết lại câu không đổi nghĩa)',
+        prompt: 'Rewrite the sentence without changing its original meaning, using the word in brackets: (more)',
+        questionText: 'Life in the countryside isn’t as stressful as life in the city. (more)',
+        options: [
+          { text: 'Life in the city is more stressful than life in the countryside.', isCorrect: true },
+          { text: 'Life in the countryside is more stressful than life in the city.', isCorrect: false },
+          { text: 'Life in the city isn’t more stressful than life in the countryside.', isCorrect: false },
+          { text: 'Life in the city is more stress than life in the countryside.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án đúng: Life in the city is more stressful than life in the countryside.</strong></p>
+          <p class="text-xs mt-1">So sánh bằng phủ định: <em>A isn't as adj as B</em> => <em>B is more adj than A</em> (Cuộc sống ở thôn quê không căng thẳng bằng thành phố => Cuộc sống ở thành phố căng thẳng hơn ở thôn quê).</p>
+        `
+      },
+      {
+        id: 'ex9_4',
+        exKey: 'ex9',
+        exTitle: 'Exercise 9: Sentence Rewriting (Viết lại câu không đổi nghĩa)',
+        prompt: 'Rewrite the sentence without changing its original meaning, using the word in brackets: (of)',
+        questionText: 'They like watching movies on weekends. (of)',
+        options: [
+          { text: 'They are fond of watching movies on weekends.', isCorrect: true },
+          { text: 'They are afraid of watching movies on weekends.', isCorrect: false },
+          { text: 'They of like watching movies on weekends.', isCorrect: false },
+          { text: 'They fond of watching movies on weekends.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án đúng: They are fond of watching movies on weekends.</strong></p>
+          <p class="text-xs mt-1">Cấu trúc: <code>be fond of + V-ing</code> = thích làm gì (đồng nghĩa với <em>like + V-ing</em>).</p>
+        `
+      },
+      {
+        id: 'ex9_5',
+        exKey: 'ex9',
+        exTitle: 'Exercise 9: Sentence Rewriting (Viết lại câu không đổi nghĩa)',
+        prompt: 'Rewrite the sentence without changing its original meaning, using the word in brackets: (than)',
+        questionText: 'Her teammate didn’t respond to criticism as constructively as she did. (than)',
+        options: [
+          { text: 'She responded to criticism more constructively than her teammate did.', isCorrect: true },
+          { text: 'Her teammate responded to criticism more constructively than she did.', isCorrect: false },
+          { text: 'She responded to criticism than her teammate more constructively.', isCorrect: false },
+          { text: 'Her teammate didn’t respond to criticism more constructively than her.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án đúng: She responded to criticism more constructively than her teammate did.</strong></p>
+          <p class="text-xs mt-1">Đồng đội của cô ấy không phản hồi trước lời phê bình mang tính xây dựng bằng cô ấy => Cô ấy phản hồi trước lời phê bình mang tính xây dựng hơn đồng đội của mình.</p>
+        `
+      },
+      {
+        id: 'ex9_6',
+        exKey: 'ex9',
+        exTitle: 'Exercise 9: Sentence Rewriting (Viết lại câu không đổi nghĩa)',
+        prompt: 'Rewrite the sentence without changing its original meaning, using the word in brackets: (better)',
+        questionText: 'I can’t cook as well as my mother. (better)',
+        options: [
+          { text: 'My mother can cook better than me (or: than I do).', isCorrect: true },
+          { text: 'I can cook better than my mother.', isCorrect: false },
+          { text: 'My mother cooks not better than me.', isCorrect: false },
+          { text: 'My mother can cook more better than me.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án đúng: My mother can cook better than me (hoặc: My mother cooks better than I can/do).</strong></p>
+          <p class="text-xs mt-1">So sánh: Tôi không thể nấu ăn ngon bằng mẹ tôi => Mẹ tôi có thể nấu ăn ngon hơn tôi (better than).</p>
+        `
+      },
+      {
+        id: 'ex9_7',
+        exKey: 'ex9',
+        exTitle: 'Exercise 9: Sentence Rewriting (Viết lại câu không đổi nghĩa)',
+        prompt: 'Rewrite the sentence without changing its original meaning, using the word in brackets: (adore)',
+        questionText: 'We are keen on trying new foods. (adore)',
+        options: [
+          { text: 'We adore trying new foods.', isCorrect: true },
+          { text: 'We adore to try new foods.', isCorrect: false },
+          { text: 'We are adore trying new foods.', isCorrect: false },
+          { text: 'We adore try new foods.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án đúng: We adore trying new foods.</strong></p>
+          <p class="text-xs mt-1">Cấu trúc: <code>be keen on + V-ing</code> = <code>adore + V-ing</code> (say mê/rất thích thử các món ăn mới).</p>
+        `
+      },
+      {
+        id: 'ex9_8',
+        exKey: 'ex9',
+        exTitle: 'Exercise 9: Sentence Rewriting (Viết lại câu không đổi nghĩa)',
+        prompt: 'Rewrite the sentence without changing its original meaning, using the word in brackets: (prefers)',
+        questionText: 'She would rather go shopping than watch TV. (prefers)',
+        options: [
+          { text: 'She prefers going shopping to watching TV.', isCorrect: true },
+          { text: 'She prefers go shopping than watch TV.', isCorrect: false },
+          { text: 'She prefers going shopping than watching TV.', isCorrect: false },
+          { text: 'She prefers to go shopping to watch TV.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án đúng: She prefers going shopping to watching TV.</strong></p>
+          <p class="text-xs mt-1">Cấu trúc kinh điển Unit 1: <code>would rather V than V</code> = <code>prefer V-ing to V-ing</code> (thích làm việc này hơn việc kia).</p>
+        `
+      },
+      {
+        id: 'ex9_9',
+        exKey: 'ex9',
+        exTitle: 'Exercise 9: Sentence Rewriting (Viết lại câu không đổi nghĩa)',
+        prompt: 'Rewrite the sentence without changing its original meaning, using the word in brackets: (cycle)',
+        questionText: 'They go to school by bike every day. (cycle)',
+        options: [
+          { text: 'They cycle to school every day.', isCorrect: true },
+          { text: 'They go to cycle to school every day.', isCorrect: false },
+          { text: 'They cycle by bike to school every day.', isCorrect: false },
+          { text: 'They are cycle to school every day.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án đúng: They cycle to school every day.</strong></p>
+          <p class="text-xs mt-1">Biến đổi: <code>go to ... by bike</code> = <code>cycle to ...</code> (đạp xe đến trường mỗi ngày).</p>
+        `
+      },
+      {
+        id: 'ex9_10',
+        exKey: 'ex9',
+        exTitle: 'Exercise 9: Sentence Rewriting (Viết lại câu không đổi nghĩa)',
+        prompt: 'Rewrite the sentence without changing its original meaning, using the word in brackets: (so)',
+        questionText: 'I can’t watch Mr. Bean because I have a lot of homework tonight. (so)',
+        options: [
+          { text: 'I have a lot of homework tonight, so I can’t watch Mr. Bean.', isCorrect: true },
+          { text: 'I can’t watch Mr. Bean, so I have a lot of homework tonight.', isCorrect: false },
+          { text: 'Because I have a lot of homework tonight, so I can’t watch Mr. Bean.', isCorrect: false },
+          { text: 'I have a lot of homework tonight so that I can’t watch Mr. Bean.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án đúng: I have a lot of homework tonight, so I can’t watch Mr. Bean.</strong></p>
+          <p class="text-xs mt-1">Biến đổi câu chỉ nguyên nhân - kết quả: <em>Clause 1 because Clause 2</em> => <em>Clause 2, so Clause 1</em>. (Lưu ý trong tiếng Anh không dùng cả "Because" và "so" trong cùng một câu ghép).</p>
+        `
+      },
+
+      // -----------------------------------------------------------------------
+      // EXERCISE 10: WRITE SENTENCES USING CUES (5 questions)
+      // -----------------------------------------------------------------------
+      {
+        id: 'ex10_1',
+        exKey: 'ex10',
+        exTitle: 'Exercise 10: Sentence Building (Viết câu dùng từ gợi ý)',
+        prompt: 'Write a complete sentence using the cues given.',
+        questionText: 'Mary/ crazy/ do puzzles/ because/ she/ think/ it/ good/ her brain.',
+        options: [
+          { text: 'Mary is crazy about doing puzzles because she thinks it is good for her brain.', isCorrect: true },
+          { text: 'Mary is crazy to do puzzles because she thinks it is good to her brain.', isCorrect: false },
+          { text: 'Mary crazy about doing puzzles because she thinks it good for her brain.', isCorrect: false },
+          { text: 'Mary is crazy of doing puzzles because she thinks it is good at her brain.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án đúng: Mary is crazy about doing puzzles because she thinks it is good for her brain.</strong></p>
+          <p class="text-xs mt-1">Cấu trúc: <code>be crazy about + V-ing</code> (rất cuồng/mê làm gì); <code>be good for something</code> (tốt cho cái gì - good for her brain); chia động từ hiện tại đơn ngôi thứ 3 số ít: Mary is..., she thinks it is...</p>
+        `
+      },
+      {
+        id: 'ex10_2',
+        exKey: 'ex10',
+        exTitle: 'Exercise 10: Sentence Building (Viết câu dùng từ gợi ý)',
+        prompt: 'Write a complete sentence using the cues given.',
+        questionText: 'Young people/ prefer/ message/ friends/ meet/ face-to-face.',
+        options: [
+          { text: 'Young people prefer messaging friends to meeting face-to-face.', isCorrect: true },
+          { text: 'Young people prefer to message friends to meeting face-to-face.', isCorrect: false },
+          { text: 'Young people prefer message friends than meet face-to-face.', isCorrect: false },
+          { text: 'Young people prefers messaging friends to meeting face-to-face.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án đúng: Young people prefer messaging friends to meeting face-to-face.</strong></p>
+          <p class="text-xs mt-1">Cấu trúc so sánh sở thích: <code>prefer V-ing to V-ing</code> (thích nhắn tin cho bạn bè hơn là gặp mặt trực tiếp). Chủ ngữ "Young people" là danh từ số nhiều nên động từ "prefer" giữ nguyên.</p>
+        `
+      },
+      {
+        id: 'ex10_3',
+        exKey: 'ex10',
+        exTitle: 'Exercise 10: Sentence Building (Viết câu dùng từ gợi ý)',
+        prompt: 'Write a complete sentence using the cues given.',
+        questionText: 'She/ sing/ beautiful/ her sister.',
+        options: [
+          { text: 'She sings more beautifully than her sister (does).', isCorrect: true },
+          { text: 'She sings more beautiful than her sister.', isCorrect: false },
+          { text: 'She sing more beautifully than her sister.', isCorrect: false },
+          { text: 'She sings beautiful than her sister.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án đúng: She sings more beautifully than her sister (does).</strong></p>
+          <p class="text-xs mt-1">Ngữ pháp: Động từ "sings" cần trạng từ so sánh hơn là <code>more beautifully than</code> (không dùng tính từ "beautiful"). Chủ ngữ "She" ngôi 3 số ít nên động từ chia "sings".</p>
+        `
+      },
+      {
+        id: 'ex10_4',
+        exKey: 'ex10',
+        exTitle: 'Exercise 10: Sentence Building (Viết câu dùng từ gợi ý)',
+        prompt: 'Write a complete sentence using the cues given.',
+        questionText: 'Mai/ speak/ English/ good/ her friends.',
+        options: [
+          { text: 'Mai speaks English better than her friends (do).', isCorrect: true },
+          { text: 'Mai speaks English more good than her friends.', isCorrect: false },
+          { text: 'Mai speak English better than her friends.', isCorrect: false },
+          { text: 'Mai speaks English more better than her friends.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án đúng: Mai speaks English better than her friends (do).</strong></p>
+          <p class="text-xs mt-1">Ngữ pháp: Trạng từ của "good" là "well", và dạng so sánh hơn của "well" là <code>better than</code>. Động từ "speaks" chia theo ngôi "Mai".</p>
+        `
+      },
+      {
+        id: 'ex10_5',
+        exKey: 'ex10',
+        exTitle: 'Exercise 10: Sentence Building (Viết câu dùng từ gợi ý)',
+        prompt: 'Write a complete sentence using the cues given.',
+        questionText: 'They/ help/ parents/ pick/ fruit/ orchard/ now.',
+        options: [
+          { text: 'They are helping their parents pick fruit in the orchard now.', isCorrect: true },
+          { text: 'They help their parents to pick fruit at the orchard now.', isCorrect: false },
+          { text: 'They are helping their parents picking fruit in the orchard now.', isCorrect: false },
+          { text: 'They are helping parents pick fruit in orchard now.', isCorrect: false }
+        ],
+        explanation: `
+          <p class="text-xs"><strong>Đáp án đúng: They are helping their parents pick fruit in the orchard now.</strong></p>
+          <p class="text-xs mt-1">Ngữ pháp: Có trạng từ "now" nên chia thì Hiện tại tiếp diễn: <code>are helping</code>; cấu trúc <code>help sb (to) do sth</code> (pick fruit); giới từ địa điểm: <code>in the orchard</code> (trong vườn cây ăn quả).</p>
+        `
+      }
+    ];
+
+    /* =========================================================================
+       APPLICATION STATE & LOGIC
+       ========================================================================= */
+    let currentFilter = 'all';
+    let userAnswers = {}; // map question.id -> selected option index
+    let randomizedQuestions = [];
+    let audioSpeechEnabled = true;
+
+    // LocalStorage streak key
+    const STREAK_KEY = 'thcs_nghiatan_grade8_perfect_streak';
+
+    function getStoredStreak() {
+      try {
+        const val = localStorage.getItem(STREAK_KEY);
+        return val ? parseInt(val, 10) || 0 : 0;
+      } catch (e) {
+        return 0;
+      }
+    }
+
+    function saveStreak(newStreak) {
+      try {
+        localStorage.setItem(STREAK_KEY, newStreak.toString());
+      } catch (e) {}
+      renderStreakUI();
+    }
+
+    function renderStreakUI() {
+      const streak = getStoredStreak();
+      const el = document.getElementById('streak-count');
+      if (el) el.textContent = streak;
+    }
+
+    // Fisher-Yates Shuffle
+    function shuffleArray(arr) {
+      const copy = [...arr];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    // Prepare randomized dataset (ANTI-CRAMMING: shuffle option order and store new indexes)
+    function initializeRandomizedQuestions() {
+      randomizedQuestions = RAW_DATABASE.map(item => {
+        if (item.isGroupHeader) return { ...item };
+        // Deep copy options and shuffle
+        const shuffledOptions = shuffleArray(item.options.map(opt => ({ ...opt })));
+        return {
+          ...item,
+          shuffledOptions: shuffledOptions
+        };
+      });
+      userAnswers = {};
+    }
+
+    function setFilter(filterKey) {
+      currentFilter = filterKey;
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        if (btn.getAttribute('data-tab') === filterKey) {
+          btn.className = 'tab-btn px-3 py-1.5 rounded-xl transition whitespace-nowrap bg-indigo-600 text-white shadow-xs font-semibold';
+        } else {
+          btn.className = 'tab-btn px-3 py-1.5 rounded-xl transition whitespace-nowrap bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold';
+        }
+      });
+      renderQuestions();
+    }
+
+    function handleSelectOption(qId, selectedIdx) {
+      // If already answered, allow reselection or lock? As requested:
+      // "Tự động chấm điểm và hiển thị lời giải thích chi tiết ngay sau khi người dùng chọn đáp án"
+      userAnswers[qId] = selectedIdx;
+      
+      const q = randomizedQuestions.find(item => item.id === qId);
+      if (q && audioSpeechEnabled && 'speechSynthesis' in window) {
+        const selectedOpt = q.shuffledOptions[selectedIdx];
+        if (selectedOpt && selectedOpt.raw) {
+          speakText(selectedOpt.raw);
+        }
+      }
+
+      renderQuestions();
+      updateProgressAndScores();
+      checkAllDoneAndEvaluate();
+    }
+
+    function speakText(txt) {
+      try {
+        if (!window.speechSynthesis) return;
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(txt);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.95;
+        window.speechSynthesis.speak(utterance);
+      } catch (e) {}
+    }
+
+    function toggleAudioSpeech() {
+      audioSpeechEnabled = !audioSpeechEnabled;
+      const icon = document.getElementById('tts-icon');
+      const btn = document.getElementById('btn-tts-toggle');
+      if (audioSpeechEnabled) {
+        icon.setAttribute('data-lucide', 'volume-2');
+        icon.className = 'w-4 h-4 text-emerald-600';
+        btn.title = "Đang bật phát âm giọng đọc tiếng Anh";
+      } else {
+        icon.setAttribute('data-lucide', 'volume-x');
+        icon.className = 'w-4 h-4 text-slate-400';
+        btn.title = "Đang tắt phát âm";
+      }
+      lucide.createIcons();
+    }
+
+    function updateProgressAndScores() {
+      const activeQuestions = randomizedQuestions.filter(q => !q.isGroupHeader);
+      const total = activeQuestions.length;
+      let answeredCount = 0;
+      let correctCount = 0;
+      let wrongCount = 0;
+
+      activeQuestions.forEach(q => {
+        if (userAnswers[q.id] !== undefined) {
+          answeredCount++;
+          const selectedIdx = userAnswers[q.id];
+          if (q.shuffledOptions[selectedIdx] && q.shuffledOptions[selectedIdx].isCorrect) {
+            correctCount++;
+          } else {
+            wrongCount++;
+          }
+        }
+      });
+
+      // Update counters in DOM
+      document.getElementById('stats-total').textContent = total;
+      document.getElementById('stats-answered').textContent = answeredCount;
+      document.getElementById('stats-correct').textContent = correctCount;
+      document.getElementById('stats-wrong').textContent = wrongCount;
+
+      const pct = total > 0 ? (answeredCount / total) * 100 : 0;
+      document.getElementById('progress-bar-fill').style.width = pct + '%';
+
+      // Summary widgets
+      const score10 = total > 0 ? ((correctCount / total) * 10).toFixed(1) : '0.0';
+      const accuracy = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
+
+      document.getElementById('summary-score-10').textContent = score10;
+      document.getElementById('summary-correct').textContent = correctCount;
+      document.getElementById('summary-wrong').textContent = wrongCount;
+      document.getElementById('summary-accuracy').textContent = accuracy + '%';
+
+      const retryBtn = document.getElementById('btn-retry-wrong');
+      if (retryBtn) {
+        retryBtn.disabled = (wrongCount === 0);
+      }
+    }
+
+    function checkAllDoneAndEvaluate() {
+      const activeQuestions = randomizedQuestions.filter(q => !q.isGroupHeader);
+      const total = activeQuestions.length;
+      const answeredKeys = Object.keys(userAnswers);
+
+      if (answeredKeys.length === total) {
+        let correctCount = 0;
+        activeQuestions.forEach(q => {
+          const selectedIdx = userAnswers[q.id];
+          if (q.shuffledOptions[selectedIdx] && q.shuffledOptions[selectedIdx].isCorrect) {
+            correctCount++;
+          }
+        });
+
+        const callout = document.getElementById('streak-callout');
+        const calloutText = document.getElementById('streak-callout-text');
+
+        if (correctCount === total) {
+          // PERFECT SCORE (10/10)! Increase streak
+          const newStreak = getStoredStreak() + 1;
+          saveStreak(newStreak);
+
+          if (callout) {
+            callout.classList.remove('hidden');
+            calloutText.textContent = `Bạn đã đạt chuỗi ${newStreak} lần đạt điểm 10 liên tiếp! Tuyệt đỉnh kiến thức!`;
+          }
+
+          // Confetti explosion
+          try {
+            confetti({
+              particleCount: 120,
+              spread: 70,
+              origin: { y: 0.6 }
+            });
+          } catch (e) {}
+        } else {
+          // Not perfect, streak reset to 0
+          saveStreak(0);
+          if (callout) {
+            callout.classList.add('hidden');
+          }
+        }
+      }
+    }
+
+    function restartWithShuffle() {
+      initializeRandomizedQuestions();
+      renderQuestions();
+      updateProgressAndScores();
+      const callout = document.getElementById('streak-callout');
+      if (callout) callout.classList.add('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function retryIncorrectQuestions() {
+      const activeQuestions = randomizedQuestions.filter(q => !q.isGroupHeader);
+      activeQuestions.forEach(q => {
+        const selectedIdx = userAnswers[q.id];
+        if (selectedIdx !== undefined) {
+          if (!q.shuffledOptions[selectedIdx].isCorrect) {
+            delete userAnswers[q.id];
+          }
+        }
+      });
+      renderQuestions();
+      updateProgressAndScores();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function scrollToSummary() {
+      const el = document.getElementById('summary-section');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Render Question Cards
+    function renderQuestions() {
+      const container = document.getElementById('questions-list');
+      if (!container) return;
+
+      const filtered = randomizedQuestions.filter(q => {
+        if (currentFilter === 'all') return true;
+        return q.exKey === currentFilter;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div class="p-8 text-center bg-white rounded-2xl border border-slate-200">
+            <p class="text-sm text-slate-500">Không có câu hỏi nào trong danh mục này.</p>
+          </div>
+        `;
+        return;
+      }
+
+      let html = '';
+      let questionOrderNumber = 0;
+
+      filtered.forEach((q) => {
+        if (q.isGroupHeader) {
+          html += q.headerHtml;
+          return;
+        }
+
+        questionOrderNumber++;
+        const hasAnswered = userAnswers[q.id] !== undefined;
+        const selectedIdx = userAnswers[q.id];
+        const isCorrect = hasAnswered && q.shuffledOptions[selectedIdx] && q.shuffledOptions[selectedIdx].isCorrect;
+
+        // Card Border and Background Accent
+        let cardBorderClass = 'border-slate-200/90';
+        if (hasAnswered) {
+          cardBorderClass = isCorrect ? 'border-emerald-300 ring-1 ring-emerald-200 bg-white' : 'border-rose-300 ring-1 ring-rose-200 bg-white';
+        }
+
+        html += `
+          <div class="bg-white rounded-2xl p-5 sm:p-6 border ${cardBorderClass} shadow-xs transition-all duration-200 space-y-4" id="card-${q.id}">
+            <!-- Question Header Meta -->
+            <div class="flex items-start justify-between gap-3 border-b border-slate-100 pb-3">
+              <div class="space-y-1">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="inline-flex items-center gap-1 text-[11px] font-extrabold uppercase tracking-wide px-2.5 py-0.5 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-200/60">
+                    Câu ${questionOrderNumber}
+                  </span>
+                  <span class="text-xs font-semibold text-slate-500">${q.exTitle}</span>
+                </div>
+                <p class="text-xs text-slate-600 font-medium">${q.prompt || ''}</p>
+              </div>
+
+              <!-- Answer Status Indicator -->
+              <div>
+                ${hasAnswered ? (
+                  isCorrect
+                    ? `<span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
+                        <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-600"></i> Chính xác
+                      </span>`
+                    : `<span class="inline-flex items-center gap-1 text-xs font-bold text-rose-700 bg-rose-50 px-2.5 py-1 rounded-full border border-rose-200">
+                        <i data-lucide="x-circle" class="w-3.5 h-3.5 text-rose-600"></i> Chưa đúng
+                      </span>`
+                ) : `
+                  <span class="text-[11px] font-medium text-slate-400 italic">Chưa trả lời</span>
+                `}
+              </div>
+            </div>
+
+            <!-- Optional Passage Context or Sign / Visual Image -->
+            ${q.passageContext ? `
+              <div class="mb-3">${q.passageContext}</div>
+            ` : ''}
+
+            ${q.visualComponent ? `
+              <div class="mb-3">${q.visualComponent}</div>
+            ` : ''}
+
+            <!-- Main Question Prompt -->
+            <div class="text-sm sm:text-base font-bold text-slate-900 tracking-tight flex items-center justify-between gap-2">
+              <div class="leading-snug">${q.questionText}</div>
+              <!-- Pronunciation Audio Button if text exists -->
+              <button onclick="speakText('${q.questionText.replace(/['"\\]/g, '')}')" title="Phát âm câu hỏi" class="p-1.5 rounded-lg text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 transition flex-shrink-0">
+                <i data-lucide="volume-2" class="w-4 h-4"></i>
+              </button>
+            </div>
+
+            <!-- Options (A, B, C, D) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
+              ${q.shuffledOptions.map((opt, idx) => {
+                const label = String.fromCharCode(65 + idx); // A, B, C, D
+                const isThisSelected = selectedIdx === idx;
+                
+                let btnStyle = 'border-slate-200 hover:border-indigo-400 hover:bg-slate-50 text-slate-800 bg-white';
+                let badgeStyle = 'bg-slate-100 text-slate-600 border-slate-200';
+
+                if (hasAnswered) {
+                  if (opt.isCorrect) {
+                    // Right answer: green
+                    btnStyle = 'border-emerald-500 bg-emerald-50/70 text-emerald-950 font-bold ring-1 ring-emerald-400';
+                    badgeStyle = 'bg-emerald-600 text-white border-emerald-600';
+                  } else if (isThisSelected && !opt.isCorrect) {
+                    // User picked wrong: red
+                    btnStyle = 'border-rose-500 bg-rose-50/70 text-rose-950 font-bold ring-1 ring-rose-400';
+                    badgeStyle = 'bg-rose-600 text-white border-rose-600';
+                  } else {
+                    btnStyle = 'border-slate-100 text-slate-400 bg-slate-50/50 opacity-60';
+                    badgeStyle = 'bg-slate-200 text-slate-400 border-slate-200';
+                  }
+                }
+
+                return `
+                  <button 
+                    onclick="handleSelectOption('${q.id}', ${idx})" 
+                    class="group relative flex items-center gap-3 p-3.5 rounded-xl border text-left text-xs sm:text-sm transition-all duration-150 active:scale-[0.99] cursor-pointer ${btnStyle}">
+                    <span class="w-6 h-6 rounded-lg flex items-center justify-center font-bold text-xs border flex-shrink-0 transition-colors ${badgeStyle}">
+                      ${label}
+                    </span>
+                    <span class="flex-1 leading-snug">${opt.text}</span>
+                    ${hasAnswered && opt.isCorrect ? '<i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0 ml-auto"></i>' : ''}
+                    ${hasAnswered && isThisSelected && !opt.isCorrect ? '<i data-lucide="x" class="w-4 h-4 text-rose-600 flex-shrink-0 ml-auto"></i>' : ''}
+                  </button>
+                `;
+              }).join('')}
+            </div>
+
+            <!-- EXPLANATION BOX (Immediately Shown After Selecting Answer) -->
+            ${hasAnswered ? `
+              <div class="mt-4 rounded-xl p-4 transition-all duration-200 ${isCorrect ? 'bg-emerald-50/90 border border-emerald-200 text-emerald-900' : 'bg-rose-50/90 border border-rose-200 text-rose-900'}">
+                <div class="flex items-center gap-2 font-extrabold text-xs mb-1.5 uppercase tracking-wider">
+                  ${isCorrect 
+                    ? `<i data-lucide="sparkles" class="w-4 h-4 text-emerald-600"></i> <span class="text-emerald-700">Chính xác! Lời giải thích chi tiết:</span>` 
+                    : `<i data-lucide="alert-circle" class="w-4 h-4 text-rose-600"></i> <span class="text-rose-700">Chưa chính xác! Hướng dẫn giải:</span>`}
+                </div>
+                <div class="text-xs leading-relaxed text-slate-800 space-y-1">
+                  ${q.explanation}
+                </div>
+              </div>
+            ` : ''}
+
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+      lucide.createIcons();
+    }
+
+    // Initialize application on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      renderStreakUI();
+      initializeRandomizedQuestions();
+      renderQuestions();
+      updateProgressAndScores();
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
