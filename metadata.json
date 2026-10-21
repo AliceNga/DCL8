@@ -1,6 +1,6 @@
 {
-  "name": "Đề Cương Ôn Tập Giữa Kì 1 Tiếng Anh 8",
-  "description": "Ứng dụng trắc nghiệm tương tác ôn tập đề cương giữa học kì 1 Tiếng Anh 8 (Units 1, 2, 3) trường THCS Nghĩa Tân, tự động chấm điểm, giải thích chi tiết và chống học vẹt đảo đáp án.",
+  "name": "Cổng Ôn Thi Giữa Kì 1 Lớp 8 (6 Môn) - THCS Nghĩa Tân",
+  "description": "Hệ thống trắc nghiệm phát âm có loa nghe và sơ đồ cấu trúc ý tự luận 6 môn ôn thi giữa kì 1 lớp 8 THCS Nghĩa Tân: Tiếng Anh 8, Khoa học Tự nhiên 8, Công nghệ 8, Lịch sử 8, Địa lí 8, Giáo dục Công dân 8.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
