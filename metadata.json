@@ -1,6 +1,6 @@
 {
-  "name": "Cổng Ôn Thi Giữa Kì 1 Lớp 8 (6 Môn) - THCS Nghĩa Tân",
-  "description": "Hệ thống trắc nghiệm phát âm có loa nghe và sơ đồ cấu trúc ý tự luận 6 môn ôn thi giữa kì 1 lớp 8 THCS Nghĩa Tân: Tiếng Anh 8, Khoa học Tự nhiên 8, Công nghệ 8, Lịch sử 8, Địa lí 8, Giáo dục Công dân 8.",
+  "name": "Cổng Ôn Thi Giữa Kì 1 Lớp 8 (8 Môn) - THCS Nghĩa Tân",
+  "description": "Hệ thống trắc nghiệm phát âm có loa nghe và sơ đồ cấu trúc ý tự luận 9 môn ôn thi giữa kì 1 lớp 8 THCS Nghĩa Tân: Tiếng Anh 8, KHTN 8, Công nghệ 8, Lịch sử 8, Địa lí 8, GDCD 8, Tin học 8, Toán 8, Ngữ văn 8.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

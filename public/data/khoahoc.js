@@ -1,0 +1,541 @@
+// =========================================================================
+// DATA: KHOA HỌC TỰ NHIÊN 8 (38 CÂU = 25 TRẮC NGHIỆM + 13 TỰ LUẬN)
+// Đề cương Giữa Học Kì I - THCS Nghĩa Tân (2026-2027)
+// =========================================================================
+
+window.SCIENCE_DATABASE = [
+  // --- PHẦN 1: 25 CÂU TRẮC NGHIỆM (LÝ - HÓA - SINH) ---
+  // A. VẬT LÍ (7 CÂU TN)
+  {
+    id: 'sci_mc_1',
+    exKey: 'sci_phy_mc',
+    exTitle: 'KHTN 8 - Vật Lí (Trắc nghiệm)',
+    questionText: 'Phần A - Câu 1. Gọi D là khối lượng riêng và d là trọng lượng riêng. Công thức liên hệ giữa D và d là:',
+    options: [
+      { text: 'd = 10D.', isCorrect: true },
+      { text: 'D = 10d.', isCorrect: false },
+      { text: 'D = 10/d.', isCorrect: false },
+      { text: 'd = D – 10.', isCorrect: false }
+    ],
+    explanation: 'Trọng lượng P = 10m, chia cả 2 vế cho thể tích V ta được d = 10D (trong đó d tính bằng N/m³, D tính bằng kg/m³).'
+  },
+  {
+    id: 'sci_mc_2',
+    exKey: 'sci_phy_mc',
+    exTitle: 'KHTN 8 - Vật Lí (Trắc nghiệm)',
+    questionText: 'Phần A - Câu 2. Để xác định khối lượng riêng viên sỏi cần dùng:',
+    options: [
+      { text: 'một cái cân.', isCorrect: false },
+      { text: 'một cái cân và bình chia độ.', isCorrect: true },
+      { text: 'bình chia độ.', isCorrect: false },
+      { text: 'một cái thước và bình chia độ.', isCorrect: false }
+    ],
+    explanation: 'Dùng cân để đo khối lượng m, dùng bình chia độ đo thể tích V (bằng lượng nước dâng lên), từ đó tính D = m/V.'
+  },
+  {
+    id: 'sci_mc_3',
+    exKey: 'sci_phy_mc',
+    exTitle: 'KHTN 8 - Vật Lí (Trắc nghiệm)',
+    questionText: 'Phần A - Câu 3. Đơn vị thường dùng để đo khối lượng riêng là:',
+    options: [
+      { text: 'N/m³.', isCorrect: false },
+      { text: 'g/cm³ (hoặc kg/m³).', isCorrect: true },
+      { text: 'kg/m².', isCorrect: false },
+      { text: 'ml/kg.', isCorrect: false }
+    ],
+    explanation: 'Đơn vị SI của khối lượng riêng là kg/m³, ngoài ra thường dùng đơn vị g/cm³ (1 g/cm³ = 1000 kg/m³).'
+  },
+  {
+    id: 'sci_mc_4',
+    exKey: 'sci_phy_mc',
+    exTitle: 'KHTN 8 - Vật Lí (Trắc nghiệm)',
+    questionText: 'Phần A - Câu 4. Khối lượng riêng của xăng là 700 kg/m³. Vậy trọng lượng riêng của xăng là:',
+    options: [
+      { text: '7 N/m³.', isCorrect: false },
+      { text: '70 N/m³.', isCorrect: false },
+      { text: '700 N/m³.', isCorrect: false },
+      { text: '7000 N/m³.', isCorrect: true }
+    ],
+    explanation: 'Áp dụng công thức d = 10D = 10 × 700 = 7000 N/m³.'
+  },
+  {
+    id: 'sci_mc_5',
+    exKey: 'sci_phy_mc',
+    exTitle: 'KHTN 8 - Vật Lí (Trắc nghiệm)',
+    questionText: 'Phần A - Câu 5. Cho D của nhôm (2700), sắt (7800), chì (11300), đá (2600 kg/m³). Một khối đồng chất thể tích 300 cm³ nặng 810 g. Đó là khối gì?',
+    options: [
+      { text: 'nhôm.', isCorrect: true },
+      { text: 'sắt.', isCorrect: false },
+      { text: 'chì.', isCorrect: false },
+      { text: 'đá.', isCorrect: false }
+    ],
+    explanation: 'D = m/V = 810g / 300cm³ = 2,7 g/cm³ = 2700 kg/m³. Đối chiếu bảng số liệu, đây chính là khối nhôm.'
+  },
+  {
+    id: 'sci_mc_6',
+    exKey: 'sci_phy_mc',
+    exTitle: 'KHTN 8 - Vật Lí (Trắc nghiệm)',
+    questionText: 'Phần A - Câu 6. Tác dụng lực F lên diện tích mặt bị ép S. Nếu tăng lực F lên 3 lần và giữ nguyên diện tích S thì:',
+    options: [
+      { text: 'diện tích mặt bị ép tăng 3 lần.', isCorrect: false },
+      { text: 'áp suất tăng 3 lần.', isCorrect: true },
+      { text: 'áp suất giảm 3 lần.', isCorrect: false },
+      { text: 'áp suất không thay đổi.', isCorrect: false }
+    ],
+    explanation: 'Áp suất p = F/S. Khi F tăng 3 lần, S không đổi thì p tỉ lệ thuận với F nên áp suất tăng 3 lần.'
+  },
+  {
+    id: 'sci_mc_7',
+    exKey: 'sci_phy_mc',
+    exTitle: 'KHTN 8 - Vật Lí (Trắc nghiệm)',
+    questionText: 'Phần A - Câu 7. Bạn Minh khối lượng 50 kg, diện tích một bàn chân là 25 cm². Áp suất Minh tác dụng lên sàn khi đứng cả hai chân là:',
+    options: [
+      { text: '1 Pa.', isCorrect: false },
+      { text: '2 Pa.', isCorrect: false },
+      { text: '10 Pa.', isCorrect: false },
+      { text: '100 000 Pa.', isCorrect: true }
+    ],
+    explanation: 'F = 10m = 500 N. Đứng cả hai chân: S = 2 × 25 cm² = 50 cm² = 0,005 m². Áp suất p = F/S = 500 / 0,005 = 100 000 Pa.'
+  },
+
+  // B. HÓA HỌC (7 CÂU TN)
+  {
+    id: 'sci_mc_8',
+    exKey: 'sci_chem_mc',
+    exTitle: 'KHTN 8 - Hóa Học (Trắc nghiệm)',
+    questionText: 'Phần B - Câu 1. Phản ứng hoá học là gì?',
+    options: [
+      { text: 'quá trình kết hợp các đơn chất thành hợp chất.', isCorrect: false },
+      { text: 'quá trình biến đổi chất này thành chất khác.', isCorrect: true },
+      { text: 'sự trao đổi của hai hay nhiều chất ban đầu để tạo chất mới.', isCorrect: false },
+      { text: 'là quá trình phân hủy chất ban đầu thành nhiều chất.', isCorrect: false }
+    ],
+    explanation: 'Định nghĩa: Phản ứng hóa học là quá trình biến đổi từ chất này (chất tham gia) thành chất khác (sản phẩm).'
+  },
+  {
+    id: 'sci_mc_9',
+    exKey: 'sci_chem_mc',
+    exTitle: 'KHTN 8 - Hóa Học (Trắc nghiệm)',
+    questionText: 'Phần B - Câu 2. Quá trình nào sau đây xảy ra sự biến đổi hoá học?',
+    options: [
+      { text: 'Khi mở nút chai nước giải khát loại có ga thấy bọt sủi lên.', isCorrect: false },
+      { text: 'Nhỏ vài giọt mực vào cốc nước và khuấy đều thấy mực loang ra cả cốc nước.', isCorrect: false },
+      { text: 'Trứng gà để lâu ngày bị hỏng, có mùi khó chịu.', isCorrect: true },
+      { text: 'Dây tóc bóng trong bóng đèn điện nóng và sáng lên khi có dòng điện chạy qua.', isCorrect: false }
+    ],
+    explanation: 'Trứng hỏng là do protein bị phân hủy bởi vi khuẩn tạo ra các chất mới có mùi thối (H₂S) -> biến đổi hóa học.'
+  },
+  {
+    id: 'sci_mc_10',
+    exKey: 'sci_chem_mc',
+    exTitle: 'KHTN 8 - Hóa Học (Trắc nghiệm)',
+    questionText: 'Phần B - Câu 3. Trong các hiện tượng: (1) Thức ăn ôi thiu; (2) Đun đường chuyển đen; (3) Bóng bay nổ; (4) Cháy rừng; (5) Băng tan. Các biến đổi hóa học là:',
+    options: [
+      { text: '(1), (2), (3), (4).', isCorrect: false },
+      { text: '(1), (2), (4), (5).', isCorrect: false },
+      { text: '(1), (2), (4).', isCorrect: true },
+      { text: '(1), (4), (5).', isCorrect: false }
+    ],
+    explanation: '(1) Thức ăn thiu, (2) Đường cháy khét, (4) Cháy rừng là biến đổi hóa học tạo chất mới. (3) và (5) chỉ là biến đổi vật lí cơ học và trạng thái.'
+  },
+  {
+    id: 'sci_mc_11',
+    exKey: 'sci_chem_mc',
+    exTitle: 'KHTN 8 - Hóa Học (Trắc nghiệm)',
+    questionText: 'Phần B - Câu 4. Trong một phản ứng hoá học, yếu tố nào luôn luôn được bảo toàn?',
+    options: [
+      { text: 'số nguyên tử của mỗi nguyên tố được bảo toàn.', isCorrect: true },
+      { text: 'số chất không đổi.', isCorrect: false },
+      { text: 'số nguyên tử trong mỗi chất được bảo toàn.', isCorrect: false },
+      { text: 'số phân tử của mỗi chất không đổi.', isCorrect: false }
+    ],
+    explanation: 'Theo định luật bảo toàn khối lượng: Chỉ có liên kết giữa các nguyên tử thay đổi, còn tổng số nguyên tử của mỗi nguyên tố được bảo toàn tuyệt đối.'
+  },
+  {
+    id: 'sci_mc_12',
+    exKey: 'sci_chem_mc',
+    exTitle: 'KHTN 8 - Hóa Học (Trắc nghiệm)',
+    questionText: 'Phần B - Câu 5. Phản ứng phân huỷ Cu(OH)₂ cần đun nóng liên tục, ngừng cung cấp nhiệt thì phản ứng dừng lại. Đây là phản ứng:',
+    options: [
+      { text: 'phản ứng toả nhiệt.', isCorrect: false },
+      { text: 'phản ứng thu nhiệt.', isCorrect: true },
+      { text: 'phản ứng trao đổi.', isCorrect: false },
+      { text: 'phản ứng quang hóa.', isCorrect: false }
+    ],
+    explanation: 'Phản ứng hấp thụ năng lượng nhiệt từ môi trường trong suốt quá trình xảy ra gọi là phản ứng thu nhiệt.'
+  },
+  {
+    id: 'sci_mc_13',
+    exKey: 'sci_chem_mc',
+    exTitle: 'KHTN 8 - Hóa Học (Trắc nghiệm)',
+    questionText: 'Phần B - Câu 6. Khi đốt cháy carbon trong oxygen tạo thành carbon dioxide. Trong phản ứng này, carbon dioxide là:',
+    options: [
+      { text: 'chất tham gia.', isCorrect: false },
+      { text: 'chất xúc tác.', isCorrect: false },
+      { text: 'sản phẩm.', isCorrect: true },
+      { text: 'dung môi.', isCorrect: false }
+    ],
+    explanation: 'Chất sinh ra sau phản ứng (C + O₂ -> CO₂) là sản phẩm.'
+  },
+  {
+    id: 'sci_mc_14',
+    exKey: 'sci_chem_mc',
+    exTitle: 'KHTN 8 - Hóa Học (Trắc nghiệm)',
+    questionText: 'Phần B - Câu 7. Trong phản ứng tổng hợp ammonia từ nitrogen và hydrogen, dùng bột sắt làm xúc tác. Các chất tham gia phản ứng là:',
+    options: [
+      { text: 'ammonia.', isCorrect: false },
+      { text: 'nitrogen và hydrogen.', isCorrect: true },
+      { text: 'hydrogen và sắt.', isCorrect: false },
+      { text: 'sắt (iron).', isCorrect: false }
+    ],
+    explanation: 'Chất tham gia phản ứng là nitrogen và hydrogen (N₂ + 3H₂ -> 2NH₃); sắt chỉ đóng vai trò chất xúc tác.'
+  },
+  {
+    id: 'sci_mc_14b',
+    exKey: 'sci_chem_mc',
+    exTitle: 'KHTN 8 - Hóa Học (Trắc nghiệm)',
+    questionText: 'Phần B - Câu 8. Một lượng khí oxygen có thể tích 115,6 ml ở điều kiện tiêu chuẩn chứa số phân tử là bao nhiêu?',
+    options: [
+      { text: '4,63 · 10¹⁵ phân tử.', isCorrect: true },
+      { text: '6,022 · 10²³ phân tử.', isCorrect: false },
+      { text: '3,011 · 10²² phân tử.', isCorrect: false },
+      { text: '1,204 · 10²⁴ phân tử.', isCorrect: false }
+    ],
+    explanation: 'Theo đề cương chữa: Áp dụng công thức tính số phân tử: N = n · N_A = (V / 24,79) · 6,022 · 10²³, tính ra 4,63 · 10¹⁵ phân tử. Đáp án đúng là A.'
+  },
+
+  // C. SINH HỌC (11 CÂU TN)
+  {
+    id: 'sci_mc_15',
+    exKey: 'sci_bio_mc',
+    exTitle: 'KHTN 8 - Sinh Học (Trắc nghiệm)',
+    questionText: 'Phần C - Câu 1. Cơ thể người được chia làm mấy phần chính?',
+    options: [
+      { text: '2 phần: Đầu và thân.', isCorrect: false },
+      { text: '3 phần: Đầu, thân và các chi (hai tay, hai chân).', isCorrect: true },
+      { text: '4 phần: Đầu, cổ, thân và tay.', isCorrect: false },
+      { text: '5 phần: Đầu, cổ, thân, hai tay và hai chân.', isCorrect: false }
+    ],
+    explanation: 'Theo SGK KHTN 8: Cơ thể người chia làm 3 phần chính gồm: đầu, thân và các chi (tay và chân).'
+  },
+  {
+    id: 'sci_mc_16',
+    exKey: 'sci_bio_mc',
+    exTitle: 'KHTN 8 - Sinh Học (Trắc nghiệm)',
+    questionText: 'Phần C - Câu 2. Hệ cơ quan nào dưới đây có vai trò vận chuyển chất dinh dưỡng, oxygen và hormone đến các tế bào?',
+    options: [
+      { text: 'Hệ hô hấp.', isCorrect: false },
+      { text: 'Hệ tiêu hóa.', isCorrect: false },
+      { text: 'Hệ tuần hoàn.', isCorrect: true },
+      { text: 'Hệ bài tiết.', isCorrect: false }
+    ],
+    explanation: 'Hệ tuần hoàn (tim và hệ mạch) là hệ thống vận chuyển máu đưa chất dinh dưỡng, O₂, hormone đến tế bào và mang chất thải đến cơ quan bài tiết.'
+  },
+  {
+    id: 'sci_mc_17',
+    exKey: 'sci_bio_mc',
+    exTitle: 'KHTN 8 - Sinh Học (Trắc nghiệm)',
+    questionText: 'Phần C - Câu 3. Hệ cơ quan nào có chức năng giúp cơ thể lấy khí oxygen từ môi trường ngoài và thải khí carbon dioxide ra khỏi cơ thể?',
+    options: [
+      { text: 'Hệ hô hấp.', isCorrect: true },
+      { text: 'Hệ bài tiết.', isCorrect: false },
+      { text: 'Hệ tuần hoàn.', isCorrect: false },
+      { text: 'Hệ vận động.', isCorrect: false }
+    ],
+    explanation: 'Hệ hô hấp (đường dẫn khí và phổi) thực hiện trao đổi khí giữa cơ thể với môi trường.'
+  },
+  {
+    id: 'sci_mc_18',
+    exKey: 'sci_bio_mc',
+    exTitle: 'KHTN 8 - Sinh Học (Trắc nghiệm)',
+    questionText: 'Phần C - Câu 4. Dinh dưỡng là gì?',
+    options: [
+      { text: 'Quá trình thu nhận, biến đổi và sử dụng chất dinh dưỡng để duy trì sự sống của cơ thể.', isCorrect: true },
+      { text: 'Quá trình phân giải các chất hữu cơ giải phóng năng lượng cho tế bào.', isCorrect: false },
+      { text: 'Quá trình đào thải các chất độc hại ra khỏi cơ thể.', isCorrect: false },
+      { text: 'Lượng thức ăn cơ thể tiêu thụ trong một bữa ăn.', isCorrect: false }
+    ],
+    explanation: 'Khái niệm dinh dưỡng: Là toàn bộ quá trình thu nhận, biến đổi và sử dụng các chất dinh dưỡng để cung cấp năng lượng và nuôi dưỡng cơ thể.'
+  },
+  {
+    id: 'sci_mc_19',
+    exKey: 'sci_bio_mc',
+    exTitle: 'KHTN 8 - Sinh Học (Trắc nghiệm)',
+    questionText: 'Phần C - Câu 5. Thức ăn khi đi qua ống tiêu hóa KHÔNG trực tiếp đi qua cơ quan nào sau đây?',
+    options: [
+      { text: 'Dạ dày.', isCorrect: false },
+      { text: 'Ruột non.', isCorrect: false },
+      { text: 'Gan.', isCorrect: true },
+      { text: 'Thực quản.', isCorrect: false }
+    ],
+    explanation: 'Thức ăn đi qua ống tiêu hóa: Khoang miệng -> Thực quản -> Dạ dày -> Ruột non -> Ruột già -> Hậu môn. Gan và tụy là tuyến tiêu hóa tiết dịch chứ thức ăn không đi qua.'
+  },
+  {
+    id: 'sci_mc_20',
+    exKey: 'sci_bio_mc',
+    exTitle: 'KHTN 8 - Sinh Học (Trắc nghiệm)',
+    questionText: 'Phần C - Câu 6. Ở khoang miệng, enzyme amylase trong nước bọt có chức năng biến đổi loại thức ăn nào?',
+    options: [
+      { text: 'Biến đổi protein thành các chuỗi peptide ngắn.', isCorrect: false },
+      { text: 'Biến đổi tinh bột chín thành đường maltose.', isCorrect: true },
+      { text: 'Biến đổi lipid thành acid béo và glycerol.', isCorrect: false },
+      { text: 'Biến đổi tất cả các loại chất dinh dưỡng.', isCorrect: false }
+    ],
+    explanation: 'Enzyme amylase trong nước bọt chỉ có tác dụng thủy phân tinh bột chín thành đường maltose.'
+  },
+  {
+    id: 'sci_mc_21',
+    exKey: 'sci_bio_mc',
+    exTitle: 'KHTN 8 - Sinh Học (Trắc nghiệm)',
+    questionText: 'Phần C - Câu 7. Cơ quan nào trong hệ tiêu hóa đảm nhận chức năng hấp thụ phần lớn các chất dinh dưỡng cho cơ thể?',
+    options: [
+      { text: 'Dạ dày.', isCorrect: false },
+      { text: 'Khoang miệng.', isCorrect: false },
+      { text: 'Ruột non.', isCorrect: true },
+      { text: 'Ruột già.', isCorrect: false }
+    ],
+    explanation: 'Ruột non có diện tích bề mặt hấp thụ khổng lồ nhờ các nếp gấp, lông ruột và mạng lưới mao mạch dày đặc, hấp thụ trên 90% chất dinh dưỡng.'
+  },
+  {
+    id: 'sci_mc_22',
+    exKey: 'sci_bio_mc',
+    exTitle: 'KHTN 8 - Sinh Học (Trắc nghiệm)',
+    questionText: 'Phần C - Câu 8. Lượng thức ăn cần cung cấp cho cơ thể trong một ngày được gọi là gì?',
+    options: [
+      { text: 'Chế độ dinh dưỡng.', isCorrect: false },
+      { text: 'Nhu cầu dinh dưỡng.', isCorrect: false },
+      { text: 'Khẩu phần ăn.', isCorrect: true },
+      { text: 'Giá trị dinh dưỡng.', isCorrect: false }
+    ],
+    explanation: 'Khẩu phần ăn là lượng thức ăn cung cấp cho một người trong vòng một ngày (24 giờ).'
+  },
+  {
+    id: 'sci_mc_23',
+    exKey: 'sci_bio_mc',
+    exTitle: 'KHTN 8 - Sinh Học (Trắc nghiệm)',
+    questionText: 'Phần C - Câu 9. Biện pháp nào dưới đây KHÔNG có tác dụng phòng ngừa các bệnh về đường tiêu hóa?',
+    options: [
+      { text: 'Ăn uống hợp vệ sinh và rửa tay trước khi ăn.', isCorrect: false },
+      { text: 'Ăn ít chất xơ và uống ít nước.', isCorrect: true },
+      { text: 'Vệ sinh răng miệng đúng cách sau khi ăn.', isCorrect: false },
+      { text: 'Tăng cường luyện tập thể dục thể thao phù hợp.', isCorrect: false }
+    ],
+    explanation: 'Ăn ít chất xơ và uống ít nước sẽ gây táo bón và rối loạn tiêu hóa, không phải biện pháp phòng bệnh.'
+  },
+  {
+    id: 'sci_mc_24',
+    exKey: 'sci_bio_mc',
+    exTitle: 'KHTN 8 - Sinh Học (Trắc nghiệm)',
+    questionText: 'Phần C - Câu 10. Thành phần cấu tạo của máu gồm có:',
+    options: [
+      { text: 'Hồng cầu, bạch cầu và tiểu cầu.', isCorrect: false },
+      { text: 'Huyết tương và các tế bào máu.', isCorrect: true },
+      { text: 'Huyết tương và hồng cầu.', isCorrect: false },
+      { text: 'Bạch cầu và tiểu cầu.', isCorrect: false }
+    ],
+    explanation: 'Máu gồm 2 phần chính: Huyết tương (chiếm khoảng 55% thể tích) và các tế bào máu gồm hồng cầu, bạch cầu, tiểu cầu (chiếm 45%).'
+  },
+  {
+    id: 'sci_mc_25',
+    exKey: 'sci_bio_mc',
+    exTitle: 'KHTN 8 - Sinh Học (Trắc nghiệm)',
+    questionText: 'Phần C - Câu 11. Loại tế bào máu nào làm nhiệm vụ chủ yếu vận chuyển khí oxygen và carbon dioxide?',
+    options: [
+      { text: 'Bạch cầu.', isCorrect: false },
+      { text: 'Tiểu cầu.', isCorrect: false },
+      { text: 'Huyết tương.', isCorrect: false },
+      { text: 'Hồng cầu.', isCorrect: true }
+    ],
+    explanation: 'Hồng cầu chứa huyết sắc tố hemoglobin (Hb) có khả năng kết hợp thuận nghịch với O₂ và CO₂ để vận chuyển khí đi khắp cơ thể. Đáp án đúng: D (Hồng cầu).'
+  },
+  {
+    id: 'sci_mc_26',
+    exKey: 'sci_bio_mc',
+    exTitle: 'KHTN 8 - Sinh Học (Trắc nghiệm)',
+    questionText: 'Phần C - Câu 12. Loại tế bào máu nào đóng vai trò then chốt trong quá trình đông máu và bảo vệ cơ thể khỏi mất máu?',
+    options: [
+      { text: 'Tiểu cầu.', isCorrect: true },
+      { text: 'Bạch cầu.', isCorrect: false },
+      { text: 'Hồng cầu.', isCorrect: false },
+      { text: 'Kháng thể.', isCorrect: false }
+    ],
+    explanation: 'Khi mạch máu bị tổn thương, tiểu cầu vỡ ra giải phóng enzyme khởi động tạo thành mạng lưới tơ máu làm đông máu. Đáp án đúng: A (Tiểu cầu).'
+  },
+
+  // --- PHẦN 2: 13 CÂU TỰ LUẬN (CHUYỂN THÀNH KEYPOINT CHECKLIST) ---
+  // A. VẬT LÍ (5 CÂU TỰ LUẬN: Q8, Q9, Q10, Q11, Q12)
+  {
+    id: 'sci_essay_1',
+    exKey: 'sci_phy_essay',
+    exTitle: 'KHTN 8 - Vật Lí (Tự luận - Câu 8)',
+    type: 'keypoint_checklist',
+    questionText: 'Phần A - Câu 8. Tính khối lượng và trọng lượng của một chiếc dầm sắt có thể tích 50 dm³. Biết khối lượng riêng của sắt là 7800 kg/m³.',
+    totalPoints: 2,
+    keypoints: [
+      { pointNum: 1, title: 'Ý 1: Đổi đơn vị và tính khối lượng m', template: 'V = 50 dm³ = {k1} m³. Khối lượng m = D × V = 7800 × 0,05 = {k2} kg.', slots: [{ id: 'k1', expected: '0,05', options: ['0,05', '0,5', '5'] }, { id: 'k2', expected: '390', options: ['390', '3900', '156'] }] },
+      { pointNum: 2, title: 'Ý 2: Tính trọng lượng P', template: 'Trọng lượng P = 10 × m = 10 × 390 = {k3} N.', slots: [{ id: 'k3', expected: '3900', options: ['3900', '390', '7800'] }] }
+    ],
+    fullSolution: '• V = 50 dm³ = 0,05 m³.<br>• Khối lượng: m = D × V = 7800 × 0,05 = 390 kg.<br>• Trọng lượng: P = 10m = 3900 N.'
+  },
+  {
+    id: 'sci_essay_2',
+    exKey: 'sci_phy_essay',
+    exTitle: 'KHTN 8 - Vật Lí (Tự luận - Câu 9)',
+    type: 'keypoint_checklist',
+    questionText: 'Phần A - Câu 9. Minh cân cốc rỗng m1 = 120g, rót V = 200 cm³ nước, cân lại m2 = 322g. Hãy tính khối lượng nước và khối lượng riêng của nước.',
+    totalPoints: 2,
+    keypoints: [
+      { pointNum: 1, title: 'Ý 1: Khối lượng nước rót vào cốc', template: 'Khối lượng nước m = m2 - m1 = 322 - 120 = {k1} g.', slots: [{ id: 'k1', expected: '202', options: ['202', '322', '120'] }] },
+      { pointNum: 2, title: 'Ý 2: Khối lượng riêng của nước', template: 'D = m / V = 202 / 200 = {k2} g/cm³ (xấp xỉ {k3} kg/m³).', slots: [{ id: 'k2', expected: '1,01', options: ['1,01', '0,99', '1,00'] }, { id: 'k3', expected: '1010', options: ['1010', '1000', '990'] }] }
+    ],
+    fullSolution: '• m_nước = m2 - m1 = 322 - 120 = 202 gam.<br>• D = m/V = 202 / 200 = 1,01 g/cm³ = 1010 kg/m³.<br>• Khối lượng của 1 m³ nước ước tính là 1010 kg.'
+  },
+  {
+    id: 'sci_essay_3',
+    exKey: 'sci_phy_essay',
+    exTitle: 'KHTN 8 - Vật Lí (Tự luận - Câu 10)',
+    type: 'keypoint_checklist',
+    questionText: 'Phần A - Câu 10. Đặt bao gạo 50 kg lên ghế 4 chân 2 kg. Diện tích mỗi chân ghế 6 cm². Tính áp suất của gạo và ghế lên mặt đất.',
+    totalPoints: 2,
+    keypoints: [
+      { pointNum: 1, title: 'Ý 1: Tổng trọng lượng và diện tích tiếp xúc', template: 'Tổng khối lượng m = 50 + 2 = 52 kg => Áp lực F = 10m = {k1} N; Tổng diện tích 4 chân ghế S = 4 × 6 = 24 cm² = {k2} m².', slots: [{ id: 'k1', expected: '520', options: ['520', '500', '20'] }, { id: 'k2', expected: '0,0024', options: ['0,0024', '0,024', '0,24'] }] },
+      { pointNum: 2, title: 'Ý 2: Tính áp suất p', template: 'Áp suất p = F / S = 520 / 0,0024 ≈ {k3} Pa.', slots: [{ id: 'k3', expected: '216 667', options: ['216 667', '21 667', '52 000'] }] }
+    ],
+    fullSolution: '• F = P = 10 × (50 + 2) = 520 N.<br>• S = 4 × 6 cm² = 24 cm² = 0,0024 m².<br>• p = F/S = 520 / 0,0024 ≈ 216 666,7 Pa.'
+  },
+  {
+    id: 'sci_essay_4',
+    exKey: 'sci_phy_essay',
+    exTitle: 'KHTN 8 - Vật Lí (Tự luận - Câu 11)',
+    type: 'keypoint_checklist',
+    questionText: 'Phần A - Câu 11. Trộn 4 lít chất lỏng A với 6 lít nước thu được hỗn hợp có D = 900 kg/m³. Biết D nước = 1000 kg/m³. Tìm D của chất lỏng A.',
+    totalPoints: 2,
+    keypoints: [
+      { pointNum: 1, title: 'Ý 1: Khối lượng hỗn hợp và khối lượng nước', template: 'V_hh = 4 + 6 = 10 lít = 0,01 m³ => m_hh = 900 × 0,01 = 9 kg; m_nước = 1000 × 0,006 = {k1} kg.', slots: [{ id: 'k1', expected: '6', options: ['6', '5,4', '4'] }] },
+      { pointNum: 2, title: 'Ý 2: Khối lượng riêng chất lỏng A', template: 'm_A = m_hh - m_nước = 9 - 6 = 3 kg => D_A = m_A / V_A = 3 / 0,004 = {k2} kg/m³.', slots: [{ id: 'k2', expected: '750', options: ['750', '800', '850'] }] }
+    ],
+    fullSolution: '• m_hh = 900 × 0,01 = 9 kg.<br>• m_nước = 1000 × 0,006 = 6 kg.<br>• m_A = 9 - 6 = 3 kg.<br>• D_A = 3 / 0,004 = 750 kg/m³.'
+  },
+  {
+    id: 'sci_essay_5',
+    exKey: 'sci_phy_essay',
+    exTitle: 'KHTN 8 - Vật Lí (Tự luận - Câu 12)',
+    type: 'keypoint_checklist',
+    questionText: 'Phần A - Câu 12. Nêu 3 ứng dụng của sự tăng, giảm áp suất trong đời sống và giải thích cơ sở khoa học.',
+    totalPoints: 2,
+    keypoints: [
+      { pointNum: 1, title: 'Ý 1: Ứng dụng tăng áp suất (giảm diện tích S)', template: 'Lưỡi dao, kéo, mũi kim được mài sắc nhọn (giảm S) để {k1} giúp cắt gọt và xuyên thủng dễ dàng.', slots: [{ id: 'k1', expected: 'tăng áp suất', options: ['tăng áp suất', 'giảm áp suất', 'giữ nguyên lực'] }] },
+      { pointNum: 2, title: 'Ý 2: Ứng dụng giảm áp suất (tăng diện tích S)', template: 'Xe máy kéo dùng bánh xích bản rộng (tăng S) để {k2} giúp xe không bị lún vào nền đất mềm.', slots: [{ id: 'k2', expected: 'giảm áp suất', options: ['giảm áp suất', 'tăng áp lực', 'tăng tốc độ'] }] }
+    ],
+    fullSolution: '• <strong>Tăng áp suất:</strong> Mài sắc dao kéo, đóng đinh nhọn đầu -> giảm diện tích tiếp xúc S để áp suất p tăng vọt.<br>• <strong>Giảm áp suất:</strong> Xe bánh xích, tà vẹt đường ray, móng nhà bè rộng -> tăng S để giảm p, chống lún đổ.'
+  },
+
+  // B. HÓA HỌC (4 CÂU TỰ LUẬN: Q1, Q2, Q3, Q4)
+  {
+    id: 'sci_essay_6',
+    exKey: 'sci_chem_essay',
+    exTitle: 'KHTN 8 - Hóa Học (Tự luận - Câu 1)',
+    type: 'keypoint_checklist',
+    questionText: 'Phần B - Câu 1. Thắng đường làm nước màu gồm: (1) Đường nóng chảy; (2) Đường chuyển vàng nâu sang đen; (3) Cho nước vào hòa tan. Xác định hiện tượng ở từng giai đoạn.',
+    totalPoints: 2,
+    keypoints: [
+      { pointNum: 1, title: 'Giai đoạn (1) và (3)', template: 'Giai đoạn (1) và (3) là {k1} vì chỉ có sự thay đổi trạng thái và sự hòa tan, không tạo ra chất mới.', slots: [{ id: 'k1', expected: 'biến đổi vật lí', options: ['biến đổi vật lí', 'biến đổi hoá học'] }] },
+      { pointNum: 2, title: 'Giai đoạn (2)', template: 'Giai đoạn (2) là {k2} vì đường bị nhiệt phân hủy tạo thành chất mới (caramel và carbon).', slots: [{ id: 'k2', expected: 'biến đổi hoá học', options: ['biến đổi hoá học', 'biến đổi vật lí'] }] }
+    ],
+    fullSolution: '• (1) Đường nóng chảy: Biến đổi vật lí (rắn -> lỏng).<br>• (2) Đường chuyển màu nâu đen: Biến đổi hóa học (tạo caramel và carbon).<br>• (3) Cho nước hòa tan: Biến đổi vật lí (hòa tan chất).'
+  },
+  {
+    id: 'sci_essay_7',
+    exKey: 'sci_chem_essay',
+    exTitle: 'KHTN 8 - Hóa Học (Tự luận - Câu 2)',
+    type: 'keypoint_checklist',
+    questionText: 'Phần B - Câu 2. Phân tích hiện tượng: Vôi sống tác dụng nước, giũa sắt, trứng ung, nến cháy. Đâu là biến đổi hóa học, đâu là vật lí?',
+    totalPoints: 2,
+    keypoints: [
+      { pointNum: 1, title: 'Ý 1: Các hiện tượng biến đổi vật lí', template: 'Giũa thanh sắt thành mạt sắt và nến nóng chảy là {k1}.', slots: [{ id: 'k1', expected: 'biến đổi vật lí', options: ['biến đổi vật lí', 'biến đổi hoá học'] }] },
+      { pointNum: 2, title: 'Ý 2: Các hiện tượng biến đổi hóa học', template: 'Cho vôi sống vào nước tạo Ca(OH)₂, trứng để lâu bị ung và hơi nến cháy là {k2}.', slots: [{ id: 'k2', expected: 'biến đổi hoá học', options: ['biến đổi hoá học', 'biến đổi vật lí'] }] }
+    ],
+    fullSolution: '• CaO + H₂O -> Ca(OH)₂: Biến đổi hóa học.<br>• Giũa sắt thành mạt sắt: Biến đổi vật lí (thay đổi kích thước).<br>• Trứng ung: Biến đổi hóa học.<br>• Nến cháy thành CO₂ và H₂O: Biến đổi hóa học.'
+  },
+  {
+    id: 'sci_essay_8',
+    exKey: 'sci_chem_essay',
+    exTitle: 'KHTN 8 - Hóa Học (Tự luận - Câu 3)',
+    type: 'keypoint_checklist',
+    questionText: 'Phần B - Câu 3. Tính: (a) Số mol 8,8g CO₂; (b) Khối lượng 0,15 mol MgO; (c) Thể tích (ở đkc: V = n × 24,79) của 0,25 mol O₂.',
+    totalPoints: 3,
+    keypoints: [
+      { pointNum: 1, title: 'Ý 1: Tính số mol của 8,8 gam CO₂ (M = 44)', template: 'n = m / M = 8,8 / 44 = {k1} mol.', slots: [{ id: 'k1', expected: '0,2', options: ['0,2', '0,5', '0,1'] }] },
+      { pointNum: 2, title: 'Ý 2: Tính khối lượng của 0,15 mol MgO (M = 40)', template: 'm = n × M = 0,15 × 40 = {k2} gam.', slots: [{ id: 'k2', expected: '6', options: ['6', '4', '8'] }] },
+      { pointNum: 3, title: 'Ý 3: Tính thể tích 0,25 mol O₂ ở điều kiện chuẩn (đkc)', template: 'V = n × 24,79 = 0,25 × 24,79 = {k3} lít.', slots: [{ id: 'k3', expected: '6,1975', options: ['6,1975', '5,6', '24,79'] }] }
+    ],
+    fullSolution: '• n_CO₂ = 8,8 / 44 = 0,2 mol.<br>• m_MgO = 0,15 × 40 = 6 gam.<br>• V_O₂ = 0,25 × 24,79 = 6,1975 lít.'
+  },
+  {
+    id: 'sci_essay_9',
+    exKey: 'sci_chem_essay',
+    exTitle: 'KHTN 8 - Hóa Học (Tự luận - Câu 4)',
+    type: 'keypoint_checklist',
+    questionText: 'Phần B - Câu 4. Khí chữa cháy X: 0,2 mol nặng 8,8 gam. Khí X tạo bởi 1 nguyên tử A và 2 nguyên tử O. Xác định công thức phân tử khí X.',
+    totalPoints: 2,
+    keypoints: [
+      { pointNum: 1, title: 'Ý 1: Tính khối lượng mol của khí X', template: 'M_X = m / n = 8,8 / 0,2 = {k1} g/mol.', slots: [{ id: 'k1', expected: '44', options: ['44', '32', '28'] }] },
+      { pointNum: 2, title: 'Ý 2: Xác định nguyên tử A và công thức hóa học', template: 'M_A + 2 × 16 = 44 => M_A = 12 (Carbon C). Vậy khí X là {k2}.', slots: [{ id: 'k2', expected: 'CO₂ (carbon dioxide)', options: ['CO₂ (carbon dioxide)', 'SO₂ (sulfur dioxide)', 'NO₂ (nitrogen dioxide)'] }] }
+    ],
+    fullSolution: '• M_X = 8,8 / 0,2 = 44 g/mol.<br>• Khí X có dạng AO₂ => M_A + 32 = 44 => M_A = 12 (Carbon).<br>• Công thức hóa học: CO₂.'
+  },
+
+  // C. SINH HỌC (4 CÂU TỰ LUẬN: Q1, Q2, Q3, Q4)
+  {
+    id: 'sci_essay_10',
+    exKey: 'sci_bio_essay',
+    exTitle: 'KHTN 8 - Sinh Học (Tự luận - Câu 1)',
+    type: 'keypoint_checklist',
+    questionText: 'Phần C - Câu 1. Phân biệt khái niệm chất dinh dưỡng và dinh dưỡng. Trình bày mối quan hệ giữa hoạt động tiêu hóa và hoạt động dinh dưỡng.',
+    totalPoints: 2,
+    keypoints: [
+      { pointNum: 1, title: 'Ý 1: Phân biệt chất dinh dưỡng và dinh dưỡng', template: 'Chất dinh dưỡng là {k1} có trong thức ăn; Dinh dưỡng là {k2} thu nhận, biến đổi và sử dụng các chất đó.', slots: [{ id: 'k1', expected: 'các chất hữu cơ và vô cơ', options: ['các chất hữu cơ và vô cơ', 'quá trình tiêu hóa', 'enzyme'] }, { id: 'k2', expected: 'toàn bộ quá trình sống', options: ['toàn bộ quá trình sống', 'chất hóa học', 'bữa ăn'] }] },
+      { pointNum: 2, title: 'Ý 2: Mối quan hệ với hoạt động tiêu hóa', template: 'Tiêu hóa là giai đoạn đầu cung cấp nguyên liệu; không có tiêu hóa thì cơ thể {k3} dinh dưỡng.', slots: [{ id: 'k3', expected: 'không thể hấp thụ và thực hiện', options: ['không thể hấp thụ và thực hiện', 'vẫn tự do thực hiện', 'tự động tổng hợp'] }] }
+    ],
+    fullSolution: '• <strong>Chất dinh dưỡng:</strong> Các chất có trong thức ăn (protein, lipid, glucid, vitamin, khoáng chất).<br>• <strong>Dinh dưỡng:</strong> Quá trình sinh học thu nhận và sử dụng chất dinh dưỡng.<br>• <strong>Mối quan hệ:</strong> Tiêu hóa phân giải thức ăn thành dưỡng chất để hệ tuần hoàn hấp thụ phục vụ quá trình dinh dưỡng ở tế bào.'
+  },
+  {
+    id: 'sci_essay_11',
+    exKey: 'sci_bio_essay',
+    exTitle: 'KHTN 8 - Sinh Học (Tự luận - Câu 2)',
+    type: 'keypoint_checklist',
+    questionText: 'Phần C - Câu 2. Khẩu phần ăn là gì? Khi lập khẩu phần ăn cần tuân thủ những nguyên tắc cơ bản nào?',
+    totalPoints: 2,
+    keypoints: [
+      { pointNum: 1, title: 'Ý 1: Khái niệm khẩu phần ăn', template: 'Là lượng thức ăn cần cung cấp cho cơ thể trong {k1}.', slots: [{ id: 'k1', expected: 'một ngày (24 giờ)', options: ['một ngày (24 giờ)', 'một bữa ăn', 'một tuần'] }] },
+      { pointNum: 2, title: 'Ý 2: Ba nguyên tắc lập khẩu phần', template: 'Đáp ứng đủ nhu cầu năng lượng, cân đối tỉ lệ các nhóm chất dinh dưỡng và phù hợp với {k2}.', slots: [{ id: 'k2', expected: 'lứa tuổi, giới tính và cường độ lao động', options: ['lứa tuổi, giới tính và cường độ lao động', 'sở thích cá nhân', 'giá thành đắt đỏ'] }] }
+    ],
+    fullSolution: '• <strong>Khái niệm:</strong> Lượng thức ăn cung cấp trong 1 ngày.<br>• <strong>Nguyên tắc:</strong><br>1. Đủ năng lượng cho cơ thể hoạt động.<br>2. Cân đối tỉ lệ 4 nhóm chất: đường bột, đạm, béo, vitamin/khoáng chất.<br>3. Phù hợp theo độ tuổi và cường độ lao động.'
+  },
+  {
+    id: 'sci_essay_12',
+    exKey: 'sci_bio_essay',
+    exTitle: 'KHTN 8 - Sinh Học (Tự luận - Câu 3)',
+    type: 'keypoint_checklist',
+    questionText: 'Phần C - Câu 3. Trình bày nguyên nhân, biểu hiện và biện pháp phòng chống đối với bệnh sâu răng và viêm loét dạ dày – tá tràng.',
+    totalPoints: 2,
+    keypoints: [
+      { pointNum: 1, title: 'Ý 1: Bệnh sâu răng', template: 'Do vi khuẩn lên men thức ăn thừa tạo {k1} phá hủy men răng; phòng tránh bằng cách {k2}.', slots: [{ id: 'k1', expected: 'axit', options: ['axit', 'kiềm', 'đường'] }, { id: 'k2', expected: 'vệ sinh răng miệng đúng cách sau khi ăn', options: ['vệ sinh răng miệng đúng cách sau khi ăn', 'ăn nhiều kẹo ngọt', 'uống nước đá'] }] },
+      { pointNum: 2, title: 'Ý 2: Viêm loét dạ dày - tá tràng', template: 'Do vi khuẩn HP, căng thẳng thần kinh hoặc ăn uống thất thường; phòng tránh bằng cách ăn uống đúng giờ và {k3}.', slots: [{ id: 'k3', expected: 'hạn chế đồ cay nóng và rượu bia', options: ['hạn chế đồ cay nóng và rượu bia', 'nhịn ăn sáng', 'uống thuốc tùy tiện'] }] }
+    ],
+    fullSolution: '• <strong>Sâu răng:</strong> Vi khuẩn phân hủy đường thừa tạo acid ăn mòn men và ngà răng. Phòng chống: Chải răng đúng cách sau ăn, khám định kỳ.<br>• <strong>Viêm loét dạ dày:</strong> Do vi khuẩn HP, stress, ăn uống thất thường làm acid dịch vị phá hủy niêm mạc. Phòng chống: Ăn chín uống sôi, không bỏ bữa, tránh lo âu và rượu bia.'
+  },
+  {
+    id: 'sci_essay_13',
+    exKey: 'sci_bio_essay',
+    exTitle: 'KHTN 8 - Sinh Học (Tự luận - Câu 4)',
+    type: 'keypoint_checklist',
+    questionText: 'Phần C - Câu 4. Bệnh nhân Nam nhóm máu B cần cấp cứu mất máu. Bác sĩ chỉ định truyền nhóm máu nào và giải thích cơ sở khoa học?',
+    totalPoints: 2,
+    keypoints: [
+      { pointNum: 1, title: 'Ý 1: Chỉ định nhóm máu ưu tiên và thay thế', template: 'Ưu tiên truyền nhóm máu {k1}; trường hợp khẩn cấp có thể truyền thay thế lượng nhỏ nhóm máu {k2}.', slots: [{ id: 'k1', expected: 'cùng nhóm B', options: ['cùng nhóm B', 'nhóm AB', 'nhóm A'] }, { id: 'k2', expected: 'nhóm O', options: ['nhóm O', 'nhóm A', 'nhóm AB'] }] },
+      { pointNum: 2, title: 'Ý 2: Cơ sở khoa học truyền máu', template: 'Hồng cầu nhóm O không có {k3} nên không bị kháng thể beta trong huyết tương người nhận làm ngưng kết.', slots: [{ id: 'k3', expected: 'kháng nguyên A và B', options: ['kháng nguyên A và B', 'kháng thể alpha', 'huyết sắc tố'] }] }
+    ],
+    fullSolution: '• <strong>Chỉ định:</strong> Tốt nhất là truyền cùng nhóm máu B.<br>• <strong>Thay thế:</strong> Có thể truyền lượng nhỏ nhóm O (nhóm chuyên cho) vì hồng cầu nhóm O không có kháng nguyên A và B trên màng, tránh tai biến ngưng kết hồng cầu.<br>• <strong>Ý nghĩa hiến máu nhân đạo:</strong> Cứu sống người bệnh hiểm nghèo, thể hiện tình người cao đẹp.'
+  }
+];
