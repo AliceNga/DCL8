@@ -1,187 +1,342 @@
 // =========================================================================
-// DATA: LỊCH SỬ 8 (4 CÂU LỚN BAO QUÁT 11 LUẬN ĐIỂM CHUẨN ĐỀ CƯƠNG)
-// Đề cương Giữa Học Kì I - THCS Nghĩa Tân (2026-2027)
+// DATA: LỊCH SỬ 8 (CHUẨN ĐỀ CƯƠNG & ĐÁP ÁN CÔ GIÁO VERIFY - THCS NGHĨA TÂN)
+// Nguồn đối chiếu: _a_p_a_n__e___cu_o_ng_GHKI_8_Lich_su_de48b655.pdf (8 Trang Đã Chữa)
+// Gồm: 4 Câu Lớn Tự Luận Trọng Tâm (Bao quát 11 Luận Điểm) + 8 Câu Trắc Nghiệm Chuẩn Cô Giáo
 // =========================================================================
 
 window.HISTORY_DATABASE = [
+  // =======================================================================
+  // PHẦN I: 4 CÂU LỚN TỰ LUẬN TRỌNG TÂM (ĐÃ CHUẨN HÓA THEO ĐÁP ÁN CÔ GIÁO VERIFY)
+  // =======================================================================
+
   // --- CÂU 1: CÁC CUỘC CÁCH MẠNG TƯ SẢN ĐẦU TIÊN (1a: Anh, 1b: Bắc Mỹ, 1c: Pháp) ---
   {
     id: 'his_1a',
     exKey: 'his_rev',
-    exTitle: 'Lịch sử 8 - Câu 1: Các cuộc CMTS',
+    exTitle: 'Lịch sử 8 - Câu 1: Bảng 3 Cuộc CMTS (CMTS Anh) [Đáp án cô giáo verify]',
     type: 'keypoint_checklist',
-    questionText: 'Câu 1a. Lập bảng hệ thống về Cách mạng tư sản Anh (thế kỉ XVII): Nguyên nhân, kết quả, ý nghĩa, tính chất và đặc điểm chính.',
+    questionText: 'Câu 1a. Lập bảng hệ thống về Cách mạng tư sản Anh (thế kỉ XVII): Nguyên nhân, lãnh đạo, hình thức, kết quả, ý nghĩa và tính chất.',
+    visualComponent: `
+      <div class="my-3 p-4 bg-amber-50/70 border border-amber-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 600 130" class="w-full max-w-xl h-auto">
+          <rect x="10" y="10" width="580" height="110" rx="12" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
+          <text x="300" y="32" font-size="13" font-weight="bold" fill="#92400e" text-anchor="middle">SƠ ĐỒ TỔNG KẾT: CÁCH MẠNG TƯ SẢN ANH (THẾ KỈ XVII)</text>
+          
+          <rect x="25" y="45" width="125" height="60" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+          <text x="87" y="65" font-size="10" font-weight="bold" fill="#b45309" text-anchor="middle">NGUYÊN NHÂN</text>
+          <text x="87" y="82" font-size="9" fill="#78350f" text-anchor="middle">Phong kiến cản trở</text>
+          <text x="87" y="95" font-size="9" fill="#78350f" text-anchor="middle">tư sản & quý tộc mới</text>
+          
+          <path d="M 152 75 L 168 75" stroke="#d97706" stroke-width="2"/>
+
+          <rect x="170" y="45" width="125" height="60" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+          <text x="232" y="65" font-size="10" font-weight="bold" fill="#b45309" text-anchor="middle">LÃNH ĐẠO & HÌNH THỨC</text>
+          <text x="232" y="82" font-size="9" fill="#78350f" text-anchor="middle">Tư sản + Quý tộc mới</text>
+          <text x="232" y="95" font-size="9" fill="#b45309" font-weight="bold" text-anchor="middle">Hình thức: Nội chiến</text>
+
+          <path d="M 297 75 L 313 75" stroke="#d97706" stroke-width="2"/>
+
+          <rect x="315" y="45" width="125" height="60" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+          <text x="377" y="65" font-size="10" font-weight="bold" fill="#b45309" text-anchor="middle">KẾT QUẢ (1688)</text>
+          <text x="377" y="82" font-size="9" fill="#78350f" text-anchor="middle">Thiết lập thể chế</text>
+          <text x="377" y="95" font-size="9" fill="#b45309" font-weight="bold" text-anchor="middle">Quân chủ lập hiến</text>
+
+          <path d="M 442 75 L 458 75" stroke="#d97706" stroke-width="2"/>
+
+          <rect x="460" y="45" width="120" height="60" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+          <text x="520" y="65" font-size="10" font-weight="bold" fill="#b45309" text-anchor="middle">TÍNH CHẤT</text>
+          <text x="520" y="82" font-size="9" fill="#dc2626" font-weight="bold" text-anchor="middle">Không triệt để</text>
+          <text x="520" y="95" font-size="8.5" fill="#78350f" text-anchor="middle">Mở đường CNTB Anh</text>
+        </svg>
+        <span class="text-[11px] text-amber-800 font-bold mt-1">Học trọng tâm các ý gạch chân theo đáp án cô giáo</span>
+      </div>
+    `,
     totalPoints: 4,
     keypoints: [
       {
         pointNum: 1,
-        title: 'Ý 1: Nguyên nhân bùng nổ',
-        template: 'Mâu thuẫn sâu sắc giữa giai cấp tư sản, {k1} và quần chúng nhân dân với chế độ {k2} kìm hãm kinh tế tư bản chủ nghĩa.',
+        title: 'Ý 1: Nguyên nhân bùng nổ (Trọng tâm gạch chân)',
+        template: 'Chế độ phong kiến Anh cản trở giai cấp tư sản và {k1} tự do {k2}.',
         slots: [
-          { id: 'k1', expected: 'quý tộc mới', options: ['quý tộc mới', 'nô lệ da đen', 'địa chủ phong kiến'] },
-          { id: 'k2', expected: 'quân chủ chuyên chế Sác-lơ I', options: ['quân chủ chuyên chế Sác-lơ I', 'thực dân phương Tây', 'cộng hòa lập hiến'] }
+          { id: 'k1', expected: 'quý tộc mới', options: ['quý tộc mới', 'chủ nô', 'nông dân tá điền'] },
+          { id: 'k2', expected: 'kinh doanh sản xuất', options: ['kinh doanh sản xuất', 'mua bán nô lệ', 'khai hoang đất đai'] }
         ]
       },
       {
         pointNum: 2,
-        title: 'Ý 2: Kết quả của cách mạng',
-        template: 'Lật đổ chế độ quân chủ chuyên chế, thiết lập chế độ {k3}, mở đường cho chủ nghĩa tư bản phát triển.',
+        title: 'Ý 2: Lãnh đạo và Hình thức đấu tranh',
+        template: 'Lãnh đạo là giai cấp tư sản và quý tộc mới (tiêu biểu là {k3}); diễn ra dưới hình thức {k4} giữa Quốc hội và Nhà vua.',
         slots: [
-          { id: 'k3', expected: 'quân chủ lập hiến', options: ['quân chủ lập hiến', 'cộng hòa dân chủ', 'chuyên chế phong kiến'] }
+          { id: 'k3', expected: 'Crôm-oen', options: ['Crôm-oen', 'Oa-sinh-tơn', 'Rô-be-spie'] },
+          { id: 'k4', expected: 'nội chiến', options: ['nội chiến', 'chiến tranh giải phóng dân tộc', 'đấu tranh tôn giáo'] }
         ]
       },
       {
         pointNum: 3,
-        title: 'Ý 3: Ý nghĩa và Tính chất',
-        template: 'Mở đường cho CNTB phát triển mạnh mẽ; là cuộc cách mạng tư sản {k4} vì chưa giải quyết vấn đề ruộng đất cho nông dân.',
+        title: 'Ý 3: Kết quả và Thể chế được thiết lập',
+        template: 'Năm 1688 thể chế {k5} được thiết lập, quyền lực nhà vua bị hạn chế dưới quyền của Quốc hội.',
         slots: [
-          { id: 'k4', expected: 'không triệt để', options: ['không triệt để', 'triệt để nhất', 'vô sản'] }
+          { id: 'k5', expected: 'quân chủ lập hiến', options: ['quân chủ lập hiến', 'cộng hòa tổng thống', 'quân chủ chuyên chế'] }
         ]
       },
       {
         pointNum: 4,
-        title: 'Ý 4: Đặc điểm chính',
-        template: 'Lãnh đạo cuộc cách mạng là liên minh giữa {k5}, hình thức là cuộc nội chiến giữa Quốc hội và Nhà vua.',
+        title: 'Ý 4: Ý nghĩa và Tính chất (Trọng tâm gạch chân)',
+        template: 'Mở đường cho CNTB Anh phát triển mạnh; mang tính chất là cuộc cách mạng tư sản {k6}.',
         slots: [
-          { id: 'k5', expected: 'tư sản và quý tộc mới', options: ['tư sản và quý tộc mới', 'tư sản và vô sản', 'nông dân và thợ thủ công'] }
+          { id: 'k6', expected: 'không triệt để', options: ['không triệt để', 'triệt để nhất', 'vô sản chuyên chính'] }
         ]
       }
     ],
-    fullSolution: '• <strong>Nguyên nhân:</strong> Kinh tế TBCN phát triển mạnh (kinh tế rào đất, ngoại thương) bị chế độ phong kiến chuyên chế Sác-lơ I kìm hãm; mâu thuẫn gay gắt giữa Tư sản + Quý tộc mới + Quần chúng với Nhà vua.<br>• <strong>Kết quả:</strong> Xóa bỏ chế độ phong kiến chuyên chế, thiết lập nền <em>quân chủ lập hiến</em> (1689).<br>• <strong>Ý nghĩa & Tính chất:</strong> Mở đường cho chủ nghĩa tư bản Anh phát triển nhanh chóng. Mang tính chất cách mạng tư sản <em>không triệt để</em> (không xóa bỏ hoàn toàn chế độ phong kiến, không chia ruộng đất cho nông dân).<br>• <strong>Đặc điểm:</strong> Do liên minh tư sản và quý tộc mới lãnh đạo dưới hình thức nội chiến cách mạng.'
+    fullSolution: '<strong>[Đáp án cô giáo verify]</strong><br>• <strong>Nguyên nhân:</strong> Chế độ <u>phong kiến Anh cản trở tư sản, quý tộc mới tự do kinh doanh sản xuất</u>.<br>• <strong>Lãnh đạo:</strong> Tư sản, quý tộc mới (tiêu biểu <u>Crôm-oen</u>).<br>• <strong>Hình thức:</strong> <u>Nội chiến</u>.<br>• <strong>Thiết lập chế độ:</strong> <u>Quân chủ lập hiến</u>.<br>• <strong>Kết quả:</strong> Năm 1688 thể chế <u>quân chủ lập hiến</u> được thiết lập.<br>• <strong>Ý nghĩa:</strong> <u>Mở đường cho CNTB Anh phát triển mạnh</u>.<br>• <strong>Tính chất:</strong> <u>CMTS không triệt để</u> (do chưa giải quyết ruộng đất cho nông dân, duy trì ngôi vua danh nghĩa).'
   },
   {
     id: 'his_1b',
     exKey: 'his_rev',
-    exTitle: 'Lịch sử 8 - Câu 1: Các cuộc CMTS',
+    exTitle: 'Lịch sử 8 - Câu 1: Bảng 3 Cuộc CMTS (13 Thuộc Địa Bắc Mỹ) [Đáp án cô giáo verify]',
     type: 'keypoint_checklist',
-    questionText: 'Câu 1b. Lập bảng hệ thống về Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ (thế kỉ XVIII): Nguyên nhân, kết quả, ý nghĩa, tính chất và đặc điểm chính.',
+    questionText: 'Câu 1b. Lập bảng hệ thống về Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ (thế kỉ XVIII): Nguyên nhân, lãnh đạo, hình thức, kết quả, ý nghĩa và tính chất.',
+    visualComponent: `
+      <div class="my-3 p-4 bg-sky-50/70 border border-sky-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 600 130" class="w-full max-w-xl h-auto">
+          <rect x="10" y="10" width="580" height="110" rx="12" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5"/>
+          <text x="300" y="32" font-size="13" font-weight="bold" fill="#0369a1" text-anchor="middle">SƠ ĐỒ TỔNG KẾT: CHIẾN TRANH GIÀNH ĐỘC LẬP 13 THUỘC ĐỊA BẮC MỸ</text>
+          
+          <rect x="25" y="45" width="125" height="60" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1"/>
+          <text x="87" y="65" font-size="10" font-weight="bold" fill="#0369a1" text-anchor="middle">NGUYÊN NHÂN</text>
+          <text x="87" y="82" font-size="9" fill="#0c4a6e" text-anchor="middle">Thực dân Anh cản trở</text>
+          <text x="87" y="95" font-size="9" fill="#0c4a6e" text-anchor="middle">kinh tế TBCN 13 thuộc địa</text>
+          
+          <path d="M 152 75 L 168 75" stroke="#0284c7" stroke-width="2"/>
+
+          <rect x="170" y="45" width="125" height="60" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1"/>
+          <text x="232" y="65" font-size="10" font-weight="bold" fill="#0369a1" text-anchor="middle">LÃNH ĐẠO & HÌNH THỨC</text>
+          <text x="232" y="82" font-size="9" fill="#0c4a6e" text-anchor="middle">G. Oa-sinh-tơn (chủ nô & TS)</text>
+          <text x="232" y="95" font-size="9" fill="#0284c7" font-weight="bold" text-anchor="middle">Chiến tranh giành độc lập</text>
+
+          <path d="M 297 75 L 313 75" stroke="#0284c7" stroke-width="2"/>
+
+          <rect x="315" y="45" width="125" height="60" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1"/>
+          <text x="377" y="65" font-size="10" font-weight="bold" fill="#0369a1" text-anchor="middle">KẾT QUẢ TIÊU BIỂU</text>
+          <text x="377" y="82" font-size="9" fill="#0c4a6e" text-anchor="middle">Tuyên ngôn Độc lập 1776</text>
+          <text x="377" y="95" font-size="9" fill="#0369a1" font-weight="bold" text-anchor="middle">Khai sinh Hợp chúng quốc Hoa Kì</text>
+
+          <path d="M 442 75 L 458 75" stroke="#0284c7" stroke-width="2"/>
+
+          <rect x="460" y="45" width="120" height="60" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1"/>
+          <text x="520" y="65" font-size="10" font-weight="bold" fill="#0369a1" text-anchor="middle">THIẾT LẬP & TÍNH CHẤT</text>
+          <text x="520" y="82" font-size="9" fill="#0284c7" font-weight="bold" text-anchor="middle">Cộng hòa tổng thống</text>
+          <text x="520" y="95" font-size="8.5" fill="#0c4a6e" text-anchor="middle">Tính chất CM tư sản</text>
+        </svg>
+        <span class="text-[11px] text-sky-800 font-bold mt-1">Học trọng tâm các ý gạch chân theo đáp án cô giáo</span>
+      </div>
+    `,
     totalPoints: 4,
     keypoints: [
       {
         pointNum: 1,
-        title: 'Ý 1: Nguyên nhân chiến tranh',
-        template: 'Chính phủ thực dân Anh áp đặt chính sách {k1}, kìm hãm sự phát triển kinh tế thương mại của 13 thuộc địa Bắc Mỹ.',
+        title: 'Ý 1: Nguyên nhân (Trọng tâm gạch chân)',
+        template: 'Chính phủ thực dân Anh cản trở {k1} của 13 thuộc địa phát triển tự do.',
         slots: [
-          { id: 'k1', expected: 'thuế khóa nặng nề và cấm đoán vô lý', options: ['thuế khóa nặng nề và cấm đoán vô lý', 'hỗ trợ mở rộng sản xuất', 'tự do buôn bán'] }
+          { id: 'k1', expected: 'kinh tế tư bản', options: ['kinh tế tư bản', 'kinh tế phong kiến', 'thương mại nô lệ'] }
         ]
       },
       {
         pointNum: 2,
-        title: 'Ý 2: Kết quả và Văn kiện tiêu biểu',
-        template: 'Lật đổ ách thống trị của thực dân Anh, thông qua bản {k2} (1776) và thành lập Hợp chúng quốc Hoa Kỳ (Mỹ).',
+        title: 'Ý 2: Lãnh đạo và Hình thức',
+        template: 'Lãnh đạo tiêu biểu là {k2} (đại diện liên minh chủ nô và tư sản); hình thức là cuộc {k3}.',
         slots: [
-          { id: 'k2', expected: 'Tuyên ngôn Độc lập', options: ['Tuyên ngôn Độc lập', 'Tuyên ngôn Nhân quyền', 'Sắc lệnh ruộng đất'] }
+          { id: 'k2', expected: 'G. Oa-sinh-tơn', options: ['G. Oa-sinh-tơn', 'Crôm-oen', 'Na-pô-lê-ông'] },
+          { id: 'k3', expected: 'chiến tranh giành độc lập', options: ['chiến tranh giành độc lập', 'nội chiến tương tàn', 'đình công bãi khóa'] }
         ]
       },
       {
         pointNum: 3,
-        title: 'Ý 3: Ý nghĩa lịch sử',
-        template: 'Giải phóng Bắc Mỹ khỏi ách thực dân, mở đường cho CNTB phát triển, thúc đẩy mạnh mẽ phong trào {k3} ở Mỹ Latinh và thế giới.',
+        title: 'Ý 3: Kết quả và Thể chế được thiết lập',
+        template: 'Anh công nhận độc lập của 13 thuộc địa; khai sinh một quốc gia mới là {k4}; thiết lập chế độ {k5}.',
         slots: [
-          { id: 'k3', expected: 'giải phóng dân tộc', options: ['giải phóng dân tộc', 'khôi phục phong kiến', 'bảo hoàng'] }
+          { id: 'k4', expected: 'Hợp chúng quốc Hoa Kì', options: ['Hợp chúng quốc Hoa Kì', 'Liên bang Ca-na-đa', 'Vương quốc Anh'] },
+          { id: 'k5', expected: 'cộng hòa tổng thống', options: ['cộng hòa tổng thống', 'quân chủ lập hiến', 'quân chủ chuyên chế'] }
         ]
       },
       {
         pointNum: 4,
-        title: 'Ý 4: Tính chất và Đặc điểm',
-        template: 'Mang tính chất là một cuộc {k4}, do liên minh tư sản và tầng lớp {k5} lãnh đạo dưới sự chỉ huy của Oa-sinh-tơn.',
+        title: 'Ý 4: Ý nghĩa và Tính chất',
+        template: 'Mở đường cho kinh tế tư bản Mĩ phát triển; cuộc đấu tranh {k6}.',
         slots: [
-          { id: 'k4', expected: 'cách mạng tư sản giải phóng dân tộc', options: ['cách mạng tư sản giải phóng dân tộc', 'nội chiến phong kiến', 'cách mạng vô sản'] },
-          { id: 'k5', expected: 'chủ nô đồn điền', options: ['chủ nô đồn điền', 'quý tộc mới', 'nông dân nghèo'] }
+          { id: 'k6', expected: 'mang tính chất cách mạng tư sản', options: ['mang tính chất cách mạng tư sản', 'là cách mạng vô sản', 'là phong kiến bảo hoàng'] }
         ]
       }
     ],
-    fullSolution: '• <strong>Nguyên nhân:</strong> Thực dân Anh kìm hãm kinh tế 13 thuộc địa Bắc Mỹ qua các đạo luật thuế vô lý (thuế tem, thuế chè - biến cố Bô-xtơn 1773).<br>• <strong>Kết quả:</strong> Thực dân Anh ký Hiệp ước Véc-xai (1783) công nhận độc lập của 13 bang; bản Tuyên ngôn Độc lập 4/7/1776 ra đời; Hợp chúng quốc Hoa Kỳ thành lập.<br>• <strong>Ý nghĩa:</strong> Giải phóng dân tộc, mở đường cho CNTB phát triển ở Bắc Mỹ; cổ vũ phong trào chống phong kiến và ách thực dân khắp thế giới.<br>• <strong>Tính chất & Đặc điểm:</strong> Cách mạng tư sản dưới hình thức chiến tranh giải phóng dân tộc; chưa triệt để vì duy trì chế độ nô lệ da đen; do tư sản và chủ nô lãnh đạo (đứng đầu là George Washington).'
+    fullSolution: '<strong>[Đáp án cô giáo verify]</strong><br>• <strong>Nguyên nhân:</strong> <u>Thực dân Anh cản trở kinh tế tư bản của 13 thuộc địa phát triển</u>.<br>• <strong>Lãnh đạo:</strong> Tiêu biểu là <u>G. Oa-sinh-tơn (chủ nô & tư sản)</u>.<br>• <strong>Hình thức:</strong> <u>Chiến tranh giành độc lập</u>.<br>• <strong>Thiết lập:</strong> Chế độ <u>cộng hòa tổng thống</u>.<br>• <strong>Kết quả:</strong> <u>Anh công nhận độc lập của 13 thuộc địa; Khai sinh 1 quốc gia mới: Hợp chúng quốc Hoa Kì</u> (Tuyên ngôn Độc lập 1776, Hiệp ước Véc-xai 1783).<br>• <strong>Ý nghĩa:</strong> <u>Mở đường cho kinh tế tư bản Mĩ phát triển</u>.<br>• <strong>Tính chất:</strong> <u>Mang tính chất cách mạng tư sản</u>.'
   },
   {
     id: 'his_1c',
     exKey: 'his_rev',
-    exTitle: 'Lịch sử 8 - Câu 1: Các cuộc CMTS',
+    exTitle: 'Lịch sử 8 - Câu 1: Bảng 3 Cuộc CMTS (CMTS Pháp) [Đáp án cô giáo verify]',
     type: 'keypoint_checklist',
-    questionText: 'Câu 1c. Lập bảng hệ thống về Cách mạng tư sản Pháp (1789): Nguyên nhân, kết quả, ý nghĩa, tính chất và đặc điểm chính.',
+    questionText: 'Câu 1c. Lập bảng hệ thống về Cách mạng tư sản Pháp (1789): Nguyên nhân, lãnh đạo, hình thức, kết quả, ý nghĩa và tính chất.',
+    visualComponent: `
+      <div class="my-3 p-4 bg-rose-50/70 border border-rose-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 600 130" class="w-full max-w-xl h-auto">
+          <rect x="10" y="10" width="580" height="110" rx="12" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5"/>
+          <text x="300" y="32" font-size="13" font-weight="bold" fill="#9f1239" text-anchor="middle">SƠ ĐỒ TỔNG KẾT: CÁCH MẠNG TƯ SẢN PHÁP (CUỐI THẾ KỈ XVIII)</text>
+          
+          <rect x="25" y="45" width="125" height="60" rx="8" fill="#ffe4e6" stroke="#e11d48" stroke-width="1"/>
+          <text x="87" y="65" font-size="10" font-weight="bold" fill="#be123c" text-anchor="middle">NGUYÊN NHÂN</text>
+          <text x="87" y="82" font-size="9" fill="#881337" text-anchor="middle">Phong kiến Pháp cản trở</text>
+          <text x="87" y="95" font-size="9" fill="#881337" text-anchor="middle">tư sản tự do kinh doanh</text>
+          
+          <path d="M 152 75 L 168 75" stroke="#e11d48" stroke-width="2"/>
+
+          <rect x="170" y="45" width="125" height="60" rx="8" fill="#ffe4e6" stroke="#e11d48" stroke-width="1"/>
+          <text x="232" y="65" font-size="10" font-weight="bold" fill="#be123c" text-anchor="middle">LÃNH ĐẠO & HÌNH THỨC</text>
+          <text x="232" y="82" font-size="9" fill="#881337" text-anchor="middle">Giai cấp tư sản</text>
+          <text x="232" y="95" font-size="9" fill="#e11d48" font-weight="bold" text-anchor="middle">Đấu tranh giai cấp</text>
+
+          <path d="M 297 75 L 313 75" stroke="#e11d48" stroke-width="2"/>
+
+          <rect x="315" y="45" width="125" height="60" rx="8" fill="#ffe4e6" stroke="#e11d48" stroke-width="1"/>
+          <text x="377" y="65" font-size="10" font-weight="bold" fill="#be123c" text-anchor="middle">KẾT QUẢ & THIẾT LẬP</text>
+          <text x="377" y="82" font-size="9" fill="#881337" text-anchor="middle">Lật đổ phong kiến</text>
+          <text x="377" y="95" font-size="9" fill="#be123c" font-weight="bold" text-anchor="middle">Chế độ cộng hòa</text>
+
+          <path d="M 442 75 L 458 75" stroke="#e11d48" stroke-width="2"/>
+
+          <rect x="460" y="45" width="120" height="60" rx="8" fill="#ffe4e6" stroke="#e11d48" stroke-width="1"/>
+          <text x="520" y="65" font-size="10" font-weight="bold" fill="#be123c" text-anchor="middle">TÍNH CHẤT NỔI BẬT</text>
+          <text x="520" y="82" font-size="9" fill="#be123c" font-weight="bold" text-anchor="middle">Triệt để, điển hình nhất</text>
+          <text x="520" y="95" font-size="8.5" fill="#881337" text-anchor="middle">"Cái chổi quét sạch PK"</text>
+        </svg>
+        <span class="text-[11px] text-rose-800 font-bold mt-1">Học trọng tâm các ý gạch chân theo đáp án cô giáo</span>
+      </div>
+    `,
     totalPoints: 4,
     keypoints: [
       {
         pointNum: 1,
-        title: 'Ý 1: Nguyên nhân kinh tế - chính trị - xã hội',
-        template: 'Mâu thuẫn gay gắt giữa {k1} (tư sản, nông dân, bình dân) với chế độ phong kiến chuyên chế của vua Lu-i XVI và 2 đẳng cấp đặc quyền là {k2}.',
+        title: 'Ý 1: Nguyên nhân (Trọng tâm gạch chân)',
+        template: 'Chế độ phong kiến Pháp cản trở giai cấp tư sản tự do {k1}.',
         slots: [
-          { id: 'k1', expected: 'Đẳng cấp thứ ba', options: ['Đẳng cấp thứ ba', 'Giai cấp công nhân', 'Tầng lớp chủ nô'] },
-          { id: 'k2', expected: 'Tăng lữ và Quý tộc', options: ['Tăng lữ và Quý tộc', 'Tư sản và Quý tộc mới', 'Thương nhân và Thợ thủ công'] }
+          { id: 'k1', expected: 'kinh doanh sản xuất', options: ['kinh doanh sản xuất', 'chiếm đất lập thuộc địa', 'bầu cử dân chủ'] }
         ]
       },
       {
         pointNum: 2,
-        title: 'Ý 2: Kết quả của cách mạng',
-        template: 'Lật đổ chế độ phong kiến chuyên chế, xử tử vua Lu-i XVI, thiết lập nền {k3}, ban bố bản Tuyên ngôn Nhân quyền và Dân quyền nổi tiếng.',
+        title: 'Ý 2: Lãnh đạo và Hình thức',
+        template: 'Lãnh đạo cách mạng là {k2}; diễn ra dưới hình thức {k3} quyết liệt giữa Đẳng cấp thứ ba và chế độ phong kiến.',
         slots: [
-          { id: 'k3', expected: 'Cộng hòa', options: ['Cộng hòa', 'Quân chủ lập hiến', 'Đế chế phong kiến'] }
+          { id: 'k2', expected: 'giai cấp tư sản', options: ['giai cấp tư sản', 'quý tộc mới', 'giai cấp vô sản'] },
+          { id: 'k3', expected: 'đấu tranh giai cấp', options: ['đấu tranh giai cấp', 'nội chiến quý tộc', 'đấu tranh hòa bình nghị viện'] }
         ]
       },
       {
         pointNum: 3,
-        title: 'Ý 3: Ý nghĩa lịch sử',
-        template: 'Mở đường cho CNTB phát triển mạnh mẽ ở Pháp; làm lung lay tận gốc rễ {k4} khắp châu Âu; cổ vũ phong trào đấu tranh vì tự do, dân chủ.',
+        title: 'Ý 3: Kết quả và Thể chế thiết lập',
+        template: 'Lật đổ hoàn toàn chế độ phong kiến, thiết lập {k4}.',
         slots: [
-          { id: 'k4', expected: 'chế độ phong kiến', options: ['chế độ phong kiến', 'chế độ tư bản', 'chủ nghĩa xã hội'] }
+          { id: 'k4', expected: 'chế độ cộng hòa', options: ['chế độ cộng hòa', 'chế độ quân chủ lập hiến', 'đế chế phong kiến'] }
         ]
       },
       {
         pointNum: 4,
-        title: 'Ý 4: Tính chất và Đặc điểm',
-        template: 'Là cuộc cách mạng tư sản {k5} nhất thời cận đại, diễn ra dưới hình thức đấu tranh giai cấp quyết liệt và chống thù trong giặc ngoài.',
+        title: 'Ý 4: Ý nghĩa và Tính chất (Trọng tâm so sánh)',
+        template: 'Mở đường cho CNTB Pháp phát triển; là cuộc cách mạng dân chủ tư sản {k5}, được ví như {k6} rác rưởi phong kiến.',
         slots: [
-          { id: 'k5', expected: 'triệt để', options: ['triệt để', 'không triệt để', 'thỏa hiệp'] }
+          { id: 'k5', expected: 'triệt để, điển hình nhất', options: ['triệt để, điển hình nhất', 'không triệt để', 'nửa vời'] },
+          { id: 'k6', expected: 'cái chổi quét sạch', options: ['cái chổi quét sạch', 'ngọn hải đăng', 'cầu nối thỏa hiệp'] }
         ]
       }
     ],
-    fullSolution: '• <strong>Nguyên nhân:</strong> Kinh tế tư bản bị chế độ phong kiến kìm hãm; trật tự 3 đẳng cấp bất công (Đẳng cấp 1: Tăng lữ, Đẳng cấp 2: Quý tộc không phải nộp thuế; Đẳng cấp 3: Tư sản, nông dân, thị dân chịu mọi thuế khóa không có quyền chính trị); trào lưu Triết học Ánh sáng dọn đường tư tưởng.<br>• <strong>Kết quả:</strong> Lật đổ nền quân chủ phong kiến, lập nền cộng hòa; xóa bỏ quyền chiếm hữu phong kiến về ruộng đất, ban bố Tuyên ngôn Nhân quyền và Dân quyền (1789).<br>• <strong>Ý nghĩa:</strong> Lật đổ chế độ phong kiến lỗi thời, mở ra thời đại thắng lợi của CNTB trên toàn thế giới.<br>• <strong>Tính chất & Đặc điểm:</strong> Cuộc cách mạng tư sản triệt để nhất thời cận đại vì giải quyết được vấn đề ruộng đất cho nông dân và thiết lập nền cộng hòa dân chủ.'
+    fullSolution: '<strong>[Đáp án cô giáo verify]</strong><br>• <strong>Nguyên nhân:</strong> <u>Phong kiến Pháp cản trở tư sản tự do kinh doanh sản xuất</u>.<br>• <strong>Lãnh đạo:</strong> <u>Tư sản</u>.<br>• <strong>Hình thức:</strong> <u>Đấu tranh giai cấp</u>.<br>• <strong>Thiết lập:</strong> <u>Chế độ cộng hòa</u>.<br>• <strong>Kết quả:</strong> <u>Lật đổ phong kiến, thiết lập chế độ cộng hòa</u>.<br>• <strong>Ý nghĩa:</strong> <u>Mở đường cho CNTB Pháp phát triển</u>.<br>• <strong>Tính chất:</strong> <u>Cách mạng dân chủ tư sản (CMTS) triệt để, điển hình nhất; "cái chổi quét sạch phong kiến"</u>.'
   },
 
   // --- CÂU 2: CÁCH MẠNG CÔNG NGHIỆP ANH ---
   {
     id: 'his_2',
     exKey: 'his_ind',
-    exTitle: 'Lịch sử 8 - Câu 2: CM Công nghiệp',
+    exTitle: 'Lịch sử 8 - Câu 2: Cách Mạng Công Nghiệp [Đáp án cô giáo verify]',
     type: 'keypoint_checklist',
-    questionText: 'Câu 2. Trình bày những thành tựu tiêu biểu của Cách mạng công nghiệp Anh và nêu những tác động quan trọng đối với sản xuất và đời sống xã hội.',
+    questionText: 'Câu 2. Trình bày những phát minh cơ khí tiêu biểu của Cách mạng công nghiệp ở Anh và nêu ý nghĩa lịch sử chuyển dịch nền văn minh nhân loại.',
+    visualComponent: `
+      <div class="my-3 p-4 bg-emerald-50/70 border border-emerald-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 600 130" class="w-full max-w-xl h-auto">
+          <rect x="10" y="10" width="580" height="110" rx="12" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+          <text x="300" y="30" font-size="12" font-weight="bold" fill="#065f46" text-anchor="middle">DÒNG THỜI GIAN PHÁT MINH TIÊU BIỂU CÁCH MẠNG CÔNG NGHIỆP ANH</text>
+          
+          <line x1="30" y1="70" x2="570" y2="70" stroke="#059669" stroke-width="2"/>
+
+          <!-- 1764 -->
+          <circle cx="65" cy="70" r="5" fill="#059669"/>
+          <text x="65" y="60" font-size="10" font-weight="bold" fill="#047857" text-anchor="middle">1764</text>
+          <text x="65" y="86" font-size="8.5" font-weight="bold" fill="#064e3b" text-anchor="middle">Giêm Ha-gri-vơ</text>
+          <text x="65" y="98" font-size="8" fill="#065f46" text-anchor="middle">Máy kéo sợi Gien-ni</text>
+
+          <!-- 1769 -->
+          <circle cx="185" cy="70" r="5" fill="#059669"/>
+          <text x="185" y="60" font-size="10" font-weight="bold" fill="#047857" text-anchor="middle">1769</text>
+          <text x="185" y="86" font-size="8.5" font-weight="bold" fill="#064e3b" text-anchor="middle">Ác-rai</text>
+          <text x="185" y="98" font-size="8" fill="#065f46" text-anchor="middle">Máy kéo sợi sức nước</text>
+
+          <!-- 1784 -->
+          <circle cx="310" cy="70" r="7" fill="#dc2626"/>
+          <text x="310" y="58" font-size="10" font-weight="bold" fill="#b91c1c" text-anchor="middle">1784 ★</text>
+          <text x="310" y="86" font-size="8.5" font-weight="bold" fill="#991b1b" text-anchor="middle">Giêm Oát (Watt)</text>
+          <text x="310" y="98" font-size="8" font-weight="bold" fill="#b91c1c" text-anchor="middle">Máy hơi nước</text>
+
+          <!-- 1785 -->
+          <circle cx="430" cy="70" r="5" fill="#059669"/>
+          <text x="430" y="60" font-size="10" font-weight="bold" fill="#047857" text-anchor="middle">1785</text>
+          <text x="430" y="86" font-size="8.5" font-weight="bold" fill="#064e3b" text-anchor="middle">Các-rai</text>
+          <text x="430" y="98" font-size="8" fill="#065f46" text-anchor="middle">Máy dệt cơ khí</text>
+
+          <!-- 1814 -->
+          <circle cx="535" cy="70" r="5" fill="#059669"/>
+          <text x="535" y="60" font-size="10" font-weight="bold" fill="#047857" text-anchor="middle">1814</text>
+          <text x="535" y="86" font-size="8.5" font-weight="bold" fill="#064e3b" text-anchor="middle">Xti-phen-xơn</text>
+          <text x="535" y="98" font-size="8" fill="#065f46" text-anchor="middle">Đầu máy xe lửa</text>
+        </svg>
+        <span class="text-[11px] text-emerald-800 font-bold mt-1">Anh: Khởi đầu CMCN $\rightarrow$ "Công xưởng của thế giới"</span>
+      </div>
+    `,
     totalPoints: 3,
     keypoints: [
       {
         pointNum: 1,
-        title: 'Ý 1: Những thành tựu tiêu biểu',
-        template: 'Khởi đầu từ ngành dệt với {k1} (1764); đột phá mang tính thời đại là {k2} của Giêm Oát (1784); tiếp nối là đầu máy xe lửa của Xti-phen-xơn (1814).',
+        title: 'Ý 1: Các phát minh tiêu biểu',
+        template: 'Năm 1764 Giêm Ha-gri-vơ phát minh {k1}; Ác-rai phát minh máy kéo sợi chạy bằng {k2}; đột phá năng lượng là {k3} của Giêm Oát (1784); Các-rai phát minh máy dệt; Xti-phen-xơn chế tạo đầu máy xe lửa (1814).',
         slots: [
-          { id: 'k1', expected: 'máy kéo sợi Gien-ni', options: ['máy kéo sợi Gien-ni', 'máy bay phản lực', 'máy in kim'] },
-          { id: 'k2', expected: 'máy hơi nước', options: ['máy hơi nước', 'động cơ điện xoay chiều', 'động cơ đốt trong'] }
+          { id: 'k1', expected: 'máy kéo sợi Gien-ni', options: ['máy kéo sợi Gien-ni', 'máy may công nghiệp', 'máy in kim'] },
+          { id: 'k2', expected: 'sức nước', options: ['sức nước', 'sức gió', 'dầu mỏ'] },
+          { id: 'k3', expected: 'máy hơi nước', options: ['máy hơi nước', 'động cơ điện xoay chiều', 'động cơ đốt trong'] }
         ]
       },
       {
         pointNum: 2,
-        title: 'Ý 2: Tác động đối với sản xuất',
-        template: 'Thay thế lao động thủ công bằng {k3}, nâng cao năng suất vọt bậc, đưa nước Anh trở thành {k4} đầu tiên trên thế giới.',
+        title: 'Ý 2: Nước khởi đầu và Vị thế nước Anh',
+        template: 'Nước khởi đầu CMCN là nước Anh $\\rightarrow$ nước Anh được mệnh danh là {k4}.',
         slots: [
-          { id: 'k3', expected: 'máy móc cơ khí', options: ['máy móc cơ khí', 'sức kéo động vật', 'lao động nô lệ'] },
-          { id: 'k4', expected: 'công xưởng của thế giới', options: ['công xưởng của thế giới', 'đất nước nông nghiệp', 'nơi xuất khẩu khoáng sản thô'] }
+          { id: 'k4', expected: 'công xưởng thế giới', options: ['công xưởng thế giới', 'đất nước nông nghiệp', 'xứ sở sương mù'] }
         ]
       },
       {
         pointNum: 3,
-        title: 'Ý 3: Tác động đối với đời sống xã hội',
-        template: 'Thúc đẩy quá trình đô thị hóa nhanh chóng, đồng thời hình thành 2 giai cấp cơ bản đối lập sâu sắc là {k5}.',
+        title: 'Ý 3: Bước chuyển dịch nền văn minh nhân loại',
+        template: 'Cách mạng công nghiệp thế kỉ 18 - 19 đã chuyển đổi căn bản xã hội loài người từ nền văn minh {k5} sang nền văn minh {k6}.',
         slots: [
-          { id: 'k5', expected: 'tư sản công nghiệp và vô sản công nghiệp', options: ['tư sản công nghiệp và vô sản công nghiệp', 'địa chủ và nông dân tá điền', 'chủ nô và nô lệ'] }
+          { id: 'k5', expected: 'nông nghiệp', options: ['nông nghiệp', 'săn bắt hái lượm', 'chiếm hữu nô lệ'] },
+          { id: 'k6', expected: 'công nghiệp', options: ['công nghiệp', 'thông tin số', 'hậu hiện đại'] }
         ]
       }
     ],
-    fullSolution: '• <strong>Thành tựu tiêu biểu:</strong><br>- Ngành dệt: 1764 Giêm Ha-gri-vơ sáng chế máy kéo sợi Gien-ni; 1785 Ét-mơn Các-rai phát minh máy dệt chạy bằng sức nước.<br>- Đột phá năng lượng: 1784 Giêm Oát (James Watt) phát minh máy hơi nước hoàn chỉnh, tạo động lực không phụ thuộc vào địa hình/dòng sông.<br>- Giao thông vận tải: 1814 Xti-phen-xơn chế tạo thành công đầu máy xe lửa chạy trên đường ray; tàu thủy chở khách chạy bằng hơi nước.<br>• <strong>Tác động đối với sản xuất:</strong> Chuyển từ sản xuất thủ công phân tán sang nền sản xuất đại cơ khí tập trung; năng suất lao động tăng vọt; bộ mặt kinh tế thay đổi hoàn toàn, Anh thành "công xưởng thế giới".<br>• <strong>Tác động đối với đời sống xã hội:</strong> Các trung tâm công nghiệp và thành phố lớn mọc lên; hình thành 2 giai cấp xã hội mới là giai cấp tư sản (nắm tư liệu sản xuất) và giai cấp vô sản (làm thuê, bị bóc lột), mâu thuẫn giai cấp ngày càng sâu sắc dẫn đến phong trào công nhân.'
+    fullSolution: '<strong>[Đáp án cô giáo verify]</strong><br>• <strong>Các phát minh tiêu biểu:</strong><br>- <u>Giêm Ha-gri-vơ: máy kéo sợi Gien-ni (1764)</u>.<br>- <u>Ác-rai: máy kéo sợi chạy bằng sức nước</u>.<br>- <u>Giêm Oát: máy hơi nước (1784)</u>.<br>- <u>Các-rai: máy dệt</u>.<br>- <u>Xti-phen-xơn: đầu máy xe lửa (1814)</u>.<br>• <strong>Vị thế:</strong> <u>Anh là nước khởi đầu CMCN $\\rightarrow$ được mệnh danh là "công xưởng thế giới"</u>.<br>• <strong>Ý nghĩa lịch sử thời đại:</strong> <u>CMCN thế kỉ 18–19 đã chuyển loài người từ văn minh nông nghiệp sang văn minh công nghiệp</u>.'
   },
 
   // --- CÂU 3: ĐÔNG NAM Á DƯỚI ÁCH ĐÔ HỘ (3a, 3b, 3c) ---
   {
     id: 'his_3a',
     exKey: 'his_sea',
-    exTitle: 'Lịch sử 8 - Câu 3: Đông Nam Á',
+    exTitle: 'Lịch sử 8 - Câu 3: Đông Nam Á (Tình hình chung) [Đáp án cô giáo verify]',
     type: 'keypoint_checklist',
     questionText: 'Câu 3a. Trình bày những nét chính về tình hình chính trị, kinh tế, văn hóa - xã hội của các nước Đông Nam Á dưới ách đô hộ của thực dân phương Tây.',
     totalPoints: 3,
@@ -189,163 +344,298 @@ window.HISTORY_DATABASE = [
       {
         pointNum: 1,
         title: 'Ý 1: Về Chính trị',
-        template: 'Các nước thực dân tước đoạt {k1}, thiết lập bộ máy cai trị trực tiếp kết hợp gián tiếp thông qua phong kiến tay sai, thi hành chính sách {k2} để chia rẽ các dân tộc.',
+        template: 'Các nước thực dân tước đoạt độc lập chủ quyền, thiết lập bộ máy cai trị hà khắc và thi hành chính sách {k1} để chia rẽ khối đoàn kết dân tộc.',
         slots: [
-          { id: 'k1', expected: 'độc lập, chủ quyền', options: ['độc lập, chủ quyền', 'quyền bầu cử tự do', 'các hiệp ước bình đẳng'] },
-          { id: 'k2', expected: 'chia để trị', options: ['chia để trị', 'bảo vệ toàn vẹn lãnh thổ', 'hòa hợp dân tộc'] }
+          { id: 'k1', expected: 'chia để trị', options: ['chia để trị', 'bảo tồn nguyên vẹn', 'hòa hợp dân tộc'] }
         ]
       },
       {
         pointNum: 2,
         title: 'Ý 2: Về Kinh tế',
-        template: 'Thực dân phương Tây đẩy mạnh {k3}, khai thác khoáng sản, độc quyền thị trường buôn bán và kìm hãm không cho nền công nghiệp bản địa phát triển độc lập.',
+        template: 'Đẩy mạnh vơ vét tài nguyên thiên nhiên, cướp đoạt ruộng đất lập đồn điền, bóc lột nhân công và biến Đông Nam Á thành {k2} độc quyền của tư sản chính quốc.',
         slots: [
-          { id: 'k3', expected: 'cướp đoạt ruộng đất lập đồn điền', options: ['cướp đoạt ruộng đất lập đồn điền', 'phát triển công nghiệp nặng', 'chia ruộng đất cho nông dân'] }
+          { id: 'k2', expected: 'thị trường tiêu thụ hàng hóa', options: ['thị trường tiêu thụ hàng hóa', 'trung tâm công nghiệp nặng', 'khu vực thương mại tự do'] }
         ]
       },
       {
         pointNum: 3,
         title: 'Ý 3: Về Văn hóa - Xã hội',
-        template: 'Thi hành chính sách {k4}, du nhập văn hóa ngoại lai đồi trụy; xã hội phân hóa sâu sắc, đa số nhân dân lao động bị {k5} và bần cùng hóa cùng cực.',
+        template: 'Thi hành chính sách {k3}, hạn chế trường học, đầu độc bằng rượu và thuốc phiện; nhân dân bị phân hóa và chịu cảnh bần cùng hóa cùng cực.',
         slots: [
-          { id: 'k4', expected: 'ngu dân, hạn chế mở trường học', options: ['ngu dân, hạn chế mở trường học', 'phổ cập giáo dục đại học', 'bảo tồn nguyên vẹn văn hóa cổ truyền'] },
-          { id: 'k5', expected: 'bóc lột nặng nề', options: ['bóc lột nặng nề', 'được bảo hiểm xã hội', 'nâng cao mức sống'] }
+          { id: 'k3', expected: 'ngu dân', options: ['ngu dân', 'phổ cập giáo dục', 'bảo tồn truyền thống'] }
         ]
       }
     ],
-    fullSolution: '• <strong>Chính trị:</strong> Mất độc lập chủ quyền; chịu sự cai trị hà khắc của thực dân (Anh, Pháp, Hà Lan, Tây Ban Nha, Mỹ...); chính sách "chia để trị" khoét sâu mâu thuẫn giữa các sắc tộc và tôn giáo.<br>• <strong>Kinh tế:</strong> Biến các nước thành nơi cung cấp tài nguyên, nông sản nhiệt đới (cao su, cà phê, thiếc, lúa gạo...) và thị trường độc quyền tiêu thụ hàng công nghiệp; kinh tế què quặt, lệ thuộc nặng nề vào chính quốc.<br>• <strong>Văn hóa - Xã hội:</strong> Chính sách ngu dân để dễ bề cai trị; các giá trị văn hóa truyền thống bị xói mòn; nhân dân lao động (đặc biệt là nông dân) chịu cảnh áp bức "một cổ hai tròng", phân hóa giai cấp sâu sắc.'
+    fullSolution: '<strong>[Đáp án cô giáo verify]</strong><br>• <strong>Chính trị:</strong> Đa số các nước Đông Nam Á bị biến thành thuộc địa; thực dân tước đoạt độc lập, thi hành chính sách "chia để trị" tinh vi.<br>• <strong>Kinh tế:</strong> Biến thành nơi cung cấp tài nguyên thô rẻ mạt và thị trường tiêu thụ hàng hóa độc quyền; kìm hãm không cho nền công nghiệp bản địa phát triển.<br>• <strong>Văn hóa - Xã hội:</strong> Thi hành chính sách "ngu dân", duy trì hủ tục lạc hậu; đời sống nhân dân cực khổ, mâu thuẫn dân tộc ngày càng sâu sắc.'
   },
   {
     id: 'his_3b',
     exKey: 'his_sea',
-    exTitle: 'Lịch sử 8 - Câu 3: Đông Nam Á',
+    exTitle: 'Lịch sử 8 - Câu 3b: Nhận Xét Chính Sách Đô Hộ [Đáp án cô giáo verify]',
     type: 'keypoint_checklist',
     questionText: 'Câu 3b. Em có nhận xét gì về chính sách đô hộ của thực dân phương Tây đối với các nước Đông Nam Á?',
     totalPoints: 2,
     keypoints: [
       {
         pointNum: 1,
-        title: 'Ý 1: Bản chất phản động và tàn bạo',
-        template: 'Chính sách đô hộ mang tính chất {k1}, vô nhân đạo, nhằm mục đích duy nhất là phục vụ lợi ích tối đa của giai cấp tư sản chính quốc.',
+        title: 'Ý 1: Bản chất thâm độc, toàn diện (Chuẩn cô giáo)',
+        template: 'Chính sách đô hộ của thực dân phương Tây đối với các nước Đông Nam Á rất {k1}, toàn diện trên tất cả các mặt {k2}, nhằm phục vụ lợi ích của tư sản chính quốc.',
         slots: [
-          { id: 'k1', expected: 'vơ vét, bóc lột tàn nhẫn', options: ['vơ vét, bóc lột tàn nhẫn', 'nhân đạo cao cả', 'phát triển kinh tế địa phương'] }
+          { id: 'k1', expected: 'thâm độc', options: ['thâm độc', 'nhân đạo', 'tiến bộ'] },
+          { id: 'k2', expected: 'chính trị, kinh tế, văn hóa - giáo dục', options: ['chính trị, kinh tế, văn hóa - giáo dục', 'quân sự thuần túy', 'ngoại giao hòa bình'] }
         ]
       },
       {
         pointNum: 2,
-        title: 'Ý 2: Hệ quả đối với các dân tộc Đông Nam Á',
-        template: 'Kìm hãm nghiêm trọng sức sản xuất, làm cho xã hội Đông Nam Á rơi vào cảnh {k2}, lạc hậu kéo dài, mâu thuẫn dân tộc bùng nổ thành các cuộc {k3}.',
+        title: 'Ý 2: Hậu quả và Sự phản kháng dân tộc',
+        template: 'Làm cho kinh tế các nước Đông Nam Á {k3}, phụ thuộc; đời sống nhân dân cực khổ dẫn đến sự {k4} của các phong trào đấu tranh giành độc lập.',
         slots: [
-          { id: 'k2', expected: 'nghèo nàn, kiệt quệ', options: ['nghèo nàn, kiệt quệ', 'phát triển rực rỡ', 'công nghiệp hóa hiện đại'] },
-          { id: 'k3', expected: 'đấu tranh giành độc lập', options: ['đấu tranh giành độc lập', 'thỏa hiệp hòa bình', 'chấp nhận cam chịu'] }
+          { id: 'k4', expected: 'bùng nổ mạnh mẽ', options: ['bùng nổ mạnh mẽ', 'suy thoái đình đốn', 'chấp nhận cam chịu'] },
+          { id: 'k3', expected: 'què quặt, lạc hậu', options: ['què quặt, lạc hậu', 'công nghiệp hóa thịnh vượng', 'tự chủ vững chắc'] }
         ]
       }
     ],
-    fullSolution: '• <strong>Bản chất:</strong> Là chính sách áp bức dân tộc và bóc lột thuộc địa tàn bạo, phản động; duy trì tàn tích phong kiến lạc hậu để làm chỗ dựa cho ách thống trị.<br>• <strong>Hệ quả:</strong> Kìm hãm sự phát triển của khu vực Đông Nam Á, tước đoạt tự do và quyền sống của con người, biến Đông Nam Á thành khu vực nghèo đói, phụ thuộc.<br>• <strong>Tác động lịch sử:</strong> Làm bùng cháy ngọn lửa yêu nước, thúc đẩy các phong trào giải phóng dân tộc quật khởi chống thực dân xâm lược.'
+    fullSolution: '<strong>[Đáp án cô giáo verify]</strong><br>• <strong>Bản chất:</strong> Chính sách đô hộ của thực dân phương Tây đối với các nước Đông Nam Á rất <u>thâm độc, toàn diện trên tất cả các mặt: chính trị, kinh tế, văn hoá - giáo dục</u>.<br>• <strong>Mục đích:</strong> Chính sách đó đã <u>phục vụ cho quyền lợi của thực dân chính quốc, bóc lột sức người, vơ vét của cải của thuộc địa</u>.<br>• <strong>Hệ quả:</strong> Làm cho kinh tế các nước Đông Nam Á què quặt, lạc hậu, phụ thuộc vào chính quốc; đời sống nhân dân cực khổ, mâu thuẫn dân tộc sâu sắc dẫn đến <u>sự bùng nổ của các phong trào đấu tranh giành độc lập</u>.'
   },
   {
     id: 'his_3c',
     exKey: 'his_sea',
-    exTitle: 'Lịch sử 8 - Câu 3: Đông Nam Á',
+    exTitle: 'Lịch sử 8 - Câu 3c: Phản Biện Luận Điệu "Giúp Đỡ" [Đáp án cô giáo verify]',
     type: 'keypoint_checklist',
     questionText: 'Câu 3c. Có ý kiến cho rằng: "Các nước tư bản phương Tây đến Đông Nam Á là để giúp đỡ những nước này thoát khỏi nghèo nàn, lạc hậu". Em có đồng ý với ý kiến đó không? Vì sao?',
     totalPoints: 2,
     keypoints: [
       {
         pointNum: 1,
-        title: 'Ý 1: Quan điểm rõ ràng',
-        template: 'Em {k1} với ý kiến trên, vì đây chỉ là luận điệu giả tạo nhằm {k2} cho hành vi xâm lược phi nghĩa.',
+        title: 'Ý 1: Thái độ và Quan điểm dứt khoát',
+        template: 'Em {k1} với ý kiến trên, vì đây chỉ là luận điệu ngụy biện nhằm che đậy hành vi {k2} tàn bạo.',
         slots: [
-          { id: 'k1', expected: 'hoàn toàn không đồng ý', options: ['hoàn toàn không đồng ý', 'đồng ý hoàn toàn', 'đồng ý một nửa'] },
-          { id: 'k2', expected: 'ngụy biện, che đậy', options: ['ngụy biện, che đậy', 'khẳng định tính đúng đắn', 'tuyên dương công lao'] }
+          { id: 'k1', expected: 'hoàn toàn không đồng ý', options: ['hoàn toàn không đồng ý', 'đồng ý hoàn toàn', 'đồng ý phần lớn'] },
+          { id: 'k2', expected: 'xâm lược và bóc lột thuộc địa', options: ['xâm lược và bóc lột thuộc địa', 'hợp tác phát triển', 'giao lưu văn hóa'] }
         ]
       },
       {
         pointNum: 2,
-        title: 'Ý 2: Lý giải thực chất mục đích phương Tây',
-        template: 'Mục đích thực sự của thực dân phương Tây đến Đông Nam Á là tìm kiếm {k3}, nguồn nguyên liệu dồi dào và nguồn nhân công giá rẻ để phục vụ nền kinh tế chính quốc.',
+        title: 'Ý 2: Lý giải thực chất mục đích và chính sách (Chuẩn cô giáo)',
+        template: 'Mục đích thực sự là vơ vét tài nguyên, bóc lột nhân công rẻ mạt và {k3}; đồng thời thi hành chính sách {k4}, đầu độc bằng rượu cồn, thuốc phiện để làm suy yếu nòi giống.',
         slots: [
-          { id: 'k3', expected: 'thị trường tiêu thụ hàng hóa', options: ['thị trường tiêu thụ hàng hóa', 'cơ hội viện trợ nhân đạo', 'nơi xóa nạn mù chữ'] }
+          { id: 'k3', expected: 'độc chiếm thị trường tiêu thụ', options: ['độc chiếm thị trường tiêu thụ', 'giải quyết nạn đói', 'xây dựng nhà máy tự chủ'] },
+          { id: 'k4', expected: 'ngu dân, cổ súy hủ tục', options: ['ngu dân, cổ súy hủ tục', 'phổ cập đại học', 'xóa bỏ giai cấp'] }
         ]
       }
     ],
-    fullSolution: '• <strong>Quan điểm:</strong> Hoàn toàn KHÔNG ĐỒNG Ý với ý kiến trên.<br>• <strong>Giải thích lý do:</strong><br>1. Luận điệu "khai hóa văn minh", "giúp đỡ các dân tộc lạc hậu" chỉ là vỏ bọc dối trá để xoa dịu dư luận tiến bộ thế giới và che giấu tội ác xâm lược.<br>2. Bản chất của chủ nghĩa tư bản giai đoạn này là tìm kiếm thị trường tiêu thụ hàng hóa dư thừa, vơ vét khoáng sản - nông sản nhiệt đới rẻ mạt, và bóc lột sức lao động nô dịch của người dân bản địa.<br>3. Bằng chứng lịch sử: Trong suốt thời kỳ đô hộ, phương Tây không xây dựng nền công nghiệp hoàn chỉnh cho thuộc địa, tỷ lệ mù chữ chiếm trên 90%, nhân dân chịu hàng trăm thứ thuế vô lý, đẩy các nước vào vòng xoáy nghèo đói và lạc hậu hơn.'
+    fullSolution: '<strong>[Đáp án cô giáo verify]</strong><br>• <strong>Quan điểm:</strong> <u>Hoàn toàn không đồng ý</u> với ý kiến trên.<br>• <strong>Vì sao (Lý giải theo đáp án cô giáo):</strong><br>1. <u>Mục đích thực sự:</u> vơ vét tài nguyên thiên nhiên, bóc lột sức lao động rẻ mạt, độc chiếm thị trường tiêu thụ.<br>2. <u>Chính sách tàn độc:</u> Thi hành chính sách "ngu dân", đầu độc thuốc phiện, cổ súy các hủ tục lạc hậu để <u>làm suy yếu nòi giống</u> và dễ bề cai trị.<br>3. <u>Hậu quả:</u> Biến các nước Đông Nam Á thành thuộc địa nghèo nàn, lạc hậu, mất độc lập chủ quyền, chứ <u>không hề có sự "giúp đỡ" hay "khai hóa văn minh"</u>.'
   },
 
-  // --- CÂU 4: XUNG ĐỘT PHONG KIẾN NAM - BẮC TRIỀU & TRỊNH - NGUYỄN ---
+  // --- CÂU 4: XUNG ĐỘT NAM - BẮC TRIỀU & TRỊNH - NGUYỄN ---
   {
     id: 'his_4a',
     exKey: 'his_conflict',
-    exTitle: 'Lịch sử 8 - Câu 4: Xung đột Đàng Trong - Đàng Ngoài',
+    exTitle: 'Lịch sử 8 - Câu 4a: Xung Đột Nam - Bắc Triều [Đáp án cô giáo verify]',
     type: 'keypoint_checklist',
     questionText: 'Câu 4a. Trình bày nguyên nhân, diễn biến và hệ quả của cuộc xung đột Nam – Bắc triều (thế kỉ XVI).',
     totalPoints: 3,
     keypoints: [
       {
         pointNum: 1,
-        title: 'Ý 1: Nguyên nhân bùng nổ xung đột',
-        template: 'Năm 1527, {k1} cướp ngôi nhà Lê lập ra Bắc triều; một số cựu thần nhà Lê do {k2} đứng đầu đã khởi binh "phù Lê diệt Mạc", lập ra Nam triều.',
+        title: 'Ý 1: Nguyên nhân (Các mốc 1527, 1533)',
+        template: 'Năm 1527, {k1} cướp ngôi nhà Lê lập ra Bắc triều (nhà Mạc); năm 1533 {k2} tập hợp lực lượng "phù Lê diệt Mạc", lập ra Nam triều.',
         slots: [
-          { id: 'k1', expected: 'Mạc Đăng Dung', options: ['Mạc Đăng Dung', 'Nguyễn Kim', 'Trịnh Kiểm'] },
-          { id: 'k2', expected: 'Nguyễn Kim', options: ['Nguyễn Kim', 'Lê Chiêu Thống', 'Nguyễn Hoàng'] }
+          { id: 'k1', expected: 'Mạc Đăng Dung', options: ['Mạc Đăng Dung', 'Trịnh Kiểm', 'Nguyễn Hoàng'] },
+          { id: 'k2', expected: 'Nguyễn Kim', options: ['Nguyễn Kim', 'Lê Chiêu Thống', 'Trịnh Tùng'] }
         ]
       },
       {
         pointNum: 2,
-        title: 'Ý 2: Diễn biến chiến tranh',
-        template: 'Chiến tranh Nam - Bắc triều kéo dài hơn {k3} (1533 - 1592), chiến trường chính diễn ra ác liệt ở vùng Thanh Hóa, Nghệ An và đồng bằng Bắc Bộ; đến năm 1592 Nam triều chiếm được Thăng Long, họ Mạc phải rút lên {k4}.',
+        title: 'Ý 2: Diễn biến thời gian (Chuẩn 60 năm: 1533 - 1592)',
+        template: 'Cuộc chiến kéo dài {k3} (1533 - 1592); đến năm 1592 quân Nam triều chiếm được Thăng Long, họ Mạc phải rút lên {k4}.',
         slots: [
-          { id: 'k3', expected: '50 năm', options: ['50 năm', '10 năm', '100 năm'] },
-          { id: 'k4', expected: 'Cao Bằng', options: ['Cao Bằng', 'Huế', 'Gia Định'] }
+          { id: 'k3', expected: '60 năm', options: ['60 năm', '20 năm', '100 năm'] },
+          { id: 'k4', expected: 'Cao Bằng', options: ['Cao Bằng', 'Thanh Hóa', 'Gia Định'] }
         ]
       },
       {
         pointNum: 3,
-        title: 'Ý 3: Hệ quả đối với đất nước',
-        template: 'Gây ra sự tàn phá nặng nề về kinh tế, đất nước bị {k5}, đồng ruộng bị bỏ hoang, đời sống nhân dân vô cùng cực khổ, ly tán.',
+        title: 'Ý 3: Hệ quả đối với đất nước (Trọng tâm gạch chân)',
+        template: 'Đất nước bị chia cắt, vùng {k5} trở thành chiến trường chính; kinh tế tàn phá, ruộng đồng bỏ hoang, nhân dân bần cùng đói rét ly tán.',
         slots: [
-          { id: 'k5', expected: 'chia cắt và tổn thương sâu sắc', options: ['chia cắt và tổn thương sâu sắc', 'phát triển thịnh vượng vượt bậc', 'hợp nhất toàn vẹn'] }
+          { id: 'k5', expected: 'Thanh - Nghệ và đồng bằng Bắc Bộ', options: ['Thanh - Nghệ và đồng bằng Bắc Bộ', 'Tây Nguyên và Nam Bộ', 'vùng Duyên hải Nam Trung Bộ'] }
         ]
       }
     ],
-    fullSolution: '• <strong>Nguyên nhân:</strong> Đầu thế kỉ XVI nhà Hậu Lê suy thoái; 1527 Mạc Đăng Dung ép vua Lê nhường ngôi, lập ra nhà Mạc (Bắc triều). Cựu thần nhà Lê là Nguyễn Kim tập hợp lực lượng đưa Lê Trang Tông lên ngôi ở Thanh Hóa, lập ra Nam triều ("phù Lê diệt Mạc").<br>• <strong>Diễn biến:</strong> Kéo dài hơn nửa thế kỷ (1533 - 1592) với hàng chục trận giao tranh lớn nhỏ tại Ninh Bình, Thanh Hóa, Nghệ An. Năm 1592, quân Nam triều (do Trịnh Tùng chỉ huy) đánh chiếm Thăng Long, nhà Mạc chạy lên cát cứ ở Cao Bằng đến năm 1677 mới chấm dứt.<br>• <strong>Hệ quả:</strong> Gây ra thảm họa chiến tranh huynh đệ tương tàn kéo dài; đất nước bị chia cắt tạm thời; sản xuất nông nghiệp đình trệ, làng mạc xơ xác; nhân dân bị bắt lính, chết đói và ly tán khắp nơi.'
+    fullSolution: '<strong>[Đáp án cô giáo verify]</strong><br>• <strong>Nguyên nhân:</strong><br>- Năm 1527, <u>Mạc Đăng Dung cướp ngôi nhà Lê lập ra Bắc triều (nhà Mạc)</u>.<br>- Năm 1533, <u>Nguyễn Kim tập hợp lực lượng "phù Lê diệt Mạc", lập ra Nam triều</u>.<br>• <strong>Diễn biến:</strong> Kéo dài <u>60 năm (1533 - 1592)</u>. Năm 1592, quân Nam triều chiếm Thăng Long, <u>Mạc chạy lên vùng Cao Bằng</u>.<br>• <strong>Hệ quả:</strong><br>- Đất nước bị chia cắt, vùng <u>Thanh - Nghệ và đồng bằng Bắc Bộ là chiến trường chính</u>.<br>- Kinh tế bị tàn phá nặng nề, sản xuất đình trệ, ruộng đồng bỏ hoang.<br>- Nhân dân rơi vào cảnh <u>bần cùng, đói rét, phiêu bạt ly tán</u>.'
   },
   {
     id: 'his_4b',
     exKey: 'his_conflict',
-    exTitle: 'Lịch sử 8 - Câu 4: Xung đột Đàng Trong - Đàng Ngoài',
+    exTitle: 'Lịch sử 8 - Câu 4b: Xung Đột Trịnh - Nguyễn [Đáp án cô giáo verify]',
     type: 'keypoint_checklist',
     questionText: 'Câu 4b. Trình bày nguyên nhân, diễn biến và hệ quả của cuộc xung đột Trịnh – Nguyễn (thế kỉ XVII).',
+    visualComponent: `
+      <div class="my-3 p-4 bg-orange-50/70 border border-orange-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 600 140" class="w-full max-w-xl h-auto">
+          <rect x="10" y="10" width="580" height="120" rx="12" fill="#fffaf0" stroke="#ea580c" stroke-width="1.5"/>
+          <text x="300" y="30" font-size="12" font-weight="bold" fill="#9a3412" text-anchor="middle">LƯỢC ĐỒ PHÂN CHIA ĐÀNG NGOÀI - ĐÀNG TRONG (THẾ KỈ XVII - XVIII)</text>
+          
+          <!-- Đàng Ngoài -->
+          <rect x="40" y="45" width="220" height="70" rx="8" fill="#ffedd5" stroke="#ea580c" stroke-width="1"/>
+          <text x="150" y="65" font-size="11" font-weight="bold" fill="#c2410c" text-anchor="middle">ĐÀNG NGOÀI</text>
+          <text x="150" y="82" font-size="9.5" fill="#7c2d12" text-anchor="middle">Vua Lê - Chúa Trịnh</text>
+          <text x="150" y="98" font-size="8.5" fill="#9a3412" text-anchor="middle">Kinh đô: Thăng Long</text>
+
+          <!-- Ranh giới Sông Gianh & Lũy Thầy -->
+          <line x1="280" y1="40" x2="280" y2="120" stroke="#dc2626" stroke-width="3" stroke-dasharray="4"/>
+          <text x="300" y="70" font-size="10" font-weight="bold" fill="#dc2626" text-anchor="middle">SÔNG GIANH</text>
+          <text x="300" y="86" font-size="9" font-weight="bold" fill="#b91c1c" text-anchor="middle">& LŨY THẦY</text>
+          <text x="300" y="102" font-size="8" fill="#7f1d1d" text-anchor="middle">(Quảng Bình)</text>
+
+          <!-- Đàng Trong -->
+          <rect x="340" y="45" width="220" height="70" rx="8" fill="#ffedd5" stroke="#ea580c" stroke-width="1"/>
+          <text x="450" y="65" font-size="11" font-weight="bold" fill="#c2410c" text-anchor="middle">ĐÀNG TRONG</text>
+          <text x="450" y="82" font-size="9.5" fill="#7c2d12" text-anchor="middle">Các Chúa Nguyễn</text>
+          <text x="450" y="98" font-size="8.5" fill="#9a3412" text-anchor="middle">Khai hoang mở rộng về phía Nam</text>
+        </svg>
+        <span class="text-[11px] text-orange-900 font-bold mt-1">Sông Gianh & Lũy Thầy (Quảng Bình) chia cắt đất nước hơn 1 thế kỉ</span>
+      </div>
+    `,
     totalPoints: 3,
     keypoints: [
       {
         pointNum: 1,
-        title: 'Ý 1: Nguyên nhân bùng nổ',
-        template: 'Sau khi Nguyễn Kim chết, con rể là {k1} nắm toàn bộ binh quyền ở Đàng Ngoài; con thứ Nguyễn Kim là {k2} xin vào trấn thủ Thuận Hóa, xây dựng thế lực cát cứ ở Đàng Trong.',
+        title: 'Ý 1: Nguyên nhân (1545, 1558)',
+        template: 'Năm 1545 Nguyễn Kim chết, con rể là {k1} nắm binh quyền; năm 1558 {k2} xin vào trấn thủ Thuận Hóa; đến thời Nguyễn Phúc Nguyên cắt đứt hoàn toàn quan hệ.',
         slots: [
-          { id: 'k1', expected: 'Trịnh Kiểm', options: ['Trịnh Kiểm', 'Trịnh Cương', 'Mạc Đăng Dung'] },
+          { id: 'k1', expected: 'Trịnh Kiểm', options: ['Trịnh Kiểm', 'Trịnh Tùng', 'Mạc Đăng Dung'] },
           { id: 'k2', expected: 'Nguyễn Hoàng', options: ['Nguyễn Hoàng', 'Nguyễn Uông', 'Nguyễn Huệ'] }
         ]
       },
       {
         pointNum: 2,
-        title: 'Ý 2: Diễn biến xung đột',
-        template: 'Từ năm 1627 đến 1672, hai tập đoàn Trịnh - Nguyễn đánh nhau {k3} lớn mà không phân thắng bại; cuối cùng hai bên lấy {k4} (Quảng Bình) làm ranh giới chia cắt đất nước.',
+        title: 'Ý 2: Diễn biến (1627 - 1672, 7 lần đại chiến)',
+        template: 'Năm 1627 bùng nổ xung đột, kéo dài gần nửa thế kỉ với {k3} lớn không phân thắng bại; hai bên lấy {k4} làm giới tuyến chia cắt.',
         slots: [
-          { id: 'k3', expected: '7 lần', options: ['7 lần', '3 lần', '12 lần'] },
-          { id: 'k4', expected: 'sông Gianh', options: ['sông Gianh', 'sông Bến Hải', 'sông Hồng'] }
+          { id: 'k3', expected: '7 lần đại chiến', options: ['7 lần đại chiến', '3 lần', '12 lần'] },
+          { id: 'k4', expected: 'sông Gianh và Luỹ Thầy (Quảng Bình)', options: ['sông Gianh và Luỹ Thầy (Quảng Bình)', 'sông Bến Hải', 'đèo Hải Vân'] }
         ]
       },
       {
         pointNum: 3,
-        title: 'Ý 3: Hệ quả lịch sử',
-        template: 'Đất nước bị chia cắt thành Đàng Ngoài và Đàng Trong hơn {k5}; gây tổn hại lớn về người và của, cản trở phát triển kinh tế; mặt khác các chúa Nguyễn đã đẩy mạnh việc mở rộng lãnh thổ về phía {k6}.',
+        title: 'Ý 3: Hệ quả và Điểm tích cực khách quan',
+        template: 'Đất nước bị chia cắt hơn {k5}; mặt tích cực khách quan là chúa Nguyễn đã di dân {k6}.',
         slots: [
-          { id: 'k5', expected: 'một thế kỉ (hơn 100 năm)', options: ['một thế kỉ (hơn 100 năm)', '10 năm', '500 năm'] },
-          { id: 'k6', expected: 'Nam', options: ['Nam', 'Bắc', 'Tây'] }
+          { id: 'k5', expected: '100 năm (hơn 1 thế kỉ)', options: ['100 năm (hơn 1 thế kỉ)', '10 năm', '500 năm'] },
+          { id: 'k6', expected: 'mở rộng lãnh thổ về phía Nam', options: ['mở rộng lãnh thổ về phía Nam', 'liên kết với phương Tây', 'đánh chiếm Bắc Triều'] }
         ]
       }
     ],
-    fullSolution: '• <strong>Nguyên nhân:</strong> Mâu thuẫn tranh giành quyền lực trong nội bộ tập đoàn phong kiến họ Lê. Sau khi Nguyễn Kim chết, Trịnh Kiểm thâu tóm quyền lực, ngấm ngầm sát hại con cả Nguyễn Uông. Để tránh họa, năm 1558 Nguyễn Hoàng xin vào trấn thủ Thuận Hóa - Quảng Nam, xây dựng cơ đồ họ Nguyễn đối địch với họ Trịnh.<br>• <strong>Diễn biến:</strong> Trong 45 năm (1627 - 1672), hai bên đại chiến 7 lần, chiến trường ác liệt nhất là vùng Quảng Bình, Hà Tĩnh với hệ thống Lũy Thầy kiên cố. Nhận thấy không thể tiêu diệt được nhau, hai bên đình chiến, lấy <em>sông Gianh</em> (Quảng Bình) làm giới tuyến quân sự.<br>• <strong>Hệ quả:</strong><br>- <em>Tiêu cực:</em> Đất nước bị chia cắt thành Đàng Ngoài (vua Lê - chúa Trịnh) và Đàng Trong (chúa Nguyễn) kéo dài hơn một thế kỷ; nhân dân chịu cảnh binh đao, chia lìa ruột thịt; kìm hãm sự phát triển chung của dân tộc.<br>- <em>Tích cực (mặt khách quan):</em> Để củng cố thế lực và mở rộng không gian sinh tồn, các chúa Nguyễn ở Đàng Trong đã tổ chức khai hoang, xác lập chủ quyền và mở mang bờ cõi xuống vùng đồng bằng sông Cửu Long và các hải đảo (Hoàng Sa, Trường Sa).'
+    fullSolution: '<strong>[Đáp án cô giáo verify]</strong><br>• <strong>Nguyên nhân:</strong><br>- Năm 1545, <u>Nguyễn Kim chết, Trịnh Kiểm nắm binh quyền (chúa Trịnh)</u>.<br>- Năm 1558, <u>Nguyễn Hoàng vào trấn thủ Thuận Hóa</u>.<br>- Đến đời <u>Nguyễn Phúc Nguyên cắt đứt quan hệ</u>.<br>• <strong>Diễn biến:</strong> Năm 1627 bùng nổ, kéo dài gần nửa thế kỉ <u>(1627 - 1672) với 7 lần đại chiến</u>; lấy <u>sông Gianh và Luỹ Thầy (Quảng Bình) làm ranh giới chia cắt Đàng Ngoài - Đàng Trong</u>.<br>• <strong>Hệ quả:</strong><br>- Chia cắt đất nước <u>hơn 1 thế kỉ (hơn 100 năm)</u>, gây suy kiệt sức người sức của.<br>- <u>Mặt tích cực khách quan:</u> Chúa Nguyễn ở Đàng Trong đẩy mạnh công cuộc khai hoang, <u>di dân mở rộng lãnh thổ về phía Nam</u>.'
+  },
+
+  // =======================================================================
+  // PHẦN II: 8 CÂU TRẮC NGHIỆM LỊCH SỬ CHUẨN CÔ GIÁO VERIFY (TRANG 8 PDF)
+  // =======================================================================
+  {
+    id: 'his_mc_1',
+    exKey: 'his_mc',
+    exTitle: 'Lịch sử 8 - Trắc nghiệm [Đáp án cô giáo verify]',
+    questionText: 'Câu 1. Đâu không phải là đặc điểm của cuộc chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ?',
+    options: [
+      { text: 'A. Do tầng lớp tư sản và chủ nô lãnh đạo.', isCorrect: false },
+      { text: 'B. Diễn ra dưới hình thức chiến tranh giải phóng dân tộc.', isCorrect: false },
+      { text: 'C. Đưa đến sự thành lập Hợp chúng quốc Hoa Kỳ.', isCorrect: false },
+      { text: 'D. Thiết lập chế độ quân chủ lập hiến.', isCorrect: true }
+    ],
+    explanation: '<strong>[Đáp án cô giáo verify]</strong> Chọn D. Cuộc chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ thiết lập <em>chế độ cộng hòa tổng thống</em>, không phải quân chủ lập hiến (chế độ quân chủ lập hiến được thiết lập ở Cách mạng tư sản Anh).'
+  },
+  {
+    id: 'his_mc_2',
+    exKey: 'his_mc',
+    exTitle: 'Lịch sử 8 - Trắc nghiệm [Đáp án cô giáo verify]',
+    questionText: 'Câu 2. Giai cấp lãnh đạo cuộc Cách mạng tư sản Pháp cuối thế kỉ XVIII là:',
+    options: [
+      { text: 'A. Giai cấp tư sản.', isCorrect: true },
+      { text: 'B. Tăng lữ giáo hội.', isCorrect: false },
+      { text: 'C. Quý tộc phong kiến phong kiến.', isCorrect: false },
+      { text: 'D. Giai cấp công nhân vô sản.', isCorrect: false }
+    ],
+    explanation: '<strong>[Đáp án cô giáo verify]</strong> Chọn A. Giai cấp tư sản là lực lượng đứng đầu Đẳng cấp thứ ba, lãnh đạo quần chúng nhân dân lật đổ chế độ quân chủ chuyên chế Pháp.'
+  },
+  {
+    id: 'his_mc_3',
+    exKey: 'his_mc',
+    exTitle: 'Lịch sử 8 - Trắc nghiệm [Đáp án cô giáo verify]',
+    questionText: 'Câu 3. Cuộc cách mạng tư sản nào thời cận đại được ví như "cái chổi khổng lồ quét sạch rác rưởi phong kiến"?',
+    options: [
+      { text: 'A. Cách mạng tư sản Hà Lan.', isCorrect: false },
+      { text: 'B. Cách mạng tư sản Anh.', isCorrect: false },
+      { text: 'C. Cách mạng tư sản Pháp.', isCorrect: true },
+      { text: 'D. Chiến tranh giành độc lập Bắc Mỹ.', isCorrect: false }
+    ],
+    explanation: '<strong>[Đáp án cô giáo verify]</strong> Chọn C. Cách mạng tư sản Pháp là cuộc cách mạng triệt để nhất, lật đổ tận gốc chế độ quân chủ chuyên chế và tàn dư phong kiến, ban bố bản Tuyên ngôn Nhân quyền và Dân quyền lịch sử.'
+  },
+  {
+    id: 'his_mc_4',
+    exKey: 'his_mc',
+    exTitle: 'Lịch sử 8 - Trắc nghiệm [Đáp án cô giáo verify]',
+    questionText: 'Câu 4. Năm 1764, Giêm Ha-gri-vơ đã phát minh ra cỗ máy nào đánh dấu bước khởi đầu Cách mạng công nghiệp ở Anh?',
+    options: [
+      { text: 'A. Máy kéo sợi chạy bằng sức nước.', isCorrect: false },
+      { text: 'B. Máy kéo sợi Gien-ni.', isCorrect: true },
+      { text: 'C. Máy hơi nước.', isCorrect: false },
+      { text: 'D. Đầu máy xe lửa.', isCorrect: false }
+    ],
+    explanation: '<strong>[Đáp án cô giáo verify]</strong> Chọn B. Năm 1764 Giêm Ha-gri-vơ sáng chế ra máy kéo sợi Gien-ni (lấy tên con gái ông), nâng cao năng suất kéo sợi lên nhiều lần so với xa quay tay thủ công.'
+  },
+  {
+    id: 'his_mc_5',
+    exKey: 'his_mc',
+    exTitle: 'Lịch sử 8 - Trắc nghiệm [Đáp án cô giáo verify]',
+    questionText: 'Câu 5. Ai là người chế tạo thành công máy hơi nước năm 1784, tạo ra động lực mới không phụ thuộc vào dòng sông hay địa hình?',
+    options: [
+      { text: 'A. Giêm Oát (James Watt).', isCorrect: true },
+      { text: 'B. Ác-rai.', isCorrect: false },
+      { text: 'C. Ét-mơn Các-rai.', isCorrect: false },
+      { text: 'D. G. Xti-phen-xơn.', isCorrect: false }
+    ],
+    explanation: '<strong>[Đáp án cô giáo verify]</strong> Chọn A. Năm 1784, Giêm Oát (James Watt) đã hoàn thiện máy hơi nước, đánh dấu bước ngoặt đưa nền sản xuất bước vào thời đại cơ khí đại công nghiệp.'
+  },
+  {
+    id: 'his_mc_6',
+    exKey: 'his_mc',
+    exTitle: 'Lịch sử 8 - Trắc nghiệm [Đáp án cô giáo verify]',
+    questionText: 'Câu 6. Tính chất của cuộc Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ là gì?',
+    options: [
+      { text: 'A. Một cuộc cách mạng vô sản.', isCorrect: false },
+      { text: 'B. Một cuộc chiến tranh phong kiến thuần túy.', isCorrect: false },
+      { text: 'C. Mang tính chất một cuộc cách mạng tư sản.', isCorrect: true },
+      { text: 'D. Một cuộc bạo loạn nông dân tự phát.', isCorrect: false }
+    ],
+    explanation: '<strong>[Đáp án cô giáo verify]</strong> Chọn C. Cuộc chiến tranh giành độc lập của 13 thuộc địa Bắc Mỹ vừa là chiến tranh giải phóng dân tộc vừa mang tính chất cách mạng tư sản vì lật đổ ách thống trị thực dân Anh, mở đường cho CNTB phát triển.'
+  },
+  {
+    id: 'his_mc_7',
+    exKey: 'his_mc',
+    exTitle: 'Lịch sử 8 - Trắc nghiệm [Đáp án cô giáo verify]',
+    questionText: 'Câu 7. Văn kiện lịch sử công bố ngày 4-7-1776 chính thức khai sinh ra Hợp chúng quốc Hoa Kỳ là:',
+    options: [
+      { text: 'A. Hiến pháp năm 1787.', isCorrect: false },
+      { text: 'B. Tuyên ngôn Độc lập.', isCorrect: true },
+      { text: 'C. Tuyên ngôn Nhân quyền và Dân quyền.', isCorrect: false },
+      { text: 'D. Sắc lệnh ruộng đất.', isCorrect: false }
+    ],
+    explanation: '<strong>[Đáp án cô giáo verify]</strong> Chọn B. Ngày 4-7-1776, Đại hội lục địa thông qua bản Tuyên ngôn Độc lập do T. Giép-phéc-xơn soạn thảo, khẳng định mọi người sinh ra đều có quyền bình đẳng, quyền sống, quyền tự do và quyền mưu cầu hạnh phúc.'
+  },
+  {
+    id: 'his_mc_8',
+    exKey: 'his_mc',
+    exTitle: 'Lịch sử 8 - Trắc nghiệm [Đáp án cô giáo verify]',
+    questionText: 'Câu 8. Quốc gia nào là nước khởi đầu cuộc Cách mạng công nghiệp thế kỉ XVIII - XIX và được mệnh danh là "công xưởng của thế giới"?',
+    options: [
+      { text: 'A. Nước Pháp.', isCorrect: false },
+      { text: 'B. Nước Mỹ.', isCorrect: false },
+      { text: 'C. Nước Anh.', isCorrect: true },
+      { text: 'D. Nước Đức.', isCorrect: false }
+    ],
+    explanation: '<strong>[Đáp án cô giáo verify]</strong> Chọn C. Nước Anh là nước khởi đầu cuộc Cách mạng công nghiệp (từ những năm 60 của thế kỉ XVIII trong ngành dệt), vươn lên thành nền kinh tế công nghiệp số một thế giới.'
   }
 ];

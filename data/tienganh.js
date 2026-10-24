@@ -757,10 +757,295 @@ window.ENGLISH_DATABASE = [
   },
 
   // ==========================================
-  // EXERCISE 9: VIẾT LẠI CÂU (10 CÂU TỰ LUẬN)
+  // EXERCISE 6: BIỂN BÁO & THÔNG BÁO (5 CÂU CÓ HÌNH ẢNH MINH HỌA)
   // ==========================================
   {
     id: 'en_56',
+    exKey: 'ex6',
+    exTitle: 'Ex 6: Biển báo & Thông báo (Có ảnh)',
+    questionText: '1. What does the notice say?',
+    visualComponent: `
+      <div class="flex flex-col items-center justify-center p-3 sm:p-4 bg-slate-50 rounded-2xl border border-slate-200 shadow-xs max-w-md mx-auto">
+        <img src="/assets/eng_notice_1.png" alt="Notice 1 - Email from Adam to Linda" class="max-h-56 object-contain rounded-xl shadow-sm border border-slate-100" onerror="this.onerror=null; this.src='assets/eng_notice_1.png';" />
+        <span class="text-[11px] text-slate-500 font-medium mt-2 italic flex items-center gap-1">
+          <i data-lucide="image" class="w-3.5 h-3.5 text-indigo-500"></i> Thông báo email: Adam mượn sách Địa lí từ Linda
+        </span>
+      </div>
+    `,
+    options: [
+      { text: 'Linda wants to study in the fitness center.', isCorrect: false },
+      { text: 'Adam requests to take Linda\'s book.', isCorrect: false },
+      { text: 'On Tuesday, Adam has a geography exam.', isCorrect: true },
+      { text: 'The book belongs to Linda.', isCorrect: false }
+    ],
+    explanation: 'Nội dung thông báo (email): Adam nhắn Linda <em>"Big test on Tuesday!"</em> (Có bài thi lớn vào thứ Ba). Do đó đáp án chuẩn là: <strong>On Tuesday, Adam has a geography exam.</strong>'
+  },
+  {
+    id: 'en_57',
+    exKey: 'ex6',
+    exTitle: 'Ex 6: Biển báo & Thông báo (Có ảnh)',
+    questionText: '2. What does the sign say?',
+    visualComponent: `
+      <div class="flex flex-col items-center justify-center p-3 sm:p-4 bg-slate-50 rounded-2xl border border-slate-200 shadow-xs max-w-xs mx-auto">
+        <img src="/assets/eng_sign_2.png" alt="Sign 2 - NO! Pushing" class="max-h-52 object-contain rounded-xl shadow-sm border border-slate-100" onerror="this.onerror=null; this.src='assets/eng_sign_2.png';" />
+        <span class="text-[11px] text-slate-500 font-medium mt-2 italic flex items-center gap-1">
+          <i data-lucide="alert-triangle" class="w-3.5 h-3.5 text-amber-500"></i> Biển cảnh báo hồ nước: NO! Pushing
+        </span>
+      </div>
+    `,
+    options: [
+      { text: 'You must not run near the water.', isCorrect: false },
+      { text: 'You must not push other people.', isCorrect: true },
+      { text: 'You must not swim in this area.', isCorrect: false },
+      { text: 'You must not climb the stairs.', isCorrect: false }
+    ],
+    explanation: 'Biển báo có hình hai người đang xô đẩy nhau bên mép nước kèm chữ <strong>"NO! Pushing"</strong> -> Cấm xô đẩy người khác: <strong>You must not push other people.</strong>'
+  },
+  {
+    id: 'en_58',
+    exKey: 'ex6',
+    exTitle: 'Ex 6: Biển báo & Thông báo (Có ảnh)',
+    questionText: '3. What does the notice say?',
+    visualComponent: `
+      <div class="flex flex-col items-center justify-center p-3 sm:p-4 bg-slate-50 rounded-2xl border border-slate-200 shadow-xs max-w-xs mx-auto">
+        <img src="/assets/eng_notice_3.png" alt="Notice 3 - RING BELL FOR SERVICE" class="max-h-52 object-contain rounded-xl shadow-sm border border-slate-100" onerror="this.onerror=null; this.src='assets/eng_notice_3.png';" />
+        <span class="text-[11px] text-slate-500 font-medium mt-2 italic flex items-center gap-1">
+          <i data-lucide="bell" class="w-3.5 h-3.5 text-blue-500"></i> Thông báo quầy dịch vụ: RING BELL FOR SERVICE
+        </span>
+      </div>
+    `,
+    options: [
+      { text: 'You have to ring the bell to ask for help.', isCorrect: true },
+      { text: 'The bell will ring when you come in.', isCorrect: false },
+      { text: 'The bell will ring when you go out.', isCorrect: false },
+      { text: 'The staff will ring the bell for you.', isCorrect: false }
+    ],
+    explanation: 'Bảng thông báo ghi <strong>"NOTICE - RING BELL FOR SERVICE"</strong> (Rung chuông nếu cần phục vụ). Do đó người đến cần rung chuông để yêu cầu hỗ trợ: <strong>You have to ring the bell to ask for help.</strong>'
+  },
+  {
+    id: 'en_59',
+    exKey: 'ex6',
+    exTitle: 'Ex 6: Biển báo & Thông báo (Có ảnh)',
+    questionText: '4. What does the notice say?',
+    visualComponent: `
+      <div class="flex flex-col items-center justify-center p-3 sm:p-4 bg-slate-50 rounded-2xl border border-slate-200 shadow-xs max-w-md mx-auto">
+        <img src="/assets/eng_notice_4.png" alt="Notice 4 - NEW STUDENTS" class="max-h-48 object-contain rounded-xl shadow-sm border border-slate-100" onerror="this.onerror=null; this.src='assets/eng_notice_4.png';" />
+        <span class="text-[11px] text-slate-500 font-medium mt-2 italic flex items-center gap-1">
+          <i data-lucide="info" class="w-3.5 h-3.5 text-indigo-500"></i> Bảng tin: Hướng dẫn học sinh mới nhận sách
+        </span>
+      </div>
+    `,
+    options: [
+      { text: 'Wait at Reception until the teacher arrives.', isCorrect: false },
+      { text: 'Collect their coursebooks from their teacher.', isCorrect: false },
+      { text: 'See their teacher before going to Reception.', isCorrect: false },
+      { text: 'Collect their coursebooks from Reception.', isCorrect: true }
+    ],
+    explanation: 'Thông báo ghi rõ: <em>"NEW STUDENTS - Go to Reception to collect your coursebooks before seeing your teacher"</em> -> Học sinh mới phải đến quầy tiếp tân nhận sách: <strong>Collect their coursebooks from Reception.</strong>'
+  },
+  {
+    id: 'en_60',
+    exKey: 'ex6',
+    exTitle: 'Ex 6: Biển báo & Thông báo (Có ảnh)',
+    questionText: '5. What does the sign say?',
+    visualComponent: `
+      <div class="flex flex-col items-center justify-center p-3 sm:p-4 bg-slate-50 rounded-2xl border border-slate-200 shadow-xs max-w-xs mx-auto">
+        <img src="/assets/eng_sign_5.png" alt="Sign 5 - No Horn" class="max-h-52 object-contain rounded-xl shadow-sm border border-slate-100" onerror="this.onerror=null; this.src='assets/eng_sign_5.png';" />
+        <span class="text-[11px] text-slate-500 font-medium mt-2 italic flex items-center gap-1">
+          <i data-lucide="volume-x" class="w-3.5 h-3.5 text-rose-500"></i> Biển giao thông: Cấm bóp còi
+        </span>
+      </div>
+    `,
+    options: [
+      { text: 'You must not play music here.', isCorrect: false },
+      { text: 'You must not sound your horn here.', isCorrect: true },
+      { text: 'You must not shout here.', isCorrect: false },
+      { text: 'You must not use your camera here.', isCorrect: false }
+    ],
+    explanation: 'Biển báo giao thông hình chiếc còi bị gạch chéo đỏ là biển cấm bóp còi: <strong>You must not sound your horn here.</strong>'
+  },
+
+  // ==========================================
+  // EXERCISE 7: ĐIỀN CÂU VÀO ĐOẠN VĂN (4 CÂU)
+  // ==========================================
+  {
+    id: 'en_61',
+    exKey: 'ex7',
+    exTitle: 'Ex 7: Điền câu vào đoạn văn',
+    questionText: `
+      <div class="space-y-2">
+        <p class="text-xs text-slate-500 font-normal italic">Chọn phương án đúng nhất điền vào vị trí <strong>(1)</strong> trong đoạn văn sau:</p>
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs sm:text-sm leading-relaxed text-slate-700 font-normal">
+          Life in the countryside is often peaceful and quiet. Unlike cities, the pace of life is slower, and <strong>(1) _________</strong>. In addition, people living in rural areas are surrounded by nature, which helps reduce stress...
+        </div>
+      </div>
+    `,
+    options: [
+      { text: 'Despite these drawbacks', isCorrect: false },
+      { text: 'it is easier to find fresh, locally-grown food', isCorrect: true },
+      { text: 'Another difficulty is transportation', isCorrect: false },
+      { text: 'While the countryside offers many benefits', isCorrect: false }
+    ],
+    explanation: 'Vị trí (1) đứng sau liên từ <em>"and"</em> nối tiếp các ưu điểm của nông thôn (nhịp sống chậm hơn và dễ tìm thực phẩm tươi ngon tự trồng tại địa phương): <strong>it is easier to find fresh, locally-grown food</strong>.'
+  },
+  {
+    id: 'en_62',
+    exKey: 'ex7',
+    exTitle: 'Ex 7: Điền câu vào đoạn văn',
+    questionText: `
+      <div class="space-y-2">
+        <p class="text-xs text-slate-500 font-normal italic">Chọn phương án đúng nhất điền vào vị trí <strong>(2)</strong> trong đoạn văn sau:</p>
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs sm:text-sm leading-relaxed text-slate-700 font-normal">
+          ...In addition, people living in rural areas are surrounded by nature, which helps reduce stress. It is also safer since the crime rate is much lower. <strong>(2) _________</strong>, it also has its challenges. Access to healthcare, education, and job opportunities may be limited compared to urban areas...
+        </div>
+      </div>
+    `,
+    options: [
+      { text: 'Despite these drawbacks', isCorrect: false },
+      { text: 'it is easier to find fresh, locally-grown food', isCorrect: false },
+      { text: 'Another difficulty is transportation', isCorrect: false },
+      { text: 'While the countryside offers many benefits', isCorrect: true }
+    ],
+    explanation: 'Vị trí (2) mở đầu mệnh đề chuyển tiếp từ những ưu điểm sang thách thức: <em>"...it also has its challenges"</em> -> chọn <strong>While the countryside offers many benefits</strong> (Trong khi nông thôn mang lại nhiều lợi ích, nó cũng có những thách thức).'
+  },
+  {
+    id: 'en_63',
+    exKey: 'ex7',
+    exTitle: 'Ex 7: Điền câu vào đoạn văn',
+    questionText: `
+      <div class="space-y-2">
+        <p class="text-xs text-slate-500 font-normal italic">Chọn phương án đúng nhất điền vào vị trí <strong>(3)</strong> trong đoạn văn sau:</p>
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs sm:text-sm leading-relaxed text-slate-700 font-normal">
+          ...Access to healthcare, education, and job opportunities may be limited compared to urban areas. <strong>(3) _________</strong>. Public transport is often lacking, making it difficult for people to commute or access services that are readily available in cities...
+        </div>
+      </div>
+    `,
+    options: [
+      { text: 'Despite these drawbacks', isCorrect: false },
+      { text: 'it is easier to find fresh, locally-grown food', isCorrect: false },
+      { text: 'Another difficulty is transportation', isCorrect: true },
+      { text: 'While the countryside offers many benefits', isCorrect: false }
+    ],
+    explanation: 'Vị trí (3) là câu chủ đề cho phần giải thích tiếp theo <em>"Public transport is often lacking..."</em> -> chọn <strong>Another difficulty is transportation</strong> (Một khó khăn khác là vấn đề đi lại / giao thông).'
+  },
+  {
+    id: 'en_64',
+    exKey: 'ex7',
+    exTitle: 'Ex 7: Điền câu vào đoạn văn',
+    questionText: `
+      <div class="space-y-2">
+        <p class="text-xs text-slate-500 font-normal italic">Chọn phương án đúng nhất điền vào vị trí <strong>(4)</strong> trong đoạn văn sau:</p>
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs sm:text-sm leading-relaxed text-slate-700 font-normal">
+          ...making it difficult for people to commute or access services that are readily available in cities. <strong>(4) _________</strong>, the countryside provides a strong sense of community, which appeals to many people...
+        </div>
+      </div>
+    `,
+    options: [
+      { text: 'Despite these drawbacks', isCorrect: true },
+      { text: 'it is easier to find fresh, locally-grown food', isCorrect: false },
+      { text: 'Another difficulty is transportation', isCorrect: false },
+      { text: 'While the countryside offers many benefits', isCorrect: false }
+    ],
+    explanation: 'Sau khi kể ra các hạn chế (drawbacks), vị trí (4) chuyển ý sang điểm gắn kết cộng đồng tích cực -> chọn <strong>Despite these drawbacks</strong> (Bất chấp những hạn chế này).'
+  },
+
+  // ==========================================
+  // EXERCISE 8: SẮP XẾP ĐOẠN VĂN LOGIC (4 CÂU)
+  // ==========================================
+  {
+    id: 'en_65',
+    exKey: 'ex8',
+    exTitle: 'Ex 8: Sắp xếp đoạn văn logic',
+    questionText: `
+      <div class="space-y-2">
+        <span class="inline-block px-2 py-0.5 rounded text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">1a. Sắp xếp thứ tự các câu (a-c)</span>
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs sm:text-sm font-normal text-slate-800 leading-relaxed space-y-1.5">
+          <p class="font-medium italic text-slate-600">"After a busy week of work, I always look forward to my leisure time. It’s the perfect opportunity to unwind. _________"</p>
+          <div class="border-t border-slate-200 pt-1.5 space-y-1 text-slate-700 text-xs">
+            <p><strong>a.</strong> No matter how I choose to spend my free time, these moments help me keep a balance between work and relaxation.</p>
+            <p><strong>b.</strong> On some weekends, I love gathering with friends for a movie night or taking a short trip out of the city.</p>
+            <p><strong>c.</strong> On other occasions, I enjoy reading quietly in a park, letting the peaceful surroundings help me relax and clear my mind.</p>
+          </div>
+        </div>
+        <p class="text-xs font-semibold text-slate-800 pt-1">Thứ tự sắp xếp đúng để hoàn thành đoạn văn là:</p>
+      </div>
+    `,
+    options: [
+      { text: 'b – c – a', isCorrect: true },
+      { text: 'c – a – b', isCorrect: false },
+      { text: 'c – b – a', isCorrect: false },
+      { text: 'b – a – c', isCorrect: false }
+    ],
+    explanation: 'Trật tự phát triển logic: <strong>b</strong> ("On some weekends...") nêu hoạt động đầu tiên -> <strong>c</strong> ("On other occasions...") nêu hoạt động tiếp theo -> <strong>a</strong> ("No matter how I choose...") đúc kết ý nghĩa cân bằng cuộc sống.'
+  },
+  {
+    id: 'en_66',
+    exKey: 'ex8',
+    exTitle: 'Ex 8: Sắp xếp đoạn văn logic',
+    questionText: `
+      <div class="space-y-2">
+        <span class="inline-block px-2 py-0.5 rounded text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">1b. Chọn câu kết thúc phù hợp nhất</span>
+        <p class="text-xs sm:text-sm font-semibold text-slate-900">Choose the sentence that can end the text (in Question 1a) most appropriately:</p>
+      </div>
+    `,
+    options: [
+      { text: 'By the time the weekend is over, I feel recharged and ready for another week.', isCorrect: true },
+      { text: 'On Monday, I feel overwhelmed and wish for the weekend to come fast.', isCorrect: false },
+      { text: 'By the time the weekend is over, I can’t wait to work again.', isCorrect: false },
+      { text: 'Nevertheless, leisure activities are more of a distraction than a benefit.', isCorrect: false }
+    ],
+    explanation: 'Câu kết đoạn văn phù hợp nhất với tinh thần thư giãn tái tạo năng lượng của cả bài là phương án A: <strong>By the time the weekend is over, I feel recharged and ready for another week.</strong>'
+  },
+  {
+    id: 'en_67',
+    exKey: 'ex8',
+    exTitle: 'Ex 8: Sắp xếp đoạn văn logic',
+    questionText: `
+      <div class="space-y-2">
+        <span class="inline-block px-2 py-0.5 rounded text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">2a. Sắp xếp thứ tự các câu (a-c)</span>
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs sm:text-sm font-normal text-slate-800 leading-relaxed space-y-1.5">
+          <p class="font-medium italic text-slate-600">"Our school held a special art exhibition last week. Everyone was keen to see the artworks. _________"</p>
+          <div class="border-t border-slate-200 pt-1.5 space-y-1 text-slate-700 text-xs">
+            <p><strong>a.</strong> The students created amazing pieces, and we were proud of their creativity.</p>
+            <p><strong>b.</strong> The exhibition was a great success, and many parents came to see the art.</p>
+            <p><strong>c.</strong> Each class contributed their best artworks, and they were displayed in the school hall.</p>
+          </div>
+        </div>
+        <p class="text-xs font-semibold text-slate-800 pt-1">Thứ tự sắp xếp đúng để hoàn thành đoạn văn là:</p>
+      </div>
+    `,
+    options: [
+      { text: 'c – b – a', isCorrect: false },
+      { text: 'c – a – b', isCorrect: true },
+      { text: 'b – c – a', isCorrect: false },
+      { text: 'a – c – b', isCorrect: false }
+    ],
+    explanation: 'Trật tự phát triển sự việc theo mạch thời gian: <strong>c</strong> (mỗi lớp đóng góp tác phẩm trưng bày ở hội trường) -> <strong>a</strong> (học sinh tạo nên các tác phẩm tuyệt vời và đầy tự hào) -> <strong>b</strong> (triển lãm thành công lớn và đông đảo phụ huynh đến xem).'
+  },
+  {
+    id: 'en_68',
+    exKey: 'ex8',
+    exTitle: 'Ex 8: Sắp xếp đoạn văn logic',
+    questionText: `
+      <div class="space-y-2">
+        <span class="inline-block px-2 py-0.5 rounded text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">2b. Chọn câu kết thúc phù hợp nhất</span>
+        <p class="text-xs sm:text-sm font-semibold text-slate-900">Choose the sentence that can end the text (in Question 2a) most appropriately:</p>
+      </div>
+    `,
+    options: [
+      { text: 'The art exhibition was canceled due to a scheduling conflict.', isCorrect: false },
+      { text: 'The students were excited to receive awards for their work.', isCorrect: false },
+      { text: 'We all enjoyed seeing the artworks and had a wonderful time at the exhibition.', isCorrect: true },
+      { text: 'The hall was decorated with colorful banners and balloons.', isCorrect: false }
+    ],
+    explanation: 'Câu kết đoạn đúc kết cảm xúc chung tuyệt vời của mọi người: <strong>We all enjoyed seeing the artworks and had a wonderful time at the exhibition.</strong>'
+  },
+
+  // ==========================================
+  // EXERCISE 9: VIẾT LẠI CÂU (10 CÂU TỰ LUẬN)
+  // ==========================================
+  {
+    id: 'en_69',
     exKey: 'ex9',
     exTitle: 'Ex 9: Viết lại câu',
     questionText: '1. My sister and I fancy reading novels when we have free time. (Viết lại dùng từ gợi ý trong ngoặc: <strong>adore</strong>)',
@@ -773,7 +1058,7 @@ window.ENGLISH_DATABASE = [
     explanation: 'Cấu trúc đồng nghĩa: <strong>fancy + V-ing = adore + V-ing</strong> (yêu thích làm gì).'
   },
   {
-    id: 'en_57',
+    id: 'en_70',
     exKey: 'ex9',
     exTitle: 'Ex 9: Viết lại câu',
     questionText: '2. She is good at playing the guitar. (Viết lại dùng từ gợi ý trong ngoặc: <strong>well</strong>)',
@@ -786,7 +1071,7 @@ window.ENGLISH_DATABASE = [
     explanation: 'Cấu trúc biến đổi tính từ thành trạng từ: <strong>be good at V-ing = play something well</strong>.'
   },
   {
-    id: 'en_58',
+    id: 'en_71',
     exKey: 'ex9',
     exTitle: 'Ex 9: Viết lại câu',
     questionText: '3. Life in the countryside isn’t as stressful as life in the city. (Viết lại dùng từ: <strong>more</strong>)',
@@ -799,7 +1084,7 @@ window.ENGLISH_DATABASE = [
     explanation: 'So sánh không bằng chuyển sang so sánh hơn: A isn\'t as... as B -> <strong>B is more stressful than A</strong>.'
   },
   {
-    id: 'en_59',
+    id: 'en_72',
     exKey: 'ex9',
     exTitle: 'Ex 9: Viết lại câu',
     questionText: '4. They like watching movies on weekends. (Viết lại dùng từ: <strong>of</strong>)',
@@ -812,7 +1097,7 @@ window.ENGLISH_DATABASE = [
     explanation: 'Cụm từ chỉ sở thích đi với giới từ "of": <strong>be fond of + V-ing</strong> = thích làm gì.'
   },
   {
-    id: 'en_60',
+    id: 'en_73',
     exKey: 'ex9',
     exTitle: 'Ex 9: Viết lại câu',
     questionText: '5. Her teammate didn’t respond to criticism as constructively as she did. (Viết lại dùng từ: <strong>than</strong>)',
@@ -825,7 +1110,7 @@ window.ENGLISH_DATABASE = [
     explanation: 'Chuyển so sánh không bằng dạng phủ định sang so sánh hơn của trạng từ dài: <strong>more constructively than</strong>.'
   },
   {
-    id: 'en_61',
+    id: 'en_74',
     exKey: 'ex9',
     exTitle: 'Ex 9: Viết lại câu',
     questionText: '6. I can’t cook as well as my mother. (Viết lại dùng từ gợi ý: <strong>better</strong>)',
@@ -838,7 +1123,7 @@ window.ENGLISH_DATABASE = [
     explanation: 'So sánh hơn của "well" là "better": Tôi không nấu ngon bằng mẹ -> <strong>Mẹ tôi nấu ăn ngon hơn tôi</strong> (My mother can cook better than me / than I can).'
   },
   {
-    id: 'en_62',
+    id: 'en_75',
     exKey: 'ex9',
     exTitle: 'Ex 9: Viết lại câu',
     questionText: '7. We are keen on trying new foods. (Viết lại dùng từ gợi ý: <strong>adore</strong>)',
@@ -851,7 +1136,7 @@ window.ENGLISH_DATABASE = [
     explanation: 'Cấu trúc: <strong>be keen on + V-ing = adore + V-ing</strong>.'
   },
   {
-    id: 'en_63',
+    id: 'en_76',
     exKey: 'ex9',
     exTitle: 'Ex 9: Viết lại câu',
     questionText: '8. She would rather go shopping than watch TV. (Viết lại dùng từ gợi ý: <strong>prefers</strong>)',
@@ -864,7 +1149,7 @@ window.ENGLISH_DATABASE = [
     explanation: 'Cấu trúc tương đương: <strong>would rather V1 than V2 = prefer V1-ing to V2-ing</strong>.'
   },
   {
-    id: 'en_64',
+    id: 'en_77',
     exKey: 'ex9',
     exTitle: 'Ex 9: Viết lại câu',
     questionText: '9. They go to school by bike every day. (Viết lại dùng động từ: <strong>cycle</strong>)',
@@ -877,7 +1162,7 @@ window.ENGLISH_DATABASE = [
     explanation: 'Cấu trúc tương đương: <strong>go to [place] by bike = cycle to [place]</strong>.'
   },
   {
-    id: 'en_65',
+    id: 'en_78',
     exKey: 'ex9',
     exTitle: 'Ex 9: Viết lại câu',
     questionText: '10. I can’t watch Mr. Bean because I have a lot of homework tonight. (Viết lại dùng liên từ: <strong>so</strong>)',
@@ -894,7 +1179,7 @@ window.ENGLISH_DATABASE = [
   // EXERCISE 10: VIẾT HOÀN CHỈNH CÂU TỪ TỪ GỢI Ý (5 CÂU)
   // ==========================================
   {
-    id: 'en_66',
+    id: 'en_79',
     exKey: 'ex10',
     exTitle: 'Ex 10: Hoàn chỉnh câu',
     questionText: '1. Mary/ crazy/ do puzzles/ because/ she/ think/ it/ good/ her brain.',
@@ -907,7 +1192,7 @@ window.ENGLISH_DATABASE = [
     explanation: 'Cấu trúc: <strong>be crazy about + V-ing</strong> (say mê), thì hiện tại đơn chủ ngữ số ít (Mary is..., she thinks...), và cụm <strong>good for...</strong> (tốt cho cái gì).'
   },
   {
-    id: 'en_67',
+    id: 'en_80',
     exKey: 'ex10',
     exTitle: 'Ex 10: Hoàn chỉnh câu',
     questionText: '2. Young people/ prefer/ message/ friends/ meet/ face-to-face.',
@@ -920,7 +1205,7 @@ window.ENGLISH_DATABASE = [
     explanation: 'Cấu trúc: <strong>prefer V-ing to V-ing</strong> (thích làm gì hơn làm gì). Chủ ngữ số nhiều "Young people" động từ giữ nguyên mẫu.'
   },
   {
-    id: 'en_68',
+    id: 'en_81',
     exKey: 'ex10',
     exTitle: 'Ex 10: Hoàn chỉnh câu',
     questionText: '3. She/ sing/ beautiful/ her sister.',
@@ -933,7 +1218,7 @@ window.ENGLISH_DATABASE = [
     explanation: 'Động từ thường "sings" bổ nghĩa bằng trạng từ ở dạng so sánh hơn: <strong>more beautifully than</strong>.'
   },
   {
-    id: 'en_69',
+    id: 'en_82',
     exKey: 'ex10',
     exTitle: 'Ex 10: Hoàn chỉnh câu',
     questionText: '4. Mai/ speak/ English/ good/ her friends.',
@@ -946,7 +1231,7 @@ window.ENGLISH_DATABASE = [
     explanation: 'Động từ thường "speaks", trạng từ bất quy tắc của "good" là "well", dạng so sánh hơn là <strong>better than</strong>.'
   },
   {
-    id: 'en_70',
+    id: 'en_83',
     exKey: 'ex10',
     exTitle: 'Ex 10: Hoàn chỉnh câu',
     questionText: '5. They/ help/ parents/ pick/ fruit/ orchard/ now.',

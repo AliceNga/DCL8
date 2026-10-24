@@ -24,13 +24,53 @@ window.SCIENCE_DATABASE = [
     exKey: 'sci_phy_mc',
     exTitle: 'KHTN 8 - Vật Lí (Trắc nghiệm)',
     questionText: 'Phần A - Câu 2. Để xác định khối lượng riêng viên sỏi cần dùng:',
+    visualComponent: `
+      <div class="my-3 p-3 bg-sky-50/70 border border-sky-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 320 130" class="w-80 h-32 max-w-full">
+          <!-- Bình 1: Nước ban đầu V1 = 50 ml -->
+          <g transform="translate(40, 10)">
+            <rect x="10" y="10" width="40" height="90" rx="4" fill="#f8fafc" stroke="#0284c7" stroke-width="1.5"/>
+            <rect x="11" y="55" width="38" height="44" fill="#bae6fd" opacity="0.8"/>
+            <!-- Vạch chia -->
+            <line x1="10" y1="35" x2="20" y2="35" stroke="#0284c7" stroke-width="1"/>
+            <text x="5" y="38" font-size="7" fill="#0369a1" text-anchor="end">80</text>
+            <line x1="10" y1="55" x2="25" y2="55" stroke="#0284c7" stroke-width="1.5"/>
+            <text x="5" y="58" font-size="8" font-weight="bold" fill="#0284c7" text-anchor="end">50</text>
+            <line x1="10" y1="75" x2="20" y2="75" stroke="#0284c7" stroke-width="1"/>
+            <text x="5" y="78" font-size="7" fill="#0369a1" text-anchor="end">20</text>
+            <text x="30" y="112" font-size="9" font-weight="bold" fill="#0369a1" text-anchor="middle">V₁ = 50 ml</text>
+          </g>
+
+          <text x="140" y="65" font-size="16" font-weight="bold" fill="#0284c7" text-anchor="middle">+</text>
+          <ellipse cx="140" cy="80" rx="9" ry="7" fill="#64748b" stroke="#334155" stroke-width="1"/>
+          <text x="140" y="98" font-size="8" font-weight="bold" fill="#475569" text-anchor="middle">Sỏi (m)</text>
+
+          <text x="175" y="65" font-size="16" font-weight="bold" fill="#0284c7" text-anchor="middle">→</text>
+
+          <!-- Bình 2: Nước dâng lên V2 = 70 ml -->
+          <g transform="translate(205, 10)">
+            <rect x="10" y="10" width="40" height="90" rx="4" fill="#f8fafc" stroke="#0284c7" stroke-width="1.5"/>
+            <rect x="11" y="40" width="38" height="59" fill="#7dd3fc" opacity="0.9"/>
+            <!-- Viên sỏi chìm ở đáy -->
+            <ellipse cx="30" cy="88" rx="10" ry="7" fill="#64748b" stroke="#334155" stroke-width="1.2"/>
+            <!-- Vạch chia -->
+            <line x1="10" y1="40" x2="25" y2="40" stroke="#0284c7" stroke-width="1.5"/>
+            <text x="5" y="43" font-size="8" font-weight="bold" fill="#0284c7" text-anchor="end">70</text>
+            <line x1="10" y1="55" x2="20" y2="55" stroke="#0284c7" stroke-width="1"/>
+            <line x1="10" y1="75" x2="20" y2="75" stroke="#0284c7" stroke-width="1"/>
+            <text x="30" y="112" font-size="9" font-weight="bold" fill="#0369a1" text-anchor="middle">V₂ = 70 ml</text>
+          </g>
+        </svg>
+        <span class="text-[11px] text-sky-900 font-bold mt-1">Cân đo khối lượng $m$ • Bình chia độ đo thể tích $V = V_2 - V_1 = 20\\text{ ml}$</span>
+      </div>
+    `,
     options: [
       { text: 'một cái cân.', isCorrect: false },
       { text: 'một cái cân và bình chia độ.', isCorrect: true },
       { text: 'bình chia độ.', isCorrect: false },
       { text: 'một cái thước và bình chia độ.', isCorrect: false }
     ],
-    explanation: 'Dùng cân để đo khối lượng m, dùng bình chia độ đo thể tích V (bằng lượng nước dâng lên), từ đó tính D = m/V.'
+    explanation: 'Dùng cân để đo khối lượng m, dùng bình chia độ đo thể tích V (bằng lượng nước dâng lên V = V₂ - V₁), từ đó tính D = m/V.'
   },
   {
     id: 'sci_mc_3',
@@ -531,6 +571,41 @@ window.SCIENCE_DATABASE = [
     exTitle: 'KHTN 8 - Sinh Học (Tự luận - Câu 4)',
     type: 'keypoint_checklist',
     questionText: 'Phần C - Câu 4. Bệnh nhân Nam nhóm máu B cần cấp cứu mất máu. Bác sĩ chỉ định truyền nhóm máu nào và giải thích cơ sở khoa học?',
+    visualComponent: `
+      <div class="my-3 p-4 bg-rose-50/70 border border-rose-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 340 180" class="w-80 h-44 max-w-full">
+          <!-- Nhóm O (ở trên) -->
+          <circle cx="170" cy="30" r="22" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+          <text x="170" y="36" font-size="14" font-weight="extrabold" fill="#b91c1c" text-anchor="middle">Nhóm O</text>
+
+          <!-- Nhóm A (bên trái) -->
+          <circle cx="50" cy="90" r="22" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+          <text x="50" y="96" font-size="14" font-weight="extrabold" fill="#b91c1c" text-anchor="middle">Nhóm A</text>
+
+          <!-- Nhóm B (bên phải - HIGHLIGHT) -->
+          <circle cx="290" cy="90" r="24" fill="#fecaca" stroke="#dc2626" stroke-width="3"/>
+          <text x="290" y="96" font-size="15" font-weight="black" fill="#991b1b" text-anchor="middle">Nhóm B</text>
+
+          <!-- Nhóm AB (ở dưới) -->
+          <circle cx="170" cy="150" r="22" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+          <text x="170" y="156" font-size="13" font-weight="extrabold" fill="#b91c1c" text-anchor="middle">Nhóm AB</text>
+
+          <!-- Mũi tên từ O đến A, B, AB -->
+          <line x1="150" y1="42" x2="72" y2="76" stroke="#ef4444" stroke-width="1.8"/>
+          <line x1="190" y1="42" x2="268" y2="76" stroke="#dc2626" stroke-width="2.5"/>
+          <line x1="170" y1="52" x2="170" y2="128" stroke="#ef4444" stroke-width="1.8"/>
+
+          <!-- Mũi tên từ A và B đến AB -->
+          <line x1="70" y1="104" x2="148" y2="138" stroke="#ef4444" stroke-width="1.8"/>
+          <line x1="270" y1="104" x2="192" y2="138" stroke="#ef4444" stroke-width="1.8"/>
+
+          <!-- Tự truyền (vòng tròn quay về chính nó) -->
+          <circle cx="290" cy="90" r="30" fill="none" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3,3"/>
+          <text x="290" y="132" font-size="9" font-weight="bold" fill="#b91c1c" text-anchor="middle">B truyền cho B (Ưu tiên)</text>
+        </svg>
+        <span class="text-[11px] text-rose-900 font-bold mt-1">Sơ đồ truyền máu: Nhóm B nhận máu B (ưu tiên) hoặc máu O (thay thế khẩn cấp)</span>
+      </div>
+    `,
     totalPoints: 2,
     keypoints: [
       { pointNum: 1, title: 'Ý 1: Chỉ định nhóm máu ưu tiên và thay thế', template: 'Ưu tiên truyền nhóm máu {k1}; trường hợp khẩn cấp có thể truyền thay thế lượng nhỏ nhóm máu {k2}.', slots: [{ id: 'k1', expected: 'cùng nhóm B', options: ['cùng nhóm B', 'nhóm AB', 'nhóm A'] }, { id: 'k2', expected: 'nhóm O', options: ['nhóm O', 'nhóm A', 'nhóm AB'] }] },

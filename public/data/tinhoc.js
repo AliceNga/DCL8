@@ -127,6 +127,55 @@ window.TIN_DATABASE = [
     exKey: 'tin_mc',
     exTitle: 'Tin học 8 (Trắc nghiệm)',
     questionText: 'Câu 10: Theo nguyên lý "chương trình được lưu trữ" thì cấu tạo của máy tính không có?',
+    visualComponent: `
+      <div class="my-3 p-3.5 bg-purple-50/70 rounded-2xl border border-purple-200 text-center">
+        <div class="text-[11px] font-bold text-purple-800 uppercase tracking-wider mb-2 flex items-center justify-center gap-1.5">
+          <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Sơ đồ kiến trúc máy tính Von Neumann (Chương trình được lưu trữ)
+        </div>
+        <div class="max-w-md mx-auto">
+          <svg viewBox="0 0 420 140" class="w-full h-auto drop-shadow-sm font-sans">
+            <!-- Thiết bị vào -->
+            <rect x="10" y="45" width="85" height="50" rx="8" fill="#F3E8FF" stroke="#9333EA" stroke-width="2" />
+            <text x="52" y="68" text-anchor="middle" font-size="11" font-weight="bold" fill="#6B21A8">THIẾT BỊ</text>
+            <text x="52" y="83" text-anchor="middle" font-size="11" font-weight="bold" fill="#6B21A8">VÀO</text>
+
+            <!-- Arrow Vào -> CPU -->
+            <path d="M 95 70 L 135 70" stroke="#7E22CE" stroke-width="2" marker-end="url(#arrow-purp)" fill="none" />
+
+            <!-- CPU & Memory Main Box -->
+            <rect x="140" y="15" width="145" height="110" rx="10" fill="#FAF5FF" stroke="#A855F7" stroke-width="2" stroke-dasharray="4 2" />
+            <text x="212" y="32" text-anchor="middle" font-size="10" font-weight="bold" fill="#7E22CE">MÁY TÍNH</text>
+
+            <!-- CPU -->
+            <rect x="150" y="40" width="125" height="35" rx="6" fill="#EDE9FE" stroke="#6D28D9" stroke-width="1.5" />
+            <text x="212" y="62" text-anchor="middle" font-size="11" font-weight="bold" fill="#5B21B6">BỘ XỬ LÝ (CPU)</text>
+
+            <!-- Bộ nhớ -->
+            <rect x="150" y="82" width="125" height="35" rx="6" fill="#EDE9FE" stroke="#6D28D9" stroke-width="1.5" />
+            <text x="212" y="104" text-anchor="middle" font-size="11" font-weight="bold" fill="#5B21B6">BỘ NHỚ</text>
+
+            <!-- Arrow CPU <-> Bộ nhớ -->
+            <path d="M 212 75 L 212 82" stroke="#6D28D9" stroke-width="2" />
+
+            <!-- Arrow CPU -> Ra -->
+            <path d="M 285 70 L 325 70" stroke="#7E22CE" stroke-width="2" marker-end="url(#arrow-purp)" fill="none" />
+
+            <!-- Thiết bị ra -->
+            <rect x="325" y="45" width="85" height="50" rx="8" fill="#F3E8FF" stroke="#9333EA" stroke-width="2" />
+            <text x="367" y="68" text-anchor="middle" font-size="11" font-weight="bold" fill="#6B21A8">THIẾT BỊ</text>
+            <text x="367" y="83" text-anchor="middle" font-size="11" font-weight="bold" fill="#6B21A8">RA</text>
+
+            <!-- Defs -->
+            <defs>
+              <marker id="arrow-purp" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                <path d="M0,0 L0,6 L6,3 z" fill="#7E22CE"/>
+              </marker>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    `,
     options: [
       { text: 'Thiết bị ra.', isCorrect: false },
       { text: 'Bộ xử lý.', isCorrect: false },

@@ -23,6 +23,25 @@ window.MATH_DATABASE = [
     exKey: 'math_de1',
     exTitle: 'Toán 8 - Đề 1 (Bài II: Toán thực tế hồ bơi)',
     questionText: 'Đề 1 - Bài II: Khuôn viên hình chữ nhật dài (x + 4)m, rộng (y + 2)m. Ở giữa có hồ bơi dài x(m), rộng y(m). Đất còn lại trồng cỏ giá 150 000 đồng/m².<br>Biểu thức diện tích trồng cỏ A và chi phí khi x = 12, y = 8 là:',
+    visualComponent: `
+      <div class="my-3 p-3 bg-teal-50/70 border border-teal-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 320 150" class="w-80 h-36 max-w-full">
+          <!-- Khuôn viên ngoài (x+4) x (y+2) -->
+          <rect x="20" y="15" width="280" height="110" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+          <text x="160" y="30" font-size="10" font-weight="bold" fill="#15803d" text-anchor="middle">Đất trồng cỏ bao quanh: A = 2x + 4y + 8 (m²)</text>
+          
+          <!-- Kích thước ngoài -->
+          <text x="160" y="10" font-size="9" font-weight="bold" fill="#15803d" text-anchor="middle">Chiều dài: x + 4 (m)</text>
+          <text x="10" y="70" font-size="9" font-weight="bold" fill="#15803d" text-anchor="middle" transform="rotate(-90, 10, 70)">Rộng: y + 2</text>
+
+          <!-- Hồ bơi x * y ở giữa -->
+          <rect x="70" y="45" width="180" height="60" rx="6" fill="#38bdf8" stroke="#0284c7" stroke-width="1.8"/>
+          <text x="160" y="75" font-size="12" font-weight="extrabold" fill="#ffffff" text-anchor="middle">HỒ BƠI (x × y)</text>
+          <text x="160" y="90" font-size="8.5" font-weight="bold" fill="#0369a1" text-anchor="middle">Dài x, Rộng y</text>
+        </svg>
+        <span class="text-[11px] text-teal-900 font-bold mt-1">S_cỏ = S_khuôn_viên - S_hồ_bơi = (x+4)(y+2) - xy = 2x + 4y + 8</span>
+      </div>
+    `,
     options: [
       { text: 'A = 2x + 4y + 8 (m²);  Chi phí = 9 600 000 đồng', isCorrect: true },
       { text: 'A = 4x + 2y + 8 (m²);  Chi phí = 8 400 000 đồng', isCorrect: false },
@@ -50,6 +69,34 @@ window.MATH_DATABASE = [
     exTitle: 'Toán 8 - Đề 1 (Bài IV: Hình học tam giác cân)',
     type: 'keypoint_checklist',
     questionText: 'Đề 1 - Bài IV: Tam giác ABC cân tại A, N là trung điểm AC, MN // BC cắt AB tại M. Trên tia đối tia NM lấy E sao cho NM = NE. Chứng minh tứ giác BMNC là hình thang cân và AECM là hình bình hành.',
+    visualComponent: `
+      <div class="my-3 p-4 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 340 180" class="w-80 h-44 max-w-full">
+          <!-- Tam giác ABC -->
+          <!-- A=(130, 20), B=(40, 150), C=(220, 150) -->
+          <polygon points="130,20 40,150 220,150" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          
+          <!-- M=(85, 85), N=(175, 85) -->
+          <line x1="85" y1="85" x2="175" y2="85" stroke="#2563eb" stroke-width="2"/>
+          
+          <!-- E trên tia đối NM sao cho NE = NM (khoảng cách 90) => E=(265, 85) -->
+          <line x1="175" y1="85" x2="265" y2="85" stroke="#dc2626" stroke-width="2" stroke-dasharray="3,3"/>
+          <line x1="130" y1="20" x2="265" y2="85" stroke="#dc2626" stroke-width="1.5"/>
+          <line x1="220" y1="150" x2="265" y2="85" stroke="#dc2626" stroke-width="1.5"/>
+          <line x1="85" y1="85" x2="220" y2="150" stroke="#059669" stroke-width="1.2" stroke-dasharray="2,2"/>
+          <line x1="130" y1="20" x2="220" y2="150" stroke="#059669" stroke-width="1.2" stroke-dasharray="2,2"/>
+
+          <!-- Điểm đỉnh -->
+          <circle cx="130" cy="20" r="3.5" fill="#0f172a"/><text x="130" y="14" font-size="10" font-weight="extrabold" fill="#0f172a" text-anchor="middle">A</text>
+          <circle cx="40" cy="150" r="3.5" fill="#0f172a"/><text x="30" y="160" font-size="10" font-weight="extrabold" fill="#0f172a">B</text>
+          <circle cx="220" cy="150" r="3.5" fill="#0f172a"/><text x="230" y="160" font-size="10" font-weight="extrabold" fill="#0f172a">C</text>
+          <circle cx="85" cy="85" r="3.5" fill="#2563eb"/><text x="73" y="88" font-size="10" font-weight="extrabold" fill="#2563eb">M</text>
+          <circle cx="175" cy="85" r="3.5" fill="#2563eb"/><text x="178" y="78" font-size="10" font-weight="extrabold" fill="#2563eb">N</text>
+          <circle cx="265" cy="85" r="3.5" fill="#dc2626"/><text x="272" y="88" font-size="10" font-weight="extrabold" fill="#dc2626">E</text>
+        </svg>
+        <span class="text-[11px] text-slate-700 font-bold mt-1">BMNC là hình thang cân (MN // BC, góc B = góc C) • AECM có 2 đường chéo cắt nhau tại N</span>
+      </div>
+    `,
     totalPoints: 2,
     keypoints: [
       { pointNum: 1, title: 'Ý 1: Chứng minh BMNC là hình thang cân', template: 'Tứ giác BMNC có MN // BC nên là hình thang; lại có góc B = góc C (do tam giác ABC cân tại A) nên BMNC là {k1}.', slots: [{ id: 'k1', expected: 'hình thang cân', options: ['hình thang cân', 'hình bình hành', 'hình chữ nhật'] }] },

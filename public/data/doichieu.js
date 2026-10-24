@@ -567,61 +567,160 @@ window.COMPARISON_MASTER_DATA = [
   },
 
   // =======================================================================
-  // 4. LỊCH SỬ 8 (4 CÂU LỚN - 11 LUẬN ĐIỂM CHUẨN ĐỀ CƯƠNG)
+  // 4. LỊCH SỬ 8 (CHUẨN ĐỀ CƯƠNG & ĐÁP ÁN CÔ GIÁO VERIFY - FILE 8 TRANG)
   // =======================================================================
   {
     id: 'comp_his_1a', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
     qCode: 'Lịch Sử - Câu 1a', type: 'essay', typeLabel: 'Tự luận bảng',
-    questionSummary: 'Cách mạng tư sản Anh (thế kỉ XVII): nguyên nhân, kết quả, ý nghĩa, tính chất, đặc điểm.',
-    appAnswer: 'Mâu thuẫn Sác-lơ I kìm hãm CNTB; thiết lập quân chủ lập hiến 1689; cách mạng không triệt để; liên minh tư sản & quý tộc mới.',
-    pdfAnswer: 'Bảng hệ thống CMTS Anh: Lật đổ phong kiến, xác lập quân chủ lập hiến, tính chất không triệt để.',
-    status: 'match', statusLabel: 'Khớp 100% chuẩn',
-    notes: 'Trang 21 PDF: Câu 1 - Bảng so sánh CMTS Anh.'
+    questionSummary: 'Cách mạng tư sản Anh (thế kỉ XVII): nguyên nhân, lãnh đạo, hình thức, kết quả, ý nghĩa, tính chất.',
+    appAnswer: 'Nguyên nhân: Phong kiến cản trở tư sản, quý tộc mới tự do kinh doanh; Lãnh đạo: Tư sản, quý tộc mới (Crôm-oen); Hình thức: Nội chiến; Kết quả: 1688 xác lập Quân chủ lập hiến; Ý nghĩa: Mở đường CNTB; Tính chất: Không triệt để.',
+    pdfAnswer: 'Chuẩn cô giáo verify: Phong kiến cản trở sản xuất kinh doanh -> Lãnh đạo: Crôm-oen -> Hình thức: Nội chiến -> Thiết lập chế độ: Quân chủ lập hiến (1688) -> Tính chất: CMTS không triệt để.',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 1-2 PDF: Học trọng tâm các ý gạch chân.'
   },
   {
     id: 'comp_his_1b', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
     qCode: 'Lịch Sử - Câu 1b', type: 'essay', typeLabel: 'Tự luận bảng',
     questionSummary: 'Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ (thế kỉ XVIII).',
-    appAnswer: 'Ách thống trị thực dân Anh; Hợp chúng quốc Mỹ ra đời; giải phóng dân tộc kết hợp cách mạng tư sản; G.Washington lãnh đạo.',
-    pdfAnswer: 'Bảng hệ thống Chiến tranh giành độc lập 13 thuộc địa Bắc Mỹ: Tuyên ngôn Độc lập 1776, Hợp chúng quốc Mỹ.',
-    status: 'match', statusLabel: 'Khớp 100% chuẩn',
-    notes: 'Trang 21 PDF: Câu 1 - Bảng so sánh Bắc Mỹ.'
+    appAnswer: 'Nguyên nhân: Thực dân Anh cản trở kinh tế tư bản 13 thuộc địa; Lãnh đạo: G. Oa-sinh-tơn (chủ nô & tư sản); Hình thức: Chiến tranh giành độc lập; Thiết lập: Cộng hòa tổng thống; Kết quả: Khai sinh Hợp chúng quốc Hoa Kì (1776 Tuyên ngôn Độc lập, 1783 thắng lợi); Tính chất: Mang tính chất CMTS.',
+    pdfAnswer: 'Chuẩn cô giáo verify: Thực dân Anh cản trở kinh tế TBCN -> Lãnh đạo: G. Oa-sinh-tơn -> Chiến tranh giành độc lập -> Thiết lập: Cộng hòa tổng thống -> Khai sinh Hợp chúng quốc Hoa Kì -> Tính chất: Mang tính chất CMTS.',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 1-2 PDF: Khớp 100% các ý gạch chân chuẩn cô giáo.'
   },
   {
     id: 'comp_his_1c', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
     qCode: 'Lịch Sử - Câu 1c', type: 'essay', typeLabel: 'Tự luận bảng',
     questionSummary: 'Cách mạng tư sản Pháp (cuối thế kỉ XVIII).',
-    appAnswer: 'Ba đẳng cấp mâu thuẫn; lật đổ phong kiến thiết lập cộng hòa; cách mạng tư sản triệt để nhất thời cận đại.',
-    pdfAnswer: 'Bảng hệ thống CMTS Pháp: Lật đổ chế độ phong kiến chuyên chế, xóa bỏ tàn dư phong kiến, tính chất triệt để nhất.',
-    status: 'match', statusLabel: 'Khớp 100% chuẩn',
-    notes: 'Trang 21-22 PDF: Câu 1 - Bảng so sánh Pháp.'
+    appAnswer: 'Nguyên nhân: Phong kiến Pháp cản trở tư sản tự do kinh doanh sản xuất; Lãnh đạo: Giai cấp tư sản; Hình thức: Đấu tranh giai cấp; Thiết lập: Chế độ cộng hòa; Kết quả: Lật đổ phong kiến, thiết lập cộng hòa; Ý nghĩa: Mở đường CNTB; Tính chất: CMTS triệt để, điển hình nhất; "cái chổi quét sạch phong kiến".',
+    pdfAnswer: 'Chuẩn cô giáo verify: Lật đổ phong kiến chuyên chế, thiết lập chế độ cộng hòa; Tính chất: Cách mạng dân chủ tư sản triệt để, điển hình nhất; cái chổi quét sạch phong kiến.',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 1-2 PDF: Học trọng tâm các ý gạch chân.'
   },
   {
     id: 'comp_his_2', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
     qCode: 'Lịch Sử - Câu 2', type: 'essay', typeLabel: 'Tự luận',
-    questionSummary: 'Thành tựu tiêu biểu của Cách mạng công nghiệp ở Anh và tác động kinh tế - xã hội.',
-    appAnswer: 'Máy kéo sợi Jenny, máy hơi nước James Watt, đầu máy xe lửa Stephenson. Kinh tế: Anh thành công xưởng thế giới; Xã hội: hình thành 2 giai cấp tư sản và vô sản.',
-    pdfAnswer: 'Nêu các phát minh cơ khí tiêu biểu + Phân tích tác động to lớn đến năng suất và sự biến chuyển cơ cấu xã hội.',
-    status: 'match', statusLabel: 'Khớp 100% chuẩn',
-    notes: 'Trang 22 PDF: Khớp 100% 4 luận điểm.'
+    questionSummary: 'Thành tựu tiêu biểu của Cách mạng công nghiệp ở Anh và tác động chuyển đổi nền văn minh nhân loại.',
+    appAnswer: '1764 Giêm Ha-gri-vơ máy kéo sợi Gien-ni; Ác-rai máy kéo sợi sức nước; 1784 Giêm Oát máy hơi nước; Các-rai máy dệt; 1814 Xti-phen-xơn đầu máy xe lửa. Anh là nước khởi đầu CMCN -> "công xưởng thế giới". Chuyển từ văn minh nông nghiệp sang văn minh công nghiệp.',
+    pdfAnswer: 'Chuẩn cô giáo verify: Đầy đủ 5 phát minh (Gien-ni, Ác-rai, Giêm Oát, Các-rai, Xti-phen-xơn); Anh = "công xưởng thế giới"; chuyển loài người từ văn minh nông nghiệp sang văn minh công nghiệp.',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 3 PDF: Trọng tâm trắc nghiệm và tự luận.'
   },
   {
-    id: 'comp_his_3', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
-    qCode: 'Lịch Sử - Câu 3', type: 'essay', typeLabel: 'Tự luận',
-    questionSummary: 'Quá trình thực dân phương Tây xâm lược và thống trị Đông Nam Á; chính sách cai trị và phản biện luận điệu "khai hóa".',
-    appAnswer: 'Chính trị: chia để trị; Kinh tế: vơ vét tài nguyên độc quyền; Văn hóa: ngu dân; Phản biện: bản chất là xâm lược bóc lột, không phải khai hóa văn minh.',
-    pdfAnswer: 'Quá trình xâm chiếm + Chính sách bóc lột thực dân + Phản biện sắc bén luận điệu ngụy biện "khai hóa".',
-    status: 'match', statusLabel: 'Khớp 100% chuẩn',
-    notes: 'Trang 22-23 PDF: Khớp toàn bộ luận điểm tự luận.'
+    id: 'comp_his_3a', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
+    qCode: 'Lịch Sử - Câu 3a', type: 'essay', typeLabel: 'Tự luận',
+    questionSummary: 'Tình hình chính trị, kinh tế, văn hóa - xã hội Đông Nam Á dưới ách đô hộ của thực dân phương Tây.',
+    appAnswer: 'Chính trị: tước đoạt độc lập, chia để trị; Kinh tế: cướp ruộng đất lập đồn điền, vơ vét tài nguyên, độc chiếm thị trường; Văn hóa - Xã hội: thi hành chính sách ngu dân, bần cùng hóa nhân dân.',
+    pdfAnswer: 'Chuẩn cô giáo verify: Phân tích 3 mặt Chính trị (chia để trị), Kinh tế (độc chiếm thị trường), Văn hóa - Xã hội (chính sách ngu dân).',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 4 PDF: Khớp 100% chuẩn.'
   },
   {
-    id: 'comp_his_4', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
-    qCode: 'Lịch Sử - Câu 4', type: 'essay', typeLabel: 'Tự luận',
-    questionSummary: 'Xung đột Nam - Bắc triều và Trịnh - Nguyễn: nguyên nhân, diễn biến và hệ quả chia cắt đất nước.',
-    appAnswer: 'Nguyên nhân tranh giành quyền lực phong kiến; Chiến tranh Nam Bắc triều (Mạc - Lê) và Trịnh - Nguyễn; Hệ quả chia cắt Đàng Trong - Đàng Ngoài (sông Gianh), kìm hãm phát triển.',
-    pdfAnswer: 'Phân tích nguyên nhân sâu xa + Diễn biến cuộc nội chiến dai dẳng + Hệ quả chia cắt đất nước hàng thế kỉ.',
-    status: 'match', statusLabel: 'Khớp 100% chuẩn',
-    notes: 'Trang 23 PDF: Lịch sử Câu 4 - Khớp 100% chuẩn.'
+    id: 'comp_his_3b', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
+    qCode: 'Lịch Sử - Câu 3b', type: 'essay', typeLabel: 'Tự luận',
+    questionSummary: 'Nhận xét về chính sách đô hộ của thực dân phương Tây đối với các nước Đông Nam Á.',
+    appAnswer: 'Chính sách rất thâm độc, toàn diện trên các mặt (chính trị, kinh tế, văn hóa - giáo dục); phục vụ tối đa quyền lợi chính quốc, bóc lột sức người của cải; làm kinh tế què quặt lạc hậu, nhân dân khốn cùng -> bùng nổ các phong trào đấu tranh giành độc lập.',
+    pdfAnswer: 'Chuẩn cô giáo verify: Thâm độc, toàn diện (chính trị, kinh tế, văn hóa - giáo dục); phục vụ lợi ích chính quốc, bóc lột sức người, vơ vét của cải; mâu thuẫn dân tộc sâu sắc -> bùng nổ đấu tranh.',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 4 PDF: Bài làm tự luận mẫu của cô giáo.'
+  },
+  {
+    id: 'comp_his_3c', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
+    qCode: 'Lịch Sử - Câu 3c', type: 'essay', typeLabel: 'Tự luận',
+    questionSummary: 'Phản biện ý kiến: "Các nước tư bản phương Tây đến Đông Nam Á là để giúp đỡ những nước này thoát khỏi nghèo nàn, lạc hậu".',
+    appAnswer: 'Hoàn toàn không đồng ý. Luận điệu ngụy biện dối trá. Mục đích thực sự: vơ vét tài nguyên, bóc lột nhân công rẻ mạt, độc chiếm thị trường tiêu thụ. Thi hành chính sách "ngu dân", đầu độc thuốc phiện, cổ súy hủ tục để làm suy yếu nòi giống.',
+    pdfAnswer: 'Chuẩn cô giáo verify: Hoàn toàn không đồng ý; mục đích vơ vét tài nguyên, bóc lột lao động, độc quyền thị trường; chính sách ngu dân, thuốc phiện làm suy yếu nòi giống.',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 5 PDF: Phản biện sắc bén theo lời dạy cô giáo.'
+  },
+  {
+    id: 'comp_his_4a', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
+    qCode: 'Lịch Sử - Câu 4a', type: 'essay', typeLabel: 'Tự luận',
+    questionSummary: 'Nguyên nhân, diễn biến và hệ quả của cuộc xung đột Nam – Bắc triều (thế kỉ XVI).',
+    appAnswer: 'Nguyên nhân: 1527 Mạc Đăng Dung cướp ngôi lập Bắc triều (nhà Mạc); 1533 Nguyễn Kim "phù Lê diệt Mạc" lập Nam triều. Diễn biến: Kéo dài 60 năm (1533 - 1592); 1592 Nam triều chiếm Thăng Long, Mạc chạy lên Cao Bằng. Hệ quả: Đất nước chia cắt, Thanh - Nghệ & đồng bằng Bắc Bộ là chiến trường; kinh tế tàn phá đình trệ, ruộng hoang; nhân dân bần cùng đói rét ly tán.',
+    pdfAnswer: 'Chuẩn cô giáo verify: Mạc Đăng Dung 1527, Nguyễn Kim 1533; kéo dài 60 năm (1533 - 1592); Nam triều chiếm Thăng Long 1592, họ Mạc rút lên Cao Bằng; hậu quả chia cắt và tàn phá nặng nề.',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 6 PDF: Khớp chuẩn từng mốc niên đại.'
+  },
+  {
+    id: 'comp_his_4b', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
+    qCode: 'Lịch Sử - Câu 4b', type: 'essay', typeLabel: 'Tự luận',
+    questionSummary: 'Nguyên nhân, diễn biến và hệ quả của cuộc xung đột Trịnh – Nguyễn (thế kỉ XVII).',
+    appAnswer: 'Nguyên nhân: 1545 Nguyễn Kim chết, Trịnh Kiểm nắm binh quyền; 1558 Nguyễn Hoàng vào trấn thủ Thuận Hóa; Nguyễn Phúc Nguyên cắt đứt quan hệ. Diễn biến: 1627 bùng nổ, kéo dài gần nửa thế kỉ (1627 - 1672) với 7 lần đại chiến; lấy sông Gianh và Luỹ Thầy (Quảng Bình) làm ranh giới. Hệ quả: Chia cắt hơn 100 năm (hơn 1 thế kỉ), kinh tế suy kiệt; mặt tích cực: chúa Nguyễn di dân mở rộng lãnh thổ về phía Nam.',
+    pdfAnswer: 'Chuẩn cô giáo verify: Trịnh Kiểm 1545, Nguyễn Hoàng 1558; bùng nổ 1627 (7 lần đại chiến kéo dài gần nửa thế kỉ); ranh giới: sông Gianh và Luỹ Thầy Quảng Bình; chia cắt hơn 1 thế kỉ; mở rộng lãnh thổ phía Nam.',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 7 PDF: Khớp 100% chuẩn.'
+  },
+  {
+    id: 'comp_his_mc1', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
+    qCode: 'Lịch Sử - Trắc nghiệm 1', type: 'mc', typeLabel: 'Trắc nghiệm',
+    questionSummary: 'Đâu không phải là đặc điểm của cuộc chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ?',
+    appAnswer: 'D. Thiết lập chế độ quân chủ lập hiến.',
+    pdfAnswer: 'D (Thiết lập chế độ quân chủ lập hiến - vì Bắc Mỹ thiết lập cộng hòa tổng thống)',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 8 PDF: Câu 1 trắc nghiệm ôn tập cô chữa.'
+  },
+  {
+    id: 'comp_his_mc2', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
+    qCode: 'Lịch Sử - Trắc nghiệm 2', type: 'mc', typeLabel: 'Trắc nghiệm',
+    questionSummary: 'Giai cấp lãnh đạo cuộc Cách mạng tư sản Pháp cuối thế kỉ XVIII là:',
+    appAnswer: 'A. Giai cấp tư sản.',
+    pdfAnswer: 'A (Giai cấp tư sản)',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 8 PDF: Câu 2 trắc nghiệm cô chữa.'
+  },
+  {
+    id: 'comp_his_mc3', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
+    qCode: 'Lịch Sử - Trắc nghiệm 3', type: 'mc', typeLabel: 'Trắc nghiệm',
+    questionSummary: 'Cuộc cách mạng tư sản nào được ví như "cái chổi khổng lồ quét sạch rác rưởi phong kiến"?',
+    appAnswer: 'C. Cách mạng tư sản Pháp.',
+    pdfAnswer: 'C (Cách mạng tư sản Pháp)',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 8 PDF: Câu 3 trắc nghiệm cô chữa.'
+  },
+  {
+    id: 'comp_his_mc4', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
+    qCode: 'Lịch Sử - Trắc nghiệm 4', type: 'mc', typeLabel: 'Trắc nghiệm',
+    questionSummary: 'Năm 1764, Giêm Ha-gri-vơ đã phát minh ra cỗ máy nào?',
+    appAnswer: 'B. Máy kéo sợi Gien-ni.',
+    pdfAnswer: 'B (Máy kéo sợi Gien-ni)',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 8 PDF: Câu 4 trắc nghiệm cô chữa.'
+  },
+  {
+    id: 'comp_his_mc5', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
+    qCode: 'Lịch Sử - Trắc nghiệm 5', type: 'mc', typeLabel: 'Trắc nghiệm',
+    questionSummary: 'Ai là người chế tạo thành công máy hơi nước năm 1784 làm động lực cho các nhà máy?',
+    appAnswer: 'A. Giêm Oát (James Watt).',
+    pdfAnswer: 'A (Giêm Oát / James Watt)',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 3 & 8 PDF: Phát minh bản lề thời đại.'
+  },
+  {
+    id: 'comp_his_mc6', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
+    qCode: 'Lịch Sử - Trắc nghiệm 6', type: 'mc', typeLabel: 'Trắc nghiệm',
+    questionSummary: 'Tính chất của cuộc Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ là:',
+    appAnswer: 'C. Mang tính chất một cuộc cách mạng tư sản.',
+    pdfAnswer: 'C (Mang tính chất một cuộc cách mạng tư sản)',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 8 PDF: Câu 6 trắc nghiệm cô chữa.'
+  },
+  {
+    id: 'comp_his_mc7', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
+    qCode: 'Lịch Sử - Trắc nghiệm 7', type: 'mc', typeLabel: 'Trắc nghiệm',
+    questionSummary: 'Văn kiện lịch sử công bố ngày 4-7-1776 khai sinh ra Hợp chúng quốc Hoa Kỳ là:',
+    appAnswer: 'B. Tuyên ngôn Độc lập.',
+    pdfAnswer: 'B (Tuyên ngôn Độc lập)',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 8 PDF: Câu 7 trắc nghiệm cô chữa.'
+  },
+  {
+    id: 'comp_his_mc8', subj: 'his', subjTitle: 'Lịch Sử 8', badgeColor: 'amber',
+    qCode: 'Lịch Sử - Trắc nghiệm 8', type: 'mc', typeLabel: 'Trắc nghiệm',
+    questionSummary: 'Nước khởi đầu cuộc Cách mạng công nghiệp thế kỉ XVIII - XIX là:',
+    appAnswer: 'C. Nước Anh (được mệnh danh là "công xưởng thế giới").',
+    pdfAnswer: 'C (Nước Anh - công xưởng thế giới)',
+    status: 'updated', statusLabel: 'Đáp án cô giáo verify',
+    notes: '[Đáp án cô giáo verify] Trang 3 PDF: Nhận định kinh điển của cô giáo.'
   },
 
   // =======================================================================
@@ -971,7 +1070,7 @@ window.COMPARISON_MASTER_DATA = [
   },
 
   // =======================================================================
-  // 6. TIẾNG ANH 8 (70 CÂU = 55 TRẮC NGHIỆM + 15 TỰ LUẬN)
+  // 6. TIẾNG ANH 8 (83 CÂU = 68 TRẮC NGHIỆM + 15 TỰ LUẬN)
   // =======================================================================
   {
     id: 'comp_en_ex1', subj: 'en', subjTitle: 'Tiếng Anh 8', badgeColor: 'indigo',
@@ -1003,56 +1102,65 @@ window.COMPARISON_MASTER_DATA = [
   {
     id: 'comp_en_ex4', subj: 'en', subjTitle: 'Tiếng Anh 8', badgeColor: 'indigo',
     qCode: 'Tiếng Anh - Ex 4 (1-10)', type: 'mc', typeLabel: 'Đọc điền từ (10 câu)',
-    questionSummary: 'Cloze test 2 đoạn văn: Đoạn 1 Teen stress (5 câu) và Đoạn 2 Nomadic life in Mongolia (5 câu).',
-    appAnswer: 'Đoạn 1: 1.D, 2.B, 3.A, 4.C, 5.D | Đoạn 2: 1.B, 2.D, 3.A, 4.A, 5.C',
+    questionSummary: 'Cloze test 2 đoạn văn: Đoạn 1 Cuộc sống thành thị và nông thôn (5 câu) và Đoạn 2 Hoạt động giải trí của người Anh (5 câu).',
+    appAnswer: 'Đoạn 1: 1.D (disadvantages), 2.B (peace), 3.A (to take), 4.C (but), 5.D (little) | Đoạn 2: 1.B (in), 2.D (the most), 3.A (record), 4.A (spend), 5.C (pets)',
     pdfAnswer: 'Đoạn 1: 1: D, 2: B, 3: A, 4: C, 5: D | Đoạn 2: 1: B, 2: D, 3: A, 4: A, 5: C',
     status: 'match', statusLabel: 'Khớp 100% chuẩn',
     notes: 'Trang 37-39 PDF: Khớp 100% đáp án bài đọc đục lỗ.'
   },
   {
     id: 'comp_en_ex5', subj: 'en', subjTitle: 'Tiếng Anh 8', badgeColor: 'indigo',
-    qCode: 'Tiếng Anh - Ex 5 (1-5)', type: 'mc', typeLabel: 'Đọc hiểu 1 (5 câu)',
-    questionSummary: 'Reading comprehension đoạn văn 1 về lối sống và sức khỏe thanh thiếu niên.',
-    appAnswer: '1.A, 2.B, 3.C, 4.B, 5.D',
+    qCode: 'Tiếng Anh - Ex 5 (1-5)', type: 'mc', typeLabel: 'Đọc hiểu văn bản (5 câu)',
+    questionSummary: 'Reading comprehension về thiên nhiên và cuộc sống miền thôn quê nước Anh (Britain countryside).',
+    appAnswer: '1.A (farmland), 2.B (most farmland in Britain), 3.C (peace and relaxation), 4.B (travel a long distance to get to work), 5.D (Those who dream of living in the countryside)',
     pdfAnswer: '1: A, 2: B, 3: C, 4: B, 5: D',
     status: 'match', statusLabel: 'Khớp 100% chuẩn',
     notes: 'Trang 39-40 PDF: Khớp 100% câu hỏi đọc hiểu 1.'
   },
   {
     id: 'comp_en_ex6', subj: 'en', subjTitle: 'Tiếng Anh 8', badgeColor: 'indigo',
-    qCode: 'Tiếng Anh - Ex 6 (1-5)', type: 'mc', typeLabel: 'Đọc hiểu 2 (5 câu)',
-    questionSummary: 'Reading comprehension đoạn văn 2 về văn hóa làng quê truyền thống.',
-    appAnswer: '1.C, 2.B, 3.A, 4.D, 5.B',
+    qCode: 'Tiếng Anh - Ex 6 (1-5)', type: 'mc', typeLabel: 'Biển báo & Thông báo (5 câu có ảnh)',
+    questionSummary: '5 câu hỏi phân tích thông báo/biển báo kèm hình ảnh: 1.Email Adam, 2.Biển NO! Pushing, 3.Bảng Ring Bell, 4.Thông báo New Students, 5.Biển cấm bóp còi.',
+    appAnswer: '1.C (On Tuesday, Adam has a geography exam), 2.B (You must not push other people), 3.A (You have to ring the bell to ask for help), 4.D (Collect their coursebooks from Reception), 5.B (You must not sound your horn here)',
     pdfAnswer: '1: C, 2: B, 3: A, 4: D, 5: B',
     status: 'match', statusLabel: 'Khớp 100% chuẩn',
-    notes: 'Trang 41-42 PDF: Khớp 100% câu hỏi đọc hiểu 2.'
+    notes: 'Trang 41-42 PDF: Đã cắt ảnh crop chuẩn HD từng biển báo và nhúng trực tiếp vào giao diện làm bài.'
   },
   {
     id: 'comp_en_ex7', subj: 'en', subjTitle: 'Tiếng Anh 8', badgeColor: 'indigo',
-    qCode: 'Tiếng Anh - Ex 7 (1-4)', type: 'mc', typeLabel: 'Biển báo (4 câu)',
-    questionSummary: 'Đọc hiểu thông báo ngắn và biển báo chỉ dẫn công cộng.',
-    appAnswer: '1.B, 2.D, 3.C, 4.A',
-    pdfAnswer: '1: B, 2: D, 3: C, 4: A',
+    qCode: 'Tiếng Anh - Ex 7 (1-4)', type: 'mc', typeLabel: 'Điền câu vào đoạn văn (4 câu)',
+    questionSummary: 'Điền 4 cụm từ/câu vào 4 vị trí trống (1)-(4) của bài văn về cuộc sống miền thôn quê.',
+    appAnswer: '(1) B (it is easier to find fresh, locally-grown food), (2) D (While the countryside offers many benefits), (3) C (Another difficulty is transportation), (4) A (Despite these drawbacks)',
+    pdfAnswer: '(1): B, (2): D, (3): C, (4): A',
     status: 'match', statusLabel: 'Khớp 100% chuẩn',
-    notes: 'Trang 42 PDF: Khớp 100% biển báo giao thông & thông báo.'
+    notes: 'Trang 42-43 PDF: Khớp 100% ngữ cảnh logic và ngữ pháp của bài điền câu.'
   },
   {
     id: 'comp_en_ex8', subj: 'en', subjTitle: 'Tiếng Anh 8', badgeColor: 'indigo',
-    qCode: 'Tiếng Anh - Ex 8 (1-4)', type: 'mc', typeLabel: 'Sắp xếp đối thoại (4 câu)',
-    questionSummary: 'Sắp xếp trật tự các câu thoại hợp lí tạo thành đoạn hội thoại hoàn chỉnh.',
-    appAnswer: '1a.A (b-c-a), 1b.A, 2a.B (c-a-b), 2b.C',
-    pdfAnswer: '1a: A (b-c-a), 1b: A, 2a: B (c-a-b), 2b: C',
+    qCode: 'Tiếng Anh - Ex 8 (1-4)', type: 'mc', typeLabel: 'Sắp xếp đoạn văn logic (4 câu)',
+    questionSummary: 'Sắp xếp câu và chọn câu kết đoạn: 1a. Thư giãn cuối tuần (b-c-a), 1b. Kết đoạn 1, 2a. Triển lãm nghệ thuật (c-a-b), 2b. Kết đoạn 2.',
+    appAnswer: '1a.A (b – c – a), 1b.A (By the time the weekend is over...), 2a.B (c – a – b), 2b.C (We all enjoyed seeing the artworks...)',
+    pdfAnswer: '1a: A, 1b: A, 2a: B, 2b: C',
     status: 'match', statusLabel: 'Khớp 100% chuẩn',
-    notes: 'Trang 43 PDF: Khớp 100% hội thoại mẫu.'
+    notes: 'Trang 43 PDF: Khớp 100% chuỗi câu và câu kết hợp lí.'
   },
   {
-    id: 'comp_en_ex9_10', subj: 'en', subjTitle: 'Tiếng Anh 8', badgeColor: 'indigo',
-    qCode: 'Tiếng Anh - Ex 9 & 10', type: 'essay', typeLabel: 'Viết lại câu (15 câu)',
-    questionSummary: '15 câu viết lại câu không đổi nghĩa và đặt câu: so sánh hơn của trạng từ, prefer V-ing to V-ing, because -> because of...',
-    appAnswer: 'Đầy đủ 15 câu viết lại chuẩn ngữ pháp kèm lời giải thích cấu trúc.',
-    pdfAnswer: 'Đáp án chi tiết 15 câu tự luận viết lại trong đề cương.',
+    id: 'comp_en_ex9', subj: 'en', subjTitle: 'Tiếng Anh 8', badgeColor: 'indigo',
+    qCode: 'Tiếng Anh - Ex 9 (1-10)', type: 'essay', typeLabel: 'Viết lại câu (10 câu)',
+    questionSummary: '10 câu viết lại không đổi nghĩa dùng từ gợi ý: adore, well, more, of, than, better, adore, prefers, cycle, so.',
+    appAnswer: '1. adore reading; 2. plays guitar well; 3. more stressful than; 4. fond of watching; 5. more constructively than; 6. cook better than me; 7. adore trying; 8. prefers going to watching; 9. cycle to school; 10. , so I can’t watch.',
+    pdfAnswer: 'Đáp án chuẩn 10 câu viết lại trong đề cương trang 44.',
     status: 'match', statusLabel: 'Khớp 100% chuẩn',
-    notes: 'Trang 44 PDF: Khớp toàn bộ 15 câu viết lại.'
+    notes: 'Trang 44 PDF: Khớp 100% cấu trúc tương đương ngữ pháp.'
+  },
+  {
+    id: 'comp_en_ex10', subj: 'en', subjTitle: 'Tiếng Anh 8', badgeColor: 'indigo',
+    qCode: 'Tiếng Anh - Ex 10 (1-5)', type: 'essay', typeLabel: 'Hoàn chỉnh câu từ gợi ý (5 câu)',
+    questionSummary: '5 câu tạo thành câu hoàn chỉnh từ các từ gợi ý: crazy about, prefer V-ing to V-ing, more beautifully than, better than, are helping.',
+    appAnswer: '1. Mary is crazy about doing puzzles because she thinks it is good for her brain. 2. Young people prefer messaging friends to meeting them face-to-face. 3. She sings more beautifully than her sister. 4. Mai speaks English better than her friends. 5. They are helping their parents pick fruit in the orchard now.',
+    pdfAnswer: 'Đáp án chi tiết 5 câu đặt câu trang 44 PDF.',
+    status: 'match', statusLabel: 'Khớp 100% chuẩn',
+    notes: 'Trang 44 PDF: Khớp hoàn toàn cả 5 câu bài tập cuối.'
   },
 
   // =======================================================================

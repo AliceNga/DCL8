@@ -199,6 +199,50 @@ window.GDCD_DATABASE = [
     exTitle: 'GDCD 8 (Tự luận - Câu 3)',
     type: 'keypoint_checklist',
     questionText: 'Câu 3. Em hãy phân biệt giữa lao động cần cù và lao động sáng tạo. Hai phẩm chất này có mối quan hệ với nhau như thế nào? Nêu ý nghĩa của cần cù, sáng tạo.',
+    visualComponent: `
+      <div class="my-3 p-3.5 bg-rose-50/70 rounded-2xl border border-rose-200 text-center">
+        <div class="text-[11px] font-bold text-rose-800 uppercase tracking-wider mb-2 flex items-center justify-center gap-1.5">
+          <svg class="w-4 h-4 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          Sơ đồ tư duy: Mối quan hệ biện chứng giữa Cần cù & Sáng tạo
+        </div>
+        <div class="max-w-md mx-auto">
+          <svg viewBox="0 0 420 150" class="w-full h-auto drop-shadow-sm font-sans">
+            <!-- Box Cần cù -->
+            <rect x="15" y="40" width="125" height="70" rx="12" fill="#FFE4E6" stroke="#E11D48" stroke-width="2.5" />
+            <text x="77" y="65" text-anchor="middle" font-weight="bold" font-size="13" fill="#9F1239">CẦN CÙ</text>
+            <text x="77" y="82" text-anchor="middle" font-size="10" fill="#BE123C">Chăm chỉ, chịu khó</text>
+            <text x="77" y="96" text-anchor="middle" font-size="9" fill="#881337">Kiên trì, thường xuyên</text>
+
+            <!-- Box Sáng tạo -->
+            <rect x="280" y="40" width="125" height="70" rx="12" fill="#E0E7FF" stroke="#4F46E5" stroke-width="2.5" />
+            <text x="342" y="65" text-anchor="middle" font-weight="bold" font-size="13" fill="#3730A3">SÁNG TẠO</text>
+            <text x="342" y="82" text-anchor="middle" font-size="10" fill="#4338CA">Đổi mới phương pháp</text>
+            <text x="342" y="96" text-anchor="middle" font-size="9" fill="#312E81">Tối ưu hiệu quả</text>
+
+            <!-- Mutual arrows -->
+            <path d="M 145 60 L 270 60" stroke="#059669" stroke-width="2" marker-end="url(#arrow-green)" fill="none" />
+            <text x="207" y="52" text-anchor="middle" font-size="9" font-weight="bold" fill="#047857">Nền tảng, điều kiện →</text>
+
+            <path d="M 275 90 L 150 90" stroke="#D97706" stroke-width="2" marker-end="url(#arrow-orange)" fill="none" />
+            <text x="212" y="105" text-anchor="middle" font-size="9" font-weight="bold" fill="#B45309">← Nâng cao năng suất</text>
+
+            <!-- Marker defs -->
+            <defs>
+              <marker id="arrow-green" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                <path d="M0,0 L0,6 L6,3 z" fill="#059669"/>
+              </marker>
+              <marker id="arrow-orange" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                <path d="M0,0 L0,6 L6,3 z" fill="#D97706"/>
+              </marker>
+            </defs>
+
+            <!-- Result badge below -->
+            <rect x="110" y="125" width="200" height="22" rx="11" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5" />
+            <text x="210" y="140" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400E">🌟 Đạt thành công & Tiến bộ xã hội</text>
+          </svg>
+        </div>
+      </div>
+    `,
     totalPoints: 3,
     keypoints: [
       {

@@ -23,13 +23,36 @@ window.GEOGRAPHY_DATABASE = [
     exKey: 'geo_mc',
     exTitle: 'Địa lí 8 (Trắc nghiệm)',
     questionText: 'Câu 2. Việt Nam có vị trí địa lí nằm trong vành đai:',
+    visualComponent: `
+      <div class="my-3 p-3 bg-blue-50/70 border border-blue-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 300 130" class="w-72 h-32 max-w-full">
+          <!-- Bán cầu Bắc & Trái đất -->
+          <circle cx="150" cy="65" r="50" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5"/>
+          <!-- Xích đạo 0 độ -->
+          <line x1="100" y1="65" x2="200" y2="65" stroke="#0369a1" stroke-width="1.5" stroke-dasharray="3,2"/>
+          <text x="205" y="68" font-size="8" font-weight="bold" fill="#0369a1">0° (Xích đạo)</text>
+
+          <!-- Chí tuyến Bắc 23 độ 27' B -->
+          <line x1="112" y1="42" x2="188" y2="42" stroke="#dc2626" stroke-width="1.5"/>
+          <text x="195" y="45" font-size="8" font-weight="bold" fill="#dc2626">23°27'B (Chí tuyến Bắc)</text>
+
+          <!-- Vùng nội chí tuyến Bắc tô sáng -->
+          <path d="M 112 42 A 50 50 0 0 1 188 42 L 200 65 A 50 50 0 0 1 100 65 Z" fill="#bae6fd" opacity="0.6"/>
+          
+          <!-- Điểm Việt Nam (8°34'B -> 23°23'B) -->
+          <rect x="145" y="44" width="10" height="18" rx="2" fill="#e11d48"/>
+          <text x="140" y="55" font-size="8" font-weight="extrabold" fill="#be123c" text-anchor="end">Việt Nam ★</text>
+        </svg>
+        <span class="text-[11px] text-blue-900 font-bold mt-1">Lãnh thổ Việt Nam nằm hoàn toàn trong vành đai nội chí tuyến Bắc bán cầu</span>
+      </div>
+    `,
     options: [
       { text: 'nội chí tuyến Nam bán cầu.', isCorrect: false },
       { text: 'ngoại chí tuyến Bắc bán cầu.', isCorrect: false },
       { text: 'nội chí tuyến Bắc bán cầu.', isCorrect: true },
       { text: 'nội chí tuyến hai bán cầu.', isCorrect: false }
     ],
-    explanation: 'Toàn bộ phần đất liền và vùng biển nước ta nằm hoàn toàn trong vùng nội chí tuyến của bán cầu Bắc.'
+    explanation: 'Toàn bộ phần đất liền và vùng biển nước ta nằm hoàn toàn trong vùng nội chí tuyến của bán cầu Bắc (khoảng từ 8°34\'B đến 23°23\'B).'
   },
   {
     id: 'geo_3',
@@ -327,6 +350,35 @@ window.GEOGRAPHY_DATABASE = [
     exTitle: 'Địa lí 8 (Tự luận - Câu 1)',
     type: 'keypoint_checklist',
     questionText: 'Câu 1. Trình bày đặc điểm phạm vi lãnh thổ Việt Nam theo ba bộ phận: vùng đất, vùng biển và vùng trời.',
+    visualComponent: `
+      <div class="my-3 p-4 bg-blue-50/70 border border-blue-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 380 160" class="w-full max-w-md h-auto">
+          <!-- Khung bản đồ thu nhỏ -->
+          <rect x="10" y="10" width="360" height="140" rx="10" fill="#f8fafc" stroke="#0284c7" stroke-width="1.5"/>
+          <text x="190" y="28" font-size="11" font-weight="extrabold" fill="#0369a1" text-anchor="middle">TỌA ĐỘ 4 ĐIỂM CỰC TRÊN ĐẤT LIỀN VIỆT NAM</text>
+
+          <!-- Cực Bắc -->
+          <circle cx="190" cy="48" r="5" fill="#dc2626"/>
+          <text x="190" y="42" font-size="9" font-weight="bold" fill="#dc2626" text-anchor="middle">CỰC BẮC: Lũng Cú (Hà Giang) - 23°23'B</text>
+
+          <!-- Trục Bắc - Nam -->
+          <line x1="190" y1="53" x2="155" y2="128" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+          <!-- Cực Tây -->
+          <circle cx="65" cy="75" r="5" fill="#059669"/>
+          <text x="70" y="72" font-size="8.5" font-weight="bold" fill="#065f46">CỰC TÂY: A Pa Chải (Điện Biên) - 102°09'Đ</text>
+
+          <!-- Cực Đông -->
+          <circle cx="310" cy="95" r="5" fill="#ea580c"/>
+          <text x="310" y="90" font-size="8.5" font-weight="bold" fill="#c2410c" text-anchor="end">CỰC ĐÔNG: Mũi Đôi (Khánh Hòa) - 109°28'Đ</text>
+
+          <!-- Cực Nam -->
+          <circle cx="155" cy="130" r="5" fill="#2563eb"/>
+          <text x="155" y="145" font-size="9" font-weight="bold" fill="#1d4ed8" text-anchor="middle">CỰC NAM: Đất Mũi (Cà Mau) - 8°34'B</text>
+        </svg>
+        <span class="text-[11px] text-blue-900 font-bold mt-1">Phạm vi lãnh thổ: Đất liền 331 344 km² • Biển 1 triệu km² (Hoàng Sa & Trường Sa) • Vùng trời</span>
+      </div>
+    `,
     totalPoints: 3,
     keypoints: [
       {
@@ -392,6 +444,29 @@ window.GEOGRAPHY_DATABASE = [
     exTitle: 'Địa lí 8 (Tự luận - Câu 3)',
     type: 'keypoint_checklist',
     questionText: 'Câu 3. Dựa vào ví dụ xây dựng hệ thống đê điều ở đồng bằng sông Hồng, hãy phân tích những tác động tích cực và tiêu cực của con người đến địa hình Việt Nam.',
+    visualComponent: `
+      <div class="my-3 p-4 bg-amber-50/70 border border-amber-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 400 130" class="w-full max-w-md h-auto">
+          <!-- Vùng trong đê (thấp, ô trũng) -->
+          <rect x="10" y="80" width="110" height="40" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+          <text x="65" y="100" font-size="9" font-weight="bold" fill="#92400e" text-anchor="middle">VÙNG TRONG ĐÊ</text>
+          <text x="65" y="112" font-size="7.5" fill="#b45309" text-anchor="middle">Ô trũng, đất bạc màu</text>
+
+          <!-- Thân đê sông Hồng -->
+          <polygon points="120,80 150,35 180,35 210,80" fill="#d97706" stroke="#92400e" stroke-width="1.5"/>
+          <text x="165" y="30" font-size="9" font-weight="extrabold" fill="#78350f" text-anchor="middle">ĐÊ SÔNG HỒNG</text>
+          <text x="165" y="55" font-size="7.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Ngăn lũ lụt</text>
+
+          <!-- Lòng sông ngoài đê (đáy sông được tôn cao bởi phù sa) -->
+          <polygon points="210,80 230,65 370,65 390,80" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>
+          <path d="M 230 65 Q 300 75 370 65" fill="#38bdf8"/>
+          <text x="300" y="55" font-size="9" font-weight="bold" fill="#0369a1" text-anchor="middle">LÒNG SÔNG NGOÀI ĐÊ</text>
+          <text x="300" y="90" font-size="7.5" fill="#0284c7" text-anchor="middle">Phù sa bồi lắng tôn cao đáy sông</text>
+          <text x="300" y="112" font-size="7" fill="#dc2626" font-weight="bold" text-anchor="middle">Mực nước lũ cao hơn mặt ruộng trong đê</text>
+        </svg>
+        <span class="text-[11px] text-amber-900 font-bold mt-1">Mặt cắt địa hình: Tích cực (chống lũ lụt) • Tiêu cực (chia cắt ô trũng, đất trong đê bạc màu)</span>
+      </div>
+    `,
     totalPoints: 2,
     keypoints: [
       {

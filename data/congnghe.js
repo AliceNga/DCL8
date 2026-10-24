@@ -88,6 +88,28 @@ window.TECH_DATABASE = [
     exKey: 'tech_mc',
     exTitle: 'Công nghệ 8 (Trắc nghiệm)',
     questionText: 'Câu 8a (Sơ đồ vị trí hình chiếu). Tên gọi tương ứng của các hình chiếu 1, 2, 3 trên bản vẽ kĩ thuật lần lượt là gì?',
+    visualComponent: `
+      <div class="my-3 p-3 bg-cyan-50/70 border border-cyan-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 280 150" class="w-72 h-36 max-w-full">
+          <!-- Hình chiếu 1: Đứng -->
+          <rect x="25" y="15" width="85" height="55" rx="6" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
+          <text x="67" y="47" font-size="14" font-weight="extrabold" fill="#854d0e" text-anchor="middle">Hình 1</text>
+          
+          <!-- Hình chiếu 3: Cạnh -->
+          <rect x="150" y="15" width="60" height="55" rx="6" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
+          <text x="180" y="47" font-size="14" font-weight="extrabold" fill="#854d0e" text-anchor="middle">Hình 3</text>
+
+          <!-- Hình chiếu 2: Bằng -->
+          <rect x="25" y="85" width="85" height="50" rx="6" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
+          <text x="67" y="115" font-size="14" font-weight="extrabold" fill="#854d0e" text-anchor="middle">Hình 2</text>
+
+          <!-- Đường dóng -->
+          <line x1="110" y1="42" x2="150" y2="42" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3,3"/>
+          <line x1="67" y1="70" x2="67" y2="85" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3,3"/>
+        </svg>
+        <span class="text-[11px] text-cyan-800 font-bold mt-1">Sơ đồ bố cục 3 hình chiếu chuẩn TCVN</span>
+      </div>
+    `,
     options: [
       { text: '1: Hình chiếu đứng, 2: Hình chiếu bằng, 3: Hình chiếu cạnh.', isCorrect: true },
       { text: '1: Hình chiếu bằng, 2: Hình chiếu đứng, 3: Hình chiếu cạnh.', isCorrect: false },
@@ -127,13 +149,34 @@ window.TECH_DATABASE = [
     exKey: 'tech_mc',
     exTitle: 'Công nghệ 8 (Trắc nghiệm)',
     questionText: 'Câu 10. Hình chiếu bằng của hình nón là hình gì?',
+    visualComponent: `
+      <div class="my-3 p-3 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 260 110" class="w-64 h-28 max-w-full">
+          <!-- Hình nón 3D -->
+          <ellipse cx="60" cy="85" rx="35" ry="12" fill="#fed7aa" stroke="#c2410c" stroke-width="1.5"/>
+          <path d="M 25 85 L 60 20 L 95 85" fill="#f97316" stroke="#c2410c" stroke-width="1.5"/>
+          <text x="60" y="105" font-size="10" font-weight="bold" fill="#9a3412" text-anchor="middle">Hình nón</text>
+
+          <!-- Mũi tên nhìn từ trên -->
+          <line x1="60" y1="5" x2="60" y2="15" stroke="#dc2626" stroke-width="2"/>
+          <text x="60" y="0" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="bold">Từ trên xuống</text>
+
+          <!-- Hình chiếu bằng -->
+          <circle cx="180" cy="55" r="32" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
+          <line x1="180" y1="20" x2="180" y2="90" stroke="#ca8a04" stroke-width="1" stroke-dasharray="2,2"/>
+          <line x1="145" y1="55" x2="215" y2="55" stroke="#ca8a04" stroke-width="1" stroke-dasharray="2,2"/>
+          <circle cx="180" cy="55" r="2" fill="#854d0e"/>
+          <text x="180" y="105" font-size="10" font-weight="bold" fill="#854d0e" text-anchor="middle">Hình chiếu bằng (Hình tròn có tâm)</text>
+        </svg>
+      </div>
+    `,
     options: [
       { text: 'Hình tam giác cân.', isCorrect: false },
       { text: 'Hình vuông.', isCorrect: false },
       { text: 'Hình tròn.', isCorrect: true },
       { text: 'Hình chữ nhật.', isCorrect: false }
     ],
-    explanation: 'Hình nón nhìn từ trên xuống (hình chiếu bằng) là một hình tròn có tâm.'
+    explanation: 'Hình nón nhìn từ trên xuống (hình chiếu bằng) là một hình tròn có tâm (đỉnh nón dóng xuống trùng tâm đáy).'
   },
   {
     id: 'tech_11',
@@ -377,6 +420,49 @@ window.TECH_DATABASE = [
     exTitle: 'Công nghệ 8 (Bài tập 2 - Con trượt)',
     type: 'keypoint_checklist',
     questionText: 'Bài 2. Nêu các bước vẽ hình chiếu vuông góc của vật thể đơn giản (ví dụ Con trượt - SGK trang 19).',
+    visualComponent: `
+      <div class="my-3 p-4 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 460 170" class="w-full max-w-lg h-auto">
+          <!-- Vật thể 3D Con trượt -->
+          <g transform="translate(15, 20)">
+            <text x="55" y="10" font-size="11" font-weight="extrabold" fill="#0f172a" text-anchor="middle">Vật thể Con trượt</text>
+            <!-- Khối đế -->
+            <polygon points="10,65 50,45 100,65 60,85" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>
+            <polygon points="10,65 60,85 60,115 10,95" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5"/>
+            <polygon points="60,85 100,65 100,95 60,115" fill="#0284c7" stroke="#0369a1" stroke-width="1.5"/>
+            <!-- Rãnh khoét chữ U ở trên -->
+            <polygon points="35,52 45,47 65,55 55,60" fill="#f8fafc" stroke="#0284c7" stroke-width="1.2"/>
+            <polygon points="35,52 55,60 55,75 35,67" fill="#cbd5e1" stroke="#0284c7" stroke-width="1.2"/>
+          </g>
+
+          <!-- 3 Hình chiếu vuông góc -->
+          <g transform="translate(160, 15)">
+            <text x="140" y="8" font-size="11" font-weight="extrabold" fill="#047857" text-anchor="middle">Bản vẽ 3 hình chiếu vuông góc</text>
+            
+            <!-- Hình chiếu ĐỨNG (nhìn trước, có rãnh thấy) -->
+            <rect x="20" y="25" width="70" height="45" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+            <rect x="40" y="25" width="30" height="20" fill="#ffffff" stroke="#ca8a04" stroke-width="1.5"/>
+            <text x="55" y="60" font-size="9" font-weight="bold" fill="#854d0e" text-anchor="middle">Đứng (rãnh thấy)</text>
+
+            <!-- Hình chiếu CẠNH (nhìn trái, rãnh khuất vẽ nét đứt) -->
+            <rect x="130" y="25" width="55" height="45" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+            <line x1="130" y1="45" x2="185" y2="45" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3,3"/>
+            <text x="157" y="60" font-size="9" font-weight="bold" fill="#854d0e" text-anchor="middle">Cạnh (nét đứt)</text>
+
+            <!-- Hình chiếu BẰNG (nhìn trên xuống) -->
+            <rect x="20" y="90" width="70" height="45" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+            <line x1="40" y1="90" x2="40" y2="135" stroke="#ca8a04" stroke-width="1.5"/>
+            <line x1="70" y1="90" x2="70" y2="135" stroke="#ca8a04" stroke-width="1.5"/>
+            <text x="55" y="115" font-size="9" font-weight="bold" fill="#854d0e" text-anchor="middle">Bằng (nét liền)</text>
+
+            <!-- Đường dóng -->
+            <line x1="90" y1="47" x2="130" y2="47" stroke="#94a3b8" stroke-dasharray="2,2"/>
+            <line x1="55" y1="70" x2="55" y2="90" stroke="#94a3b8" stroke-dasharray="2,2"/>
+          </g>
+        </svg>
+        <span class="text-[11px] text-slate-600 font-bold mt-1">Con trượt: Hình chiếu đứng có rãnh thấy • Hình chiếu cạnh có rãnh khuất (nét đứt)</span>
+      </div>
+    `,
     totalPoints: 2,
     keypoints: [
       {
