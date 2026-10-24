@@ -1,0 +1,118 @@
+Câu 1: Các phép tính đầu tiên được con người thực hiện bằng cách?
+A. Sử dụng máy tính để bàn. 	B. Sử dụng máy tính cầm tay.
+C. Sử dụng 10 ngón tay. 	D. Cả hai đáp án A, B đều sai.
+Câu 2: Con người đã biết làm các phép tính số học từ bao giờ?
+A. Hơn 1000 năm trước Công nguyên. 	B. Hơn 1000 năm sau Công nguyên.
+C. Hơn 2000 năm sau Công nguyên. 	D. Hơn 2000 năm trước Công
+nguyên.
+Câu 3: Chiếc máy tính cơ học Pascal do ai sáng tạo ra?
+A. Charles Babbage. 	B. John Mauchly.
+C. Blaise Pascal. 	D. J. Presper Eckert.
+Câu 4: Sau Pascal, Gottfried Leibniz đã cải tiến và thêm vào phép tính gì để máy tính của Pascal
+thực hiện cả bốn phép tính số học?
+A. Phép chia và phép trừ. 	B. Phép nhân và phép cộng.
+C. Phép nhân và phép chia. 	D. Phép nhân và phép trừ.
+Câu 5: Ai được coi là chả đẻ của công nghệ máy tính?
+A. Charles Babbage. 	B. Gottfried Leibniz.
+C. John Mauchly. 	D. Blaise Pascal.
+Câu 6: Ý tưởng nào đóng vai trò quan trọng trong lịch sử phát triển của máy tính?
+A. Cơ giới hóa việc lao động. 	B. Trí óc hóa việc tính toán.
+C. Cơ giới hóa việc tính toán. 	D. Trí óc hóa việc lao động.
+Câu 7: Nền tảng cho việc thiết kế các máy tính kĩ thuật số hiện đại là?
+A. Cơ giới hóa việc tính toán.
+B. Claude Shannon có thể sử dụng các rơ le để thực hiện các tính toán trên dãu các bit.
+C. Sáng tạo ra chiếc máy tính cơ học Pascal.
+D. Cả ba đáp án trên đều sai.
+Câu 8: Thời kì đầu các máy tính được thiết kế dựa trên các rơ le được gọi là?
+A. Máy tính thông minh. 	B. Máy tính hiện đại.
+C. Máy tính khoa học. 	D. Máy tính điện cơ.
+Câu 9: Năm 1943, Howard Aiken đã chế tạo thành công?
+A. Máy tính cơ giới hóa. 	B. Máy tính cơ học Pascal.
+C. Máy tính điều khiển tuần tự tự động. 	D. Máy tính cầm tay.
+Câu 10: Theo nguyên lý " chương trình được lưu trữ" thì cấu tạo của máy tính không có?
+A. Thiết bị ra. 	B. Bộ xử lý.
+C. Bộ nhớ. 	D. Con chuột.
+Câu 11: Công nghệ nào thay thế rơ le điện cơ?
+A. Công nghệ cơ giới hóa. 	B. Công nghệ tự động hóa.
+C. Công nghệ đèn điện tử. 	D. Công nghệ chế tạo.
+Câu 12: Bức ảnh số khác với ảnh trên giấy ở?
+A. Không tốn vật liệu. 	B. Khi bức ảnh được gửi đi thì người gửi vẫn có ảnh.
+C. Cả hai đáp án trên đều đúng. 	D. Cả hai đáp án trên đều sai.
+Câu 13: Thông tin số là?
+A. Thông tin được mã hóa thành dãy bit.
+B. Thông tin được được chuyển vào máy tính, điện thoại thông minh, máy tính bảng,.... để có thể lan
+truyền, trao đổi trong một môi trường kĩ thuật số.
+
+-- 1 of 3 --
+
+C. Thông tin được mã hóa thành dãy bit, được chuyển vào máy tính, điện thoại thông minh, máy tính
+bảng,… để có thể lan truyền, trao đổi trong một môi trường kĩ thuật số.
+D. Thông tin có thể trao đổi dựa trên thông tin trên giấy.
+Câu 14: Đặc điểm của thông tin số là?
+A. Có thể trao đổi không cần mạng.
+B. Có thể trao đổi dựa trên thông tin trên giấy.
+C. Có thể truy cập từ xa thông qua kết nối Internet.
+D. Có thể trao đổi trên đài Radio.
+Câu 15: Đâu không phải là đặc điểm của thông tin số?
+A. Thông tin số có thể truy cập từ xa qua Internet.
+B. Thông tin số dễ dàng được nhân bản và chia sẻ.
+C. Thông tin số chỉ có thể truy cập ở khoảng cách gần.
+D. Thông tin số có thể được lan truyền tự động do nhiều thiết bị được đồng bộ với nhau.
+Câu 16: Thông tin số có thể được truy cập từ xa nếu.
+A. Người quản lý thông tin đó cho phép. 	B. Thông tin có khả năng truyền tải xa.
+C. Thông tin ít dữ liệu. 	D. Người quản lý thông tin không cho phép.
+Câu 17: Thông tin số có thể?
+A. Được lưu trữ rất lớn bởi nhiều cá nhân, tổ chức.
+B. Được cấp quyền truy cập khác nhau.
+C. Cả hai đáp án A,B đều đúng.
+D. Cả hai đáp ánA, B đều sai.
+Câu 18: Mức độ tin cậy của thông tin số phụ thuộc vào?
+A. Nguồn gốc. 	B. Mục tiêu thông tin.
+C. Cả hai đáp án A,B đều đúng. 	D. Cả hai đáp án A, B đều sai.
+Câu 19: Độ tin cậy của ý kiến thấp hơn sự kiện vì?
+A. Mang nhiều cảm xúc. 	B. Mang định kiến cá nhân.
+C. Cả hai đáp án A, B đều đúng. 	D. Cả hai đáp án A, B đều sai.
+Câu 20: Điều gì quyết định thông tin có còn ý nghĩa hay không?
+A. Sự chính xác của thông tin. 	B. Thông tin mang tinh sự kiện.
+C. Thời điểm công bố thông tin. 	D. Đặc điểm của thông tin.
+
+-- 2 of 3 --
+
+PHẦN II: Phần trắc nghiệm đúng sai
+Học sinh đọc câu hỏi và đưa ra khẳng định đúng hoặc sai.
+Câu 1. Các khẳng định sau đúng hay sai?
+1. Thông tin số đa dạng, được thu thập nhanh, được lưu trữ với dung lượng rất lớn bởi nhiều tổ chức,
+các nhân.
+2. Có nhiều công cụ hỗ trợ tìm kiếm, truy cập, lưu trữ, xử lí, chia sẻ thông tin số.
+3. Các thông tin số đều có độ tin cậy và chính xác cao.
+4. Thông tin số là miễn phí, không cần phải quản lí, khai thác an toàn.
+5. Thông tin số dễ dàng được nhân bản và lan truyền, nhưng khó bị xoá bỏ hoàn toàn.
+6. Quyền tác giả của thông tin số được pháp luật bảo hộ.
+7. Nguồn tài nguyên trên Internet là miễn phí, không cần xin phép khi sử dụng.
+8. Thông tin số khó chỉnh sửa, nên rất chính xác.
+Câu 2: Sau khi tìm hiểu về lịch sử phát triển của máy tính tính, A nói với B rằng: "Máy tính thế hệ thứ
+nhất rất cồng kềnh, tiêu tốn nhiều điện năng trong khi máy tính thế hệ thứ hai nhỏ hơn, hoạt động
+nhanh hơn và đáng tin cậy hơn nhiều". Nghe vậy, bạn B đáp lại: "Đúng rồi, tớ cũng thấy rằng các thế
+hệ sau cũng cải tiến tối hơn thế hệ trước".
+Phát biểu của hai bạn A và B đều đúng.
+Máy tính thế hệ thứ ba sử dụng bóng bán dẫn và kích thước lớn hơn thế hệ thứ hai.
+Mạch tích hợp (IC) giúp máy tính nhỏ gọn hơn và tăng tốc độ tính toán nhưng
+chưa có bộ nhớ như các máy tính ngày nay chúng ta dùng hằng ngày.
+Ngày nay, máy tính xách tay chúng ta đang dùng được coi là đại diện cho thế hệ
+thứ tư, vì nó giúp tìm kiếm thông tin, làm bài tập một cách hiệu quả và kết nối với
+bạn bè.
+Câu 3: Trong một buổi học nhóm, H nói với các bạn rằng mình thường chỉ tin vào những gì được
+nhiều người chia sẻ trên mạng xã hội, nhưng bạn K lại không đồng ý với quan điểm đó. Sau khi thảo
+luận, các bạn học sinh đưa ra một số nhận xét dưới đây.
+a) Thông tin được nhiều người chia sẻ trên mạng xã hội luôn đáng tin cậy hơn thông tin
+từ một trang web ít người biết đến.
+b) Có thể sử dụng Google hoặc Bing để tra cứu thông tin trên Internet bằng cách nhập
+vào các từ khóa.
+c) Khi muốn tìm hiểu về tác hại của rác thải nhựa, em tìm kiếm và đọc thông tin từ một
+bài viết trong một nhóm mạng xã hội thì được coi là khai thác thông tin đáng tin cậy.
+d) Để chuẩn bị cho bài thuyết trình môn Sinh học về tác hại của việc lạm dụng thuốc
+kháng sinh, bạn K cho rằng nên so sánh các số liệu từ Bộ Y tế và WHO trước khi đưa
+vào bài thuyết trình.
+
+-- 3 of 3 --
+

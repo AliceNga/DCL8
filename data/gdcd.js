@@ -125,15 +125,25 @@ window.GDCD_DATABASE = [
   {
     id: 'gdcd_10',
     exKey: 'gdcd_mc',
-    exTitle: 'GDCD 8 (Đúng/Sai)',
-    questionText: 'Câu 10 (Đọc đoạn thông tin Báo Nhân Dân về bảo tồn và sáng tạo di sản). Cho các nhận định sau:<br>a) Thế hệ trẻ chỉ cần sao chép các trào lưu nước ngoài, không cần kế thừa văn hóa truyền thống.<br>b) Quá trình sáng tạo của người trẻ phải gắn liền với sự tôn trọng và hiểu biết cội nguồn dân tộc.<br>c) Sự đổi mới sáng tạo trong nghệ thuật luôn phá hỏng và làm mất đi giá trị di sản cổ truyền.<br>d) Kế thừa và phát huy truyền thống cần có tư duy sáng tạo để nối dài sức sống cho di sản.<br>Phương án ghép Đúng (Đ) / Sai (S) chính xác là:',
+    exTitle: 'GDCD 8 (Đúng/Sai - Báo Nhân Dân)',
+    questionText: `Câu 10 (Đúng/Sai). Đọc đoạn thông tin sau và trả lời câu hỏi:<br>
+      <div class="my-2 p-3 bg-rose-50/80 rounded-xl border border-rose-200 text-xs leading-relaxed text-slate-800">
+        <i>"Bàn về vấn đề khơi nguồn sáng tạo từ văn hóa truyền thống, báo chí chính thống đã nhấn mạnh: 'Cái quan trọng là trong quá trình sáng tạo ấy, người trẻ vẫn giữ được sự hiểu biết, tôn trọng và ý thức về cội nguồn của di sản, để mỗi đổi mới không phải là sự đứt gãy mà là một bước phát triển tự nhiên của di sản'. Việc này sẽ 'giúp tạo ra sản phẩm vừa quảng bá văn hóa dân tộc, vừa phù hợp thị hiếu đương đại, mang lại lợi nhuận và tạo nền tảng bền vững để người trẻ tiếp tục hành trình sáng tạo của mình, nối dài sức sống cho những di sản văn hóa được cha ông truyền lại'."</i><br>
+        <span class="text-[10px] text-rose-700 font-bold mt-1 block">(Nguồn tham khảo: Báo Nhân Dân, 23/07/2026 & 25/01/2025)</span>
+      </div>
+      Cho các nhận định sau:<br>
+      a) Sự đổi mới, sáng tạo trong nghệ thuật truyền thống luôn dẫn đến sự đứt gãy và làm mất đi giá trị cội nguồn của di sản.<br>
+      b) Để di sản văn hóa tiếp tục phát triển tự nhiên, quá trình lao động sáng tạo của người trẻ phải gắn liền với sự tôn trọng và hiểu biết về cội nguồn dân tộc.<br>
+      c) Việc tạo ra các sản phẩm văn hóa phù hợp với thị hiếu đương đại chỉ nhằm mục đích duy nhất là mang lại lợi nhuận kinh tế.<br>
+      d) Thông qua lao động cần cù và sáng tạo, thế hệ trẻ đóng vai trò quan trọng trong việc nối dài sức sống cho các di sản văn hóa truyền thống của cha ông.<br>
+      Phương án ghép Đúng (Đ) / Sai (S) chính xác là:`,
     options: [
-      { text: 'a-Đ, b-Đ, c-S, d-S.', isCorrect: false },
       { text: 'a-S, b-Đ, c-S, d-Đ.', isCorrect: true },
+      { text: 'a-Đ, b-Đ, c-S, d-S.', isCorrect: false },
       { text: 'a-S, b-S, c-Đ, d-Đ.', isCorrect: false },
       { text: 'a-Đ, b-S, c-Đ, d-S.', isCorrect: false }
     ],
-    explanation: 'Theo đề cương chữa chuẩn: a-Sai, b-Đúng, c-Sai, d-Đúng. Sáng tạo phải dựa trên nền tảng hiểu biết sâu sắc và tôn trọng cội nguồn để nối dài sức sống cho di sản văn hóa.'
+    explanation: 'Đáp án chuẩn theo Đề cương PDF (Trang 5):<br>• a) SAI (Đoạn trích khẳng định đổi mới không phải là sự đứt gãy mà là bước phát triển tự nhiên).<br>• b) ĐÚNG (Quá trình sáng tạo phải giữ được sự hiểu biết, tôn trọng cội nguồn).<br>• c) SAI (Không chỉ vì lợi nhuận mà còn vừa quảng bá văn hóa dân tộc, nối dài sức sống di sản).<br>• d) ĐÚNG (Thế hệ trẻ tiếp tục hành trình sáng tạo, nối dài sức sống cho di sản cha ông).'
   },
 
   // --- PHẦN II: 4 CÂU TỰ LUẬN (CHUYỂN THÀNH SƠ ĐỒ CẤU TRÚC Ý & TỪ KHÓA) ---

@@ -1,0 +1,108 @@
+
+=== PAGE 13 ===
+
+
+TRƯỜNG THCS NGHĨA TÂN
+ĐỀ CƯƠNG ÔN TẬP GIỮA HỌC KÌ I NĂM HỌC 2026-2027
+MÔN: CÔNG NGHỆ LỚP 8
+I. Phạm vi ôn tập
+1. Một số tiêu chuẩn trình bày bản vẽ kĩ thuật.
+2. Hình chiếu vuông góc.
+II. Hình thức kiểm tra
+Phần 1: Trắc nghiệm
+1. Trắc nghiệm nhiều đáp án (16 câu)
+2. Trắc nghiệm đúng sai (1câu)
+Phần 2. Tự luận (Hs nắm chắc kiến thức lý thuyết, đọc hình chiếu và vẽ được hình chiếu
+vật thể đơn giản) (3 câu)
+III. Một số câu hỏi trắc nghiệm và tự luận
+1. Câu hỏi trắc nghiệm
+Câu 1. Tỉ lệ 2:1 trên bản vẽ có ý nghĩa như thế nào?
+A. Kích thước trên bản vẽ gấp 2 lần kích thước thực.
+B. Kích thước trên bản vẽ bằng kích thước thực.
+C. Kích thước trên bản vẽ bằng một nửa kích thước thực.
+D. Là tỉ lệ thu nhỏ của bản vẽ.
+Câu 2. Chữ R ghi trước chữ số kích thước để chỉ kích thước nào dưới đây?
+A. Kích thước góc. B. Kích thước bán kính.
+C. Kích thước đường kính. D. Kích thước đoạn thẳng.
+Câu 4. Những khối nào sau đây là khối tròn xoay
+A. Khối nón, khối cầu, khối chóp. B. Khối nón, khối cầu, hình trụ.
+C. Hình hộp chữ nhật, khối lăng trụ. D. Khối nón, khối lăng trụ, hình chóp.
+Câu 5.Viên phấn viết bảng có hình chiếu là hình dạng nào dưới đây?
+A. Hình tròn, hình chữ nhật. B. Hình tròn, hình tam giác.
+C. Hình tròn. D. Hình tam giác.
+Câu 6. Khổ giấy A0 được chia thành bao nhiêu khổ giấy A4?
+A. 8. B. 12. C. 16. D. 20
+Câu 7. Trên bản vẽ kỹ thuật, nét đứt dùng để vẽ đường nào?
+A. Đường kích thước, đường dóng kích thước. B. Đường trục.
+C. Đường bao khuất, cạnh khuất. D. Đường bao thấy.
+Câu 9. Kích thước độ dài ghi trên bản vẽ kĩ thuật có đơn vị là gì?
+A. Mét (m). B. Decimét (dm). C. Centimét (cm). D. Milimét (mm).
+Câu 10. Hình chiếu đứng thể hiện các kích thước nào sau đây của vật thể?
+A. Chiều dài và chiều rộng. B. Chiều cao và chiều rộng.
+C. Chiều cao và chiều dài. D. Chỉ thể hiện kích thước chiều cao.
+Câu 8. Tên gọi các hình chiếu 1, 2, 3 lần lượt là gì?
+A. Hình chiếu đứng, hình chiếu bằng, hình chiếu cạnh.
+B. Hình chiếu bằng, hình chiếu đứng, hình chiếu cạnh.
+C. Hình chiếu cạnh, hình chiếu bằng, hình chiếu đứng.
+D. Hình chiếu đứng, hình chiếu cạnh, hình chiếu bằng.
+Câu 12. Hình chiếu của hình chóp tứ giác đều có hình dạng nào dưới đây?
+A. Hình tam giác và hình vuông. B. Hình tam giác cân và hình vuông.
+C. Hình tròn và hình tam giác. D. Hình tam giác cân và hình chữ nhật.
+1 	2
+3
+
+
+=== PAGE 14 ===
+
+
+Câu 13. Hình chóp đều được bao bởi mặt đáy là hình gì?
+A. Tam giác. B. Đa giác đều. C. Tam giác đều. D.Hình chữ nhật
+Câu 11. Khi xây dựng hình chiếu vuông góc, vật thể được đặt vị trí nào sau đây?
+A. Trong không gian tạo bởi ba mặt phẳng.
+B. Trong không gian tạo bởi ba mặt phẳng hình chiếu vuông góc.
+C. Trong không gian tạo bởi ba mặt phẳng hình chiếu vuông góc với nhau từng đôi một.
+D. Trong không gian tạo bởi các mặt phẳng bất kì.
+Câu 14. Trên bản vẽ kĩ thuật, hình chiếu đứng có hướng chiếu như thế nào?
+A. Có hướng chiếu từ trước tới. B. Có hướng chiếu từ trên xuống.
+C. Có hướng chiếu từ trái sang phải. D. Có hướng chiếu từ phải sang trái.
+Trắc nghiệm đúng, sai Đúng ghi (Đ), sai ghi (S) vào ô trống sau mỗi ý a, b, c, d
+Câu 15. Một học sinh được giao vẽ 3 hình chiếu cho một non sữa trên khổ giấy A4. Non
+sữa có chiều cao là 1400mm, đường kính đáy có kích thước 1000 mm. Non sữa được đặt ở
+vị trí sao cho mặt đáy // với mặt phẳng hình chiếu cạnh. Dưới đây là một số nhận định
+a, Tỉ lệ sử dụng vẽ 3 hình chiếu là tỉ lệ thu nhỏ 1: 10
+b, Hình chiếu bằng là hình tròn; hình chiếu đứng, hình chiếu cạnh là hình chữ nhật.
+c, Hình chiếu cạnh là hình tròn; hình chiếu đứng, hình chiếu bằng là hình chữ nhật.
+d, Tỉ lệ sử dụng vẽ 3 hình chiếu là tỉ lệ phóng to 10:1
+2. Câu hỏi tự luận
+a. Lý thuyết
+Câu 1: Hãy nêu qui ước các hình chiếu, vị trí các hình chiếu, tỉ lệ và một số nét vẽ
+cơ bản trên bản vẽ kĩ thuật mà em đã học?
+Câu 2. Thế nào là khối hình hộp chữ nhật, khối lăng trụ đều và khối chóp đều? Hình
+chiếu của chúng là hình gì?
+Câu 3. Hình trụ, hình nón, hình cầu được tạo thành như thế nào? Hình chiếu của các khối
+tròn xoay là hình gì?
+b. Dạng bài tập đọc hình chiếu và vẽ hình chiếu vuông góc của vật thể đơn giản.
+Bài 1. Cho vật thể có các mặt A, B, C, D, E, F, G và các hình chiếu I, II, III
+a. Hãy xác định tên các hình chiếu vào bảng 1
+b. Hãy ghi số tương ứng với các mặt của vật thể vào bảng 2
+Bảng 1
+Hình
+chiếu
+Tên gọi
+I
+II
+III
+Bảng 2
+A B C D E F G
+I
+II
+III
+Bài 2. Vẽ hình chiếu của vật thể đơn giản: ví dụ Con trượt – SGK trang 19.
+
+
+=== PAGE 15 ===
+
+
+Môn:
+LỊCH SỬ
+

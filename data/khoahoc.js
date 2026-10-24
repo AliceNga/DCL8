@@ -234,14 +234,14 @@ window.SCIENCE_DATABASE = [
     id: 'sci_mc_14b',
     exKey: 'sci_chem_mc',
     exTitle: 'KHTN 8 - Hóa Học (Trắc nghiệm)',
-    questionText: 'Phần B - Câu 8. Một lượng khí oxygen có thể tích 115,6 ml ở điều kiện tiêu chuẩn chứa số phân tử là bao nhiêu?',
+    questionText: 'Phần B - Câu 8. Isoamyl acetate (C₇H₁₄O₂) là hợp chất tạo ra mùi thơm của quả chuối chín. Điều thú vị là ong có thể tiết ra hợp chất này khi chúng đốt các sinh vật, mùi hương sẽ thu hút những con ong khác tham gia cuộc tấn công. Giả sử khi ong đốt nó tiết ra 1 μg (bằng 1 × 10⁻⁶ gam) isoamyl acetate, hãy xác định trong một vết ong đốt có bao nhiêu phân tử isoamyl acetate được giải phóng?<br><i>(Cho H = 1, C = 12, O = 16)</i>',
     options: [
-      { text: '4,63 · 10¹⁵ phân tử.', isCorrect: true },
-      { text: '6,022 · 10²³ phân tử.', isCorrect: false },
-      { text: '3,011 · 10²² phân tử.', isCorrect: false },
-      { text: '1,204 · 10²⁴ phân tử.', isCorrect: false }
+      { text: 'A. 4,63 · 10¹⁵.', isCorrect: true },
+      { text: 'B. 4,63 · 10²¹.', isCorrect: false },
+      { text: 'C. 2,32 · 10¹⁵.', isCorrect: false },
+      { text: 'D. 3,2 · 10¹⁶.', isCorrect: false }
     ],
-    explanation: 'Theo đề cương chữa: Áp dụng công thức tính số phân tử: N = n · N_A = (V / 24,79) · 6,022 · 10²³, tính ra 4,63 · 10¹⁵ phân tử. Đáp án đúng là A.'
+    explanation: '• Khối lượng mol của Isoamyl acetate C₇H₁₄O₂: M = 7 × 12 + 14 × 1 + 2 × 16 = 130 (g/mol).<br>• Khối lượng m = 1 μg = 1 × 10⁻⁶ g.<br>• Số mol n = m / M = (1 × 10⁻⁶) / 130 ≈ 7,6923 × 10⁻⁹ mol.<br>• Số phân tử = n × N_A = 7,6923 × 10⁻⁹ × 6,022 × 10²³ ≈ <strong>4,63 · 10¹⁵ phân tử</strong>. Đáp án đúng là A.'
   },
 
   // C. SINH HỌC (11 CÂU TN)

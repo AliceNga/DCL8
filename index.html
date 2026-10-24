@@ -141,19 +141,7 @@
           <span class="text-xs font-bold"><span id="header-streak-num">0</span> <span class="hidden sm:inline font-medium text-amber-700">điểm 10 liên tiếp</span></span>
         </div>
 
-        <!-- Comparison Table Quick Button -->
-        <button onclick="navigateView('comparison')" class="px-3 py-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-xs font-bold shadow-xs flex items-center gap-1.5 transition cursor-pointer">
-          <i data-lucide="table-properties" class="w-4 h-4 text-blue-200"></i>
-          <span class="hidden sm:inline">Đối Chiếu Đáp Án (PDF)</span>
-        </button>
-
-        <!-- DoD Test Suite Quick Button -->
-        <button onclick="openDoDModal()" class="px-3 py-1.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white text-xs font-bold shadow-xs flex items-center gap-1.5 transition cursor-pointer">
-          <i data-lucide="shield-check" class="w-4 h-4 text-emerald-200"></i>
-          <span class="hidden sm:inline">Kiểm Thử DOD</span>
-        </button>
-
-        <!-- Subject Switcher Quick Menu -->
+        <!-- Subject Switcher Quick Menu (For Students) -->
         <div class="relative">
           <button id="btn-quick-switch" onclick="toggleQuickMenu()" class="px-3 py-1.5 rounded-xl bg-slate-900 text-white text-xs font-bold hover:bg-slate-800 transition shadow-xs flex items-center gap-1.5 cursor-pointer">
             <i data-lucide="book-marked" class="w-4 h-4"></i>
@@ -213,16 +201,73 @@
               <div><div>Ngữ Văn 8 (7 bài tự luận & TN)</div><div class="text-[10px] text-slate-400 font-normal">Đọc hiểu văn bản & Lập dàn ý</div></div>
             </button>
             <div class="border-t border-slate-100 pt-1">
-              <button onclick="navigateView('comparison'); toggleQuickMenu()" class="w-full flex items-center gap-2 p-2 rounded-xl hover:bg-blue-50 text-blue-700 text-xs font-bold cursor-pointer">
-                <i data-lucide="table-properties" class="w-4 h-4 text-blue-600"></i> Bảng Đối Chiếu Đáp Án (PDF)
-              </button>
-              <button onclick="openDoDModal(); toggleQuickMenu()" class="w-full flex items-center gap-2 p-2 rounded-xl hover:bg-emerald-50 text-emerald-700 text-xs font-bold cursor-pointer">
-                <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i> Báo Cáo Kiểm Thử DOD
-              </button>
               <button onclick="navigateView('dashboard'); toggleQuickMenu()" class="w-full flex items-center gap-2 p-2 rounded-xl hover:bg-slate-100 text-slate-600 text-xs font-medium cursor-pointer">
                 <i data-lucide="layout-grid" class="w-4 h-4"></i> Trang chủ Dashboard
               </button>
             </div>
+          </div>
+        </div>
+
+        <!-- DEDICATED ADMIN MENU AT THE FAR RIGHT -->
+        <div class="relative">
+          <button id="btn-admin-menu" onclick="toggleAdminMenu()" title="Menu Quản Trị & Kiểm Định" class="px-2.5 sm:px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 hover:text-slate-900 text-xs font-bold transition border border-slate-200/90 shadow-xs flex items-center gap-1.5 cursor-pointer">
+            <i data-lucide="shield" class="w-4 h-4 text-indigo-600"></i>
+            <span class="hidden md:inline">Menu Admin</span>
+            <span class="md:hidden">Admin</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-400"></i>
+          </button>
+
+          <div id="admin-menu-dropdown" class="absolute right-0 mt-2 w-72 sm:w-80 bg-white rounded-2xl shadow-2xl border border-slate-200 p-2 hidden z-50 space-y-1">
+            <div class="px-2.5 py-1.5 text-[10px] font-extrabold uppercase tracking-wider text-slate-600 bg-slate-100/80 rounded-xl flex items-center justify-between">
+              <span class="flex items-center gap-1.5">
+                <i data-lucide="sliders-horizontal" class="w-3.5 h-3.5 text-indigo-600"></i> Công Cụ Quản Trị & Kiểm Định
+              </span>
+              <span class="text-[9px] px-1.5 py-0.5 rounded-md bg-amber-100 text-amber-800 font-bold border border-amber-200">Admin</span>
+            </div>
+
+            <!-- Item 1: Kiểm Thử DOD -->
+            <button onclick="openDoDModal(); toggleAdminMenu()" class="w-full flex items-center gap-2.5 p-2 rounded-xl hover:bg-emerald-50 text-slate-800 text-xs font-bold transition text-left cursor-pointer group">
+              <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition">
+                <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i>
+              </div>
+              <div>
+                <div class="text-slate-900 font-black">Kiểm Thử DOD</div>
+                <div class="text-[10px] text-slate-500 font-normal">Chạy bộ kiểm thử 7 tiêu chuẩn (Audit & Test Suite)</div>
+              </div>
+            </button>
+
+            <!-- Item 2: Bảng Đối Chiếu Đáp Án (PDF) -->
+            <button onclick="navigateView('comparison'); toggleAdminMenu()" class="w-full flex items-center gap-2.5 p-2 rounded-xl hover:bg-blue-50 text-slate-800 text-xs font-bold transition text-left cursor-pointer group">
+              <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition">
+                <i data-lucide="table-properties" class="w-4 h-4 text-blue-600"></i>
+              </div>
+              <div>
+                <div class="text-slate-900 font-black">Bảng Đối Chiếu Đáp Án (PDF)</div>
+                <div class="text-[10px] text-slate-500 font-normal">Đối chiếu chi tiết 9 môn với đề cương PDF gốc</div>
+              </div>
+            </button>
+
+            <!-- Item 3: Kho Đề Cương & Lời Giải AI -->
+            <button onclick="openArchiveModal(); toggleAdminMenu()" class="w-full flex items-center gap-2.5 p-2 rounded-xl hover:bg-indigo-50 text-slate-800 text-xs font-bold transition text-left cursor-pointer group">
+              <div class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition">
+                <i data-lucide="folder-git-2" class="w-4 h-4 text-indigo-600"></i>
+              </div>
+              <div>
+                <div class="text-slate-900 font-black">Kho Đề Cương & Lời Giải AI</div>
+                <div class="text-[10px] text-slate-500 font-normal">Tệp đề cương PDF gốc & lời giải AI có versioning</div>
+              </div>
+            </button>
+
+            <!-- Item 4: Thống Kê & Đối Chiếu 2 Đề Gốc -->
+            <button onclick="openExamStatsModal(); toggleAdminMenu()" class="w-full flex items-center gap-2.5 p-2 rounded-xl hover:bg-amber-50 text-slate-800 text-xs font-bold transition text-left cursor-pointer group">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition">
+                <i data-lucide="file-check-2" class="w-4 h-4 text-amber-600"></i>
+              </div>
+              <div>
+                <div class="text-slate-900 font-black">Thống Kê 2 Đề Thi Gốc (802 & 805)</div>
+                <div class="text-[10px] text-slate-500 font-normal">Báo cáo nghiệm thu trích xuất từng trang PDF & Audio</div>
+              </div>
+            </button>
           </div>
         </div>
 
@@ -252,17 +297,17 @@
           Tích hợp <strong>phát âm có loa nghe từng đáp án</strong> (Tiếng Anh), <strong>chống học vẹt đảo đề ngẫu nhiên</strong> và phương pháp <strong>"Sơ đồ Cấu trúc Ý & Từ khóa cốt lõi"</strong> ghi nhớ bài tự luận sâu sắc nhất. Đã lưu trữ toàn bộ đề cương gốc và đáp án AI có versioning.
         </p>
         <div class="flex flex-wrap items-center gap-3 pt-2">
-          <button onclick="navigateView('comparison')" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-xs shadow-md hover:shadow-lg transition flex items-center gap-2 cursor-pointer">
-            <i data-lucide="clipboard-check" class="w-4 h-4 text-amber-100"></i>
-            <span>Bảng Đối Chiếu Đáp Án Với Đề Cương Gốc (PDF)</span>
+          <button onclick="selectSubject('en_802')" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-indigo-600 hover:to-blue-700 text-white font-bold text-xs shadow-md hover:shadow-lg transition flex items-center gap-2 cursor-pointer">
+            <i data-lucide="play" class="w-4 h-4 fill-white"></i>
+            <span>Luyện Đề 802 (Năm 2025-2026)</span>
           </button>
-          <button onclick="openDoDModal()" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold text-xs shadow-md hover:shadow-lg transition flex items-center gap-2 cursor-pointer">
-            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-100"></i>
-            <span>Chạy Kiểm Thử DOD (Audit & Test Suite)</span>
+          <button onclick="selectSubject('en_805')" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-600 text-white font-bold text-xs shadow-md hover:shadow-lg transition flex items-center gap-2 cursor-pointer">
+            <i data-lucide="pen-tool" class="w-4 h-4 text-white"></i>
+            <span>Luyện Đề 805 (Năm 2024-2025)</span>
           </button>
-          <button onclick="openArchiveModal()" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs backdrop-blur-md border border-white/20 transition flex items-center gap-2 cursor-pointer">
-            <i data-lucide="folder-git-2" class="w-4 h-4 text-teal-300"></i>
-            <span>Kho Đề Cương & Lời Giải AI</span>
+          <button onclick="document.getElementById('subjects-list-section')?.scrollIntoView({ behavior: 'smooth' })" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs backdrop-blur-md border border-white/20 transition flex items-center gap-2 cursor-pointer">
+            <i data-lucide="book-open" class="w-4 h-4 text-teal-300"></i>
+            <span>Xem Đề Cương 8 Môn Học</span>
           </button>
         </div>
       </div>
@@ -285,11 +330,15 @@
             Học sinh có thể thi thử bấm giờ 60 phút như thi thật với <strong>Mã Đề 802 (Năm 2025-2026)</strong> và <strong>Mã Đề 805 (Năm 2024-2025)</strong>: Tích hợp âm thanh hội thoại Tom & Trang, hình ảnh biển báo/thông báo gốc, và bộ gõ bài tự luận viết có chấm điểm tự động.
           </p>
         </div>
-        <div class="flex items-center gap-2.5 flex-wrap flex-shrink-0">
-          <button onclick="openExamStatsModal()" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-xs shadow-md transition flex items-center gap-2 cursor-pointer">
-            <i data-lucide="table-properties" class="w-4 h-4 text-amber-100"></i>
-            <span>Báo Cáo Thống Kê & Đối Chiếu 2 Đề Gốc</span>
-          </button>
+        <div class="flex items-center gap-2 flex-wrap flex-shrink-0">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/10 text-emerald-300 text-xs font-bold border border-white/15 backdrop-blur-xs">
+            <i data-lucide="headphones" class="w-3.5 h-3.5 text-emerald-400"></i>
+            <span>Audio Tom & Trang</span>
+          </div>
+          <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/10 text-indigo-200 text-xs font-bold border border-white/15 backdrop-blur-xs">
+            <i data-lucide="check-circle" class="w-3.5 h-3.5 text-indigo-300"></i>
+            <span>Chấm tự động</span>
+          </div>
         </div>
       </div>
 
@@ -427,7 +476,7 @@
     </div>
 
     <!-- 8 SUBJECT CARDS SELECTION -->
-    <div class="space-y-4">
+    <div id="subjects-list-section" class="space-y-4 scroll-mt-20">
       <div class="flex items-center justify-between">
         <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
           <i data-lucide="layout-grid" class="w-5 h-5 text-indigo-600"></i> Danh Sách Trọn Bộ 8 Môn Ôn Tập Giữa Kì 1
@@ -1852,7 +1901,20 @@
     }
 
     function toggleQuickMenu() {
-      document.getElementById('quick-menu-dropdown').classList.toggle('hidden');
+      const qm = document.getElementById('quick-menu-dropdown');
+      if (qm) qm.classList.toggle('hidden');
+      const am = document.getElementById('admin-menu-dropdown');
+      if (am) am.classList.add('hidden');
+    }
+
+    function toggleAdminMenu() {
+      const am = document.getElementById('admin-menu-dropdown');
+      if (am) am.classList.toggle('hidden');
+      const qm = document.getElementById('quick-menu-dropdown');
+      if (qm) qm.classList.add('hidden');
+      if (window.lucide && window.lucide.createIcons) {
+        window.lucide.createIcons();
+      }
     }
 
     document.addEventListener('click', (e) => {
@@ -1860,6 +1922,12 @@
       const menu = document.getElementById('quick-menu-dropdown');
       if (btn && menu && !btn.contains(e.target) && !menu.contains(e.target)) {
         menu.classList.add('hidden');
+      }
+
+      const adminBtn = document.getElementById('btn-admin-menu');
+      const adminMenu = document.getElementById('admin-menu-dropdown');
+      if (adminBtn && adminMenu && !adminBtn.contains(e.target) && !adminMenu.contains(e.target)) {
+        adminMenu.classList.add('hidden');
       }
     });
 

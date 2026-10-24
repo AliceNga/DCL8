@@ -1,0 +1,188 @@
+
+=== PAGE 33 ===
+
+
+UBND PHƯỜNG NGHĨA ĐÔ
+TRƯỜNG THCS NGHĨA TÂN
+ĐỀ SỐ 1
+ĐỀ ÔN TẬP GIỮA HỌC KÌ I
+NĂM HỌC 2026 – 2027
+MÔN: TOÁN 8
+Thời gian: 90 phút
+Bài I. (2,0 điểm). Thực hiện các phép tính và thu gọn các biểu thức sau:
+a) (3𝑥2𝑦 − 2𝑥𝑦) + (𝑥2𝑦 + 5𝑥𝑦)
+b) (6𝑥3𝑦2 − 9𝑥2𝑦3): (3𝑥𝑦) − (2𝑥2𝑦 + 3𝑥𝑦2) (𝑥𝑦 ≠ 0)
+c) (2𝑥 − 𝑦)2 + (𝑥 + 𝑦)(𝑥 − 𝑦) 	d) (𝑥 − 1)(𝑥2 + 𝑥 + 1) − (𝑥 + 1)3
+Bài II. (2,0 điểm).
+Một khu nghỉ dưỡng thiết kế khuôn viên hình chữ nhật
+có chiều dài (𝑥 + 4) m và chiều rộng (𝑦 + 2) m. Ở
+giữa khuôn viên có một hồ bơi hình chữ nhật chiều dài
+𝑥 m, chiều rộng 𝑦 m (𝑥 > 0, 𝑦 > 0). Phần diện tích
+còn lại được trồng cỏ. Chi phí trồng cỏ là 150 000
+đồng/m².
+a) Viết biểu thức A biểu diễn diện tích phần đất trồng
+cỏ theo 𝑥, 𝑦 và thu gọn (nếu có thể).
+b) Viết biểu thức B biểu diễn tổng chi phí trồng cỏ theo 𝑥, 𝑦 và thu gọn (nếu có thể).
+c) Tính tổng chi phí trồng cỏ khi 𝑥 = 12 và 𝑦 = 8.
+Bài III. (2,0 điểm). Tìm 𝑥, biết:
+a) 2𝑥2 + 4𝑥 = 0 	b) (2𝑥 + 1)2 − 𝑥2 = 0
+c) 3𝑥 − 3 + 𝑥2 − 1 = 0 	d) (𝑥 + 2)(𝑥2 − 2𝑥 + 4) − 2𝑥(𝑥 + 2) = 0
+Bài IV. (3,5 điểm).
+Cho tam giác ABC cân tại A. Gọi N là trung điểm của AC. Qua N kẻ đường thẳng song song
+với BC cắt AB tại M. Trên tia đối của tia NM lấy điểm E sao cho NM = NE.
+a) Chứng minh tứ giác BMNC là hình thang cân.
+b) Chứng minh tứ giác AECM, BMEC là hình bình hành.
+c) Gọi MC cắt BN, BE lần lượt tại G, I.
+Chứng minh tam giác CNE cân, 𝐺𝑀 = 1
+3𝐵𝑁.
+Bài V. (0,5 điểm). Sức mạnh của sự đoàn kết
+Người cha muốn dạy hai con bài học “Đoàn kết tạo nên sức mạnh” nên đưa cho mỗi người
+một bó đũa gồm lần lượt 4𝑥 và 4𝑦 chiếc (𝑥, 𝑦 là các số nguyên dương). Ông yêu cầu mỗi
+người dùng hết bó đũa của mình để xếp thành một hình vuông. Sau đó, hai người gộp cả hai
+bó đũa để xếp thành một hình vuông lớn hơn. Biết mỗi chiếc đũa dài 𝑎 (cm) với 𝑎 > 0, các
+chiếc đũa được xếp nối tiếp và không chồng lên nhau.
+a) Hãy so sánh diện tích hình vuông lớn với tổng diện
+tích hai hình vuông nhỏ. Từ đó, giải thích ý nghĩa của bài
+học mà người cha muốn truyền đạt.
+b) Người cha nhận thấy diện tích hình vuông lớn gấp đôi
+tổng diện tích hai hình vuông nhỏ. Hỏi số đũa trong hai
+bó có mối quan hệ như thế nào?
+—————— HẾT ——————
+
+
+=== PAGE 34 ===
+
+
+UBND PHƯỜNG NGHĨA ĐÔ
+TRƯỜNG THCS NGHĨA TÂN
+ĐỀ SỐ 2
+ĐỀ ÔN TẬP GIỮA HỌC KÌ I
+NĂM HỌC 2026 – 2027
+MÔN: TOÁN 8
+Thời gian: 90 phút
+Bài I. (2,0 điểm). Thực hiện các phép tính và thu gọn các biểu thức sau:
+a) 3𝑥(𝑥 − 2𝑦) + 2𝑦(3𝑥 − 𝑦)
+b) (12𝑥4𝑦2 − 8𝑥3𝑦3 + 4𝑥2𝑦2): (4𝑥2𝑦2) − 𝑥(3𝑥 − 2𝑦)(xy ≠ 0)
+c) (𝑥 − 2𝑦)2 + 4𝑦(𝑥 − 𝑦) 	d) (𝑥 + 2)(𝑥2 − 2𝑥 + 4) − 𝑥(𝑥 − 3)2
+Bài II. (2,0 điểm).
+Một bể cá cảnh bằng kính dạng hình hộp chữ nhật
+không có nắp, có chiều cao 4 dm, chiều dài đáy (𝑥 + 𝑦)
+dm và chiều rộng đáy (𝑥 − 𝑦) dm (𝑥 > 𝑦 > 0). Bỏ qua
+độ dày của kính.
+a) Viết biểu thức 𝐴 biểu diễn thể tích của bể theo 𝑥, 𝑦 và thu gọn (nếu có thể).
+b) Biết giá kính là 2000 đồng/dm². Viết biểu thức 𝐵 biểu diễn số tiền mua kính để làm bể
+theo 𝑥, 𝑦 và thu gọn (nếu có thể).
+c) Tính thể tích của bể và số tiền mua kính khi 𝑥 = 7 và 𝑦 = 3.
+Bài III. (2,0 điểm). Tìm 𝑥, biết:
+a) 𝑥2 − 7𝑥 = 0 	b) (2𝑥 − 1)(2𝑥 + 1) − 4𝑥(𝑥 − 2) = 7
+c) (𝑥 − 1)2 − 9 = 0 	d) 𝑥(𝑥 + 3) − 5𝑥 − 15 = 0
+Bài IV. (3,5 điểm).
+Cho hình thang cân 𝐴𝐵𝐶𝐷 (𝐴𝐵//𝐶𝐷; 𝐴𝐵 < 𝐶𝐷). Gọi 𝐻 và 𝐾 lần lượt là hình chiếu
+của 𝐴 và 𝐵 trên cạnh 𝐶𝐷.
+a) Chứng minh 𝐷𝐻 = 𝐶𝐾.
+b) Trên tia đối của tia 𝐷𝐶 lấy điểm 𝐸 sao cho 𝐷𝐸 = 𝐴𝐵. Chứng minh tứ giác 𝐴𝐵𝐷𝐸 là
+hình bình hành và tam giác 𝐴𝐶𝐸 cân.
+c) Gọi 𝐼 là trung điểm của 𝐴𝐷. Qua 𝐼 kẻ đường thẳng song song với 𝐷𝐶 cắt 𝐵𝐶 tại 𝑀.
+Chứng minh ba điểm 𝐵, 𝐼, 𝐸 thẳng hàng và ba đường thẳng 𝐵𝐻, 𝐶𝐼, 𝐸𝑀 đồng quy.
+Bài V. (0,5 điểm). Vận dụng
+Một trang trại muốn rào một bãi cỏ hình chữ nhật để
+chăn thả bò, một cạnh của bãi cỏ là bờ sông nên không
+cần rào. Chi phí làm hàng rào ở ba cạnh còn lại là 40
+nghìn đồng mỗi mét. Biết số tiền làm hàng rào vừa đủ 4
+triệu đồng. Tính diện tích lớn nhất có thể của bãi cỏ.
+—————— HẾT ——————
+
+
+=== PAGE 35 ===
+
+
+UBND PHƯỜNG NGHĨA ĐÔ
+TRƯỜNG THCS NGHĨA TÂN
+ĐỀ SỐ 3
+ĐỀ ÔN TẬP GIỮA HỌC KÌ I
+NĂM HỌC 2026 – 2027
+MÔN: TOÁN 8
+Thời gian: 90 phút
+Bài I. (2,0 điểm). Rút gọn biểu thức và thực hiện các phép tính sau:
+a) 2(3𝑥 + 4) − (12𝑥2 − 15𝑥): (3𝑥)(x ≠ 0) b) (𝑥 − 2)(2𝑥 + 1) + 𝑥(1 − 2𝑥)
+c) (𝑥 − 3)(𝑥 + 3) − (𝑥 − 5)2 − 10𝑥 	d) (𝑥 + 2)3 + (𝑥 − 2)2 − 𝑥(𝑥2 + 12)
+Bài II. (2,0 điểm).
+Một khu vườn hình chữ nhật có chiều dài (3𝑥 + 2) m,
+chiều rộng (𝑦 + 4) m. Người ta làm một lối đi hình chữ
+nhật dọc theo chiều dài khu vườn, rộng 2 m (như hình
+vẽ), với 𝑥 > 0, 𝑦 > 0.
+a) Viết biểu thức 𝐴 biểu diễn diện tích khu vườn và thu gọn (nếu có thể).
+b) Viết biểu thức 𝐵 biểu diễn diện tích phần đất trồng cây còn lại và thu gọn (nếu có thể).
+c) Tính diện tích đất trồng cây khi 𝑥 = 6, 𝑦 = 8.
+Bài III. (2,0 điểm). Tìm 𝑥, biết:
+a) 4𝑥(𝑥 + 3) − 4𝑥2 = 36 	b) (𝑥 + 2)2 − (𝑥 − 3)(𝑥 + 3) = − 3
+c) 𝑥2(𝑥 − 7) − 4(𝑥 − 7) = 0 	d) 𝑥(2𝑥 − 3) − 4𝑥2 + 9 = 0
+Bài IV. (3,5 điểm). Cho tam giác 𝐴𝐵𝐶 nhọn (𝐴𝐵 < 𝐴𝐶 < 𝐵𝐶). Gọi 𝑂 là trung điểm của
+𝐵𝐶, lấy điểm 𝐷 sao cho 𝑂 là trung điểm của 𝐴𝐷.
+a) Chứng minh tứ giác 𝐴𝐵𝐷𝐶 là hình bình hành.
+b) Gọi 𝑀 là hình chiếu của 𝐵 trên 𝐶𝐷, lấy điểm 𝑌 sao cho 𝑀 là trung điểm của 𝐷𝑌.
+Chứng minh ̂ 𝐶𝐴𝐵 =̂ 𝐵𝑌𝐷 và tứ giác 𝐴𝐶𝑌𝐵 là hình thang cân.
+c) 𝐴𝑌 cắt 𝐵𝐶 tại 𝑆, lấy điểm 𝑃 trên 𝐴𝐵 sao cho 𝑆𝑃//𝑀𝐵. Lấy điểm 𝐸 sao cho 𝐷 là trung
+điểm của 𝐵𝐸, 𝐴𝐸 cắt 𝐶𝐷 tại 𝑄. Chứng minh 𝑃 là trung điểm của 𝐴𝐵 và ba điểm 𝑃, 𝑂, 𝑄
+thẳng hàng.
+Bài V. (0,5 điểm). Vận dụng
+Một cửa hàng nhập một loại bút với giá nhập 20 nghìn đồng mỗi chiếc. Nếu bán với giá bán
+40 nghìn đồng mỗi chiếc thì mỗi ngày bán được 50 chiếc. Cửa hàng dự định giảm giá bán,
+biết rằng cứ giảm giá 1 nghìn đồng mỗi chiếc thì số bút bán được mỗi ngày tăng thêm 5
+chiếc. Hỏi cửa hàng nên bán mỗi chiếc bút với giá bao nhiêu để lợi nhuận mỗi ngày lớn
+nhất? Tính lợi nhuận lớn nhất đó.
+—————— HẾT ——————
+
+
+=== PAGE 36 ===
+
+
+UBND PHƯỜNG NGHĨA ĐÔ
+TRƯỜNG THCS NGHĨA TÂN
+ĐỀ SỐ 4
+ĐỀ ÔN TẬP GIỮA HỌC KÌ I
+NĂM HỌC 2026 – 2027
+MÔN: TOÁN 8
+Thời gian: 90 phút
+Bài I. (2,0 điểm). Rút gọn các biểu thức sau:
+a) 𝐴 = 3𝑥2 + 𝑥𝑦 − 𝑥(3𝑥 − 2𝑦)
+b) 𝐵 = (12𝑥4𝑦3 − 9𝑥3𝑦4 + 6𝑥3𝑦3): (3𝑥3𝑦3) − 4𝑥 + 6𝑦 (với 𝑥 ≠ 0, 𝑦 ≠ 0)
+c) 𝐶 = (𝑥 + 2)(𝑥 − 4) − (𝑥 − 3)(𝑥 + 3) + 2𝑥
+d) 𝐷 = (𝑥 + 3)3 − 𝑥2(𝑥 + 9) − 27
+Bài II. (2,0 điểm).
+Một siêu thị điện máy bán một chiếc tủ lạnh với giá niêm yết là 𝑥
+(nghìn đồng) và một chiếc máy hút bụi với giá niêm yết là 𝑦 (nghìn
+đồng), với 𝑥 > 0, 𝑦 > 0. Gia đình bạn Lan mua 2 chiếc tủ lạnh và 3
+chiếc máy hút bụi.
+a) Viết biểu thức 𝐴 biểu diễn số tiền gia đình bạn Lan phải trả nếu mua theo giá niêm yết và
+thu gọn (nếu có thể).
+b) Nhân dịp khai trương, siêu thị giảm 20% cho mặt hàng tủ lạnh và giảm 30% cho mặt
+hàng máy hút bụi so với giá niêm yết. Viết biểu thức 𝐵 biểu diễn số tiền gia đình bạn Lan
+phải trả sau khi được giảm giá và thu gọn (nếu có thể).
+c) Tính số tiền gia đình bạn Lan thực tế phải trả, biết giá niêm yết của một chiếc tủ lạnh là
+10 triệu đồng và của một chiếc máy hút bụi là 4 triệu đồng.
+Bài III. (2,0 điểm). Tìm 𝑥, biết:
+a) 3𝑥2 − 2 − 𝑥(3𝑥 − 2) = 4 	b) (𝑥 + 5)(𝑥 − 5) = (𝑥 − 2)2 − 6
+c) (𝑥 + 3)(4𝑥2 − 7𝑥 + 9) − (𝑥 + 3)(3𝑥2 + 9) = 0 d) 4(3𝑥 − 2)2 = 25(𝑥 − 1)2
+Bài IV. (3,5 điểm). Cho hình bình hành 𝐴𝐵𝐶𝐷. Gọi 𝐸 và 𝐹 theo thứ tự là trung điểm của 𝐴𝐵
+và 𝐶𝐷.
+a) Chứng minh rằng tứ giác 𝐴𝐸𝐶𝐹 là hình bình hành.
+b) 𝐴𝐶 cắt 𝐵𝐷 tại 𝑂. Chứng minh ba điểm 𝐸, 𝑂, 𝐹 thẳng hàng.
+c) Gọi 𝑀, 𝑁 theo thứ tự là giao điểm của 𝐵𝐷 với 𝐴𝐹, 𝐶𝐸. Chứng minh 𝑂𝑀 = 1
+2𝑀𝐷 và
+𝑀 là trung điểm của 𝐷𝑁.
+Bài V. (0,5 điểm). Vận dụng
+Một sợi dây thép dài 24 m được chia thành hai
+phần. Một phần uốn thành hình chữ nhật có chiều
+dài hơn chiều rộng 2 m; phần còn lại uốn thành
+hình vuông. Hỏi phải chia sợi dây như thế nào để
+tổng diện tích hai hình nhỏ nhất? Tính tổng diện
+tích nhỏ nhất đó.
+—————— HẾT ——————
+
+
+=== PAGE 37 ===
+
+
+
+

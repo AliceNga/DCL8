@@ -96,7 +96,7 @@ window.COMPARISON_MASTER_DATA = [
     appAnswer: 'a-Sai, b-Đúng, c-Sai, d-Đúng',
     pdfAnswer: 'a-S, b-Đ, c-S, d-Đ',
     status: 'updated', statusLabel: 'Đã cập nhật theo PDF',
-    notes: 'Trang 7 PDF: Sáng tạo phải dựa trên tôn trọng cội nguồn (b Đúng, d Đúng; a Sai, c Sai). Đã chuẩn hóa theo đề cương.'
+    notes: 'Trang 5 PDF: Trích đoạn Báo Nhân Dân (23/07/2026 & 25/01/2025), a-Sai, b-Đúng, c-Sai, d-Đúng. Sáng tạo phải dựa trên tôn trọng cội nguồn di sản.'
   },
   {
     id: 'comp_gdcd_tl1', subj: 'gdcd', subjTitle: 'GDCD 8', badgeColor: 'rose',
@@ -469,56 +469,56 @@ window.COMPARISON_MASTER_DATA = [
   {
     id: 'comp_tech_10', subj: 'tech', subjTitle: 'Công Nghệ 8', badgeColor: 'cyan',
     qCode: 'Công Nghệ - Câu 10', type: 'mc', typeLabel: 'Trắc nghiệm',
-    questionSummary: 'Hình chiếu bằng của hình nón là hình gì?',
-    appAnswer: 'C. Hình tròn.',
-    pdfAnswer: 'C (Hình tròn)',
+    questionSummary: 'Hình chiếu đứng thể hiện các kích thước nào sau đây của vật thể?',
+    appAnswer: 'C. Chiều cao và chiều dài.',
+    pdfAnswer: 'C (Chiều cao và chiều dài)',
     status: 'updated', statusLabel: 'Đã cập nhật theo PDF',
-    notes: 'Trang 17 PDF: Đã cập nhật câu hỏi hình chiếu bằng hình nón từ đề cương.'
+    notes: 'Trang 13-14 PDF: Chiếu từ trước tới thể hiện kích thước chiều dài và chiều cao.'
   },
   {
     id: 'comp_tech_11', subj: 'tech', subjTitle: 'Công Nghệ 8', badgeColor: 'cyan',
     qCode: 'Công Nghệ - Câu 11', type: 'mc', typeLabel: 'Trắc nghiệm',
-    questionSummary: 'Nét gạch chấm mảnh dùng để vẽ đường nào?',
-    appAnswer: 'C. Đường tâm, đường trục đối xứng.',
-    pdfAnswer: 'C (Đường tâm, đường trục đối xứng)',
+    questionSummary: 'Khi xây dựng hình chiếu vuông góc, vật thể được đặt ở vị trí nào?',
+    appAnswer: 'C. Trong không gian tạo bởi ba mặt phẳng hình chiếu vuông góc với nhau từng đôi một.',
+    pdfAnswer: 'C (Trong không gian tạo bởi ba mặt phẳng hình chiếu vuông góc với nhau từng đôi một)',
     status: 'updated', statusLabel: 'Đã cập nhật theo PDF',
-    notes: 'Trang 17 PDF: Đã cập nhật nét gạch chấm mảnh TCVN.'
+    notes: 'Trang 14 PDF: Phương pháp chiếu góc thứ nhất.'
   },
   {
     id: 'comp_tech_12', subj: 'tech', subjTitle: 'Công Nghệ 8', badgeColor: 'cyan',
     qCode: 'Công Nghệ - Câu 12', type: 'mc', typeLabel: 'Trắc nghiệm',
-    questionSummary: 'Hình chóp đều có mặt đáy là hình gì?',
-    appAnswer: 'B. Đa giác đều.',
-    pdfAnswer: 'B (Đa giác đều)',
+    questionSummary: 'Hình chiếu của hình chóp tứ giác đều có hình dạng nào dưới đây?',
+    appAnswer: 'B. Hình tam giác cân và hình vuông.',
+    pdfAnswer: 'B (Hình tam giác cân và hình vuông)',
     status: 'updated', statusLabel: 'Đã cập nhật theo PDF',
-    notes: 'Trang 17 PDF: Khái niệm chuẩn hình chóp đều.'
+    notes: 'Trang 14 PDF: Đáy là hình vuông, các mặt bên là tam giác cân.'
   },
   {
     id: 'comp_tech_13', subj: 'tech', subjTitle: 'Công Nghệ 8', badgeColor: 'cyan',
     qCode: 'Công Nghệ - Câu 13', type: 'mc', typeLabel: 'Trắc nghiệm',
-    questionSummary: 'Kích thước tiêu chuẩn của khổ giấy A4 là:',
-    appAnswer: 'B. 297 x 210 mm.',
-    pdfAnswer: 'B (297 x 210 mm)',
+    questionSummary: 'Hình chóp đều được bao bởi mặt đáy là hình gì?',
+    appAnswer: 'B. Đa giác đều.',
+    pdfAnswer: 'B (Đa giác đều)',
     status: 'updated', statusLabel: 'Đã cập nhật theo PDF',
-    notes: 'Trang 17 PDF: Khổ giấy A4 chuẩn TCVN.'
+    notes: 'Trang 14 PDF: Đáy là một đa giác đều, các mặt bên là tam giác cân bằng nhau.'
   },
   {
     id: 'comp_tech_14', subj: 'tech', subjTitle: 'Công Nghệ 8', badgeColor: 'cyan',
     qCode: 'Công Nghệ - Câu 14', type: 'mc', typeLabel: 'Trắc nghiệm',
-    questionSummary: 'Trên bản vẽ kĩ thuật, hình chiếu đứng có hướng chiếu từ đâu tới?',
+    questionSummary: 'Trên bản vẽ kĩ thuật, hình chiếu đứng có hướng chiếu như thế nào?',
     appAnswer: 'A. Có hướng chiếu từ trước tới.',
     pdfAnswer: 'A (Từ trước tới)',
     status: 'match', statusLabel: 'Khớp 100% chuẩn',
-    notes: 'Trang 17 PDF: Hướng nhìn từ trước ra sau.'
+    notes: 'Trang 14 PDF: Hướng nhìn từ trước tới.'
   },
   {
     id: 'comp_tech_15', subj: 'tech', subjTitle: 'Công Nghệ 8', badgeColor: 'cyan',
     qCode: 'Công Nghệ - Câu 15 (Đ/S)', type: 'tf', typeLabel: 'Đúng / Sai',
-    questionSummary: 'Nhận định về bản vẽ kĩ thuật: a) Chiếu cạnh từ trái sang; b) Đo góc là mm; c) A4 là 297x210; d) Tỉ lệ 1:2 là phóng to.',
+    questionSummary: 'Bài toán lon sữa 1400x1000mm trên A4, đáy // mặt phẳng hình chiếu cạnh: a) Tỉ lệ 1:10; b) Chiếu bằng là tròn; c) Chiếu cạnh là tròn; d) Tỉ lệ 10:1.',
     appAnswer: 'a-Đ, b-S, c-Đ, d-S',
     pdfAnswer: 'a-Đ, b-S, c-Đ, d-S',
     status: 'updated', statusLabel: 'Đã cập nhật theo PDF',
-    notes: 'Trang 17 PDF: Đã cập nhật câu Đúng/Sai 4 ý chính xác theo đề cương.'
+    notes: 'Trang 14 PDF: Thu nhỏ 1:10 vì vật thể 1400x1000mm trên khổ A4; đáy // hình chiếu cạnh nên hình chiếu cạnh là hình tròn.'
   },
   {
     id: 'comp_tech_tl1', subj: 'tech', subjTitle: 'Công Nghệ 8', badgeColor: 'cyan',
@@ -900,11 +900,11 @@ window.COMPARISON_MASTER_DATA = [
   {
     id: 'comp_sci_c8', subj: 'sci', subjTitle: 'KHTN 8 (Hóa)', badgeColor: 'emerald',
     qCode: 'KHTN Hóa - Câu 8', type: 'mc', typeLabel: 'Trắc nghiệm',
-    questionSummary: 'Số phân tử oxygen có trong mẫu thể tích 115,6 ml ở điều kiện tiêu chuẩn?',
-    appAnswer: 'A. 4,63 · 10¹⁵ phân tử.',
+    questionSummary: 'Số phân tử Isoamyl acetate (C₇H₁₄O₂ mùi chuối chín) được giải phóng trong 1 vết ong đốt (1 μg)?',
+    appAnswer: 'A. 4,63 · 10¹⁵.',
     pdfAnswer: 'A (4,63 . 10¹⁵)',
     status: 'updated', statusLabel: 'Đã cập nhật theo PDF',
-    notes: 'Trang 28 PDF: Đã bổ sung câu hỏi số hạt phân tử còn thiếu trong ứng dụng.'
+    notes: 'Trang 20 PDF: Khối lượng mol M = 130 g/mol, m = 1×10⁻⁶ g, N = (1×10⁻⁶ / 130) × 6,022×10²³ ≈ 4,63×10¹⁵ phân tử.'
   },
   {
     id: 'comp_sci_ce1', subj: 'sci', subjTitle: 'KHTN 8 (Hóa)', badgeColor: 'emerald',
