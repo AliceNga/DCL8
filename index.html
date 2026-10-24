@@ -1692,6 +1692,8 @@
        ========================================================================= */
     const STORAGE_KEYS = {
       en: 'app_stats_tieng_anh_8',
+      en_802: 'app_stats_tieng_anh_802',
+      en_805: 'app_stats_tieng_anh_805',
       sci: 'app_stats_khtn_8',
       tech: 'app_stats_cong_nghe_8',
       his: 'app_stats_lich_su_8',
@@ -1746,6 +1748,8 @@
        SUBJECT DATABASES (LOADED FROM /data/ EXTERNAL SCRIPTS)
        ========================================================================= */
     var ENGLISH_DATABASE = window.ENGLISH_DATABASE || [];
+    var EXAM_802_DATABASE = window.EXAM_802_DATABASE || [];
+    var EXAM_805_DATABASE = window.EXAM_805_DATABASE || [];
     var SCIENCE_DATABASE = window.SCIENCE_DATABASE || [];
     var TECH_DATABASE = window.TECH_DATABASE || [];
     var HISTORY_DATABASE = window.HISTORY_DATABASE || [];
@@ -1760,6 +1764,8 @@
        ========================================================================= */
     const SUBJECT_MAP = {
       en: { title: 'Đề Cương Tiếng Anh 8 (Units 1, 2, 3)', badge: 'Tiếng Anh 8', dataset: ENGLISH_DATABASE, color: 'indigo' },
+      en_802: { title: 'Đề Thi Giữa Kì 1 - Mã Đề 802 (2025-2026)', badge: 'Mã đề 802', dataset: EXAM_802_DATABASE, color: 'indigo' },
+      en_805: { title: 'Đề Thi Giữa Kì 1 - Mã Đề 805 (2024-2025)', badge: 'Mã đề 805', dataset: EXAM_805_DATABASE, color: 'emerald' },
       sci: { title: 'Đề Cương Khoa Học Tự Nhiên 8', badge: 'KHTN 8', dataset: SCIENCE_DATABASE, color: 'emerald' },
       tech: { title: 'Đề Cương Công Nghệ 8 (Bản vẽ kĩ thuật)', badge: 'Công Nghệ 8', dataset: TECH_DATABASE, color: 'cyan' },
       his: { title: 'Đề Cương Lịch Sử 8 (Bài 1 -> Bài 5)', badge: 'Lịch Sử 8', dataset: HISTORY_DATABASE, color: 'amber' },
@@ -1837,13 +1843,20 @@
     });
 
     function selectSubject(subjKey) {
+      const meta = SUBJECT_MAP[subjKey];
+      if (!meta) {
+        console.error('Unknown subject:', subjKey);
+        return;
+      }
+
       currentSubject = subjKey;
       currentFilter = 'all';
       currentHistoryKey = STORAGE_KEYS[subjKey];
-      const meta = SUBJECT_MAP[subjKey];
 
       const datasets = {
         en: window.ENGLISH_DATABASE,
+        en_802: window.EXAM_802_DATABASE,
+        en_805: window.EXAM_805_DATABASE,
         sci: window.SCIENCE_DATABASE,
         tech: window.TECH_DATABASE,
         his: window.HISTORY_DATABASE,
@@ -1917,9 +1930,10 @@
           }));
           return { ...item, shuffledKeypoints: clonedKeypoints };
         } else {
+          const options = Array.isArray(item.options) ? item.options : [];
           return {
             ...item,
-            shuffledOptions: shuffleArray(item.options.map(o => ({ ...o })))
+            shuffledOptions: shuffleArray(options.map(o => ({ ...o })))
           };
         }
       });
@@ -2152,9 +2166,29 @@
 
       let html = '';
       let qNum = 0;
+      let listeningAudioRendered = false;
+      const listeningAudioSrc = currentSubject === 'en_802'
+        ? 'assets/audio/exam-802-listening.mp3'
+        : currentSubject === 'en_805'
+          ? 'assets/audio/exam-805-listening.mp3'
+          : '';
 
       filtered.forEach(q => {
         qNum++;
+        if (q.exKey === 'listening' && listeningAudioSrc && !listeningAudioRendered) {
+          listeningAudioRendered = true;
+          html += `
+            <div class="bg-indigo-50 border border-indigo-200 rounded-2xl p-4 sm:p-5 space-y-2">
+              <div class="flex items-center gap-2 text-sm font-bold text-indigo-900">
+                <i data-lucide="headphones" class="w-4 h-4"></i>
+                Bài nghe Mã đề ${currentSubject === 'en_802' ? '802' : '805'}
+              </div>
+              <audio class="w-full" controls preload="metadata" src="${listeningAudioSrc}">
+                Trình duyệt của bạn không hỗ trợ phát âm thanh.
+              </audio>
+            </div>
+          `;
+        }
         if (q.type === 'keypoint_checklist') {
           html += renderKeypointEssayCard(q, qNum);
         } else {
