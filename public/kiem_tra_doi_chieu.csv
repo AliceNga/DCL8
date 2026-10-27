@@ -1,0 +1,435 @@
+source_id,status,app_file,app_id,similarity,missing_parts,needs_human_review,note
+K8-GDCD-tn-c01,MATCHED,gdcd.js,gdcd_1,1.0,,False,
+K8-GDCD-tn-c02,MATCHED,gdcd.js,gdcd_2,1.0,,False,
+K8-GDCD-tn-c03,MATCHED,gdcd.js,gdcd_3,1.0,,False,
+K8-GDCD-tn-c04,MATCHED,gdcd.js,gdcd_4,1.0,,False,
+K8-GDCD-tn-c05,MATCHED,gdcd.js,gdcd_5,1.0,,False,
+K8-GDCD-tn-c06,MATCHED,gdcd.js,gdcd_6,1.0,,False,
+K8-GDCD-tn-c07,MATCHED,gdcd.js,gdcd_7,1.0,,False,
+K8-GDCD-tn-c08,MATCHED,gdcd.js,gdcd_8,1.0,,False,
+K8-GDCD-tn-c09,MATCHED,gdcd.js,gdcd_9,1.0,,False,
+K8-GDCD-ds-c01,MATCHED,gdcd.js,gdcd_10,0.97,,True,SOURCE needs_pdf_review=True
+K8-GDCD-ds-c01-a,MATCHED,gdcd.js,gdcd_10,1.0,,False,
+K8-GDCD-ds-c01-b,MATCHED,gdcd.js,gdcd_10,1.0,,False,
+K8-GDCD-ds-c01-c,MATCHED,gdcd.js,gdcd_10,1.0,,False,
+K8-GDCD-ds-c01-d,MATCHED,gdcd.js,gdcd_10,1.0,,False,
+K8-GDCD-tl-c01,MATCHED,gdcd.js,gdcd_essay_1,1.0,,False,
+K8-GDCD-tl-c02,MATCHED,gdcd.js,gdcd_essay_2,1.0,,False,
+K8-GDCD-tl-c03,MATCHED,gdcd.js,gdcd_essay_3,0.91,,False,
+K8-GDCD-tl-c04,MATCHED,gdcd.js,gdcd_essay_4,0.89,,False,
+K8-GDCD-tl-c04-a,MATCHED,gdcd.js,gdcd_essay_4,1.0,,False,
+K8-GDCD-tl-c04-b,MATCHED,gdcd.js,gdcd_essay_4,0.89,,False,
+K8-DIALI-tn-c01,MATCHED,dialy.js,geo_1,1.0,,False,
+K8-DIALI-tn-c02,MATCHED,dialy.js,geo_2,1.0,,False,
+K8-DIALI-tn-c03,MATCHED,dialy.js,geo_3,1.0,,False,
+K8-DIALI-tn-c04,MATCHED,dialy.js,geo_4,1.0,,False,
+K8-DIALI-tn-c05,MATCHED,dialy.js,geo_5,1.0,,False,
+K8-DIALI-tn-c06,MATCHED,dialy.js,geo_6,1.0,,False,
+K8-DIALI-tn-c07,MATCHED,dialy.js,geo_7,1.0,,False,
+K8-DIALI-tn-c08,MATCHED,dialy.js,geo_8,1.0,,False,
+K8-DIALI-tn-c09,MATCHED,dialy.js,geo_9,1.0,,False,
+K8-DIALI-tn-c10,MATCHED,dialy.js,geo_10,1.0,,False,
+K8-DIALI-tn-c11,MATCHED,dialy.js,geo_11,1.0,,False,
+K8-DIALI-tn-c12,MATCHED,dialy.js,geo_12,1.0,,False,
+K8-DIALI-tn-c13,MATCHED,dialy.js,geo_13,1.0,,False,
+K8-DIALI-tn-c14,MATCHED,dialy.js,geo_14,1.0,,False,
+K8-DIALI-tn-c15,MATCHED,dialy.js,geo_15,1.0,,False,
+K8-DIALI-tn-c16,MATCHED,dialy.js,geo_16,1.0,,False,
+K8-DIALI-tn-c17,MATCHED,dialy.js,geo_17,1.0,,False,
+K8-DIALI-tn-c18,MATCHED,dialy.js,geo_18,1.0,,False,
+K8-DIALI-tn-c19,MATCHED,dialy.js,geo_19,1.0,,False,
+K8-DIALI-tn-c20,PARTIAL,dialy.js,geo_20,0.78,"Độ tương đồng 0.78, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-DIALI-ds-c01,PARTIAL,dialy.js,geo_10,0.82,"Độ tương đồng 0.82, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-DIALI-ds-c01-a,MATCHED,dialy.js,geo_tf_1,1.0,,False,
+K8-DIALI-ds-c01-b,MATCHED,dialy.js,geo_tf_1,1.0,,False,
+K8-DIALI-ds-c01-c,TEXT_MISMATCH,dialy.js,geo_tf_1,0.75,"Khác số: SOURCE là ""1 triệu km²"" | APP (lựa chọn 4) là ""100 nghìn km²""",False,APP chuyển ý đúng thành phương án nhiễu sai (100 nghìn km²)
+K8-DIALI-ds-c01-d,MATCHED,dialy.js,geo_tf_1,1.0,,False,
+K8-DIALI-ds-c02,MATCHED,dialy.js,geo_6,1.0,,True,SOURCE needs_pdf_review=True
+K8-DIALI-ds-c02-a,MATCHED,dialy.js,geo_6,1.0,,False,
+K8-DIALI-ds-c02-b,MATCHED,dialy.js,geo_17,1.0,,False,
+K8-DIALI-ds-c02-c,MATCHED,dialy.js,geo_tf_2,1.0,,False,
+K8-DIALI-ds-c02-d,PARTIAL,dialy.js,geo_tf_2,0.71,"Độ tương đồng 0.71, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-DIALI-ds-c03,MATCHED,dialy.js,geo_7,1.0,,True,SOURCE needs_pdf_review=True
+K8-DIALI-ds-c03-a,MATCHED,dialy.js,geo_tf_3,1.0,,False,
+K8-DIALI-ds-c03-b,MATCHED,dialy.js,geo_tf_3,1.0,,False,
+K8-DIALI-ds-c03-c,MATCHED,dialy.js,geo_tf_3,1.0,,False,
+K8-DIALI-ds-c03-d,MATCHED,dialy.js,geo_tf_3,1.0,,False,
+K8-DIALI-ds-c04,MATCHED,dialy.js,geo_tf_3,1.0,,True,SOURCE needs_pdf_review=True
+K8-DIALI-ds-c04-a,PARTIAL,dialy.js,geo_tf_4,0.81,"Độ tương đồng 0.81, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-DIALI-ds-c04-b,PARTIAL,dialy.js,geo_tf_4,0.82,"Độ tương đồng 0.82, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-DIALI-ds-c04-c,MATCHED,dialy.js,geo_tf_4,1.0,,False,
+K8-DIALI-ds-c04-d,PARTIAL,dialy.js,geo_20,0.74,"Độ tương đồng 0.74, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-DIALI-tl-c01,MATCHED,dialy.js,geo_essay_1,1.0,,False,
+K8-DIALI-tl-c02,MATCHED,dialy.js,geo_essay_2,1.0,,False,
+K8-DIALI-tl-c03,MATCHED,dialy.js,geo_essay_3,1.0,,False,
+K8-CN-tn-c01,MATCHED,congnghe.js,tech_1,1.0,,False,
+K8-CN-tn-c02,MATCHED,congnghe.js,tech_2,1.0,,False,
+K8-CN-tn-c04,MATCHED,congnghe.js,tech_3,1.0,,False,
+K8-CN-tn-c05,MATCHED,congnghe.js,tech_4,1.0,,True,SOURCE needs_pdf_review=True
+K8-CN-tn-c06,MATCHED,congnghe.js,tech_5,1.0,,False,
+K8-CN-tn-c07,MATCHED,congnghe.js,tech_6,0.95,,False,
+K8-CN-tn-c09,PARTIAL,congnghe.js,tech_9,0.87,"Độ tương đồng 0.87, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-CN-tn-c10,MATCHED,congnghe.js,tech_10,1.0,,False,
+K8-CN-tn-c08,MATCHED,congnghe.js,tech_7,0.88,,True,SOURCE has_image=True; SOURCE needs_pdf_review=True
+K8-CN-tn-c12,MATCHED,congnghe.js,tech_12,1.0,,False,
+K8-CN-tn-c13,MATCHED,congnghe.js,tech_13,1.0,,True,SOURCE needs_pdf_review=True
+K8-CN-tn-c11,MATCHED,congnghe.js,tech_11,1.0,,False,
+K8-CN-tn-c14,MATCHED,congnghe.js,tech_14,1.0,,False,
+K8-CN-ds-c15,MATCHED,congnghe.js,tech_15,0.88,,True,SOURCE needs_pdf_review=True
+K8-CN-ds-c15-a,MATCHED,congnghe.js,tech_15,1.0,,False,
+K8-CN-ds-c15-b,MATCHED,congnghe.js,tech_4,1.0,,False,
+K8-CN-ds-c15-c,MATCHED,congnghe.js,tech_4,1.0,,False,
+K8-CN-ds-c15-d,PARTIAL,congnghe.js,tech_15,0.78,"Độ tương đồng 0.78, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-CN-tl-c01,MATCHED,congnghe.js,tech_essay_1,0.92,,False,
+K8-CN-tl-c02,MATCHED,congnghe.js,tech_essay_2,1.0,,False,
+K8-CN-tl-c03,MATCHED,congnghe.js,tech_essay_3,1.0,,False,
+K8-CN-th-c01,MATCHED,congnghe.js,tech_essay_4,1.0,,True,SOURCE has_image=True; SOURCE needs_pdf_review=True
+K8-CN-th-c01-a,MATCHED,congnghe.js,tech_essay_4,0.9,,True,SOURCE needs_pdf_review=True
+K8-CN-th-c01-b,PARTIAL,congnghe.js,tech_essay_4,0.86,"Độ tương đồng 0.86, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE has_image=True; SOURCE needs_pdf_review=True
+K8-CN-th-c02,MATCHED,congnghe.js,tech_essay_5,1.0,,False,
+K8-LS-tl-c01,MATCHED,lichsu.js,his_1b,0.91,,True,SOURCE needs_pdf_review=True
+K8-LS-tl-c02,PARTIAL,lichsu.js,his_2,0.61,"Độ tương đồng 0.61, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-LS-tl-c03,MATCHED,lichsu.js,his_3a..3c (Parent),1.0,,False,Mục cha chứa tiêu đề phần
+K8-LS-tl-c03-a,MATCHED,lichsu.js,his_3a,1.0,,False,
+K8-LS-tl-c03-b,MATCHED,lichsu.js,his_3b,1.0,,False,
+K8-LS-tl-c03-c,MATCHED,lichsu.js,his_3c,1.0,,False,
+K8-LS-tl-c04,MATCHED,lichsu.js,his_4a,1.0,,False,
+K8-KHTN-khtn1-tn-c01,MATCHED,khoahoc.js,sci_mc_1,1.0,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn1-tn-c02,MATCHED,khoahoc.js,sci_mc_2,1.0,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn1-tn-c03,PARTIAL,khoahoc.js,sci_mc_3,0.77,"Độ tương đồng 0.77, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn1-tn-c04,PARTIAL,khoahoc.js,sci_mc_4,0.62,"Độ tương đồng 0.62, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn1-tn-c05,PARTIAL,khoahoc.js,sci_mc_5,0.57,"Độ tương đồng 0.57, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn1-tn-c06,PARTIAL,khoahoc.js,sci_mc_6,0.85,"Độ tương đồng 0.85, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn1-tn-c07,MATCHED,khoahoc.js,sci_mc_7,0.9,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn1-tl-c08,PARTIAL,khoahoc.js,sci_essay_1,0.86,"Độ tương đồng 0.86, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn1-tl-c09,PARTIAL,khoahoc.js,sci_essay_2,0.76,"Độ tương đồng 0.76, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn1-tl-c09-a,MATCHED,khoahoc.js,sci_essay_2,0.91,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn1-tl-c09-b,PARTIAL,khoahoc.js,sci_essay_2,0.83,"Độ tương đồng 0.83, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn1-tl-c09-c,MATCHED,khoahoc.js,sci_essay_2,0.89,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn1-tl-c09-d,MATCHED,khoahoc.js,sci_essay_2,0.93,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn1-tl-c10,PARTIAL,khoahoc.js,sci_essay_3,0.73,"Độ tương đồng 0.73, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn1-tl-c11,PARTIAL,khoahoc.js,sci_essay_4,0.77,"Độ tương đồng 0.77, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn1-tl-c12,MATCHED,khoahoc.js,sci_essay_5,1.0,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c01,MISSING_IN_APP,khoahoc.js,sci_essay_6,0.49,Không tìm thấy trong APP (độ trùng 0.49 < 0.55),True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-ds-c02,MISSING_IN_APP,khoahoc.js,sci_essay_12,0.37,Không tìm thấy trong APP (độ trùng 0.37 < 0.55),True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-ds-c02-a,PARTIAL,khoahoc.js,sci_essay_7,0.79,"Độ tương đồng 0.79, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-ds-c02-b,MISSING_IN_APP,khoahoc.js,sci_essay_6,0.52,Không tìm thấy trong APP (độ trùng 0.52 < 0.55),True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-ds-c02-c,PARTIAL,khoahoc.js,sci_essay_7,0.75,"Độ tương đồng 0.75, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-ds-c02-d,PARTIAL,khoahoc.js,sci_mc_9,0.86,"Độ tương đồng 0.86, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c03,MATCHED,khoahoc.js,sci_essay_2,1.0,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c03-a,PARTIAL,khoahoc.js,sci_essay_8,0.8,"Độ tương đồng 0.80, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c03-b,MATCHED,khoahoc.js,sci_essay_8,0.9,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c03-c,PARTIAL,khoahoc.js,sci_essay_8,0.83,"Độ tương đồng 0.83, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c04,MISSING_IN_APP,khoahoc.js,sci_mc_18,0.4,Không tìm thấy trong APP (độ trùng 0.40 < 0.55),True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c04-a,MATCHED,khoahoc.js,sci_essay_9,0.92,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c04-b,PARTIAL,khoahoc.js,sci_essay_9,0.64,"Độ tương đồng 0.64, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tn-c01,MATCHED,khoahoc.js,sci_mc_8,1.0,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tn-c02,MATCHED,khoahoc.js,sci_mc_9,1.0,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tn-c03,MISSING_IN_APP,khoahoc.js,sci_mc_10,0.39,Không tìm thấy trong APP (độ trùng 0.39 < 0.55),True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tn-c04,MATCHED,khoahoc.js,sci_mc_11,1.0,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tn-c05,MISSING_IN_APP,khoahoc.js,sci_mc_12,0.53,Không tìm thấy trong APP (độ trùng 0.53 < 0.55),True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tn-c06,MATCHED,khoahoc.js,sci_mc_13,1.0,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tn-c07,PARTIAL,khoahoc.js,sci_mc_14,0.83,"Độ tương đồng 0.83, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tn-c08,PARTIAL,khoahoc.js,sci_mc_14b,0.76,"Độ tương đồng 0.76, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn3-tn-c01,MATCHED,khoahoc.js,sci_mc_15,1.0,,False,
+K8-KHTN-khtn3-tn-c02,MATCHED,khoahoc.js,sci_mc_16,0.91,,False,
+K8-KHTN-khtn3-tn-c03,MATCHED,khoahoc.js,sci_mc_17,1.0,,False,
+K8-KHTN-khtn3-tn-c04,MATCHED,khoahoc.js,sci_mc_18,1.0,,False,
+K8-KHTN-khtn3-tn-c05,MATCHED,khoahoc.js,sci_mc_19,1.0,,False,
+K8-KHTN-khtn3-tn-c06,MATCHED,khoahoc.js,sci_mc_20,1.0,,False,
+K8-KHTN-khtn3-tn-c07,MATCHED,khoahoc.js,sci_mc_21,1.0,,False,
+K8-KHTN-khtn3-tn-c08,MATCHED,khoahoc.js,sci_mc_22,1.0,,False,
+K8-KHTN-khtn3-tn-c09,MATCHED,khoahoc.js,sci_mc_23,1.0,,False,
+K8-KHTN-khtn3-tn-c10,MATCHED,khoahoc.js,sci_mc_24,1.0,,False,
+K8-KHTN-khtn3-tn-c11,PARTIAL,khoahoc.js,sci_mc_25,0.88,"Độ tương đồng 0.88, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-KHTN-khtn3-tn-c12,PARTIAL,khoahoc.js,sci_mc_26,0.79,"Độ tương đồng 0.79, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-KHTN-khtn3-tl-c01,MATCHED,khoahoc.js,sci_essay_10,1.0,,False,
+K8-KHTN-khtn3-tl-c02,PARTIAL,khoahoc.js,sci_essay_11,0.78,"Độ tương đồng 0.78, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-KHTN-khtn3-tl-c03,MATCHED,khoahoc.js,sci_essay_12,0.96,,False,
+K8-KHTN-khtn3-tl-c04,PARTIAL,khoahoc.js,sci_essay_13,0.71,"Độ tương đồng 0.71, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-KHTN-khtn3-tl-c04-a,MATCHED,khoahoc.js,sci_essay_13,1.0,,False,
+K8-KHTN-khtn3-tl-c04-b,PARTIAL,khoahoc.js,sci_essay_13,0.72,"Độ tương đồng 0.72, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-KHTN-khtn3-tl-c04-c,PARTIAL,khoahoc.js,sci_essay_13,0.68,"Độ tương đồng 0.68, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-KHTN-khtn2-tl-c03-a-1,PARTIAL,khoahoc.js,sci_mc_14b,0.7,"Độ tương đồng 0.70, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c03-a-2,PARTIAL,khoahoc.js,sci_mc_14b,0.83,"Độ tương đồng 0.83, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c03-a-3,MATCHED,khoahoc.js,sci_essay_8,0.9,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c03-b-1,MATCHED,khoahoc.js,sci_essay_8,1.0,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c03-b-2,MATCHED,khoahoc.js,sci_essay_8,0.9,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c03-b-3,MATCHED,khoahoc.js,sci_essay_8,0.89,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c03-c-1,MATCHED,khoahoc.js,sci_essay_8,0.89,,True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c03-c-2,PARTIAL,khoahoc.js,sci_essay_8,0.88,"Độ tương đồng 0.88, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-KHTN-khtn2-tl-c03-c-3,PARTIAL,khoahoc.js,sci_essay_8,0.82,"Độ tương đồng 0.82, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TA-ex01,MATCHED,tienganh.js,en_1,0.87,,False,Tiêu đề bài tập tích hợp trong từng câu hỏi của Exercise
+K8-TA-ex01-c01,MATCHED,tienganh.js,en_1,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex01-c02,MATCHED,tienganh.js,en_2,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex01-c03,MATCHED,tienganh.js,en_3,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex01-c04,MATCHED,tienganh.js,en_4,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex01-c05,MATCHED,tienganh.js,en_5,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex01-c06,MATCHED,tienganh.js,en_6,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex01-c07,MATCHED,tienganh.js,en_7,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex01-c08,MATCHED,tienganh.js,en_8,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex01-c09,MATCHED,tienganh.js,en_9,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex01-c10,MATCHED,tienganh.js,en_10,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex02,MATCHED,tienganh.js,en_11,0.92,,False,Tiêu đề bài tập tích hợp trong từng câu hỏi của Exercise
+K8-TA-ex02-c01,MATCHED,tienganh.js,en_11,1.0,,False,
+K8-TA-ex02-c02,MATCHED,tienganh.js,en_12,1.0,,False,
+K8-TA-ex02-c03,MATCHED,tienganh.js,en_13,1.0,,False,
+K8-TA-ex02-c04,MATCHED,tienganh.js,en_14,1.0,,False,
+K8-TA-ex02-c05,MATCHED,tienganh.js,en_15,1.0,,False,
+K8-TA-ex03,MATCHED,tienganh.js,en_58,0.4,,False,Tiêu đề bài tập tích hợp trong từng câu hỏi của Exercise
+K8-TA-ex03-c01,MATCHED,tienganh.js,en_16,1.0,,False,
+K8-TA-ex03-c02,MATCHED,tienganh.js,en_17,1.0,,False,
+K8-TA-ex03-c03,MATCHED,tienganh.js,en_18,1.0,,False,
+K8-TA-ex03-c04,MATCHED,tienganh.js,en_19,1.0,,False,
+K8-TA-ex03-c05,MATCHED,tienganh.js,en_20,1.0,,False,
+K8-TA-ex03-c06,MATCHED,tienganh.js,en_21,1.0,,False,
+K8-TA-ex03-c07,MATCHED,tienganh.js,en_22,1.0,,False,
+K8-TA-ex03-c08,MATCHED,tienganh.js,en_23,1.0,,False,
+K8-TA-ex03-c09,MATCHED,tienganh.js,en_24,1.0,,False,
+K8-TA-ex03-c10,MATCHED,tienganh.js,en_25,1.0,,False,
+K8-TA-ex03-c11,MATCHED,tienganh.js,en_26,1.0,,False,
+K8-TA-ex03-c12,MATCHED,tienganh.js,en_27,1.0,,False,
+K8-TA-ex03-c13,MATCHED,tienganh.js,en_28,1.0,,False,
+K8-TA-ex03-c14,MATCHED,tienganh.js,en_29,1.0,,False,
+K8-TA-ex03-c15,MATCHED,tienganh.js,en_30,1.0,,False,
+K8-TA-ex03-c16,MATCHED,tienganh.js,en_31,1.0,,False,
+K8-TA-ex03-c17,MATCHED,tienganh.js,en_32,1.0,,False,
+K8-TA-ex03-c18,MATCHED,tienganh.js,en_33,1.0,,False,
+K8-TA-ex03-c19,MATCHED,tienganh.js,en_34,1.0,,False,
+K8-TA-ex03-c20,MATCHED,tienganh.js,en_35,1.0,,False,
+K8-TA-ex03-c21,MATCHED,tienganh.js,en_36,1.0,,False,
+K8-TA-ex03-c22,MATCHED,tienganh.js,en_37,1.0,,False,
+K8-TA-ex03-c23,MATCHED,tienganh.js,en_38,1.0,,False,
+K8-TA-ex03-c24,MATCHED,tienganh.js,en_39,1.0,,False,
+K8-TA-ex03-c25,MATCHED,tienganh.js,en_40,1.0,,False,
+K8-TA-ex04,MATCHED,tienganh.js,en_55,0.31,,False,Tiêu đề bài tập tích hợp trong từng câu hỏi của Exercise
+K8-TA-ex04-doan1,MATCHED,tienganh.js,en_45,0.25,,False,Đoạn văn đọc hiểu được nạp trong readingContext của từng câu
+K8-TA-ex04-doan1-g01,MATCHED,tienganh.js,en_41,1.0,,False,
+K8-TA-ex04-doan1-g02,MATCHED,tienganh.js,en_42,1.0,,False,
+K8-TA-ex04-doan1-g03,MATCHED,tienganh.js,en_43,1.0,,False,
+K8-TA-ex04-doan1-g04,MATCHED,tienganh.js,en_44,1.0,,False,
+K8-TA-ex04-doan1-g05,MATCHED,tienganh.js,en_45,1.0,,False,
+K8-TA-ex04-doan2,MATCHED,tienganh.js,en_50,0.26,,False,Đoạn văn đọc hiểu được nạp trong readingContext của từng câu
+K8-TA-ex04-doan2-g01,MATCHED,tienganh.js,en_46,1.0,,False,
+K8-TA-ex04-doan2-g02,MATCHED,tienganh.js,en_47,1.0,,False,
+K8-TA-ex04-doan2-g03,MATCHED,tienganh.js,en_48,1.0,,False,
+K8-TA-ex04-doan2-g04,MATCHED,tienganh.js,en_49,1.0,,False,
+K8-TA-ex04-doan2-g05,MATCHED,tienganh.js,en_50,1.0,,False,
+K8-TA-ex05,MATCHED,tienganh.js,en_66,0.36,,False,Tiêu đề bài tập tích hợp trong từng câu hỏi của Exercise
+K8-TA-ex05-doan,MATCHED,tienganh.js,en_55,0.24,,True,SOURCE needs_pdf_review=True; Đoạn văn đọc hiểu được nạp trong readingContext của từng câu
+K8-TA-ex05-c01,MATCHED,tienganh.js,en_51,1.0,,False,
+K8-TA-ex05-c02,MATCHED,tienganh.js,en_52,1.0,,False,
+K8-TA-ex05-c03,MATCHED,tienganh.js,en_53,1.0,,False,
+K8-TA-ex05-c04,MATCHED,tienganh.js,en_54,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex05-c05,MATCHED,tienganh.js,en_55,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex06,MATCHED,tienganh.js,en_40,0.25,,False,Tiêu đề bài tập tích hợp trong từng câu hỏi của Exercise
+K8-TA-ex06-c01,MATCHED,tienganh.js,en_56,1.0,,True,SOURCE has_image=True; SOURCE needs_pdf_review=True
+K8-TA-ex06-c02,MATCHED,tienganh.js,en_57,1.0,,True,SOURCE has_image=True; SOURCE needs_pdf_review=True
+K8-TA-ex06-c03,MATCHED,tienganh.js,en_58,1.0,,True,SOURCE has_image=True; SOURCE needs_pdf_review=True
+K8-TA-ex06-c04,MATCHED,tienganh.js,en_59,1.0,,True,SOURCE has_image=True; SOURCE needs_pdf_review=True
+K8-TA-ex06-c05,MATCHED,tienganh.js,en_60,1.0,,True,SOURCE has_image=True; SOURCE needs_pdf_review=True
+K8-TA-ex07,MATCHED,tienganh.js,en_65,0.28,,False,Tiêu đề bài tập tích hợp trong từng câu hỏi của Exercise
+K8-TA-ex07-doan,MATCHED,tienganh.js,en_62,0.53,,False,Đoạn văn đọc hiểu được nạp trong readingContext của từng câu
+K8-TA-ex07-dapan-chung,MATCHED,tienganh.js,en_61,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex08,MATCHED,tienganh.js,en_1,0.33,,False,Tiêu đề bài tập tích hợp trong từng câu hỏi của Exercise
+K8-TA-ex08-c01a,PARTIAL,tienganh.js,en_65,0.72,"Độ tương đồng 0.72, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-TA-ex08-c01a-a,MATCHED,tienganh.js,en_65,1.0,,False,
+K8-TA-ex08-c01a-b,MATCHED,tienganh.js,en_65,1.0,,False,
+K8-TA-ex08-c01a-c,MATCHED,tienganh.js,en_65,1.0,,False,
+K8-TA-ex08-c01b,MATCHED,tienganh.js,en_66,1.0,,False,
+K8-TA-ex08-c02a,PARTIAL,tienganh.js,en_67,0.69,"Độ tương đồng 0.69, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-TA-ex08-c02a-a,MATCHED,tienganh.js,en_67,1.0,,False,
+K8-TA-ex08-c02a-b,MATCHED,tienganh.js,en_67,1.0,,False,
+K8-TA-ex08-c02a-c,MATCHED,tienganh.js,en_67,1.0,,False,
+K8-TA-ex08-c02b,MATCHED,tienganh.js,en_68,0.96,,False,
+K8-TA-ex09,MATCHED,tienganh.js,en_5,0.21,,False,Tiêu đề bài tập tích hợp trong từng câu hỏi của Exercise
+K8-TA-ex09-c01,MATCHED,tienganh.js,en_69,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex09-c02,MATCHED,tienganh.js,en_70,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex09-c03,MATCHED,tienganh.js,en_71,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex09-c04,MATCHED,tienganh.js,en_72,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex09-c05,MATCHED,tienganh.js,en_73,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex09-c06,MATCHED,tienganh.js,en_74,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex09-c07,MATCHED,tienganh.js,en_75,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex09-c08,MATCHED,tienganh.js,en_76,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex09-c09,MATCHED,tienganh.js,en_77,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex09-c10,MATCHED,tienganh.js,en_78,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex10,MATCHED,tienganh.js,en_25,0.25,,False,Tiêu đề bài tập tích hợp trong từng câu hỏi của Exercise
+K8-TA-ex10-c01,MATCHED,tienganh.js,en_79,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex10-c02,MATCHED,tienganh.js,en_80,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex10-c03,MATCHED,tienganh.js,en_81,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex10-c04,MATCHED,tienganh.js,en_82,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex10-c05,MATCHED,tienganh.js,en_83,1.0,,True,SOURCE needs_pdf_review=True
+K8-TA-ex07-g01,PARTIAL,tienganh.js,en_61,0.85,"Độ tương đồng 0.85, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TA-ex07-g02,MATCHED,tienganh.js,en_62,0.91,,True,SOURCE needs_pdf_review=True
+K8-TA-ex07-g03,MATCHED,tienganh.js,en_18,0.5,,True,SOURCE needs_pdf_review=True; Chỗ trống số (3) tương ứng câu en_63
+K8-TA-ex07-g04,MATCHED,tienganh.js,en_64,0.88,,True,SOURCE needs_pdf_review=True
+K8-NV-A-I-03,PARTIAL,nguvan.js,van_essay_1,0.61,"Độ tương đồng 0.61, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-NV-A-I-04,MATCHED,nguvan.js,van_4,1.0,,False,
+K8-NV-A-I-05,PARTIAL,nguvan.js,van_4,0.8,"Độ tương đồng 0.80, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-NV-A-II-02,MATCHED,nguvan.js,van_essay_1,1.0,,False,
+K8-NV-B-I-02,PARTIAL,nguvan.js,van_essay_1,0.64,"Độ tương đồng 0.64, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-NV-B-I-03,PARTIAL,nguvan.js,van_2,0.85,"Độ tương đồng 0.85, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-NV-B-I-04,MISSING_IN_APP,nguvan.js,van_essay_1,0.5,Không tìm thấy trong APP (độ trùng 0.50 < 0.55),True,SOURCE needs_pdf_review=True
+K8-NV-B-I-05,PARTIAL,nguvan.js,van_essay_1,0.57,"Độ tương đồng 0.57, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-NV-B-I-06,PARTIAL,nguvan.js,van_essay_1,0.7,"Độ tương đồng 0.70, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-NV-B-I-07,PARTIAL,nguvan.js,van_essay_1,0.67,"Độ tương đồng 0.67, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-NV-B-I-08,MISSING_IN_APP,nguvan.js,van_essay_1,0.48,Không tìm thấy trong APP (độ trùng 0.48 < 0.55),True,SOURCE needs_pdf_review=True
+K8-NV-B-I-09,PARTIAL,nguvan.js,van_essay_1,0.81,"Độ tương đồng 0.81, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-NV-B-I-10,PARTIAL,nguvan.js,van_essay_1,0.71,"Độ tương đồng 0.71, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-NV-B-I-11,PARTIAL,nguvan.js,van_4,0.64,"Độ tương đồng 0.64, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-NV-B-I-12,PARTIAL,nguvan.js,van_essay_1,0.83,"Độ tương đồng 0.83, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-NV-B-I-13,PARTIAL,nguvan.js,van_essay_1,0.76,"Độ tương đồng 0.76, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-NV-B-I-14,MISSING_IN_APP,nguvan.js,van_essay_1,0.39,Không tìm thấy trong APP (độ trùng 0.39 < 0.55),False,
+K8-NV-B-II-02,MATCHED,nguvan.js,van_essay_1,0.89,,True,SOURCE needs_pdf_review=True
+K8-NV-B-II-03,PARTIAL,nguvan.js,van_essay_1,0.8,"Độ tương đồng 0.80, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-NV-B-II-04,MISSING_IN_APP,nguvan.js,van_essay_1,0.33,Không tìm thấy trong APP (độ trùng 0.33 < 0.55),False,
+K8-NV-B-II-05,PARTIAL,nguvan.js,van_essay_1,0.58,"Độ tương đồng 0.58, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-NV-B-II-06,PARTIAL,nguvan.js,van_essay_1,0.62,"Độ tương đồng 0.62, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-NV-B-II-07,PARTIAL,nguvan.js,van_essay_1,0.8,"Độ tương đồng 0.80, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-NV-B-II-08,MISSING_IN_APP,nguvan.js,van_essay_1,0.54,Không tìm thấy trong APP (độ trùng 0.54 < 0.55),False,
+K8-NV-B-II-09,MISSING_IN_APP,nguvan.js,van_essay_1,0.5,Không tìm thấy trong APP (độ trùng 0.50 < 0.55),False,
+K8-NV-C-0-02,PARTIAL,nguvan.js,van_essay_1,0.61,"Độ tương đồng 0.61, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiI,MATCHED,toan.js,math_d1_b1,0.94,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiI-a,MATCHED,toan.js,math_d1_b1,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiI-b,MATCHED,toan.js,math_d1_b1,0.89,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiI-c,MATCHED,toan.js,math_d1_b1,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiI-d,MATCHED,toan.js,math_d1_b1,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiII,PARTIAL,toan.js,math_d1_b2,0.76,"Độ tương đồng 0.76, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE has_image=True; SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiII-a,PARTIAL,toan.js,math_d1_b2,0.65,"Độ tương đồng 0.65, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiII-b,PARTIAL,toan.js,math_d1_b2,0.63,"Độ tương đồng 0.63, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiII-c,MATCHED,toan.js,math_d1_b2,0.92,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiIII,MATCHED,toan.js,math_d1_b3,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiIII-a,MATCHED,toan.js,math_d1_b3,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiIII-b,MATCHED,toan.js,math_d1_b1,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiIII-c,MISSING_IN_APP,toan.js,math_d1_b3,1.0,Ý c và d của Đề 1 Bài III không có trong math_d1_b3,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiIII-d,MISSING_IN_APP,toan.js,math_d1_b3,1.0,Ý c và d của Đề 1 Bài III không có trong math_d1_b3,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiIV,PARTIAL,toan.js,math_d1_b4,0.86,"Độ tương đồng 0.86, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiIV-a,MATCHED,toan.js,math_d1_b4,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiIV-b,MATCHED,toan.js,math_d1_b4,0.9,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiIV-b-1,MATCHED,toan.js,math_d1_b4,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiIV-b-2,MATCHED,toan.js,math_d1_b4,0.89,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiIV-c,MISSING_IN_APP,toan.js,math_d1_b4,0.94,Ý c (chứng minh đồng quy/thẳng hàng/tam giác cân) không có trong math_d1_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiIV-c-1,MISSING_IN_APP,toan.js,math_d1_b4,1.0,Ý c (chứng minh đồng quy/thẳng hàng/tam giác cân) không có trong math_d1_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiIV-c-2,MISSING_IN_APP,toan.js,math_d1_b4,0.8,Ý c (chứng minh đồng quy/thẳng hàng/tam giác cân) không có trong math_d1_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiV,MISSING_IN_APP,toan.js,math_d1_b5,0.53,Không tìm thấy trong APP (độ trùng 0.53 < 0.55),True,SOURCE has_image=True; APP KHÔNG CÓ HÌNH; SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiV-a,PARTIAL,toan.js,math_d1_b5,0.67,"Độ tương đồng 0.67, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiV-a-1,MATCHED,toan.js,math_d1_b5,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiV-a-2,MISSING_IN_APP,toan.js,math_d1_b5,0.46,Không tìm thấy trong APP (độ trùng 0.46 < 0.55),True,SOURCE needs_pdf_review=True
+K8-TOAN-de1-baiV-b,PARTIAL,toan.js,math_d1_b5,0.65,"Độ tương đồng 0.65, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiI,MATCHED,toan.js,math_d1_b1,0.94,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiI-a,MATCHED,toan.js,math_d2_b1,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiI-b,PARTIAL,toan.js,math_d2_b1,0.8,"Độ tương đồng 0.80, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiI-c,MATCHED,toan.js,math_d1_b5,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiI-d,MISSING_IN_APP,toan.js,math_d1_b3,1.0,Ý d Đề 2 Bài I không có trong math_d2_b1,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiII,PARTIAL,toan.js,math_d2_b2,0.75,"Độ tương đồng 0.75, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE has_image=True; SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiII-a,PARTIAL,toan.js,math_d2_b2,0.65,"Độ tương đồng 0.65, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiII-b,PARTIAL,toan.js,math_d2_b2,0.69,"Độ tương đồng 0.69, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiII-c,MATCHED,toan.js,math_d2_b2,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiII-c-1,MATCHED,toan.js,math_d2_b2,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiII-c-2,MATCHED,toan.js,math_d2_b2,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiIII,MATCHED,toan.js,math_d1_b3,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiIII-a,MATCHED,toan.js,math_d2_b3,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiIII-b,MATCHED,toan.js,math_d1_b3,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiIII-c,MISSING_IN_APP,toan.js,math_d1_b3,1.0,"Ý c, d Đề 2 Bài III không có trong math_d2_b3",True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiIII-d,MISSING_IN_APP,toan.js,math_d2_b3,0.86,"Ý c, d Đề 2 Bài III không có trong math_d2_b3",True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiIV,PARTIAL,toan.js,math_d2_b4,0.85,"Độ tương đồng 0.85, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiIV-a,MATCHED,toan.js,math_d2_b4,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiIV-b,MISSING_IN_APP,toan.js,math_d1_b4,0.85,Ý b và c Đề 2 Bài IV không có trong math_d2_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiIV-b-1,MISSING_IN_APP,toan.js,math_d1_b4,0.89,Ý b và c Đề 2 Bài IV không có trong math_d2_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiIV-b-2,MISSING_IN_APP,toan.js,math_d1_b4,0.83,Ý b và c Đề 2 Bài IV không có trong math_d2_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiIV-c,MISSING_IN_APP,toan.js,math_d2_b4,0.93,Ý b và c Đề 2 Bài IV không có trong math_d2_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiIV-c-1,MISSING_IN_APP,toan.js,math_d2_b4,0.89,Ý b và c Đề 2 Bài IV không có trong math_d2_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiIV-c-2,MISSING_IN_APP,toan.js,math_d2_b4,0.9,Ý b và c Đề 2 Bài IV không có trong math_d2_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de2-baiV,PARTIAL,toan.js,math_d2_b5,0.61,"Độ tương đồng 0.61, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE has_image=True; APP KHÔNG CÓ HÌNH; SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiI,MATCHED,toan.js,math_d1_b1,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiI-a,MATCHED,toan.js,math_d3_b1,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiI-b,MATCHED,toan.js,math_d1_b1,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiI-c,MISSING_IN_APP,toan.js,math_d1_b3,1.0,"Ý c, d Đề 3 Bài I không có trong math_d3_b1",True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiI-d,MISSING_IN_APP,toan.js,math_d3_b1,1.0,"Ý c, d Đề 3 Bài I không có trong math_d3_b1",True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiII,PARTIAL,toan.js,math_d3_b2,0.88,"Độ tương đồng 0.88, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE has_image=True; SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiII-a,PARTIAL,toan.js,math_d3_b2,0.6,"Độ tương đồng 0.60, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiII-b,PARTIAL,toan.js,math_d3_b2,0.68,"Độ tương đồng 0.68, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiII-c,MATCHED,toan.js,math_d3_b2,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiIII,MATCHED,toan.js,math_d1_b3,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiIII-a,MATCHED,toan.js,math_d3_b3,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiIII-b,MISSING_IN_APP,toan.js,math_d1_b3,1.0,"Ý b, c, d Đề 3 Bài III không có trong math_d3_b3",True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiIII-c,MISSING_IN_APP,toan.js,math_d1_b3,1.0,"Ý b, c, d Đề 3 Bài III không có trong math_d3_b3",True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiIII-d,MISSING_IN_APP,toan.js,math_d3_b3,1.0,"Ý b, c, d Đề 3 Bài III không có trong math_d3_b3",True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiIV,MATCHED,toan.js,math_d3_b4,0.91,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiIV-a,MATCHED,toan.js,math_d3_b4,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiIV-b,MISSING_IN_APP,toan.js,math_d3_b4,0.96,Ý b và c Đề 3 Bài IV không có trong math_d3_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiIV-b-1,MISSING_IN_APP,toan.js,math_d3_b4,1.0,Ý b và c Đề 3 Bài IV không có trong math_d3_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiIV-b-2,MISSING_IN_APP,toan.js,math_d3_b4,1.0,Ý b và c Đề 3 Bài IV không có trong math_d3_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiIV-c,MISSING_IN_APP,toan.js,math_d3_b4,0.83,Ý b và c Đề 3 Bài IV không có trong math_d3_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiIV-c-1,MISSING_IN_APP,toan.js,math_d3_b4,1.0,Ý b và c Đề 3 Bài IV không có trong math_d3_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiIV-c-2,MISSING_IN_APP,toan.js,math_d3_b4,1.0,Ý b và c Đề 3 Bài IV không có trong math_d3_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiV,PARTIAL,toan.js,math_d3_b5,0.77,"Độ tương đồng 0.77, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiV-1,MATCHED,toan.js,math_d3_b5,0.89,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de3-baiV-2,MATCHED,toan.js,math_d3_b5,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiI,MATCHED,toan.js,math_d1_b1,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiI-a,MATCHED,toan.js,math_d4_b1,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiI-b,MISSING_IN_APP,toan.js,math_d4_b1,1.0,"Ý b, c, d Đề 4 Bài I không có trong math_d4_b1",True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiI-c,MISSING_IN_APP,toan.js,math_d4_b1,1.0,"Ý b, c, d Đề 4 Bài I không có trong math_d4_b1",True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiI-d,MISSING_IN_APP,toan.js,math_d4_b1,1.0,"Ý b, c, d Đề 4 Bài I không có trong math_d4_b1",True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiII,PARTIAL,toan.js,math_d4_b2,0.82,"Độ tương đồng 0.82, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE has_image=True; SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiII-a,PARTIAL,toan.js,math_d4_b2,0.71,"Độ tương đồng 0.71, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiII-b,PARTIAL,toan.js,math_d4_b2,0.68,"Độ tương đồng 0.68, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiII-c,PARTIAL,toan.js,math_d4_b2,0.83,"Độ tương đồng 0.83, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiIII,MATCHED,toan.js,math_d1_b3,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiIII-a,MATCHED,toan.js,math_d4_b1,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiIII-b,MISSING_IN_APP,toan.js,math_d4_b3,1.0,"Ý b, c, d Đề 4 Bài III không có trong math_d4_b3",True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiIII-c,MISSING_IN_APP,toan.js,math_d4_b3,1.0,"Ý b, c, d Đề 4 Bài III không có trong math_d4_b3",True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiIII-d,MISSING_IN_APP,toan.js,math_d1_b3,1.0,"Ý b, c, d Đề 4 Bài III không có trong math_d4_b3",True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiIV,MATCHED,toan.js,math_d4_b4,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiIV-a,MATCHED,toan.js,math_d4_b4,0.9,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiIV-b,MISSING_IN_APP,toan.js,math_d4_b4,1.0,Ý b và c Đề 4 Bài IV không có trong math_d4_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiIV-c,MISSING_IN_APP,toan.js,math_d4_b4,1.0,Ý b và c Đề 4 Bài IV không có trong math_d4_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiIV-c-1,MISSING_IN_APP,toan.js,math_d4_b4,1.0,Ý b và c Đề 4 Bài IV không có trong math_d4_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiIV-c-2,MISSING_IN_APP,toan.js,math_d4_b4,1.0,Ý b và c Đề 4 Bài IV không có trong math_d4_b4,True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiV,MATCHED,toan.js,math_d4_b5,0.95,,True,SOURCE has_image=True; APP KHÔNG CÓ HÌNH; SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiV-1,MATCHED,toan.js,math_d4_b5,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-de4-baiV-2,MATCHED,toan.js,math_d4_b5,1.0,,True,SOURCE needs_pdf_review=True
+K8-TOAN-cautruc-bai1,MISSING_IN_APP,toan.js,N/A,0.0,Bảng ma trận cấu trúc điểm thi trang 38 (ảnh ma trận),True,"SOURCE có hình ma trận điểm, APP KHÔNG CÓ HÌNH"
+K8-TOAN-cautruc-bai2,MISSING_IN_APP,toan.js,N/A,0.0,Bảng ma trận cấu trúc điểm thi trang 38 (ảnh ma trận),True,"SOURCE có hình ma trận điểm, APP KHÔNG CÓ HÌNH"
+K8-TOAN-cautruc-bai3,MISSING_IN_APP,toan.js,N/A,0.0,Bảng ma trận cấu trúc điểm thi trang 38 (ảnh ma trận),True,"SOURCE có hình ma trận điểm, APP KHÔNG CÓ HÌNH"
+K8-TOAN-cautruc-bai4,MISSING_IN_APP,toan.js,N/A,0.0,Bảng ma trận cấu trúc điểm thi trang 38 (ảnh ma trận),True,"SOURCE có hình ma trận điểm, APP KHÔNG CÓ HÌNH"
+K8-TOAN-cautruc-bai5,MISSING_IN_APP,toan.js,N/A,0.0,Bảng ma trận cấu trúc điểm thi trang 38 (ảnh ma trận),True,"SOURCE có hình ma trận điểm, APP KHÔNG CÓ HÌNH"
+K8-TH-tn-c01,MATCHED,tinhoc.js,tin_1,1.0,,False,
+K8-TH-tn-c02,MATCHED,tinhoc.js,tin_22,1.0,,False,
+K8-TH-tn-c03,MATCHED,tinhoc.js,tin_23,1.0,,False,
+K8-TH-tn-c04,MATCHED,tinhoc.js,tin_4,1.0,,False,
+K8-TH-tn-c05,MATCHED,tinhoc.js,tin_5,0.95,,False,
+K8-TH-tn-c06,MATCHED,tinhoc.js,tin_6,1.0,,False,
+K8-TH-tn-c07,MATCHED,tinhoc.js,tin_7,0.98,,False,
+K8-TH-tn-c08,MATCHED,tinhoc.js,tin_8,1.0,,False,
+K8-TH-tn-c09,MATCHED,tinhoc.js,tin_9,1.0,,False,
+K8-TH-tn-c10,MATCHED,tinhoc.js,tin_10,1.0,,False,
+K8-TH-tn-c11,MATCHED,tinhoc.js,tin_11,1.0,,False,
+K8-TH-tn-c12,MATCHED,tinhoc.js,tin_12,1.0,,False,
+K8-TH-tn-c13,MATCHED,tinhoc.js,tin_13,1.0,,False,
+K8-TH-tn-c14,MATCHED,tinhoc.js,tin_14,1.0,,False,
+K8-TH-tn-c15,MATCHED,tinhoc.js,tin_15,1.0,,False,
+K8-TH-tn-c16,MATCHED,tinhoc.js,tin_16,1.0,,False,
+K8-TH-tn-c17,MATCHED,tinhoc.js,tin_17,0.97,,False,
+K8-TH-tn-c18,MATCHED,tinhoc.js,tin_18,1.0,,False,
+K8-TH-tn-c19,MATCHED,tinhoc.js,tin_19,1.0,,False,
+K8-TH-tn-c20,MATCHED,tinhoc.js,tin_20,0.96,,False,
+K8-TH-ds-c01,PARTIAL,tinhoc.js,tin_21,0.71,"Độ tương đồng 0.71, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TH-ds-c01-1,MATCHED,tinhoc.js,tin_21,0.68,"Độ tương đồng 0.68, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-TH-ds-c01-2,MATCHED,tinhoc.js,tin_21,0.53,Không tìm thấy trong APP (độ trùng 0.53 < 0.55),False,
+K8-TH-ds-c01-3,MATCHED,tinhoc.js,tin_21,1.0,,False,
+K8-TH-ds-c01-4,MATCHED,tinhoc.js,tin_21,0.6,"Độ tương đồng 0.60, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-TH-ds-c01-5,PARTIAL,tinhoc.js,tin_15,0.72,"Độ tương đồng 0.72, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-TH-ds-c01-6,MATCHED,tinhoc.js,tin_21,1.0,,False,
+K8-TH-ds-c01-7,MATCHED,tinhoc.js,tin_21,1.0,,False,
+K8-TH-ds-c01-8,MATCHED,tinhoc.js,tin_21,1.0,,False,
+K8-TH-ds-c02,MATCHED,tinhoc.js,tin_22,0.45,Không tìm thấy trong APP (độ trùng 0.45 < 0.55),True,SOURCE needs_pdf_review=True
+K8-TH-ds-c02-a,MATCHED,tinhoc.js,tin_22,0.8,"Độ tương đồng 0.80, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TH-ds-c02-b,MATCHED,tinhoc.js,tin_22,1.0,,True,SOURCE needs_pdf_review=True
+K8-TH-ds-c02-c,MATCHED,tinhoc.js,tin_22,0.93,,True,SOURCE needs_pdf_review=True
+K8-TH-ds-c02-d,MATCHED,tinhoc.js,tin_22,0.55,"Độ tương đồng 0.55, thiếu dữ kiện/biểu thức/tiêu chí con",True,SOURCE needs_pdf_review=True
+K8-TH-ds-c03,MATCHED,tinhoc.js,tin_23,0.44,Không tìm thấy trong APP (độ trùng 0.44 < 0.55),True,SOURCE needs_pdf_review=True
+K8-TH-ds-c03-a,MATCHED,tinhoc.js,tin_23,0.95,,False,
+K8-TH-ds-c03-b,MATCHED,tinhoc.js,tin_23,0.76,"Độ tương đồng 0.76, thiếu dữ kiện/biểu thức/tiêu chí con",False,
+K8-TH-ds-c03-c,MATCHED,tinhoc.js,tin_23,0.88,,False,
+K8-TH-ds-c03-d,MATCHED,tinhoc.js,tin_23,0.68,"Độ tương đồng 0.68, thiếu dữ kiện/biểu thức/tiêu chí con",False,

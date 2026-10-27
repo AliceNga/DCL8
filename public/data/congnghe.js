@@ -148,100 +148,96 @@ window.TECH_DATABASE = [
     id: 'tech_10',
     exKey: 'tech_mc',
     exTitle: 'Công nghệ 8 (Trắc nghiệm)',
-    questionText: 'Câu 10. Hình chiếu bằng của hình nón là hình gì?',
-    visualComponent: `
-      <div class="my-3 p-3 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col items-center">
-        <svg viewBox="0 0 260 110" class="w-64 h-28 max-w-full">
-          <!-- Hình nón 3D -->
-          <ellipse cx="60" cy="85" rx="35" ry="12" fill="#fed7aa" stroke="#c2410c" stroke-width="1.5"/>
-          <path d="M 25 85 L 60 20 L 95 85" fill="#f97316" stroke="#c2410c" stroke-width="1.5"/>
-          <text x="60" y="105" font-size="10" font-weight="bold" fill="#9a3412" text-anchor="middle">Hình nón</text>
-
-          <!-- Mũi tên nhìn từ trên -->
-          <line x1="60" y1="5" x2="60" y2="15" stroke="#dc2626" stroke-width="2"/>
-          <text x="60" y="0" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="bold">Từ trên xuống</text>
-
-          <!-- Hình chiếu bằng -->
-          <circle cx="180" cy="55" r="32" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
-          <line x1="180" y1="20" x2="180" y2="90" stroke="#ca8a04" stroke-width="1" stroke-dasharray="2,2"/>
-          <line x1="145" y1="55" x2="215" y2="55" stroke="#ca8a04" stroke-width="1" stroke-dasharray="2,2"/>
-          <circle cx="180" cy="55" r="2" fill="#854d0e"/>
-          <text x="180" y="105" font-size="10" font-weight="bold" fill="#854d0e" text-anchor="middle">Hình chiếu bằng (Hình tròn có tâm)</text>
-        </svg>
-      </div>
-    `,
+    questionText: 'Câu 10. Hình chiếu đứng thể hiện các kích thước nào sau đây của vật thể?',
     options: [
-      { text: 'Hình tam giác cân.', isCorrect: false },
-      { text: 'Hình vuông.', isCorrect: false },
-      { text: 'Hình tròn.', isCorrect: true },
-      { text: 'Hình chữ nhật.', isCorrect: false }
+      { text: 'Chiều dài và chiều rộng.', isCorrect: false },
+      { text: 'Chiều cao và chiều rộng.', isCorrect: false },
+      { text: 'Chiều cao và chiều dài.', isCorrect: true },
+      { text: 'Chỉ thể hiện kích thước chiều cao.', isCorrect: false }
     ],
-    explanation: 'Hình nón nhìn từ trên xuống (hình chiếu bằng) là một hình tròn có tâm (đỉnh nón dóng xuống trùng tâm đáy).'
+    explanation: 'Hình chiếu đứng (hướng chiếu từ trước tới) thể hiện hai kích thước của vật thể là chiều dài và chiều cao.'
   },
   {
     id: 'tech_11',
     exKey: 'tech_mc',
     exTitle: 'Công nghệ 8 (Trắc nghiệm)',
-    questionText: 'Câu 11. Nét gạch chấm mảnh dùng để vẽ đường nào?',
+    questionText: 'Câu 11. Khi xây dựng hình chiếu vuông góc, vật thể được đặt vị trí nào sau đây?',
     options: [
-      { text: 'Đường bao thấy, cạnh thấy.', isCorrect: false },
-      { text: 'Đường bao khuất, cạnh khuất.', isCorrect: false },
-      { text: 'Đường tâm, đường trục đối xứng.', isCorrect: true },
-      { text: 'Đường dóng kích thước.', isCorrect: false }
+      { text: 'Trong không gian tạo bởi ba mặt phẳng.', isCorrect: false },
+      { text: 'Trong không gian tạo bởi ba mặt phẳng hình chiếu vuông góc.', isCorrect: false },
+      { text: 'Trong không gian tạo bởi ba mặt phẳng hình chiếu vuông góc với nhau từng đôi một.', isCorrect: true },
+      { text: 'Trong không gian tạo bởi các mặt phẳng bất kì.', isCorrect: false }
     ],
-    explanation: 'TCVN quy ước: Nét gạch chấm mảnh dùng để vẽ đường tâm, đường trục đối xứng.'
+    explanation: 'Quy chuẩn chiếu góc thứ nhất: Vật thể được đặt trong không gian tạo bởi ba mặt phẳng hình chiếu vuông góc với nhau từng đôi một (mặt phẳng hình chiếu đứng, hình chiếu bằng và hình chiếu cạnh).'
   },
   {
     id: 'tech_12',
     exKey: 'tech_mc',
     exTitle: 'Công nghệ 8 (Trắc nghiệm)',
-    questionText: 'Câu 12. Hình chóp đều có mặt đáy là hình gì?',
+    questionText: 'Câu 12. Hình chiếu của hình chóp tứ giác đều có hình dạng nào dưới đây?',
+    visualComponent: `
+      <div class="my-3 p-3 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col items-center">
+        <svg viewBox="0 0 280 110" class="w-72 h-28 max-w-full">
+          <!-- Hình chiếu đứng & bằng của hình chóp tứ giác đều -->
+          <!-- Đứng: Tam giác cân -->
+          <polygon points="60,20 20,85 100,85" fill="#bae6fd" stroke="#0284c7" stroke-width="1.8"/>
+          <line x1="60" y1="20" x2="60" y2="85" stroke="#0284c7" stroke-width="1" stroke-dasharray="2,2"/>
+          <text x="60" y="102" font-size="9" font-weight="bold" fill="#0369a1" text-anchor="middle">Hình chiếu đứng (Tam giác cân)</text>
+
+          <!-- Bằng: Hình vuông có 2 đường chéo -->
+          <rect x="180" y="25" width="60" height="60" fill="#fef08a" stroke="#ca8a04" stroke-width="1.8"/>
+          <line x1="180" y1="25" x2="240" y2="85" stroke="#ca8a04" stroke-width="1.2"/>
+          <line x1="180" y1="85" x2="240" y2="25" stroke="#ca8a04" stroke-width="1.2"/>
+          <text x="210" y="102" font-size="9" font-weight="bold" fill="#854d0e" text-anchor="middle">Hình chiếu bằng (Hình vuông)</text>
+        </svg>
+      </div>
+    `,
     options: [
-      { text: 'Hình vuông.', isCorrect: false },
-      { text: 'Đa giác đều.', isCorrect: true },
-      { text: 'Tam giác đều.', isCorrect: false },
-      { text: 'Hình chữ nhật.', isCorrect: false }
+      { text: 'Hình tam giác và hình vuông.', isCorrect: false },
+      { text: 'Hình tam giác cân và hình vuông.', isCorrect: true },
+      { text: 'Hình tròn và hình tam giác.', isCorrect: false },
+      { text: 'Hình tam giác cân và hình chữ nhật.', isCorrect: false }
     ],
-    explanation: 'Khái niệm chuẩn: Hình chóp đều là hình chóp có đáy là một đa giác đều và các mặt bên là các tam giác cân bằng nhau có chung đỉnh.'
+    explanation: 'Hình chóp tứ giác đều có đáy là hình vuông (hình chiếu bằng là hình vuông có 2 đường chéo) và các mặt bên là tam giác cân (hình chiếu đứng và hình chiếu cạnh là hình tam giác cân).'
   },
   {
     id: 'tech_13',
     exKey: 'tech_mc',
     exTitle: 'Công nghệ 8 (Trắc nghiệm)',
-    questionText: 'Câu 13. Kích thước tiêu chuẩn của khổ giấy A4 là:',
+    questionText: 'Câu 13. Hình chóp đều được bao bởi mặt đáy là hình gì?',
     options: [
-      { text: '210 x 297 cm.', isCorrect: false },
-      { text: '297 x 210 mm.', isCorrect: true },
-      { text: '420 x 297 mm.', isCorrect: false },
-      { text: '297 x 210 m.', isCorrect: false }
+      { text: 'Tam giác.', isCorrect: false },
+      { text: 'Đa giác đều.', isCorrect: true },
+      { text: 'Tam giác đều.', isCorrect: false },
+      { text: 'Hình chữ nhật.', isCorrect: false }
     ],
-    explanation: 'Khổ giấy A4 có kích thước tiêu chuẩn là 297 x 210 mm (chiều dài x chiều rộng).'
+    explanation: 'Định nghĩa SGK: Hình chóp đều được bao bởi mặt đáy là một hình đa giác đều và các mặt bên là các hình tam giác cân bằng nhau có chung đỉnh.'
   },
   {
     id: 'tech_14',
     exKey: 'tech_mc',
     exTitle: 'Công nghệ 8 (Trắc nghiệm)',
-    questionText: 'Câu 14. Trên bản vẽ kĩ thuật, hình chiếu đứng có hướng chiếu từ đâu tới?',
+    questionText: 'Câu 14. Trên bản vẽ kĩ thuật, hình chiếu đứng có hướng chiếu như thế nào?',
     options: [
       { text: 'Có hướng chiếu từ trước tới.', isCorrect: true },
       { text: 'Có hướng chiếu từ trên xuống.', isCorrect: false },
       { text: 'Có hướng chiếu từ trái sang phải.', isCorrect: false },
       { text: 'Có hướng chiếu từ phải sang trái.', isCorrect: false }
     ],
-    explanation: 'Quy tắc hình chiếu vuông góc: Hình chiếu đứng có hướng chiếu từ trước tới; Hình chiếu bằng từ trên xuống; Hình chiếu cạnh từ trái sang phải.'
+    explanation: 'Quy tắc hướng chiếu vuông góc: Hình chiếu đứng có hướng chiếu từ trước tới; Hình chiếu bằng có hướng chiếu từ trên xuống; Hình chiếu cạnh có hướng chiếu từ trái sang phải.'
   },
   {
     id: 'tech_15',
     exKey: 'tech_mc',
     exTitle: 'Công nghệ 8 (Đúng/Sai)',
-    questionText: 'Câu 15 (Đ/S). Cho các nhận định về quy chuẩn bản vẽ và hình chiếu sau:<br>a) Hình chiếu cạnh có hướng chiếu từ trái sang phải.<br>b) Đơn vị đo góc trên bản vẽ kĩ thuật là milimét.<br>c) Khổ giấy A4 có kích thước 297 x 210 mm.<br>d) Tỉ lệ 1:2 là tỉ lệ phóng to.<br>Phương án ghép Đúng (Đ) / Sai (S) chính xác là:',
+    questionText: 'Câu 15 (Đ/S). Một học sinh được giao vẽ 3 hình chiếu cho một lon sữa trên khổ giấy A4. Lon sữa có chiều cao là 1400 mm, đường kính đáy có kích thước 1000 mm. Lon sữa được đặt ở vị trí sao cho mặt đáy song song (//) với mặt phẳng hình chiếu cạnh.<br>Cho các nhận định sau:<br>a) Tỉ lệ sử dụng vẽ 3 hình chiếu là tỉ lệ thu nhỏ 1:10.<br>b) Hình chiếu bằng là hình tròn; hình chiếu đứng, hình chiếu cạnh là hình chữ nhật.<br>c) Hình chiếu cạnh là hình tròn; hình chiếu đứng, hình chiếu bằng là hình chữ nhật.<br>d) Tỉ lệ sử dụng vẽ 3 hình chiếu là tỉ lệ phóng to 10:1.<br>Phương án ghép Đúng (Đ) / Sai (S) chính xác là:',
     options: [
-      { text: 'a-Đ, b-Đ, c-S, d-S.', isCorrect: false },
       { text: 'a-Đ, b-S, c-Đ, d-S.', isCorrect: true },
-      { text: 'a-S, b-Đ, c-Đ, d-S.', isCorrect: false },
-      { text: 'a-Đ, b-S, c-S, d-Đ.', isCorrect: false }
+      { text: 'a-Đ, b-Đ, c-S, d-S.', isCorrect: false },
+      { text: 'a-S, b-Đ, c-S, d-Đ.', isCorrect: false },
+      { text: 'a-S, b-S, c-Đ, d-Đ.', isCorrect: false }
     ],
-    explanation: 'Đáp án chuẩn theo Đề cương 8A6:<br>• a) ĐÚNG (Hình chiếu cạnh chiếu từ trái sang phải).<br>• b) SAI (Đơn vị đo góc là độ, phút, giây).<br>• c) ĐÚNG (Khổ A4 là 297 x 210 mm).<br>• d) SAI (Tỉ lệ 1:2 là tỉ lệ thu nhỏ).'
+    explanation: 'Đáp án chuẩn theo Đề cương PDF (Trang 14):<br>• a) ĐÚNG: Kích thước lon sữa 1400x1000 mm rất lớn so với khổ giấy A4 (297x210 mm) nên phải chọn tỉ lệ thu nhỏ 1:10 (khi đó hình vẽ còn 140x100 mm).<br>• b) SAI: Vì mặt đáy // mặt phẳng hình chiếu cạnh nên hình chiếu cạnh là hình tròn, không phải hình chiếu bằng.<br>• c) ĐÚNG: Hình chiếu cạnh là hình tròn; hình chiếu đứng và bằng là hình chữ nhật.<br>• d) SAI: Phải dùng tỉ lệ thu nhỏ 1:10, không thể dùng tỉ lệ phóng to 10:1.'
   },
 
   // --- PHẦN II: 5 CÂU TỰ LUẬN / BÀI TẬP VẼ HÌNH CHIẾU ---

@@ -1016,11 +1016,11 @@ window.ENGLISH_DATABASE = [
     `,
     options: [
       { text: 'c – b – a', isCorrect: false },
-      { text: 'c – a – b', isCorrect: true },
+      { text: 'c – a – b', isCorrect: false },
       { text: 'b – c – a', isCorrect: false },
-      { text: 'a – c – b', isCorrect: false }
+      { text: 'a – c – b', isCorrect: true }
     ],
-    explanation: 'Trật tự phát triển sự việc theo mạch thời gian: <strong>c</strong> (mỗi lớp đóng góp tác phẩm trưng bày ở hội trường) -> <strong>a</strong> (học sinh tạo nên các tác phẩm tuyệt vời và đầy tự hào) -> <strong>b</strong> (triển lãm thành công lớn và đông đảo phụ huynh đến xem).'
+    explanation: "Đáp án đúng theo đáp số của giáo viên: a – c – b. Câu a (học sinh tạo ra những tác phẩm tuyệt vời, chúng tôi tự hào) nối ngay sau câu mở đầu \"Everyone was keen to see the artworks\" -> c (mỗi lớp đóng góp tác phẩm hay nhất và được trưng bày ở hội trường) -> b (triển lãm thành công lớn, nhiều phụ huynh đến xem) làm câu tổng kết kết quả."
   },
   {
     id: 'en_68',
@@ -1063,12 +1063,12 @@ window.ENGLISH_DATABASE = [
     exTitle: 'Ex 9: Viết lại câu',
     questionText: '2. She is good at playing the guitar. (Viết lại dùng từ gợi ý trong ngoặc: <strong>well</strong>)',
     options: [
-      { text: 'She plays the guitar well.', isCorrect: true },
+      { text: 'She plays the guitar very well.', isCorrect: true },
       { text: 'She plays the guitar good.', isCorrect: false },
       { text: 'She is play the guitar well.', isCorrect: false },
       { text: 'She plays guitar well.', isCorrect: false }
     ],
-    explanation: 'Cấu trúc biến đổi tính từ thành trạng từ: <strong>be good at V-ing = play something well</strong>.'
+    explanation: "Đáp án giáo viên: She plays the guitar very well. be good at + V-ing = play + trạng từ well (good là tính từ nên không bổ nghĩa cho động từ \"plays\"; very đứng trước well để nhấn mạnh)."
   },
   {
     id: 'en_71',
@@ -1197,12 +1197,12 @@ window.ENGLISH_DATABASE = [
     exTitle: 'Ex 10: Hoàn chỉnh câu',
     questionText: '2. Young people/ prefer/ message/ friends/ meet/ face-to-face.',
     options: [
-      { text: 'Young people prefer messaging friends to meeting them face-to-face.', isCorrect: true },
+      { text: 'Young people prefer messaging (their) friends to meeting face-to-face.', isCorrect: true },
       { text: 'Young people prefer to message friends than meeting them face-to-face.', isCorrect: false },
       { text: 'Young people prefer message friends to meet face-to-face.', isCorrect: false },
       { text: 'Young people prefers messaging friends to meeting face-to-face.', isCorrect: false }
     ],
-    explanation: 'Cấu trúc: <strong>prefer V-ing to V-ing</strong> (thích làm gì hơn làm gì). Chủ ngữ số nhiều "Young people" động từ giữ nguyên mẫu.'
+    explanation: "Cấu trúc: prefer V-ing to V-ing (thích làm gì hơn làm gì). Chủ ngữ số nhiều \"Young people\" nên động từ giữ nguyên \"prefer\"; \"their\" trước friends có thể có hoặc không (theo đáp án giáo viên)."
   },
   {
     id: 'en_81',
@@ -1248,4 +1248,9 @@ window.ENGLISH_DATABASE = [
 // Đảm bảo tương thích toàn cục
 if (typeof window !== 'undefined') {
   window.ENGLISH_DATABASE = window.ENGLISH_DATABASE || [];
+}
+
+// Alias for backwards-compatibility
+if (typeof window !== 'undefined') {
+  window.EN_DATABASE = window.ENGLISH_DATABASE;
 }

@@ -27,7 +27,7 @@ window.HISTORY_DATABASE = [
           <text x="87" y="82" font-size="9" fill="#78350f" text-anchor="middle">Phong kiến cản trở</text>
           <text x="87" y="95" font-size="9" fill="#78350f" text-anchor="middle">tư sản & quý tộc mới</text>
           
-          <path d="M 152 75 L 168 75" stroke="#d97706" stroke-width="2"/>
+          <path d="M 152 75 L 168 75" stroke="#d97706" stroke-width="2" marker-end="url(#arrow)"/>
 
           <rect x="170" y="45" width="125" height="60" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
           <text x="232" y="65" font-size="10" font-weight="bold" fill="#b45309" text-anchor="middle">LÃNH ĐẠO & HÌNH THỨC</text>
@@ -390,8 +390,8 @@ window.HISTORY_DATABASE = [
         title: 'Ý 2: Hậu quả và Sự phản kháng dân tộc',
         template: 'Làm cho kinh tế các nước Đông Nam Á {k3}, phụ thuộc; đời sống nhân dân cực khổ dẫn đến sự {k4} của các phong trào đấu tranh giành độc lập.',
         slots: [
-          { id: 'k4', expected: 'bùng nổ mạnh mẽ', options: ['bùng nổ mạnh mẽ', 'suy thoái đình đốn', 'chấp nhận cam chịu'] },
-          { id: 'k3', expected: 'què quặt, lạc hậu', options: ['què quặt, lạc hậu', 'công nghiệp hóa thịnh vượng', 'tự chủ vững chắc'] }
+          { id: 'k3', expected: 'què quặt, lạc hậu', options: ['què quặt, lạc hậu', 'công nghiệp hóa thịnh vượng', 'tự chủ vững chắc'] },
+          { id: 'k4', expected: 'bùng nổ mạnh mẽ', options: ['bùng nổ mạnh mẽ', 'suy thoái đình đốn', 'chấp nhận cam chịu'] }
         ]
       }
     ],
