@@ -163,13 +163,22 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 2: Announcement Cloze (Thông báo)',
     examCode: '802',
     page: 1,
-    readingContext: `<div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-950 font-serif leading-relaxed mb-3">
-      <div class="text-center font-bold text-base text-amber-900 mb-2 uppercase">Summer Sports Camp</div>
-      <p>Join our exciting Summer Sports Camp!</p>
-      <p>• Date: 1st July - 31st July<br>• Time: 8:00 a.m.- 1:00 p.m.<br>• Location: City Sports Centre</p>
-      <p class="mt-2">This camp is perfect for students aged 5 to 16 years old. You can learn new sports such as volleyball and basketball. Our coaches will help you <strong>(9) ________</strong> your skills. We provide all the necessary equipment, and snacks will be available <strong>(10) ________</strong> breaks. The camp is a great way to stay <strong>(11) ________</strong> and make new friends during the summer.</p>
-      <p class="mt-1 font-semibold">Price: $100 per week. For more information, please contact us at 084 008 008 or visit our website at www.sportscamp.com.</p>
-    </div>`,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs sm:text-sm text-amber-950 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-amber-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-amber-900 flex items-center gap-1.5">
+      <i data-lucide="bell" class="w-4 h-4 text-amber-600"></i>
+      <span>Thông Báo: Summer Sports Camp (Mã Đề 802 - Trang 1)</span>
+    </div>
+    <span class="text-[11px] font-bold text-amber-800 bg-white px-2.5 py-0.5 rounded-full border border-amber-200">Part 2 • Câu 9 - 11</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <p class="font-bold text-amber-950 text-center uppercase tracking-wide">Summer Sports Camp</p>
+    <p>Join our exciting Summer Sports Camp!</p>
+    <p>• <strong>Date:</strong> 1st July - 31st July<br>• <strong>Time:</strong> 8:00 a.m. - 1:00 p.m.<br>• <strong>Location:</strong> City Sports Centre</p>
+    <p>This camp is perfect for students aged 5 to 16 years old. You can learn new sports such as volleyball and basketball. Our coaches will help you <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(9) ________ [Câu đang làm]</span> your skills. We provide all the necessary equipment, and snacks will be available <span class="font-bold text-amber-900">(10) ________</span> breaks. The camp is a great way to stay <span class="font-bold text-amber-900">(11) ________</span> and make new friends during the summer.</p>
+    <p class="font-semibold text-amber-900">Price: $100 per week. For more information, please contact us at 084 008 008 or visit our website at www.sportscamp.com.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 9.</strong> Choose the option that best fits blank (9): "Our coaches will help you (9) ________ your skills."',
     options: [
       { text: 'A. build', isCorrect: false },
@@ -185,6 +194,22 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 2: Announcement Cloze (Thông báo)',
     examCode: '802',
     page: 1,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs sm:text-sm text-amber-950 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-amber-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-amber-900 flex items-center gap-1.5">
+      <i data-lucide="bell" class="w-4 h-4 text-amber-600"></i>
+      <span>Thông Báo: Summer Sports Camp (Mã Đề 802 - Trang 1)</span>
+    </div>
+    <span class="text-[11px] font-bold text-amber-800 bg-white px-2.5 py-0.5 rounded-full border border-amber-200">Part 2 • Câu 9 - 11</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <p class="font-bold text-amber-950 text-center uppercase tracking-wide">Summer Sports Camp</p>
+    <p>Join our exciting Summer Sports Camp!</p>
+    <p>• <strong>Date:</strong> 1st July - 31st July<br>• <strong>Time:</strong> 8:00 a.m. - 1:00 p.m.<br>• <strong>Location:</strong> City Sports Centre</p>
+    <p>This camp is perfect for students aged 5 to 16 years old. You can learn new sports such as volleyball and basketball. Our coaches will help you <span class="font-bold text-amber-900">(9) ________</span> your skills. We provide all the necessary equipment, and snacks will be available <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(10) ________ [Câu đang làm]</span> breaks. The camp is a great way to stay <span class="font-bold text-amber-900">(11) ________</span> and make new friends during the summer.</p>
+    <p class="font-semibold text-amber-900">Price: $100 per week. For more information, please contact us at 084 008 008 or visit our website at www.sportscamp.com.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 10.</strong> Choose the option that best fits blank (10): "...and snacks will be available (10) ________ breaks."',
     options: [
       { text: 'A. of', isCorrect: false },
@@ -200,6 +225,22 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 2: Announcement Cloze (Thông báo)',
     examCode: '802',
     page: 1,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs sm:text-sm text-amber-950 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-amber-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-amber-900 flex items-center gap-1.5">
+      <i data-lucide="bell" class="w-4 h-4 text-amber-600"></i>
+      <span>Thông Báo: Summer Sports Camp (Mã Đề 802 - Trang 1)</span>
+    </div>
+    <span class="text-[11px] font-bold text-amber-800 bg-white px-2.5 py-0.5 rounded-full border border-amber-200">Part 2 • Câu 9 - 11</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <p class="font-bold text-amber-950 text-center uppercase tracking-wide">Summer Sports Camp</p>
+    <p>Join our exciting Summer Sports Camp!</p>
+    <p>• <strong>Date:</strong> 1st July - 31st July<br>• <strong>Time:</strong> 8:00 a.m. - 1:00 p.m.<br>• <strong>Location:</strong> City Sports Centre</p>
+    <p>This camp is perfect for students aged 5 to 16 years old. You can learn new sports such as volleyball and basketball. Our coaches will help you <span class="font-bold text-amber-900">(9) ________</span> your skills. We provide all the necessary equipment, and snacks will be available <span class="font-bold text-amber-900">(10) ________</span> breaks. The camp is a great way to stay <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(11) ________ [Câu đang làm]</span> and make new friends during the summer.</p>
+    <p class="font-semibold text-amber-900">Price: $100 per week. For more information, please contact us at 084 008 008 or visit our website at www.sportscamp.com.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 11.</strong> Choose the option that best fits blank (11): "The camp is a great way to stay (11) ________ and make new friends..."',
     options: [
       { text: 'A. action', isCorrect: false },
@@ -219,14 +260,23 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 3: Text Ordering (Sắp xếp đoạn văn)',
     examCode: '802',
     page: 2,
-    readingContext: `<div class="p-4 rounded-xl bg-indigo-50 border border-indigo-200 text-xs sm:text-sm text-indigo-950 font-serif leading-relaxed mb-3">
-      <p class="italic mb-2">"Leisure time is important for everyone, especially for young people. It is the time you spend relaxing and doing activities you enjoy. There are many ways to enjoy your leisure time. ______"</p>
-      <div class="space-y-1.5 pl-3 border-l-2 border-indigo-300">
-        <div><strong>a.</strong> Another fun activity is playing sports to keep you active and healthy as well as make new friends.</div>
-        <div><strong>b.</strong> One way is to read books. Reading can take you to new worlds and help you learn new things.</div>
-        <div><strong>c.</strong> You can also spend time with family and friends, watching movies, playing games, or going to the park. These are great ways to connect with others.</div>
-      </div>
-    </div>`,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/80 border border-indigo-200 text-xs sm:text-sm text-indigo-950 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="list-ordered" class="w-4 h-4 text-indigo-600"></i>
+      <span>Đoạn Văn Sắp Xếp: Leisure Time (Mã Đề 802 - Trang 2)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 3 • Câu 12 & 13</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <p class="italic text-slate-700 bg-white/70 p-2.5 rounded-xl border border-indigo-100">"Leisure time is important for everyone, especially for young people. It is the time you spend relaxing and doing activities you enjoy. There are many ways to enjoy your leisure time. ______"</p>
+    <div class="space-y-1.5 pl-3 border-l-2 border-indigo-400">
+      <div><strong>a.</strong> Another fun activity is playing sports to keep you active and healthy as well as make new friends.</div>
+      <div><strong>b.</strong> One way is to read books. Reading can take you to new worlds and help you learn new things.</div>
+      <div><strong>c.</strong> You can also spend time with family and friends, watching movies, playing games, or going to the park. These are great ways to connect with others.</div>
+    </div>
+  </div>
+</div>`,
     questionText: '<strong>Question 12.</strong> Put the sentences (a-c) in the correct order, then fill in the blank to make a logical text.',
     options: [
       { text: 'A. a-b-c', isCorrect: false },
@@ -242,6 +292,23 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 3: Text Ordering (Sắp xếp đoạn văn)',
     examCode: '802',
     page: 2,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/80 border border-indigo-200 text-xs sm:text-sm text-indigo-950 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="list-ordered" class="w-4 h-4 text-indigo-600"></i>
+      <span>Đoạn Văn Sắp Xếp: Leisure Time (Mã Đề 802 - Trang 2)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 3 • Câu 12 & 13</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <p class="italic text-slate-700 bg-white/70 p-2.5 rounded-xl border border-indigo-100">"Leisure time is important for everyone, especially for young people. It is the time you spend relaxing and doing activities you enjoy. There are many ways to enjoy your leisure time. ______"</p>
+    <div class="space-y-1.5 pl-3 border-l-2 border-indigo-400">
+      <div><strong>a.</strong> Another fun activity is playing sports to keep you active and healthy as well as make new friends.</div>
+      <div><strong>b.</strong> One way is to read books. Reading can take you to new worlds and help you learn new things.</div>
+      <div><strong>c.</strong> You can also spend time with family and friends, watching movies, playing games, or going to the park. These are great ways to connect with others.</div>
+    </div>
+  </div>
+</div>`,
     questionText: '<strong>Question 13.</strong> Choose the sentence that most appropriately ends the text (in Question 12).',
     options: [
       { text: 'A. Therefore, it is a waste of time doing these things like painting, gardening, or cooking, etc. in your leisure time.', isCorrect: false },
@@ -261,11 +328,20 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 4: Cloze Passage (Áp lực tuổi dậy thì)',
     examCode: '802',
     page: 2,
-    readingContext: `<div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-800 font-serif leading-relaxed mb-3">
-      <p>Teenagers often feel a lot of pressure from many areas of their lives. One common <strong>(14) __________</strong> of pressure is school. Teens have to study hard and get good grades to prepare for their future, which can be stressful. They also face pressure from their friends to fit in. This can lead to doing things they don't really want to do, like wearing certain clothes or trying things such as smoking or drinking.</p>
-      <p class="mt-2">Social media adds even <strong>(15) __________</strong> pressure. Teens may feel like they need to look perfect or have the best life because of what they see online. This can make <strong>(16) __________</strong> with themselves.</p>
-      <p class="mt-2">It's important for teens to remember that they don't have to be perfect. Talking to a trusted adult, like a parent or teacher, can help them manage stress. Finding healthy ways to relax, like sports or hobbies, is also a great way to deal with pressure.</p>
-    </div>`,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+      <span>Đoạn Văn Đọc Điền: Teen Pressure (Mã Đề 802 - Trang 2)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 4 • Câu 14 - 16</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <p>Teenagers often feel a lot of pressure from many areas of their lives. One common <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(14) __________ [Câu đang làm]</span> of pressure is school. Teens have to study hard and get good grades to prepare for their future, which can be stressful. They also face pressure from their friends to fit in. This can lead to doing things they don't really want to do, like wearing certain clothes or trying things such as smoking or drinking.</p>
+    <p>Social media adds even <span class="font-bold text-indigo-900">(15) __________</span> pressure. Teens may feel like they need to look perfect or have the best life because of what they see online. This can make <span class="font-bold text-indigo-900">(16) __________</span> with themselves.</p>
+    <p>It's important for teens to remember that they don't have to be perfect. Talking to a trusted adult, like a parent or teacher, can help them manage stress. Finding healthy ways to relax, like sports or hobbies, is also a great way to deal with pressure.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 14.</strong> Choose the correct word for blank (14): "One common (14) __________ of pressure is school."',
     options: [
       { text: 'A. source', isCorrect: true },
@@ -281,6 +357,20 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 4: Cloze Passage (Áp lực tuổi dậy thì)',
     examCode: '802',
     page: 2,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+      <span>Đoạn Văn Đọc Điền: Teen Pressure (Mã Đề 802 - Trang 2)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 4 • Câu 14 - 16</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <p>Teenagers often feel a lot of pressure from many areas of their lives. One common <span class="font-bold text-indigo-900">(14) __________</span> of pressure is school. Teens have to study hard and get good grades to prepare for their future, which can be stressful. They also face pressure from their friends to fit in. This can lead to doing things they don't really want to do, like wearing certain clothes or trying things such as smoking or drinking.</p>
+    <p>Social media adds even <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(15) __________ [Câu đang làm]</span> pressure. Teens may feel like they need to look perfect or have the best life because of what they see online. This can make <span class="font-bold text-indigo-900">(16) __________</span> with themselves.</p>
+    <p>It's important for teens to remember that they don't have to be perfect. Talking to a trusted adult, like a parent or teacher, can help them manage stress. Finding healthy ways to relax, like sports or hobbies, is also a great way to deal with pressure.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 15.</strong> Choose the correct word for blank (15): "Social media adds even (15) __________ pressure."',
     options: [
       { text: 'A. many', isCorrect: false },
@@ -296,6 +386,20 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 4: Cloze Passage (Áp lực tuổi dậy thì)',
     examCode: '802',
     page: 2,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+      <span>Đoạn Văn Đọc Điền: Teen Pressure (Mã Đề 802 - Trang 2)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 4 • Câu 14 - 16</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <p>Teenagers often feel a lot of pressure from many areas of their lives. One common <span class="font-bold text-indigo-900">(14) __________</span> of pressure is school. Teens have to study hard and get good grades to prepare for their future, which can be stressful. They also face pressure from their friends to fit in. This can lead to doing things they don't really want to do, like wearing certain clothes or trying things such as smoking or drinking.</p>
+    <p>Social media adds even <span class="font-bold text-indigo-900">(15) __________</span> pressure. Teens may feel like they need to look perfect or have the best life because of what they see online. This can make <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(16) __________ [Câu đang làm]</span> with themselves.</p>
+    <p>It's important for teens to remember that they don't have to be perfect. Talking to a trusted adult, like a parent or teacher, can help them manage stress. Finding healthy ways to relax, like sports or hobbies, is also a great way to deal with pressure.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 16.</strong> Choose the correct option for blank (16): "This can make (16) __________ with themselves."',
     options: [
       { text: 'A. they are insecure', isCorrect: false },
@@ -550,6 +654,14 @@ window.EXAM_802_DATABASE = [
     examCode: '802',
     page: 3,
     imageSrc: 'assets/exam_signs/de802_q31.png',
+    visualComponent: `
+      <div class="flex flex-col items-center justify-center p-3 sm:p-4 bg-slate-50 rounded-2xl border border-slate-200 shadow-xs max-w-sm mx-auto my-2">
+        <img src="assets/exam_signs/de802_q31.png" alt="Question 31 Sign" class="max-h-56 object-contain rounded-xl shadow-sm border border-slate-100" onerror="this.onerror=null; this.src='public/assets/exam_signs/de802_q31.png';" />
+        <span class="text-[11px] text-slate-500 font-medium mt-2 italic flex items-center gap-1">
+          <i data-lucide="image" class="w-3.5 h-3.5 text-indigo-500"></i> Biển báo giao thông - Câu 31
+        </span>
+      </div>
+    `,
     questionText: '<strong>Question 31.</strong> What does the sign say?',
     options: [
       { text: 'A. You can ride your bicycle here.', isCorrect: false },
@@ -566,6 +678,14 @@ window.EXAM_802_DATABASE = [
     examCode: '802',
     page: 3,
     imageSrc: 'assets/exam_signs/de802_q32.png',
+    visualComponent: `
+      <div class="flex flex-col items-center justify-center p-3 sm:p-4 bg-slate-50 rounded-2xl border border-slate-200 shadow-xs max-w-sm mx-auto my-2">
+        <img src="assets/exam_signs/de802_q32.png" alt="Question 32 Notice" class="max-h-56 object-contain rounded-xl shadow-sm border border-slate-100" onerror="this.onerror=null; this.src='public/assets/exam_signs/de802_q32.png';" />
+        <span class="text-[11px] text-slate-500 font-medium mt-2 italic flex items-center gap-1">
+          <i data-lucide="image" class="w-3.5 h-3.5 text-indigo-500"></i> Bảng thông báo quy định - Câu 32
+        </span>
+      </div>
+    `,
     questionText: '<strong>Question 32.</strong> What does the notice say? (Notice: <em>"Do not litter. Use the bins provided"</em>)',
     options: [
       { text: 'A. Don\'t use the bins to litter.', isCorrect: false },
@@ -585,9 +705,18 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 10: Reading Comprehension (Đọc hiểu Shopping)',
     examCode: '802',
     page: 4,
-    readingContext: `<div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-800 font-serif leading-relaxed mb-3">
-      <p>Shopping is an enjoyable activity for many people around the world in their leisure time. It involves buying items we need or want, such as food, clothes, and gifts. There are different places to shop, like supermarkets, shopping malls, and local markets. In supermarkets, you can find fresh fruits, vegetables, and everyday items. Shopping malls often have many stores, where you can buy many things such as clothes, shoes, and electronics. Local markets are great for finding unique products and supporting local sellers. Shopping can also be a social activity. Friends and family often go together to have fun and share opinions. Many people enjoy looking for good deals and discounts. Nowadays, online shopping is becoming more and more popular, allowing people to buy items from home. You can browse many products and read reviews before making a purchase. However, it is important to be careful when shopping online and to buy from trusted websites. Overall, shopping is not just about buying things; it can also be a way to explore new places and spend time with loved ones.</p>
-    </div>`,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+      <span>Bài Đọc Hiểu: Shopping In Leisure Time (Mã Đề 802 - Trang 4)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 10 • Câu 33 - 36</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal leading-relaxed">
+    <p>Shopping is an enjoyable activity for many people around the world in their leisure time. It involves buying items we need or want, such as food, clothes, and gifts. There are different places to shop, like supermarkets, shopping malls, and local markets. In supermarkets, you can find fresh fruits, vegetables, and everyday items. Shopping malls often have many stores, where you can buy many things such as clothes, shoes, and electronics. Local markets are great for finding unique products and supporting local sellers. Shopping can also be a social activity. Friends and family often go together to have fun and share opinions. Many people enjoy looking for good deals and discounts. Nowadays, online shopping is becoming more and more popular, allowing people to buy items from home. You can browse many products and read reviews before making a purchase. However, it is important to be careful when shopping online and to buy from trusted websites. Overall, shopping is not just about buying things; it can also be a way to explore new places and spend time with loved ones.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 33.</strong> What is the main idea of the reading passage?',
     options: [
       { text: 'A. Shopping is an everyday life activity only for rich people.', isCorrect: false },
@@ -603,6 +732,18 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 10: Reading Comprehension (Đọc hiểu Shopping)',
     examCode: '802',
     page: 4,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+      <span>Bài Đọc Hiểu: Shopping In Leisure Time (Mã Đề 802 - Trang 4)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 10 • Câu 33 - 36</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal leading-relaxed">
+    <p>Shopping is an enjoyable activity for many people around the world in their leisure time. It involves buying items we need or want, such as food, clothes, and gifts. There are different places to shop, like supermarkets, shopping malls, and local markets. In supermarkets, you can find fresh fruits, vegetables, and everyday items. Shopping malls often have many stores, where you can buy many things such as clothes, shoes, and electronics. Local markets are great for finding unique products and supporting local sellers. Shopping can also be a social activity. Friends and family often go together to have fun and share opinions. Many people enjoy looking for good deals and discounts. Nowadays, online shopping is becoming more and more popular, allowing people to buy items from home. You can browse many products and read reviews before making a purchase. However, it is important to be careful when shopping online and to buy from trusted websites. Overall, shopping is not just about buying things; it can also be a way to explore new places and spend time with loved ones.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 34.</strong> The word <strong>supporting</strong> in the passage is CLOSEST in meaning to _____.',
     options: [
       { text: 'A. involving', isCorrect: false },
@@ -618,6 +759,18 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 10: Reading Comprehension (Đọc hiểu Shopping)',
     examCode: '802',
     page: 4,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+      <span>Bài Đọc Hiểu: Shopping In Leisure Time (Mã Đề 802 - Trang 4)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 10 • Câu 33 - 36</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal leading-relaxed">
+    <p>Shopping is an enjoyable activity for many people around the world in their leisure time. It involves buying items we need or want, such as food, clothes, and gifts. There are different places to shop, like supermarkets, shopping malls, and local markets. In supermarkets, you can find fresh fruits, vegetables, and everyday items. Shopping malls often have many stores, where you can buy many things such as clothes, shoes, and electronics. Local markets are great for finding unique products and supporting local sellers. Shopping can also be a social activity. Friends and family often go together to have fun and share opinions. Many people enjoy looking for good deals and discounts. Nowadays, online shopping is becoming more and more popular, allowing people to buy items from home. You can browse many products and read reviews before making a purchase. However, it is important to be careful when shopping online and to buy from trusted websites. Overall, shopping is not just about buying things; it can also be a way to explore new places and spend time with loved ones.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 35.</strong> What do people often enjoy while shopping?',
     options: [
       { text: 'A. Buying only expensive items', isCorrect: false },
@@ -633,6 +786,18 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 10: Reading Comprehension (Đọc hiểu Shopping)',
     examCode: '802',
     page: 4,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+      <span>Bài Đọc Hiểu: Shopping In Leisure Time (Mã Đề 802 - Trang 4)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 10 • Câu 33 - 36</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal leading-relaxed">
+    <p>Shopping is an enjoyable activity for many people around the world in their leisure time. It involves buying items we need or want, such as food, clothes, and gifts. There are different places to shop, like supermarkets, shopping malls, and local markets. In supermarkets, you can find fresh fruits, vegetables, and everyday items. Shopping malls often have many stores, where you can buy many things such as clothes, shoes, and electronics. Local markets are great for finding unique products and supporting local sellers. Shopping can also be a social activity. Friends and family often go together to have fun and share opinions. Many people enjoy looking for good deals and discounts. Nowadays, online shopping is becoming more and more popular, allowing people to buy items from home. You can browse many products and read reviews before making a purchase. However, it is important to be careful when shopping online and to buy from trusted websites. Overall, shopping is not just about buying things; it can also be a way to explore new places and spend time with loved ones.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 36.</strong> Which of the following statements is true?',
     options: [
       { text: 'A. Online shopping is more popular than shopping in stores.', isCorrect: false },
@@ -652,17 +817,27 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 11: Sentence Insertion (Điền câu vào đoạn văn)',
     examCode: '802',
     page: 4,
-    readingContext: `<div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-xs sm:text-sm text-emerald-950 font-serif leading-relaxed mb-3">
-      <p class="font-bold text-emerald-900 mb-1">Các câu được trích ra (A - D):</p>
-      <div class="space-y-1 mb-3 text-xs">
-        <div><strong>A.</strong> but it can also be done at home</div>
-        <div><strong>B.</strong> which allows them to stay active and healthy</div>
-        <div><strong>C.</strong> People can choose from different genres</div>
-        <div><strong>D.</strong> Spending time doing something fun is a great way to relax</div>
-      </div>
-      <p class="font-bold text-emerald-900 mb-1">Đoạn văn hoàn chỉnh:</p>
-      <p>People have different hobbies and ways to relax in their free time. Some enjoy outdoor activities like hiking and cycling, <strong>(37) __________</strong>. Reading books is another popular hobby because it helps people relax and learn new things. <strong>(38) __________</strong>. For example, some people love fiction, while others prefer non-fiction or magazines. Watching movies and playing games are also common pastimes. Many enjoy going to the cinema, <strong>(39) __________</strong>. In addition, some people like to play board games with friends or family. <strong>(40) __________</strong>. It is important to find a hobby that you enjoy, as it helps you feel happy and relaxed.</p>
-    </div>`,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-emerald-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-950 flex items-center gap-1.5">
+      <i data-lucide="file-input" class="w-4 h-4 text-emerald-600"></i>
+      <span>Đoạn Văn Điền Câu: Hobbies & Relaxation (Mã Đề 802 - Trang 4)</span>
+    </div>
+    <span class="text-[11px] font-bold text-emerald-800 bg-white px-2.5 py-0.5 rounded-full border border-emerald-200">Part 11 • Câu 37 - 40</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal leading-relaxed">
+    <p>People have different hobbies and ways to relax in their free time. Some enjoy outdoor activities like hiking and cycling, <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(37) __________ [Chỗ trống đang chọn]</span>. Reading books is another popular hobby because it helps people relax and learn new things. <span class="font-bold text-emerald-900">(38) __________</span>. For example, some people love fiction, while others prefer non-fiction or magazines. Watching movies and playing games are also common pastimes. Many enjoy going to the cinema, <span class="font-bold text-emerald-900">(39) __________</span>. In addition, some people like to play board games with friends or family. <span class="font-bold text-emerald-900">(40) __________</span>. It is important to find a hobby that you enjoy, as it helps you feel happy and relaxed.</p>
+  </div>
+  <div class="bg-white/90 p-3 rounded-xl border border-emerald-200/80 text-xs text-slate-700 space-y-1">
+    <div class="font-bold text-emerald-900">4 câu / cụm từ cần điền vào chỗ trống (A–D):</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
+      <div><strong>A.</strong> but it can also be done at home</div>
+      <div><strong>B.</strong> which allows them to stay active and healthy</div>
+      <div><strong>C.</strong> People can choose from different genres</div>
+      <div><strong>D.</strong> Spending time doing something fun is a great way to relax</div>
+    </div>
+  </div>
+</div>`,
     questionText: '<strong>Question 37.</strong> Choose the option that fits blank (37): "Some enjoy outdoor activities like hiking and cycling, (37) __________."',
     options: [
       { text: 'A. but it can also be done at home', isCorrect: false },
@@ -678,6 +853,27 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 11: Sentence Insertion (Điền câu vào đoạn văn)',
     examCode: '802',
     page: 4,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-emerald-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-950 flex items-center gap-1.5">
+      <i data-lucide="file-input" class="w-4 h-4 text-emerald-600"></i>
+      <span>Đoạn Văn Điền Câu: Hobbies & Relaxation (Mã Đề 802 - Trang 4)</span>
+    </div>
+    <span class="text-[11px] font-bold text-emerald-800 bg-white px-2.5 py-0.5 rounded-full border border-emerald-200">Part 11 • Câu 37 - 40</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal leading-relaxed">
+    <p>People have different hobbies and ways to relax in their free time. Some enjoy outdoor activities like hiking and cycling, <span class="font-bold text-emerald-900">(37) __________</span>. Reading books is another popular hobby because it helps people relax and learn new things. <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(38) __________ [Chỗ trống đang chọn]</span>. For example, some people love fiction, while others prefer non-fiction or magazines. Watching movies and playing games are also common pastimes. Many enjoy going to the cinema, <span class="font-bold text-emerald-900">(39) __________</span>. In addition, some people like to play board games with friends or family. <span class="font-bold text-emerald-900">(40) __________</span>. It is important to find a hobby that you enjoy, as it helps you feel happy and relaxed.</p>
+  </div>
+  <div class="bg-white/90 p-3 rounded-xl border border-emerald-200/80 text-xs text-slate-700 space-y-1">
+    <div class="font-bold text-emerald-900">4 câu / cụm từ cần điền vào chỗ trống (A–D):</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
+      <div><strong>A.</strong> but it can also be done at home</div>
+      <div><strong>B.</strong> which allows them to stay active and healthy</div>
+      <div><strong>C.</strong> People can choose from different genres</div>
+      <div><strong>D.</strong> Spending time doing something fun is a great way to relax</div>
+    </div>
+  </div>
+</div>`,
     questionText: '<strong>Question 38.</strong> Choose the option that fits blank (38): "Reading books is another popular hobby... (38) __________. For example, some people love fiction..."',
     options: [
       { text: 'A. but it can also be done at home', isCorrect: false },
@@ -693,6 +889,27 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 11: Sentence Insertion (Điền câu vào đoạn văn)',
     examCode: '802',
     page: 4,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-emerald-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-950 flex items-center gap-1.5">
+      <i data-lucide="file-input" class="w-4 h-4 text-emerald-600"></i>
+      <span>Đoạn Văn Điền Câu: Hobbies & Relaxation (Mã Đề 802 - Trang 4)</span>
+    </div>
+    <span class="text-[11px] font-bold text-emerald-800 bg-white px-2.5 py-0.5 rounded-full border border-emerald-200">Part 11 • Câu 37 - 40</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal leading-relaxed">
+    <p>People have different hobbies and ways to relax in their free time. Some enjoy outdoor activities like hiking and cycling, <span class="font-bold text-emerald-900">(37) __________</span>. Reading books is another popular hobby because it helps people relax and learn new things. <span class="font-bold text-emerald-900">(38) __________</span>. For example, some people love fiction, while others prefer non-fiction or magazines. Watching movies and playing games are also common pastimes. Many enjoy going to the cinema, <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(39) __________ [Chỗ trống đang chọn]</span>. In addition, some people like to play board games with friends or family. <span class="font-bold text-emerald-900">(40) __________</span>. It is important to find a hobby that you enjoy, as it helps you feel happy and relaxed.</p>
+  </div>
+  <div class="bg-white/90 p-3 rounded-xl border border-emerald-200/80 text-xs text-slate-700 space-y-1">
+    <div class="font-bold text-emerald-900">4 câu / cụm từ cần điền vào chỗ trống (A–D):</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
+      <div><strong>A.</strong> but it can also be done at home</div>
+      <div><strong>B.</strong> which allows them to stay active and healthy</div>
+      <div><strong>C.</strong> People can choose from different genres</div>
+      <div><strong>D.</strong> Spending time doing something fun is a great way to relax</div>
+    </div>
+  </div>
+</div>`,
     questionText: '<strong>Question 39.</strong> Choose the option that fits blank (39): "Many enjoy going to the cinema, (39) __________."',
     options: [
       { text: 'A. but it can also be done at home', isCorrect: true },
@@ -708,6 +925,27 @@ window.EXAM_802_DATABASE = [
     exTitle: 'Part 11: Sentence Insertion (Điền câu vào đoạn văn)',
     examCode: '802',
     page: 4,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-emerald-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-950 flex items-center gap-1.5">
+      <i data-lucide="file-input" class="w-4 h-4 text-emerald-600"></i>
+      <span>Đoạn Văn Điền Câu: Hobbies & Relaxation (Mã Đề 802 - Trang 4)</span>
+    </div>
+    <span class="text-[11px] font-bold text-emerald-800 bg-white px-2.5 py-0.5 rounded-full border border-emerald-200">Part 11 • Câu 37 - 40</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal leading-relaxed">
+    <p>People have different hobbies and ways to relax in their free time. Some enjoy outdoor activities like hiking and cycling, <span class="font-bold text-emerald-900">(37) __________</span>. Reading books is another popular hobby because it helps people relax and learn new things. <span class="font-bold text-emerald-900">(38) __________</span>. For example, some people love fiction, while others prefer non-fiction or magazines. Watching movies and playing games are also common pastimes. Many enjoy going to the cinema, <span class="font-bold text-emerald-900">(39) __________</span>. In addition, some people like to play board games with friends or family. <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(40) __________ [Chỗ trống đang chọn]</span>. It is important to find a hobby that you enjoy, as it helps you feel happy and relaxed.</p>
+  </div>
+  <div class="bg-white/90 p-3 rounded-xl border border-emerald-200/80 text-xs text-slate-700 space-y-1">
+    <div class="font-bold text-emerald-900">4 câu / cụm từ cần điền vào chỗ trống (A–D):</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
+      <div><strong>A.</strong> but it can also be done at home</div>
+      <div><strong>B.</strong> which allows them to stay active and healthy</div>
+      <div><strong>C.</strong> People can choose from different genres</div>
+      <div><strong>D.</strong> Spending time doing something fun is a great way to relax</div>
+    </div>
+  </div>
+</div>`,
     questionText: '<strong>Question 40.</strong> Choose the option that fits blank (40): "In addition, some people like to play board games with friends or family. (40) __________. It is important to find a hobby..."',
     options: [
       { text: 'A. but it can also be done at home', isCorrect: false },
@@ -1028,6 +1266,14 @@ window.EXAM_805_DATABASE = [
     examCode: '805',
     page: 2,
     imageSrc: 'assets/exam_signs/de805_q19.png',
+    visualComponent: `
+      <div class="flex flex-col items-center justify-center p-3 sm:p-4 bg-slate-50 rounded-2xl border border-slate-200 shadow-xs max-w-sm mx-auto my-2">
+        <img src="assets/exam_signs/de805_q19.png" alt="Question 19 Sign" class="max-h-56 object-contain rounded-xl shadow-sm border border-slate-100" onerror="this.onerror=null; this.src='public/assets/exam_signs/de805_q19.png';" />
+        <span class="text-[11px] text-slate-500 font-medium mt-2 italic flex items-center gap-1">
+          <i data-lucide="shield-alert" class="w-3.5 h-3.5 text-rose-500"></i> Biển báo trường học - Câu 19 (No Bullying)
+        </span>
+      </div>
+    `,
     questionText: '<strong>Question 19.</strong> What does this sign say?',
     options: [
       { text: 'A. You mustn’t bully others.', isCorrect: true },
@@ -1044,6 +1290,14 @@ window.EXAM_805_DATABASE = [
     examCode: '805',
     page: 2,
     imageSrc: 'assets/exam_signs/de805_q20.png',
+    visualComponent: `
+      <div class="flex flex-col items-center justify-center p-3 sm:p-4 bg-slate-50 rounded-2xl border border-slate-200 shadow-xs max-w-sm mx-auto my-2">
+        <img src="assets/exam_signs/de805_q20.png" alt="Question 20 Notice" class="max-h-56 object-contain rounded-xl shadow-sm border border-slate-100" onerror="this.onerror=null; this.src='public/assets/exam_signs/de805_q20.png';" />
+        <span class="text-[11px] text-slate-500 font-medium mt-2 italic flex items-center gap-1">
+          <i data-lucide="info" class="w-3.5 h-3.5 text-indigo-500"></i> Bảng thông báo quy định - Câu 20 (Private Rooms)
+        </span>
+      </div>
+    `,
     questionText: '<strong>Question 20.</strong> What does the notice say? (Notice: <em>"The Private Rooms are open from 10am to 2pm to people with membership cards"</em>)',
     options: [
       { text: 'A. You can get your membership cards from the Private Rooms between 10am and 2pm.', isCorrect: false },
@@ -1063,9 +1317,18 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 6: Reading Cloze (Thử thách cạnh tranh của Teens)',
     examCode: '805',
     page: 3,
-    readingContext: `<div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-800 font-serif leading-relaxed mb-3">
-      <p>Today teenagers <strong>(21) __________</strong> in a very competitive world. It is more important than ever to succeed at school if you hope to have a chance in the job market afterwards. It’s no wonder that many young people worry <strong>(22) __________</strong> letting down their parents, their <strong>(23) __________</strong> and themselves. To try to please everyone, they take on too many tasks until it becomes harder <strong>(24) __________</strong> harder to balance homework assignments, parties, sports activities and friends. The result is that young people suffer from stress.</p>
-    </div>`,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+      <span>Đoạn Văn Đọc Điền: Teen Competition & Stress (Mã Đề 805 - Trang 2)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 6 • Câu 21 - 24</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <p>Today teenagers <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(21) __________ [Câu đang làm]</span> in a very competitive world. It is more important than ever to succeed at school if you hope to have a chance in the job market afterwards. It’s no wonder that many young people worry <span class="font-bold text-indigo-900">(22) __________</span> letting down their parents, their <span class="font-bold text-indigo-900">(23) __________</span> and themselves. To try to please everyone, they take on too many tasks until it becomes harder <span class="font-bold text-indigo-900">(24) __________</span> harder to balance homework assignments, parties, sports activities and friends. The result is that young people suffer from stress.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 21.</strong> Choose the option that fits blank (21): "Today teenagers (21) __________ in a very competitive world."',
     options: [
       { text: 'A. live', isCorrect: true },
@@ -1081,6 +1344,18 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 6: Reading Cloze (Thử thách cạnh tranh của Teens)',
     examCode: '805',
     page: 3,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+      <span>Đoạn Văn Đọc Điền: Teen Competition & Stress (Mã Đề 805 - Trang 2)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 6 • Câu 21 - 24</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <p>Today teenagers <span class="font-bold text-indigo-900">(21) __________</span> in a very competitive world. It is more important than ever to succeed at school if you hope to have a chance in the job market afterwards. It’s no wonder that many young people worry <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(22) __________ [Câu đang làm]</span> letting down their parents, their <span class="font-bold text-indigo-900">(23) __________</span> and themselves. To try to please everyone, they take on too many tasks until it becomes harder <span class="font-bold text-indigo-900">(24) __________</span> harder to balance homework assignments, parties, sports activities and friends. The result is that young people suffer from stress.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 22.</strong> Choose the option that fits blank (22): "...many young people worry (22) __________ letting down their parents..."',
     options: [
       { text: 'A. at', isCorrect: false },
@@ -1096,6 +1371,18 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 6: Reading Cloze (Thử thách cạnh tranh của Teens)',
     examCode: '805',
     page: 3,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+      <span>Đoạn Văn Đọc Điền: Teen Competition & Stress (Mã Đề 805 - Trang 2)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 6 • Câu 21 - 24</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <p>Today teenagers <span class="font-bold text-indigo-900">(21) __________</span> in a very competitive world. It is more important than ever to succeed at school if you hope to have a chance in the job market afterwards. It’s no wonder that many young people worry <span class="font-bold text-indigo-900">(22) __________</span> letting down their parents, their <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(23) __________ [Câu đang làm]</span> and themselves. To try to please everyone, they take on too many tasks until it becomes harder <span class="font-bold text-indigo-900">(24) __________</span> harder to balance homework assignments, parties, sports activities and friends. The result is that young people suffer from stress.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 23.</strong> Choose the option that fits blank (23): "...letting down their parents, their (23) __________ and themselves."',
     options: [
       { text: 'A. peer', isCorrect: false },
@@ -1111,6 +1398,18 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 6: Reading Cloze (Thử thách cạnh tranh của Teens)',
     examCode: '805',
     page: 3,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+      <span>Đoạn Văn Đọc Điền: Teen Competition & Stress (Mã Đề 805 - Trang 2)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 6 • Câu 21 - 24</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <p>Today teenagers <span class="font-bold text-indigo-900">(21) __________</span> in a very competitive world. It is more important than ever to succeed at school if you hope to have a chance in the job market afterwards. It’s no wonder that many young people worry <span class="font-bold text-indigo-900">(22) __________</span> letting down their parents, their <span class="font-bold text-indigo-900">(23) __________</span> and themselves. To try to please everyone, they take on too many tasks until it becomes harder <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(24) __________ [Câu đang làm]</span> harder to balance homework assignments, parties, sports activities and friends. The result is that young people suffer from stress.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 24.</strong> Choose the option that fits blank (24): "...until it becomes harder (24) __________ harder to balance..."',
     options: [
       { text: 'A. and', isCorrect: true },
@@ -1130,9 +1429,18 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 7: Reading Comprehension (Cuộc sống làng quê)',
     examCode: '805',
     page: 3,
-    readingContext: `<div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-800 font-serif leading-relaxed mb-3">
-      <p>Many people enjoy living in a big city because they think life is more exciting there. However, I come from a small village and in my view, there are lots of benefits. The main reason I prefer village life is because it is very quiet, so I always feel calm when living here. Every morning, I am woken up by the chirping of the birds, then I open the door to take a deep breath of the fresh air. Another reason is that the air is so fresh and clean. We have more green spaces and bigger gardens, too. There are not so many vehicles in the street; therefore, it is not usually crowded during rush hours. The fewer the vehicles are, the less dust and smoke they emit. In addition, I think the people here are friendlier. They live in a simple way with daily jokes, and normal expectations, so they rarely get angry with each other. Personally, I’m interested in wildlife photography, so the countryside is perfect for me.</p>
-    </div>`,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+      <span>Bài Đọc Hiểu: Village Life & Wildlife Photography (Mã Đề 805 - Trang 3)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 7 • Câu 25 - 28</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal leading-relaxed">
+    <p>Many people enjoy living in a big city because they think life is more exciting there. However, I come from a small village and in my view, there are lots of benefits. The main reason I prefer village life is because it is very quiet, so I always feel calm when living here. Every morning, I am woken up by the chirping of the birds, then I open the door to take a deep breath of the fresh air. Another reason is that the air is so fresh and clean. We have more green spaces and bigger gardens, too. There are not so many vehicles in the street; therefore, it is not usually crowded during rush hours. The fewer the vehicles are, the less dust and smoke they emit. In addition, I think the people here are friendlier. They live in a simple way with daily jokes, and normal expectations, so they rarely get angry with each other. Personally, I’m interested in wildlife photography, so the countryside is perfect for me.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 25.</strong> Where does the writer come from?',
     options: [
       { text: 'A. A big city', isCorrect: false },
@@ -1148,6 +1456,18 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 7: Reading Comprehension (Cuộc sống làng quê)',
     examCode: '805',
     page: 3,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+      <span>Bài Đọc Hiểu: Village Life & Wildlife Photography (Mã Đề 805 - Trang 3)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 7 • Câu 25 - 28</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal leading-relaxed">
+    <p>Many people enjoy living in a big city because they think life is more exciting there. However, I come from a small village and in my view, there are lots of benefits. The main reason I prefer village life is because it is very quiet, so I always feel calm when living here. Every morning, I am woken up by the chirping of the birds, then I open the door to take a deep breath of the fresh air. Another reason is that the air is so fresh and clean. We have more green spaces and bigger gardens, too. There are not so many vehicles in the street; therefore, it is not usually crowded during rush hours. The fewer the vehicles are, the less dust and smoke they emit. In addition, I think the people here are friendlier. They live in a simple way with daily jokes, and normal expectations, so they rarely get angry with each other. Personally, I’m interested in wildlife photography, so the countryside is perfect for me.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 26.</strong> One reason why he prefers village life is that ______________.',
     options: [
       { text: 'A. it’s very noisy', isCorrect: false },
@@ -1163,6 +1483,18 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 7: Reading Comprehension (Cuộc sống làng quê)',
     examCode: '805',
     page: 3,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+      <span>Bài Đọc Hiểu: Village Life & Wildlife Photography (Mã Đề 805 - Trang 3)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 7 • Câu 25 - 28</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal leading-relaxed">
+    <p>Many people enjoy living in a big city because they think life is more exciting there. However, I come from a small village and in my view, there are lots of benefits. The main reason I prefer village life is because it is very quiet, so I always feel calm when living here. Every morning, I am woken up by the chirping of the birds, then I open the door to take a deep breath of the fresh air. Another reason is that the air is so fresh and clean. We have more green spaces and bigger gardens, too. There are not so many vehicles in the street; therefore, it is not usually crowded during rush hours. The fewer the vehicles are, the less dust and smoke they emit. In addition, I think the people here are friendlier. They live in a simple way with daily jokes, and normal expectations, so they rarely get angry with each other. Personally, I’m interested in wildlife photography, so the countryside is perfect for me.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 27.</strong> What does he think about the people in his village?',
     options: [
       { text: 'A. Friendlier', isCorrect: true },
@@ -1178,6 +1510,18 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 7: Reading Comprehension (Cuộc sống làng quê)',
     examCode: '805',
     page: 3,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-950 flex items-center gap-1.5">
+      <i data-lucide="book-open" class="w-4 h-4 text-indigo-600"></i>
+      <span>Bài Đọc Hiểu: Village Life & Wildlife Photography (Mã Đề 805 - Trang 3)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Part 7 • Câu 25 - 28</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal leading-relaxed">
+    <p>Many people enjoy living in a big city because they think life is more exciting there. However, I come from a small village and in my view, there are lots of benefits. The main reason I prefer village life is because it is very quiet, so I always feel calm when living here. Every morning, I am woken up by the chirping of the birds, then I open the door to take a deep breath of the fresh air. Another reason is that the air is so fresh and clean. We have more green spaces and bigger gardens, too. There are not so many vehicles in the street; therefore, it is not usually crowded during rush hours. The fewer the vehicles are, the less dust and smoke they emit. In addition, I think the people here are friendlier. They live in a simple way with daily jokes, and normal expectations, so they rarely get angry with each other. Personally, I’m interested in wildlife photography, so the countryside is perfect for me.</p>
+  </div>
+</div>`,
     questionText: '<strong>Question 28.</strong> What is the hobby of the writer?',
     options: [
       { text: 'A. Portrait photography', isCorrect: false },
@@ -1197,12 +1541,30 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 8: Announcement - Coffee Break (Thông báo)',
     examCode: '805',
     page: 4,
-    readingContext: `<div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-950 font-serif leading-relaxed mb-3">
-      <div class="text-center font-bold text-base text-amber-900 mb-2 uppercase">GIVE YOURSELF A COFFEE BREAK!</div>
-      <p><strong>THINK BETTER!</strong><br>Stop working for a while and take a cheerful cup of coffee. Your mind is <strong>(29) _________</strong> and solutions are nearer to you.</p>
-      <p class="mt-2"><strong>WORK BETTER!</strong><br>Get <strong>(30) _________</strong> for your work with a fragrant cup of coffee. Its gentle stimulation is your cue for <strong>(31) _________</strong> work.</p>
-      <p class="mt-2"><strong>FEEL BETTER!</strong><br>Stop getting tired with the kind of black or brown liquid known <strong>(32) _________</strong> coffee. As long as you take it, your boredom and disappointment will be gone.</p>
-    </div>`,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs sm:text-sm text-amber-950 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-amber-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-amber-900 flex items-center gap-1.5">
+      <i data-lucide="coffee" class="w-4 h-4 text-amber-600"></i>
+      <span>Thông Báo: Give Yourself A Coffee Break! (Mã Đề 805 - Trang 3)</span>
+    </div>
+    <span class="text-[11px] font-bold text-amber-800 bg-white px-2.5 py-0.5 rounded-full border border-amber-200">Part 8 • Câu 29 - 32</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <div class="text-center font-black text-amber-950 text-sm tracking-wide uppercase">GIVE YOURSELF A COFFEE BREAK!</div>
+    <div>
+      <p class="font-bold text-amber-900">THINK BETTER!</p>
+      <p>Stop working for a while and take a cheerful cup of coffee. Your mind is <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(29) _________ [Câu đang làm]</span> and solutions are nearer to you.</p>
+    </div>
+    <div>
+      <p class="font-bold text-amber-900">WORK BETTER!</p>
+      <p>Get <span class="font-bold text-amber-900">(30) _________</span> for your work with a fragrant cup of coffee. Its gentle stimulation is your cue for <span class="font-bold text-amber-900">(31) _________</span> work.</p>
+    </div>
+    <div>
+      <p class="font-bold text-amber-900">FEEL BETTER!</p>
+      <p>Stop getting tired with the kind of black or brown liquid known <span class="font-bold text-amber-900">(32) _________</span> coffee. As long as you take it, your boredom and disappointment will be gone.</p>
+    </div>
+  </div>
+</div>`,
     questionText: '<strong>Question 29.</strong> Choose the option that fits blank (29): "Your mind is (29) _________ and solutions are nearer to you."',
     options: [
       { text: 'A. clearer', isCorrect: true },
@@ -1218,6 +1580,30 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 8: Announcement - Coffee Break (Thông báo)',
     examCode: '805',
     page: 4,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs sm:text-sm text-amber-950 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-amber-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-amber-900 flex items-center gap-1.5">
+      <i data-lucide="coffee" class="w-4 h-4 text-amber-600"></i>
+      <span>Thông Báo: Give Yourself A Coffee Break! (Mã Đề 805 - Trang 3)</span>
+    </div>
+    <span class="text-[11px] font-bold text-amber-800 bg-white px-2.5 py-0.5 rounded-full border border-amber-200">Part 8 • Câu 29 - 32</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <div class="text-center font-black text-amber-950 text-sm tracking-wide uppercase">GIVE YOURSELF A COFFEE BREAK!</div>
+    <div>
+      <p class="font-bold text-amber-900">THINK BETTER!</p>
+      <p>Stop working for a while and take a cheerful cup of coffee. Your mind is <span class="font-bold text-amber-900">(29) _________</span> and solutions are nearer to you.</p>
+    </div>
+    <div>
+      <p class="font-bold text-amber-900">WORK BETTER!</p>
+      <p>Get <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(30) _________ [Câu đang làm]</span> for your work with a fragrant cup of coffee. Its gentle stimulation is your cue for <span class="font-bold text-amber-900">(31) _________</span> work.</p>
+    </div>
+    <div>
+      <p class="font-bold text-amber-900">FEEL BETTER!</p>
+      <p>Stop getting tired with the kind of black or brown liquid known <span class="font-bold text-amber-900">(32) _________</span> coffee. As long as you take it, your boredom and disappointment will be gone.</p>
+    </div>
+  </div>
+</div>`,
     questionText: '<strong>Question 30.</strong> Choose the option that fits blank (30): "Get (30) _________ for your work with a fragrant cup of coffee."',
     options: [
       { text: 'A. high', isCorrect: false },
@@ -1233,6 +1619,30 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 8: Announcement - Coffee Break (Thông báo)',
     examCode: '805',
     page: 4,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs sm:text-sm text-amber-950 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-amber-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-amber-900 flex items-center gap-1.5">
+      <i data-lucide="coffee" class="w-4 h-4 text-amber-600"></i>
+      <span>Thông Báo: Give Yourself A Coffee Break! (Mã Đề 805 - Trang 3)</span>
+    </div>
+    <span class="text-[11px] font-bold text-amber-800 bg-white px-2.5 py-0.5 rounded-full border border-amber-200">Part 8 • Câu 29 - 32</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <div class="text-center font-black text-amber-950 text-sm tracking-wide uppercase">GIVE YOURSELF A COFFEE BREAK!</div>
+    <div>
+      <p class="font-bold text-amber-900">THINK BETTER!</p>
+      <p>Stop working for a while and take a cheerful cup of coffee. Your mind is <span class="font-bold text-amber-900">(29) _________</span> and solutions are nearer to you.</p>
+    </div>
+    <div>
+      <p class="font-bold text-amber-900">WORK BETTER!</p>
+      <p>Get <span class="font-bold text-amber-900">(30) _________</span> for your work with a fragrant cup of coffee. Its gentle stimulation is your cue for <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(31) _________ [Câu đang làm]</span> work.</p>
+    </div>
+    <div>
+      <p class="font-bold text-amber-900">FEEL BETTER!</p>
+      <p>Stop getting tired with the kind of black or brown liquid known <span class="font-bold text-amber-900">(32) _________</span> coffee. As long as you take it, your boredom and disappointment will be gone.</p>
+    </div>
+  </div>
+</div>`,
     questionText: '<strong>Question 31.</strong> Choose the option that fits blank (31): "...cue for (31) _________ work."',
     options: [
       { text: 'A. well', isCorrect: false },
@@ -1248,6 +1658,30 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 8: Announcement - Coffee Break (Thông báo)',
     examCode: '805',
     page: 4,
+    readingContext: `<div class="p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs sm:text-sm text-amber-950 leading-relaxed space-y-2.5 my-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-amber-200/80 pb-2 flex-wrap gap-2">
+    <div class="text-xs font-extrabold uppercase tracking-wider text-amber-900 flex items-center gap-1.5">
+      <i data-lucide="coffee" class="w-4 h-4 text-amber-600"></i>
+      <span>Thông Báo: Give Yourself A Coffee Break! (Mã Đề 805 - Trang 3)</span>
+    </div>
+    <span class="text-[11px] font-bold text-amber-800 bg-white px-2.5 py-0.5 rounded-full border border-amber-200">Part 8 • Câu 29 - 32</span>
+  </div>
+  <div class="space-y-2 text-slate-800 font-normal">
+    <div class="text-center font-black text-amber-950 text-sm tracking-wide uppercase">GIVE YOURSELF A COFFEE BREAK!</div>
+    <div>
+      <p class="font-bold text-amber-900">THINK BETTER!</p>
+      <p>Stop working for a while and take a cheerful cup of coffee. Your mind is <span class="font-bold text-amber-900">(29) _________</span> and solutions are nearer to you.</p>
+    </div>
+    <div>
+      <p class="font-bold text-amber-900">WORK BETTER!</p>
+      <p>Get <span class="font-bold text-amber-900">(30) _________</span> for your work with a fragrant cup of coffee. Its gentle stimulation is your cue for <span class="font-bold text-amber-900">(31) _________</span> work.</p>
+    </div>
+    <div>
+      <p class="font-bold text-amber-900">FEEL BETTER!</p>
+      <p>Stop getting tired with the kind of black or brown liquid known <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(32) _________ [Câu đang làm]</span> coffee. As long as you take it, your boredom and disappointment will be gone.</p>
+    </div>
+  </div>
+</div>`,
     questionText: '<strong>Question 32.</strong> Choose the option that fits blank (32): "...black or brown liquid known (32) _________ coffee."',
     options: [
       { text: 'A. as', isCorrect: true },
@@ -1261,19 +1695,21 @@ window.EXAM_805_DATABASE = [
   // ==========================================
   // WRITING: ERROR IDENTIFICATION & CORRECTION (Q33 - Q34)
   // ==========================================
-  {
+    {
     id: 'e805_33',
     exKey: 'writing_error',
     exTitle: 'Part 9: Error Identification (Tìm và sửa lỗi sai)',
     examCode: '805',
     page: 4,
-    isWritingExercise: true,
-    writingType: 'error_correction',
-    questionText: '<strong>Question 33.</strong> Find and correct the mistake in the sentence:<br><em>"I have <span class="border-b-2 border-indigo-400 font-bold">(A) a lot of</span> exercises <span class="border-b-2 border-indigo-400 font-bold">(B) to do</span> this evening, <span class="border-b-2 border-rose-500 font-bold">(C) but</span> I don’t have time to chat <span class="border-b-2 border-indigo-400 font-bold">(D) with you</span>."</em>',
-    mistakeLetter: 'C',
-    correctAnswer: 'so',
-    acceptableAnswers: ['so', 'therefore', 'and so'],
-    explanation: '<strong>Lỗi sai ở C: "but" -> sửa thành "so" (hoặc "therefore")</strong>.<br>Giải thích: Mối quan hệ giữa 2 mệnh đề là nguyên nhân - kết quả ("Tôi có nhiều bài tập phải làm tối nay, NÊN tôi không có thời gian nói chuyện với bạn"), chứ không phải quan hệ tương phản đối lập "but".'
+    questionText: '<strong>Question 33.</strong> Find the mistake in the sentence:<br><em>"I have <u>a lot of</u> (A) exercises <u>to do</u> (B) this evening, <u>but</u> (C) I don’t have time <u>to chat</u> (D) with you."</em>',
+    options: [
+      { text: 'A. a lot of', isCorrect: false },
+      { text: 'B. to do', isCorrect: false },
+      { text: 'C. but (Sửa thành: so)', isCorrect: true },
+      { text: 'D. to chat', isCorrect: false }
+    ],
+    acceptableAnswers: ['C', 'but', 'so', 'but -> so'],
+    explanation: 'Mệnh đề thứ hai chỉ kết quả của việc có nhiều bài tập (tôi có nhiều bài tập NÊN tôi không có thời gian...), do đó liên từ chỉ sự tương phản <strong>but</strong> là sai, cần sửa thành <strong>so</strong>.'
   },
   {
     id: 'e805_34',
@@ -1281,29 +1717,29 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 9: Error Identification (Tìm và sửa lỗi sai)',
     examCode: '805',
     page: 4,
-    isWritingExercise: true,
-    writingType: 'error_correction',
-    questionText: '<strong>Question 34.</strong> Find and correct the mistake in the sentence:<br><em>"<span class="border-b-2 border-indigo-400 font-bold">(A) More and more</span> people <span class="border-b-2 border-indigo-400 font-bold">(B) move</span> to <span class="border-b-2 border-rose-500 font-bold">(C) biger</span> cities to get <span class="border-b-2 border-indigo-400 font-bold">(D) more job opportunities</span> every year."</em>',
-    mistakeLetter: 'C',
-    correctAnswer: 'bigger',
-    acceptableAnswers: ['bigger'],
-    explanation: '<strong>Lỗi sai ở C: "biger" -> sửa thành "bigger"</strong>.<br>Giải thích: Tính từ ngắn <em>big</em> có cấu tạo gồm 1 phụ âm đứng sau 1 nguyên âm đơn (C-V-C), khi chuyển sang dạng so sánh hơn ta phải gấp đôi phụ âm cuối trước khi thêm <em>-er</em>: <strong>bigger</strong>.'
+    questionText: '<strong>Question 34.</strong> Find the mistake in the sentence:<br><em>"<u>More and more</u> (A) people move to <u>biger</u> (B) cities to get <u>more</u> (C) job opportunities <u>every year</u> (D)."</em>',
+    options: [
+      { text: 'A. More and more', isCorrect: false },
+      { text: 'B. biger (Sửa thành: bigger)', isCorrect: true },
+      { text: 'C. more', isCorrect: false },
+      { text: 'D. every year', isCorrect: false }
+    ],
+    acceptableAnswers: ['B', 'biger', 'bigger', 'biger -> bigger'],
+    explanation: 'Tính từ một âm tiết kết thúc bằng 1 nguyên âm + 1 phụ âm khi thêm đuôi so sánh hơn "-er" phải gấp đôi phụ âm cuối: <strong>big -> bigger</strong>. Từ "biger" sai chính tả.'
   },
-
-  // ==========================================
-  // WRITING: REWRITE SENTENCES (Q35 - Q37)
-  // ==========================================
   {
     id: 'e805_35',
     exKey: 'writing_rewrite',
     exTitle: 'Part 10: Sentence Rewrite (Viết lại câu giữ nguyên nghĩa)',
     examCode: '805',
     page: 4,
-    isWritingExercise: true,
-    writingType: 'rewrite',
-    promptText: 'We love going hiking in the mountainous area.',
-    givenWord: 'keen',
-    correctAnswer: 'We are keen on going hiking in the mountainous area.',
+    questionText: '<strong>Question 35.</strong> Rewrite the sentence using the given word in brackets:<br><em>"We love going hiking in the mountainous area."</em> (keen)',
+    options: [
+      { text: 'A. We are keen on going hiking in the mountainous area.', isCorrect: true },
+      { text: 'B. We are keen to go hiking in the mountainous area.', isCorrect: false },
+      { text: 'C. We keen on going hiking in the mountainous area.', isCorrect: false },
+      { text: 'D. We are keen of going hiking in the mountainous area.', isCorrect: false }
+    ],
     acceptableAnswers: [
       'We are keen on going hiking in the mountainous area.',
       'We are keen on going hiking in the mountainous area',
@@ -1318,11 +1754,13 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 10: Sentence Rewrite (Viết lại câu giữ nguyên nghĩa)',
     examCode: '805',
     page: 4,
-    isWritingExercise: true,
-    writingType: 'rewrite',
-    promptText: 'Although he wants to hang out with his friends, he has to study for the midterm test.',
-    givenWord: 'but',
-    correctAnswer: 'He wants to hang out with his friends, but he has to study for the midterm test.',
+    questionText: '<strong>Question 36.</strong> Rewrite the sentence using the given word in brackets:<br><em>"Although he wants to hang out with his friends, he has to study for the midterm test."</em> (but)',
+    options: [
+      { text: 'A. He wants to hang out with his friends, but he has to study for the midterm test.', isCorrect: true },
+      { text: 'B. Although he wants to hang out with his friends, but he has to study for the midterm test.', isCorrect: false },
+      { text: 'C. He wants to hang out with his friends, but has to study for the midterm test.', isCorrect: false },
+      { text: 'D. He wants to hang out with his friends but he has study for the midterm test.', isCorrect: false }
+    ],
     acceptableAnswers: [
       'He wants to hang out with his friends, but he has to study for the midterm test.',
       'He wants to hang out with his friends, but he has to study for the midterm test',
@@ -1336,11 +1774,13 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 10: Sentence Rewrite (Viết lại câu giữ nguyên nghĩa)',
     examCode: '805',
     page: 4,
-    isWritingExercise: true,
-    writingType: 'rewrite',
-    promptText: 'Jim is a better football player than Alex.',
-    givenWord: 'plays',
-    correctAnswer: 'Jim plays football better than Alex.',
+    questionText: '<strong>Question 37.</strong> Rewrite the sentence using the given word in brackets:<br><em>"Jim is a better football player than Alex."</em> (plays)',
+    options: [
+      { text: 'A. Jim plays football better than Alex.', isCorrect: true },
+      { text: 'B. Jim plays football more good than Alex.', isCorrect: false },
+      { text: 'C. Jim plays football good than Alex.', isCorrect: false },
+      { text: 'D. Jim plays football as good as Alex.', isCorrect: false }
+    ],
     acceptableAnswers: [
       'Jim plays football better than Alex.',
       'Jim plays football better than Alex',
@@ -1349,20 +1789,19 @@ window.EXAM_805_DATABASE = [
     ],
     explanation: '<strong>Cấu trúc:</strong> Chuyển từ cụm danh từ (be a better football player than) sang động từ thường "plays" kết hợp trạng từ so sánh hơn "better than": <strong>Jim plays football better than Alex.</strong>'
   },
-
-  // ==========================================
-  // WRITING: SENTENCE BUILDING FROM CUES (Q38 - Q40)
-  // ==========================================
   {
     id: 'e805_38',
     exKey: 'writing_cues',
     exTitle: 'Part 11: Sentence Building (Tạo câu hoàn chỉnh từ từ gợi ý)',
     examCode: '805',
     page: 4,
-    isWritingExercise: true,
-    writingType: 'cues',
-    promptText: 'My son / addicted / play / games.',
-    correctAnswer: 'My son is addicted to playing games.',
+    questionText: '<strong>Question 38.</strong> Make the most meaningful sentence from the given words:<br><em>"My son / addicted / play / games."</em>',
+    options: [
+      { text: 'A. My son is addicted to playing games.', isCorrect: true },
+      { text: 'B. My son is addicted with playing games.', isCorrect: false },
+      { text: 'C. My son addicted to play games.', isCorrect: false },
+      { text: 'D. My son is addicted to play games.', isCorrect: false }
+    ],
     acceptableAnswers: [
       'My son is addicted to playing games.',
       'My son is addicted to playing games',
@@ -1377,10 +1816,13 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 11: Sentence Building (Tạo câu hoàn chỉnh từ từ gợi ý)',
     examCode: '805',
     page: 4,
-    isWritingExercise: true,
-    writingType: 'cues',
-    promptText: 'Now / I / ride / careful / I / used to /.',
-    correctAnswer: 'Now I ride more carefully than I used to.',
+    questionText: '<strong>Question 39.</strong> Make the most meaningful sentence from the given words:<br><em>"Now / I / ride / careful / I / used to /."</em>',
+    options: [
+      { text: 'A. Now I ride more carefully than I used to.', isCorrect: true },
+      { text: 'B. Now I ride more careful than I used to.', isCorrect: false },
+      { text: 'C. Now I ride carefully than I used to.', isCorrect: false },
+      { text: 'D. Now I am riding more carefully than I used to be.', isCorrect: false }
+    ],
     acceptableAnswers: [
       'Now I ride more carefully than I used to.',
       'Now I ride more carefully than I used to',
@@ -1395,10 +1837,13 @@ window.EXAM_805_DATABASE = [
     exTitle: 'Part 11: Sentence Building (Tạo câu hoàn chỉnh từ từ gợi ý)',
     examCode: '805',
     page: 4,
-    isWritingExercise: true,
-    writingType: 'cues',
-    promptText: 'The / weather / cold / outside; therefore/ I / wear / coat.',
-    correctAnswer: 'The weather is cold outside; therefore, I wear a coat.',
+    questionText: '<strong>Question 40.</strong> Make the most meaningful sentence from the given words:<br><em>"The / weather / cold / outside; therefore/ I / wear / coat."</em>',
+    options: [
+      { text: 'A. The weather is cold outside; therefore, I wear a coat.', isCorrect: true },
+      { text: 'B. The weather is cold outside, therefore, I wear a coat.', isCorrect: false },
+      { text: 'C. The weather is cold outside; therefore, I am wearing coat.', isCorrect: false },
+      { text: 'D. The weather cold outside; therefore, I wear a coat.', isCorrect: false }
+    ],
     acceptableAnswers: [
       'The weather is cold outside; therefore, I wear a coat.',
       'The weather is cold outside; therefore, I wear a coat',
@@ -1411,9 +1856,6 @@ window.EXAM_805_DATABASE = [
   }
 ];
 
-// ==========================================
-// EXAM VERIFICATION REPORT & STATISTICAL METRICS
-// ==========================================
 window.EXAM_VERIFICATION_STATS = {
   exam802: {
     code: 'Mã đề 802',

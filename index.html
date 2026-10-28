@@ -2512,8 +2512,12 @@
           ` : ''}
 
           <!-- Optional Visual Component / Image / Diagram -->
-          ${q.visualComponent ? `
-            <div class="my-3">${q.visualComponent}</div>
+          ${(q.visualComponent || q.imageSrc) ? `
+            <div class="my-3">${q.visualComponent || `
+              <div class="flex flex-col items-center justify-center p-3 sm:p-4 bg-slate-50 rounded-2xl border border-slate-200 shadow-xs max-w-sm mx-auto">
+                <img src="${q.imageSrc}" alt="Illustration" class="max-h-56 object-contain rounded-xl shadow-sm border border-slate-100" onerror="this.onerror=null; this.src='public/${q.imageSrc}';" />
+              </div>
+            `}</div>
           ` : ''}
 
           <!-- Options -->
@@ -3227,10 +3231,13 @@
       });
       const progressPercent = Math.round((answeredCount / totalCount) * 100);
 
-      // Audio Source check
+      // Audio Source check (only for listening questions or items with audioSrc)
+      const isListeningQuestion = q.exKey === 'listening' || q.isAudioQuiz || !!q.audioSrc;
       const audioSrc = q.audioSrc || (
-        currentSubject === 'en_802' ? 'assets/audio/exam-802-listening.mp3' :
-        currentSubject === 'en_805' ? 'assets/audio/exam-805-listening.mp3' : ''
+        isListeningQuestion ? (
+          currentSubject === 'en_802' ? 'assets/audio/exam-802-listening.mp3' :
+          currentSubject === 'en_805' ? 'assets/audio/exam-805-listening.mp3' : ''
+        ) : ''
       );
 
       // Question card feedback state
@@ -3448,7 +3455,13 @@
                 <div class="my-3">${q.readingContext || q.readingPassage}</div>
               ` : ''}
 
-              ${q.visualComponent ? `<div class="my-3">${q.visualComponent}</div>` : ''}
+              ${(q.visualComponent || q.imageSrc) ? `
+                <div class="my-3">${q.visualComponent || `
+                  <div class="flex flex-col items-center justify-center p-3 sm:p-4 bg-slate-50 rounded-2xl border border-slate-200 shadow-xs max-w-sm mx-auto">
+                    <img src="${q.imageSrc}" alt="Illustration" class="max-h-56 object-contain rounded-xl shadow-sm border border-slate-100" onerror="this.onerror=null; this.src='public/${q.imageSrc}';" />
+                  </div>
+                `}</div>
+              ` : ''}
             </div>
 
             <!-- Options Grid -->
