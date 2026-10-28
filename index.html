@@ -12,7 +12,7 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
+        tailwind.config = {
       darkMode: 'class',
       theme: {
         extend: {
@@ -33,6 +33,7 @@
       }
     }
   </script>
+
 
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -56,6 +57,7 @@
   <!-- DỮ LIỆU ĐỀ CƯƠNG 9 MÔN HỌC (DATA MODULES - v2.2.0) -->
   <script src="data/tienganh.js?v=2.2.0"></script>
   <script src="data/tienganh_dethi.js?v=2.2.0"></script>
+  <script src="data/tienganh_listening.js?v=2.2.0"></script>
   <script src="data/khoahoc.js?v=2.2.0"></script>
   <script src="data/tinhoc.js?v=2.2.0"></script>
   <script src="data/toan.js?v=2.2.0"></script>
@@ -160,6 +162,10 @@
             <button onclick="selectSubject('en_805'); toggleQuickMenu()" class="w-full flex items-center gap-2.5 p-2 rounded-xl hover:bg-emerald-50 text-slate-800 text-xs font-bold transition text-left cursor-pointer">
               <span class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center flex-shrink-0 text-xs font-black shadow-xs">805</span>
               <div><div class="text-emerald-950 font-black">Mã Đề 805 (2024 - 2025)</div><div class="text-[10px] text-slate-500 font-normal">40 câu (32 TN + 8 Tự luận) • 60 phút</div></div>
+            </button>
+            <button onclick="selectSubject('en_listening'); toggleQuickMenu()" class="w-full flex items-center gap-2.5 p-2 rounded-xl hover:bg-violet-50 text-slate-800 text-xs font-bold transition text-left cursor-pointer">
+              <span class="w-8 h-8 rounded-lg bg-violet-600 text-white flex items-center justify-center flex-shrink-0 text-xs font-black shadow-xs">🎧</span>
+              <div><div class="text-violet-950 font-black">Luyện Nghe Units 1-2-3 (Chuẩn PDF)</div><div class="text-[10px] text-slate-500 font-normal">48 câu trắc nghiệm • Kèm 6 Audio & Làm từng câu</div></div>
             </button>
             <div class="px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-wider text-slate-400 mt-1">
               Đề Cương 9 Môn Học (THCS Nghĩa Tân)
@@ -305,6 +311,10 @@
             <i data-lucide="pen-tool" class="w-4 h-4 text-white"></i>
             <span>Luyện Đề 805 (Năm 2024-2025)</span>
           </button>
+          <button onclick="selectSubject('en_listening')" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white font-bold text-xs shadow-md hover:shadow-lg transition flex items-center gap-2 cursor-pointer">
+            <i data-lucide="headphones" class="w-4 h-4 text-violet-200"></i>
+            <span>Luyện Nghe Units 1-2-3 (Kèm 6 Audio)</span>
+          </button>
           <button onclick="document.getElementById('subjects-list-section')?.scrollIntoView({ behavior: 'smooth' })" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs backdrop-blur-md border border-white/20 transition flex items-center gap-2 cursor-pointer">
             <i data-lucide="book-open" class="w-4 h-4 text-teal-300"></i>
             <span>Xem Đề Cương 8 Môn Học</span>
@@ -342,7 +352,7 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- CARD ĐỀ THI 1: MÃ ĐỀ 802 -->
         <div class="bg-white rounded-3xl border-2 border-indigo-200 hover:border-indigo-500 p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
@@ -467,6 +477,70 @@
               <i data-lucide="play" class="w-4 h-4 fill-white"></i> Vào Luyện Đề Mã 805
             </button>
             <button onclick="openHistoryModal('app_stats_tieng_anh_805', 'Đề Thi Mã 805')" title="Xem lịch sử làm bài" class="p-3 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600 transition cursor-pointer">
+              <i data-lucide="history" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD ĐỀ THI 3: ĐỀ LUYỆN NGHE UNITS 1-2-3 (CHUẨN PDF) -->
+        <div class="bg-white rounded-3xl border-2 border-violet-200 hover:border-violet-500 p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-32 h-32 bg-violet-50 rounded-full blur-2xl pointer-events-none"></div>
+
+          <div class="space-y-4 relative z-10">
+            <div class="flex items-start justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-600 to-purple-700 text-white flex flex-col items-center justify-center shadow-md shadow-violet-100 group-hover:scale-105 transition">
+                  <i data-lucide="headphones" class="w-6 h-6"></i>
+                  <span class="text-[9px] font-bold uppercase tracking-wider text-violet-200 mt-0.5">Audio</span>
+                </div>
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-violet-600 bg-violet-50 px-2 py-0.5 rounded-md border border-violet-100">
+                    PDF Đề Cương & 6 Audio Gốc
+                  </span>
+                  <h4 class="text-lg font-black text-slate-900 mt-1">Đề Luyện Nghe Units 1-2-3</h4>
+                </div>
+              </div>
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-extrabold bg-violet-50 text-violet-700 border border-violet-200">
+                <i data-lucide="layers" class="w-3.5 h-3.5"></i> Làm Từng Câu
+              </span>
+            </div>
+
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Trọn bộ <strong>48 câu trắc nghiệm chuẩn PDF</strong> (Unit 1, 2, 3 Getting Started & Skills 2). Tích hợp <strong>6 file audio gốc</strong> riêng cho từng Unit, có chế độ làm từng câu một (one-by-one), tua âm thanh ±5s, chỉnh tốc độ và xem toàn bộ lời thoại (script).
+            </p>
+
+            <div class="grid grid-cols-2 gap-2 text-xs">
+              <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-2 text-slate-700">
+                <i data-lucide="headphones" class="w-4 h-4 text-violet-600 flex-shrink-0"></i>
+                <span class="truncate">6 Audio kèm từng Unit</span>
+              </div>
+              <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-2 text-slate-700">
+                <i data-lucide="file-text" class="w-4 h-4 text-violet-600 flex-shrink-0"></i>
+                <span class="truncate">Lời thoại Transcript đầy đủ</span>
+              </div>
+              <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-2 text-slate-700">
+                <i data-lucide="target" class="w-4 h-4 text-violet-600 flex-shrink-0"></i>
+                <span class="truncate">Làm từng câu một</span>
+              </div>
+              <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-2 text-slate-700">
+                <i data-lucide="award" class="w-4 h-4 text-violet-600 flex-shrink-0"></i>
+                <span class="truncate">Thang điểm: 10 chuẩn</span>
+              </div>
+            </div>
+
+            <!-- Subject Statistics -->
+            <div class="grid grid-cols-3 gap-1.5 p-2.5 rounded-2xl bg-slate-50 border border-slate-100 text-center">
+              <div><div class="text-[9px] uppercase font-bold text-slate-400">Số lượt</div><div id="dash-en_listening-count" class="text-sm font-extrabold text-slate-800">0</div></div>
+              <div><div class="text-[9px] uppercase font-bold text-violet-600">Điểm cao</div><div id="dash-en_listening-highest" class="text-sm font-extrabold text-violet-600">--</div></div>
+              <div><div class="text-[9px] uppercase font-bold text-orange-500">Chuỗi 10</div><div id="dash-en_listening-streak" class="text-sm font-extrabold text-orange-600">0 🔥</div></div>
+            </div>
+          </div>
+
+          <div class="pt-5 flex items-center gap-2 relative z-10">
+            <button onclick="selectSubject('en_listening')" class="flex-1 py-3 px-4 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-bold text-xs shadow-md shadow-violet-100 transition flex items-center justify-center gap-2 cursor-pointer">
+              <i data-lucide="headphones" class="w-4 h-4"></i> Vào Luyện Nghe (Từng câu)
+            </button>
+            <button onclick="openHistoryModal('app_stats_tieng_anh_listening', 'Đề Luyện Nghe Units 1-2-3')" title="Xem lịch sử làm bài" class="p-3 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600 transition cursor-pointer">
               <i data-lucide="history" class="w-4 h-4"></i>
             </button>
           </div>
@@ -1013,7 +1087,15 @@
         <i data-lucide="shuffle" class="w-4 h-4 text-blue-600 flex-shrink-0"></i>
         <span id="quiz-mode-notice"><strong>Chế độ chống học vẹt:</strong> Đáp án trắc nghiệm và vị trí từ khóa tự luận được tự động xáo trộn.</span>
       </div>
-      <div class="flex items-center gap-2 flex-shrink-0">
+      <div class="flex items-center gap-2 flex-shrink-0 flex-wrap">
+        <button id="btn-toggle-one-by-one" onclick="toggleOneByOneMode()" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg border border-indigo-200 bg-white hover:bg-indigo-50 text-indigo-700 font-bold text-xs cursor-pointer shadow-xs transition" title="Chuyển chế độ làm từng câu một hoặc xem danh sách">
+          <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+          <span id="label-toggle-mode">Chế độ 1 câu</span>
+        </button>
+        <button id="btn-question-palette" onclick="toggleQuestionPaletteModal()" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs cursor-pointer shadow-xs transition" title="Mở bảng số câu hỏi để nhảy nhanh">
+          <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i>
+          <span id="palette-summary-badge">Bảng câu hỏi</span>
+        </button>
         <button onclick="restartWithShuffle()" class="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs cursor-pointer">
           <i data-lucide="rotate-cw" class="w-3.5 h-3.5"></i> Đảo đề
         </button>
@@ -1759,6 +1841,7 @@
        ========================================================================= */
     const STORAGE_KEYS = {
       en: 'app_stats_tieng_anh_8',
+      en_listening: 'app_stats_tieng_anh_listening',
       en_802: 'app_stats_tieng_anh_802',
       en_805: 'app_stats_tieng_anh_805',
       sci: 'app_stats_khtn_8',
@@ -1815,6 +1898,7 @@
        SUBJECT DATABASES (LOADED FROM /data/ EXTERNAL SCRIPTS)
        ========================================================================= */
     var ENGLISH_DATABASE = window.ENGLISH_DATABASE || [];
+    var LISTENING_PRACTICE_DATABASE = window.LISTENING_PRACTICE_DATABASE || [];
     var EXAM_802_DATABASE = window.EXAM_802_DATABASE || [];
     var EXAM_805_DATABASE = window.EXAM_805_DATABASE || [];
     var SCIENCE_DATABASE = window.SCIENCE_DATABASE || [];
@@ -1831,6 +1915,7 @@
        ========================================================================= */
     const SUBJECT_MAP = {
       en: { title: 'Đề Cương Tiếng Anh 8 (Units 1, 2, 3)', badge: 'Tiếng Anh 8', dataset: ENGLISH_DATABASE, color: 'indigo' },
+      en_listening: { title: 'Đề Luyện Nghe Tiếng Anh 8 (Practice Listening Units 1-2-3)', badge: 'Luyện Nghe U1-2-3', dataset: LISTENING_PRACTICE_DATABASE, color: 'violet', isListeningTest: true },
       en_802: { title: 'Đề Thi Giữa Kì 1 - Mã Đề 802 (2025-2026)', badge: 'Mã đề 802', dataset: EXAM_802_DATABASE, color: 'indigo' },
       en_805: { title: 'Đề Thi Giữa Kì 1 - Mã Đề 805 (2024-2025)', badge: 'Mã đề 805', dataset: EXAM_805_DATABASE, color: 'emerald' },
       sci: { title: 'Đề Cương Khoa Học Tự Nhiên 8', badge: 'KHTN 8', dataset: SCIENCE_DATABASE, color: 'emerald' },
@@ -1855,6 +1940,13 @@
     let quizMode = 'practice';
     let hasSubmittedQuiz = false;
     let pendingSubjectKey = null;
+
+    // One-by-one Question Mode & Audio Controls
+    let isOneByOneMode = false;
+    let currentQuestionIndex = 0;
+    let flaggedQuestions = new Set();
+    let currentAudioPlaybackRate = 1.0;
+    let showAudioTranscript = false;
 
     let currentCompSubject = 'all';
 
@@ -1970,6 +2062,7 @@
 
       const datasets = {
         en: window.ENGLISH_DATABASE,
+        en_listening: window.LISTENING_PRACTICE_DATABASE,
         en_802: window.EXAM_802_DATABASE,
         en_805: window.EXAM_805_DATABASE,
         sci: window.SCIENCE_DATABASE,
@@ -1983,6 +2076,10 @@
       };
       currentDataset = datasets[subjKey] || meta.dataset || [];
 
+      if (subjKey === 'en_listening') {
+        isOneByOneMode = true;
+        currentQuestionIndex = 0;
+      }
       document.getElementById('header-subject-badge').textContent = `Môn: ${meta.badge}`;
       document.getElementById('quiz-header-title').textContent = meta.title;
       document.getElementById('quiz-mode-notice').innerHTML = mode === 'practice'
@@ -2093,6 +2190,9 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
+    window.selectOption = handleSelectMultipleChoice;
+    window.handleSelectMultipleChoice = handleSelectMultipleChoice;
+    window.selectOption = handleSelectMultipleChoice;
     function handleSelectMultipleChoice(qId, selectedIdx) {
       if (hasSavedCurrentSession || hasSubmittedQuiz) return;
       if (quizMode === 'practice' && userAnswers[qId] !== undefined) return;
@@ -2301,6 +2401,17 @@
         return q.exKey === currentFilter;
       });
 
+      // Update toggle button text
+      const toggleBtnLabel = document.getElementById('label-toggle-mode');
+      if (toggleBtnLabel) {
+        toggleBtnLabel.textContent = isOneByOneMode ? 'Xem toàn bộ' : 'Chế độ 1 câu';
+      }
+
+      if (isOneByOneMode) {
+        renderOneByOneView(filtered);
+        return;
+      }
+
       if (filtered.length === 0) {
         container.innerHTML = `<div class="p-8 text-center bg-white rounded-2xl border border-slate-200 text-xs text-slate-500">Không có câu hỏi trong phần này.</div>`;
         return;
@@ -2394,6 +2505,11 @@
           <div class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
             ${q.questionText}
           </div>
+
+          <!-- Optional Reading Passage / Context -->
+          ${(q.readingContext || q.readingPassage) ? `
+            <div class="my-3">${q.readingContext || q.readingPassage}</div>
+          ` : ''}
 
           <!-- Optional Visual Component / Image / Diagram -->
           ${q.visualComponent ? `
@@ -2926,6 +3042,491 @@
       refreshDashboardStats();
       lucide.createIcons();
     });
+
+    /* =========================================================================
+       ONE-BY-ONE QUESTION MODE ENGINE & AUDIO CONTROLS
+       ========================================================================= */
+    window.toggleOneByOneMode = toggleOneByOneMode;
+    function toggleOneByOneMode() {
+      isOneByOneMode = !isOneByOneMode;
+      renderQuestions();
+    }
+
+    window.toggleFlagQuestion = toggleFlagQuestion;
+    function toggleFlagQuestion(qId) {
+      if (flaggedQuestions.has(qId)) {
+        flaggedQuestions.delete(qId);
+      } else {
+        flaggedQuestions.add(qId);
+      }
+      renderQuestions();
+    }
+
+    window.goToOneByOne = goToOneByOne;
+    function goToOneByOne(idx) {
+      const filtered = randomizedQuestions.filter(q => currentFilter === 'all' || q.exKey === currentFilter);
+      if (idx >= 0 && idx < filtered.length) {
+        currentQuestionIndex = idx;
+        isOneByOneMode = true;
+        renderQuestions();
+        const mainCard = document.getElementById('one-by-one-card');
+        if (mainCard) {
+          mainCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
+    }
+
+    window.prevQuestion = prevQuestion;
+    function prevQuestion() {
+      const filtered = randomizedQuestions.filter(q => currentFilter === 'all' || q.exKey === currentFilter);
+      if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        renderQuestions();
+      }
+    }
+
+    window.nextQuestion = nextQuestion;
+    function nextQuestion() {
+      const filtered = randomizedQuestions.filter(q => currentFilter === 'all' || q.exKey === currentFilter);
+      if (currentQuestionIndex < filtered.length - 1) {
+        currentQuestionIndex++;
+        renderQuestions();
+      }
+    }
+
+    window.selectCurrentQuestionOption = selectCurrentQuestionOption;
+    function selectCurrentQuestionOption(optIdx) {
+      const filtered = randomizedQuestions.filter(q => currentFilter === 'all' || q.exKey === currentFilter);
+      const q = filtered[currentQuestionIndex];
+      if (q && q.shuffledOptions && q.shuffledOptions[optIdx]) {
+        handleSelectMultipleChoice(q.id, optIdx);
+      }
+    }
+
+    window.setAudioSpeed = setAudioSpeed;
+    function setAudioSpeed(speed) {
+      currentAudioPlaybackRate = speed;
+      const audio = document.getElementById('active-unit-audio');
+      if (audio) {
+        audio.playbackRate = speed;
+      }
+      document.querySelectorAll('.speed-btn').forEach(btn => {
+        const btnSpeed = parseFloat(btn.getAttribute('data-speed'));
+        if (Math.abs(btnSpeed - speed) < 0.05) {
+          btn.className = 'speed-btn px-2.5 py-1 rounded-md text-xs font-bold bg-indigo-600 text-white cursor-pointer';
+        } else {
+          btn.className = 'speed-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 cursor-pointer';
+        }
+      });
+    }
+
+    window.seekAudio = seekAudio;
+    function seekAudio(delta) {
+      const audio = document.getElementById('active-unit-audio');
+      if (audio) {
+        audio.currentTime = Math.max(0, Math.min(audio.duration || 9999, audio.currentTime + delta));
+      }
+    }
+
+    window.toggleAudioTranscript = toggleAudioTranscript;
+    function toggleAudioTranscript() {
+      showAudioTranscript = !showAudioTranscript;
+      const transEl = document.getElementById('audio-transcript-box');
+      const transBtn = document.getElementById('btn-audio-transcript');
+      if (transEl) {
+        transEl.classList.toggle('hidden', !showAudioTranscript);
+      }
+      if (transBtn) {
+        transBtn.innerHTML = showAudioTranscript
+          ? '<i data-lucide="chevron-up" class="w-3.5 h-3.5"></i> Ẩn Lời thoại (Transcript)'
+          : '<i data-lucide="file-text" class="w-3.5 h-3.5"></i> Xem Lời thoại (Transcript & Tạm dịch)';
+        lucide.createIcons();
+      }
+    }
+
+    window.toggleQuestionPaletteModal = toggleQuestionPaletteModal;
+    function toggleQuestionPaletteModal() {
+      const modal = document.getElementById('question-palette-modal');
+      if (!modal) return;
+      const isHidden = modal.classList.contains('hidden');
+      if (isHidden) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        renderPaletteGrid();
+      } else {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+      lucide.createIcons();
+    }
+
+    function renderPaletteGrid() {
+      const grid = document.getElementById('palette-grid-container');
+      const statText = document.getElementById('palette-stat-text');
+      if (!grid) return;
+
+      const filtered = randomizedQuestions.filter(q => currentFilter === 'all' || q.exKey === currentFilter);
+      let answeredCount = 0;
+
+      grid.innerHTML = filtered.map((q, idx) => {
+        const isAnswered = userAnswers[q.id] !== undefined;
+        if (isAnswered) answeredCount++;
+        const isCurrent = idx === currentQuestionIndex;
+        const isFlagged = flaggedQuestions.has(q.id);
+
+        let btnClass = 'relative flex flex-col items-center justify-center p-2.5 rounded-xl border text-xs font-bold transition cursor-pointer ';
+
+        if (isCurrent) {
+          btnClass += 'border-indigo-600 bg-indigo-600 text-white shadow-md ring-2 ring-indigo-300';
+        } else if (isAnswered) {
+          btnClass += 'border-emerald-300 bg-emerald-50 text-emerald-800 hover:bg-emerald-100';
+        } else {
+          btnClass += 'border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100';
+        }
+
+        return `
+          <button onclick="toggleQuestionPaletteModal(); goToOneByOne(${idx});" class="${btnClass}">
+            <span>${idx + 1}</span>
+            ${isFlagged ? '<span class="absolute -top-1.5 -right-1 text-[10px]">🚩</span>' : ''}
+          </button>
+        `;
+      }).join('');
+
+      if (statText) {
+        statText.textContent = `Đã hoàn thành ${answeredCount}/${filtered.length} câu • Nhấn vào ô để chuyển đến câu tương ứng`;
+      }
+      const paletteSummary = document.getElementById('palette-summary-badge');
+      if (paletteSummary) {
+        paletteSummary.textContent = `Câu ${currentQuestionIndex + 1}/${filtered.length} (${answeredCount} đã làm)`;
+      }
+    }
+
+    function renderOneByOneView(filtered) {
+      const container = document.getElementById('questions-list');
+      if (!container) return;
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<div class="p-8 text-center bg-white rounded-2xl border border-slate-200 text-xs text-slate-500">Không có câu hỏi trong phần này.</div>`;
+        return;
+      }
+
+      if (currentQuestionIndex >= filtered.length) {
+        currentQuestionIndex = filtered.length - 1;
+      }
+      if (currentQuestionIndex < 0) {
+        currentQuestionIndex = 0;
+      }
+
+      const q = filtered[currentQuestionIndex];
+      const qNum = currentQuestionIndex + 1;
+      const totalCount = filtered.length;
+
+      let answeredCount = 0;
+      filtered.forEach(item => {
+        if (userAnswers[item.id] !== undefined) answeredCount++;
+      });
+      const progressPercent = Math.round((answeredCount / totalCount) * 100);
+
+      // Audio Source check
+      const audioSrc = q.audioSrc || (
+        currentSubject === 'en_802' ? 'assets/audio/exam-802-listening.mp3' :
+        currentSubject === 'en_805' ? 'assets/audio/exam-805-listening.mp3' : ''
+      );
+
+      // Question card feedback state
+      const hasAnswered = userAnswers[q.id] !== undefined;
+      const selectedIdx = userAnswers[q.id];
+      const showFeedback = quizMode === 'practice' ? hasAnswered : hasSubmittedQuiz;
+      const isCorrect = showFeedback && hasAnswered && q.shuffledOptions && q.shuffledOptions[selectedIdx] && q.shuffledOptions[selectedIdx].isCorrect;
+      const lockAnswer = (quizMode === 'practice' && hasAnswered) || hasSubmittedQuiz || hasSavedCurrentSession;
+      const isFlagged = flaggedQuestions.has(q.id);
+
+      let cardBorder = 'border-slate-200/90';
+      if (showFeedback && hasAnswered) {
+        cardBorder = isCorrect ? 'border-emerald-300 ring-2 ring-emerald-100 bg-white' : 'border-rose-300 ring-2 ring-rose-100 bg-white';
+      }
+
+      let audioPlayerHtml = '';
+      if (audioSrc) {
+        const transcriptText = q.audioScript || (window.LISTENING_SCRIPTS && window.LISTENING_SCRIPTS[q.unit]) || '';
+        audioPlayerHtml = `
+          <!-- ATTACHED UNIT AUDIO PLAYER -->
+          <div class="bg-gradient-to-r from-indigo-900 via-indigo-800 to-purple-900 text-white rounded-3xl p-5 shadow-lg space-y-4 border border-indigo-700/50">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white shadow-inner">
+                  <i data-lucide="headphones" class="w-5 h-5 text-indigo-200"></i>
+                </div>
+                <div>
+                  <div class="text-[11px] font-bold tracking-wider uppercase text-indigo-200/80">Tệp Âm Thanh Nghe Đính Kèm</div>
+                  <div class="text-sm sm:text-base font-extrabold text-white">${q.unit || 'Luyện Nghe'} • ${q.part || 'Audio Đề Cương Chuẩn'}</div>
+                </div>
+              </div>
+
+              <!-- Speed Controls -->
+              <div class="flex items-center gap-1.5 bg-black/20 p-1 rounded-xl backdrop-blur-xs border border-white/10">
+                <span class="text-[10px] uppercase font-bold text-indigo-200 px-1.5">Tốc độ:</span>
+                <button onclick="setAudioSpeed(0.8)" data-speed="0.8" class="speed-btn px-2 py-0.5 rounded-lg text-xs font-semibold ${Math.abs(currentAudioPlaybackRate - 0.8) < 0.05 ? 'bg-indigo-500 text-white font-bold' : 'text-indigo-200 hover:text-white'} cursor-pointer">0.8x</button>
+                <button onclick="setAudioSpeed(1.0)" data-speed="1.0" class="speed-btn px-2 py-0.5 rounded-lg text-xs font-semibold ${Math.abs(currentAudioPlaybackRate - 1.0) < 0.05 ? 'bg-indigo-500 text-white font-bold' : 'text-indigo-200 hover:text-white'} cursor-pointer">1.0x</button>
+                <button onclick="setAudioSpeed(1.2)" data-speed="1.2" class="speed-btn px-2 py-0.5 rounded-lg text-xs font-semibold ${Math.abs(currentAudioPlaybackRate - 1.2) < 0.05 ? 'bg-indigo-500 text-white font-bold' : 'text-indigo-200 hover:text-white'} cursor-pointer">1.2x</button>
+              </div>
+            </div>
+
+            <!-- Audio Tag & Quick Seek -->
+            <div class="space-y-2">
+              <audio id="active-unit-audio" class="w-full h-11 rounded-xl" controls preload="metadata" data-src="${audioSrc}">
+                <source src="${audioSrc}" type="audio/mpeg">
+                Trình duyệt không hỗ trợ trình phát âm thanh.
+              </audio>
+              <div class="flex items-center justify-between text-xs text-indigo-200">
+                <div class="flex items-center gap-2">
+                  <button onclick="seekAudio(-5)" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white text-[11px] font-semibold transition cursor-pointer">
+                    <i data-lucide="rotate-ccw" class="w-3 h-3"></i> -5s
+                  </button>
+                  <button onclick="seekAudio(5)" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white text-[11px] font-semibold transition cursor-pointer">
+                    <i data-lucide="rotate-cw" class="w-3 h-3"></i> +5s
+                  </button>
+                </div>
+
+                ${transcriptText ? `
+                  <button id="btn-audio-transcript" onclick="toggleAudioTranscript()" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white/15 hover:bg-white/25 text-white text-xs font-bold transition cursor-pointer">
+                    <i data-lucide="${showAudioTranscript ? 'chevron-up' : 'file-text'}" class="w-3.5 h-3.5"></i>
+                    ${showAudioTranscript ? 'Ẩn Lời thoại' : 'Xem Lời thoại (Transcript)'}
+                  </button>
+                ` : ''}
+              </div>
+            </div>
+
+            <!-- Transcript Drawer -->
+            ${transcriptText ? `
+              <div id="audio-transcript-box" class="${showAudioTranscript ? '' : 'hidden'} bg-indigo-950/70 border border-indigo-700/60 rounded-2xl p-4 text-xs leading-relaxed text-indigo-100 max-h-56 overflow-y-auto space-y-2 animate-in fade-in duration-200">
+                <div class="font-bold text-amber-300 flex items-center gap-1.5 border-b border-indigo-800/80 pb-1.5">
+                  <i data-lucide="file-text" class="w-4 h-4"></i> Lời Thoại Bài Nghe Gốc (Tape Script)
+                </div>
+                <div class="whitespace-pre-line font-mono text-[11.5px] leading-relaxed text-indigo-100/90">
+                  ${transcriptText}
+                </div>
+              </div>
+            ` : ''}
+          </div>
+        `;
+      }
+
+      // Render Options
+      const optionsHtml = (q.shuffledOptions || []).map((opt, idx) => {
+        const label = String.fromCharCode(65 + idx);
+        const isThisSelected = selectedIdx === idx;
+        let btnStyle = 'border-slate-200 hover:border-indigo-400 hover:bg-indigo-50/40 text-slate-800 bg-white';
+        let badgeStyle = 'bg-slate-100 text-slate-700 border-slate-200';
+
+        if (showFeedback && hasAnswered) {
+          if (opt.isCorrect) {
+            btnStyle = 'border-emerald-500 bg-emerald-50 text-emerald-950 ring-2 ring-emerald-300 font-bold';
+            badgeStyle = 'bg-emerald-600 text-white border-emerald-600';
+          } else if (isThisSelected && !opt.isCorrect) {
+            btnStyle = 'border-rose-400 bg-rose-50 text-rose-950 ring-2 ring-rose-200 line-through';
+            badgeStyle = 'bg-rose-600 text-white border-rose-600';
+          } else {
+            btnStyle = 'border-slate-200 opacity-60 text-slate-600 bg-white';
+            badgeStyle = 'bg-slate-100 text-slate-500 border-slate-200';
+          }
+        } else if (isThisSelected) {
+          btnStyle = 'border-indigo-600 bg-indigo-50/80 text-indigo-950 ring-2 ring-indigo-300 font-bold';
+          badgeStyle = 'bg-indigo-600 text-white border-indigo-600';
+        }
+
+        return `
+          <button 
+            type="button"
+            onclick="${lockAnswer ? '' : `handleSelectMultipleChoice('${q.id}', ${idx})`}"
+            class="group w-full text-left p-3.5 sm:p-4 rounded-2xl border ${btnStyle} transition duration-150 flex items-start gap-3 relative shadow-2xs ${lockAnswer ? 'cursor-default' : 'cursor-pointer'}"
+          >
+            <span class="w-7 h-7 rounded-xl border ${badgeStyle} flex items-center justify-center font-extrabold text-xs flex-shrink-0 transition-transform group-hover:scale-105">
+              ${label}
+            </span>
+            <span class="flex-1 text-sm sm:text-base font-medium leading-relaxed pt-0.5">
+              ${opt.text}
+            </span>
+            <span 
+              onclick="event.stopPropagation(); speakWord('${opt.text.replace(/'/g, "\'")}');"
+              title="Nghe phát âm lựa chọn này"
+              class="p-1.5 rounded-lg text-slate-400 hover:text-indigo-600 hover:bg-indigo-100/60 transition cursor-pointer"
+            >
+              <i data-lucide="volume-2" class="w-4 h-4"></i>
+            </span>
+          </button>
+        `;
+      }).join('');
+
+      // Explanation box
+      let explanationHtml = '';
+      if (showFeedback && hasAnswered && q.explanation) {
+        explanationHtml = `
+          <div class="mt-4 p-4 rounded-2xl ${isCorrect ? 'bg-emerald-50/80 border border-emerald-200 text-emerald-950' : 'bg-rose-50/80 border border-rose-200 text-rose-950'} space-y-1.5 animate-in fade-in duration-200">
+            <div class="flex items-center gap-2 font-bold text-xs">
+              <i data-lucide="${isCorrect ? 'check-circle' : 'info'}" class="w-4 h-4"></i>
+              <span>Giải thích chi tiết & Đáp án chuẩn:</span>
+            </div>
+            <div class="text-xs sm:text-sm leading-relaxed pl-6">
+              ${q.explanation}
+            </div>
+          </div>
+        `;
+      }
+
+      container.innerHTML = `
+        <div class="space-y-6">
+          ${audioPlayerHtml}
+
+          <!-- QUESTION CARD CONTAINER -->
+          <div id="one-by-one-card" class="bg-white rounded-3xl p-6 sm:p-8 border ${cardBorder} shadow-sm space-y-5 transition-all">
+            <!-- Header Bar -->
+            <div class="flex items-center justify-between gap-3 border-b border-slate-100 pb-4 flex-wrap">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="inline-flex items-center gap-1 text-xs font-black uppercase px-3 py-1 rounded-xl bg-indigo-600 text-white shadow-xs">
+                  Câu ${qNum} / ${totalCount}
+                </span>
+                <span class="text-xs font-semibold text-slate-500">${q.exTitle || ''}</span>
+                ${q.unit ? `<span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2.5 py-0.5 rounded-lg">${q.unit}</span>` : ''}
+              </div>
+
+              <div class="flex items-center gap-2">
+                <button 
+                  onclick="toggleFlagQuestion('${q.id}')" 
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl border ${isFlagged ? 'bg-amber-50 border-amber-300 text-amber-700 font-bold' : 'border-slate-200 text-slate-500 hover:bg-slate-50'} text-xs cursor-pointer transition"
+                >
+                  <i data-lucide="flag" class="w-3.5 h-3.5 ${isFlagged ? 'fill-amber-500 text-amber-500' : ''}"></i>
+                  <span>${isFlagged ? 'Đã đánh dấu' : 'Đánh dấu'}</span>
+                </button>
+
+                ${showFeedback && hasAnswered ? (
+                  isCorrect 
+                    ? `<span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                        <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-600"></i> Đúng
+                      </span>`
+                    : `<span class="inline-flex items-center gap-1 text-xs font-bold text-rose-700 bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
+                        <i data-lucide="x-circle" class="w-3.5 h-3.5 text-rose-600"></i> Sai
+                      </span>`
+                ) : hasAnswered ? `
+                  <span class="inline-flex items-center gap-1 text-xs font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200">
+                    Đã trả lời
+                  </span>
+                ` : `
+                  <span class="text-xs text-slate-400 font-medium italic">Chưa làm</span>
+                `}
+              </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="space-y-1">
+              <div class="flex items-center justify-between text-[11px] text-slate-500 font-semibold">
+                <span>Tiến độ hoàn thành: ${answeredCount}/${totalCount} câu (${progressPercent}%)</span>
+                <span>Phím tắt: ← / → để chuyển câu • 1, 2, 3, 4 chọn A, B, C, D</span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                <div class="bg-indigo-600 h-2 rounded-full transition-all duration-300" style="width: ${progressPercent}%"></div>
+              </div>
+            </div>
+
+            <!-- Question Body -->
+            <div class="pt-2">
+              <div class="flex items-start justify-between gap-3">
+                <div class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                  ${q.questionText}
+                </div>
+                <button 
+                  onclick="speakWord('${q.questionText.replace(/'/g, "\'")}');"
+                  title="Nghe câu hỏi"
+                  class="p-2 rounded-xl text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 cursor-pointer flex-shrink-0 transition"
+                >
+                  <i data-lucide="volume-2" class="w-5 h-5"></i>
+                </button>
+              </div>
+
+              <!-- Optional Reading Passage / Context -->
+              ${(q.readingContext || q.readingPassage) ? `
+                <div class="my-3">${q.readingContext || q.readingPassage}</div>
+              ` : ''}
+
+              ${q.visualComponent ? `<div class="my-3">${q.visualComponent}</div>` : ''}
+            </div>
+
+            <!-- Options Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              ${optionsHtml}
+            </div>
+
+            ${explanationHtml}
+
+            <!-- One-by-one Navigation Controls -->
+            <div class="pt-6 border-t border-slate-100 flex items-center justify-between gap-3 flex-wrap">
+              <button 
+                onclick="prevQuestion()" 
+                ${currentQuestionIndex === 0 ? 'disabled' : ''}
+                class="inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl border border-slate-200 text-slate-700 font-bold text-xs sm:text-sm hover:bg-slate-50 transition cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
+              >
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Câu trước
+              </button>
+
+              <button 
+                onclick="toggleQuestionPaletteModal()" 
+                class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-2xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs sm:text-sm transition cursor-pointer"
+              >
+                <i data-lucide="layout-grid" class="w-4 h-4 text-indigo-600"></i>
+                <span>Danh sách câu (${qNum}/${totalCount})</span>
+              </button>
+
+              ${currentQuestionIndex < totalCount - 1 ? `
+                <button 
+                  onclick="nextQuestion()" 
+                  class="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs sm:text-sm shadow-md transition cursor-pointer"
+                >
+                  Câu tiếp theo <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+              ` : `
+                <button 
+                  onclick="submitQuiz()" 
+                  class="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-md transition cursor-pointer"
+                >
+                  <i data-lucide="check-circle" class="w-4 h-4"></i> Hoàn thành & Chấm điểm
+                </button>
+              `}
+            </div>
+          </div>
+        </div>
+      `;
+
+      lucide.createIcons();
+
+      // Audio playback rate retention
+      const currentAudio = document.getElementById('active-unit-audio');
+      if (currentAudio) {
+        currentAudio.playbackRate = currentAudioPlaybackRate;
+      }
+
+      if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise();
+      }
+    }
+
+    // Keyboard Shortcuts for One-by-one Navigation
+    window.addEventListener('keydown', (e) => {
+      if (!isOneByOneMode) return;
+      if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
+
+      if (e.key === 'ArrowLeft') {
+        prevQuestion();
+      } else if (e.key === 'ArrowRight') {
+        nextQuestion();
+      } else if (['1', '2', '3', '4'].includes(e.key)) {
+        const idx = parseInt(e.key) - 1;
+        selectCurrentQuestionOption(idx);
+      } else if (['a', 'b', 'c', 'd', 'A', 'B', 'C', 'D'].includes(e.key)) {
+        const idx = e.key.toUpperCase().charCodeAt(0) - 65;
+        selectCurrentQuestionOption(idx);
+      }
+    });
+
   </script>
 </body>
 </html>

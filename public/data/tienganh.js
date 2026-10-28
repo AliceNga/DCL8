@@ -560,6 +560,19 @@ window.ENGLISH_DATABASE = [
     id: 'en_41',
     exKey: 'ex4',
     exTitle: 'Ex 4: Đọc điền từ (Đoạn 1)',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn Đọc Điền Từ: The Country & The City (Trang 25 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 4 • Đoạn 1</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>The country and the city have both advantages and <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(1) _________ [Câu đang làm]</span>. People in the country enjoy beautiful surroundings, <span class="font-bold text-indigo-700">(2) _________</span> and quietness, and can work at their own pace because no one is in a hurry. They often live in larger, more comfortable houses, and their neighbors are friendly and always ready to lend a hand. Life in the countryside, however, can be boring, and people may feel isolated. This can be a serious problem if they become ill or need <span class="font-bold text-indigo-700">(3) _________</span> their children to school, especially when essential services are far away.</p>
+    <p>Cities offer many services that may not be available in the countryside, <span class="font-bold text-indigo-700">(4) _________</span> they also have disadvantages. They are often polluted, with both poor air quality and noisy streets. City life is usually fast-paced, so people may have <span class="font-bold text-indigo-700">(5) _________</span> time to get to know their neighbors and make friends.</p>
+  </div>
+</div>`,
     questionText: 'Đoạn 1: The country and the city have both advantages and (1) _________.',
     options: [
       { text: 'benefits', isCorrect: false },
@@ -573,6 +586,19 @@ window.ENGLISH_DATABASE = [
     id: 'en_42',
     exKey: 'ex4',
     exTitle: 'Ex 4: Đọc điền từ (Đoạn 1)',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn Đọc Điền Từ: The Country & The City (Trang 25 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 4 • Đoạn 1</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>The country and the city have both advantages and <span class="font-bold text-indigo-700">(1) _________</span>. People in the country enjoy beautiful surroundings, <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(2) _________ [Câu đang làm]</span> and quietness, and can work at their own pace because no one is in a hurry. They often live in larger, more comfortable houses, and their neighbors are friendly and always ready to lend a hand. Life in the countryside, however, can be boring, and people may feel isolated. This can be a serious problem if they become ill or need <span class="font-bold text-indigo-700">(3) _________</span> their children to school, especially when essential services are far away.</p>
+    <p>Cities offer many services that may not be available in the countryside, <span class="font-bold text-indigo-700">(4) _________</span> they also have disadvantages. They are often polluted, with both poor air quality and noisy streets. City life is usually fast-paced, so people may have <span class="font-bold text-indigo-700">(5) _________</span> time to get to know their neighbors and make friends.</p>
+  </div>
+</div>`,
     questionText: 'Đoạn 1: People in the country enjoy beautiful surroundings, (2) _________ and quietness...',
     options: [
       { text: 'peace-loving', isCorrect: false },
@@ -586,6 +612,19 @@ window.ENGLISH_DATABASE = [
     id: 'en_43',
     exKey: 'ex4',
     exTitle: 'Ex 4: Đọc điền từ (Đoạn 1)',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn Đọc Điền Từ: The Country & The City (Trang 25 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 4 • Đoạn 1</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>The country and the city have both advantages and <span class="font-bold text-indigo-700">(1) _________</span>. People in the country enjoy beautiful surroundings, <span class="font-bold text-indigo-700">(2) _________</span> and quietness, and can work at their own pace because no one is in a hurry. They often live in larger, more comfortable houses, and their neighbors are friendly and always ready to lend a hand. Life in the countryside, however, can be boring, and people may feel isolated. This can be a serious problem if they become ill or need <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(3) _________ [Câu đang làm]</span> their children to school, especially when essential services are far away.</p>
+    <p>Cities offer many services that may not be available in the countryside, <span class="font-bold text-indigo-700">(4) _________</span> they also have disadvantages. They are often polluted, with both poor air quality and noisy streets. City life is usually fast-paced, so people may have <span class="font-bold text-indigo-700">(5) _________</span> time to get to know their neighbors and make friends.</p>
+  </div>
+</div>`,
     questionText: 'Đoạn 1: This can be a serious problem if they become ill or need (3) _________ their children to school...',
     options: [
       { text: 'to take', isCorrect: true },
@@ -599,6 +638,19 @@ window.ENGLISH_DATABASE = [
     id: 'en_44',
     exKey: 'ex4',
     exTitle: 'Ex 4: Đọc điền từ (Đoạn 1)',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn Đọc Điền Từ: The Country & The City (Trang 25 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 4 • Đoạn 1</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>The country and the city have both advantages and <span class="font-bold text-indigo-700">(1) _________</span>. People in the country enjoy beautiful surroundings, <span class="font-bold text-indigo-700">(2) _________</span> and quietness, and can work at their own pace because no one is in a hurry. They often live in larger, more comfortable houses, and their neighbors are friendly and always ready to lend a hand. Life in the countryside, however, can be boring, and people may feel isolated. This can be a serious problem if they become ill or need <span class="font-bold text-indigo-700">(3) _________</span> their children to school, especially when essential services are far away.</p>
+    <p>Cities offer many services that may not be available in the countryside, <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(4) _________ [Câu đang làm]</span> they also have disadvantages. They are often polluted, with both poor air quality and noisy streets. City life is usually fast-paced, so people may have <span class="font-bold text-indigo-700">(5) _________</span> time to get to know their neighbors and make friends.</p>
+  </div>
+</div>`,
     questionText: 'Đoạn 1: Cities offer many services that may not be available in the countryside, (4) _________ they also have disadvantages.',
     options: [
       { text: 'although', isCorrect: false },
@@ -612,6 +664,19 @@ window.ENGLISH_DATABASE = [
     id: 'en_45',
     exKey: 'ex4',
     exTitle: 'Ex 4: Đọc điền từ (Đoạn 1)',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn Đọc Điền Từ: The Country & The City (Trang 25 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 4 • Đoạn 1</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>The country and the city have both advantages and <span class="font-bold text-indigo-700">(1) _________</span>. People in the country enjoy beautiful surroundings, <span class="font-bold text-indigo-700">(2) _________</span> and quietness, and can work at their own pace because no one is in a hurry. They often live in larger, more comfortable houses, and their neighbors are friendly and always ready to lend a hand. Life in the countryside, however, can be boring, and people may feel isolated. This can be a serious problem if they become ill or need <span class="font-bold text-indigo-700">(3) _________</span> their children to school, especially when essential services are far away.</p>
+    <p>Cities offer many services that may not be available in the countryside, <span class="font-bold text-indigo-700">(4) _________</span> they also have disadvantages. They are often polluted, with both poor air quality and noisy streets. City life is usually fast-paced, so people may have <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(5) _________ [Câu đang làm]</span> time to get to know their neighbors and make friends.</p>
+  </div>
+</div>`,
     questionText: 'Đoạn 1: City life is usually fast-paced, so people may have (5) _________ time to get to know their neighbors and make friends.',
     options: [
       { text: 'few', isCorrect: false },
@@ -625,6 +690,20 @@ window.ENGLISH_DATABASE = [
     id: 'en_46',
     exKey: 'ex4',
     exTitle: 'Ex 4: Đọc điền từ (Đoạn 2)',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn Đọc Điền Từ: British Leisure Time (Trang 25-26 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 4 • Đoạn 2</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>The British spend their free time in different ways, mainly to relax and enjoy themselves. Many people also take part <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(1) _________ [Câu đang làm]</span> voluntary work, especially for charities.</p>
+    <p>People spend a lot of their free time at home, where <span class="font-bold text-indigo-700">(2) _________</span> popular leisure activity is watching television. They often watch TV for about 25 hours a week. People often <span class="font-bold text-indigo-700">(3) _________</span> TV programs so that they can watch them later.</p>
+    <p>Reading is also a favorite way of spending leisure time. The British <span class="font-bold text-indigo-700">(4) _________</span> a lot of time reading newspapers and magazines. Gardening is popular in summer, while in winter, people often turn to “Do-it-yourself” (DIY) activities, in which they improve or repair their homes. Many people also have <span class="font-bold text-indigo-700">(5) _________</span> to look after, and walking the dog every day is part of their daily routine.</p>
+  </div>
+</div>`,
     questionText: 'Đoạn 2: Many people also take part (1) _________ voluntary work, especially for charities.',
     options: [
       { text: 'on', isCorrect: false },
@@ -638,6 +717,20 @@ window.ENGLISH_DATABASE = [
     id: 'en_47',
     exKey: 'ex4',
     exTitle: 'Ex 4: Đọc điền từ (Đoạn 2)',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn Đọc Điền Từ: British Leisure Time (Trang 25-26 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 4 • Đoạn 2</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>The British spend their free time in different ways, mainly to relax and enjoy themselves. Many people also take part <span class="font-bold text-indigo-700">(1) _________</span> voluntary work, especially for charities.</p>
+    <p>People spend a lot of their free time at home, where <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(2) _________ [Câu đang làm]</span> popular leisure activity is watching television. They often watch TV for about 25 hours a week. People often <span class="font-bold text-indigo-700">(3) _________</span> TV programs so that they can watch them later.</p>
+    <p>Reading is also a favorite way of spending leisure time. The British <span class="font-bold text-indigo-700">(4) _________</span> a lot of time reading newspapers and magazines. Gardening is popular in summer, while in winter, people often turn to “Do-it-yourself” (DIY) activities, in which they improve or repair their homes. Many people also have <span class="font-bold text-indigo-700">(5) _________</span> to look after, and walking the dog every day is part of their daily routine.</p>
+  </div>
+</div>`,
     questionText: 'Đoạn 2: People spend a lot of their free time at home, where (2) _________ popular leisure activity is watching television.',
     options: [
       { text: 'more than', isCorrect: false },
@@ -651,6 +744,20 @@ window.ENGLISH_DATABASE = [
     id: 'en_48',
     exKey: 'ex4',
     exTitle: 'Ex 4: Đọc điền từ (Đoạn 2)',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn Đọc Điền Từ: British Leisure Time (Trang 25-26 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 4 • Đoạn 2</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>The British spend their free time in different ways, mainly to relax and enjoy themselves. Many people also take part <span class="font-bold text-indigo-700">(1) _________</span> voluntary work, especially for charities.</p>
+    <p>People spend a lot of their free time at home, where <span class="font-bold text-indigo-700">(2) _________</span> popular leisure activity is watching television. They often watch TV for about 25 hours a week. People often <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(3) _________ [Câu đang làm]</span> TV programs so that they can watch them later.</p>
+    <p>Reading is also a favorite way of spending leisure time. The British <span class="font-bold text-indigo-700">(4) _________</span> a lot of time reading newspapers and magazines. Gardening is popular in summer, while in winter, people often turn to “Do-it-yourself” (DIY) activities, in which they improve or repair their homes. Many people also have <span class="font-bold text-indigo-700">(5) _________</span> to look after, and walking the dog every day is part of their daily routine.</p>
+  </div>
+</div>`,
     questionText: 'Đoạn 2: People often (3) _________ TV programs so that they can watch them later.',
     options: [
       { text: 'record', isCorrect: true },
@@ -664,6 +771,20 @@ window.ENGLISH_DATABASE = [
     id: 'en_49',
     exKey: 'ex4',
     exTitle: 'Ex 4: Đọc điền từ (Đoạn 2)',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn Đọc Điền Từ: British Leisure Time (Trang 25-26 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 4 • Đoạn 2</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>The British spend their free time in different ways, mainly to relax and enjoy themselves. Many people also take part <span class="font-bold text-indigo-700">(1) _________</span> voluntary work, especially for charities.</p>
+    <p>People spend a lot of their free time at home, where <span class="font-bold text-indigo-700">(2) _________</span> popular leisure activity is watching television. They often watch TV for about 25 hours a week. People often <span class="font-bold text-indigo-700">(3) _________</span> TV programs so that they can watch them later.</p>
+    <p>Reading is also a favorite way of spending leisure time. The British <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(4) _________ [Câu đang làm]</span> a lot of time reading newspapers and magazines. Gardening is popular in summer, while in winter, people often turn to “Do-it-yourself” (DIY) activities, in which they improve or repair their homes. Many people also have <span class="font-bold text-indigo-700">(5) _________</span> to look after, and walking the dog every day is part of their daily routine.</p>
+  </div>
+</div>`,
     questionText: 'Đoạn 2: The British (4) _________ a lot of time reading newspapers and magazines.',
     options: [
       { text: 'spend', isCorrect: true },
@@ -677,6 +798,20 @@ window.ENGLISH_DATABASE = [
     id: 'en_50',
     exKey: 'ex4',
     exTitle: 'Ex 4: Đọc điền từ (Đoạn 2)',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn Đọc Điền Từ: British Leisure Time (Trang 25-26 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 4 • Đoạn 2</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>The British spend their free time in different ways, mainly to relax and enjoy themselves. Many people also take part <span class="font-bold text-indigo-700">(1) _________</span> voluntary work, especially for charities.</p>
+    <p>People spend a lot of their free time at home, where <span class="font-bold text-indigo-700">(2) _________</span> popular leisure activity is watching television. They often watch TV for about 25 hours a week. People often <span class="font-bold text-indigo-700">(3) _________</span> TV programs so that they can watch them later.</p>
+    <p>Reading is also a favorite way of spending leisure time. The British <span class="font-bold text-indigo-700">(4) _________</span> a lot of time reading newspapers and magazines. Gardening is popular in summer, while in winter, people often turn to “Do-it-yourself” (DIY) activities, in which they improve or repair their homes. Many people also have <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(5) _________ [Câu đang làm]</span> to look after, and walking the dog every day is part of their daily routine.</p>
+  </div>
+</div>`,
     questionText: 'Đoạn 2: Many people also have (5) _________ to look after, and walking the dog every day is part of their daily routine.',
     options: [
       { text: 'worms', isCorrect: false },
@@ -694,6 +829,19 @@ window.ENGLISH_DATABASE = [
     id: 'en_51',
     exKey: 'ex5',
     exTitle: 'Ex 5: Đọc hiểu văn bản',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn Đọc Hiểu: The British Countryside (Trang 26 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 5 • Đọc hiểu 5 câu</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>Besides its beauty, the countryside of Britain is well known for many contrasts: its bare mountains and moorland, its lakes, rivers and woods, and its long, often wild coastline. National parks which are protected from development by the government have the most beautiful and picturesque scenery. British people often associate the countryside with farmland, open spaces like fields of wheat and barley, green fields enclosed by hedges or stone walls in which cows or sheep are raised. Most farmland is now owned by individual people or independent companies. However, the government has built a network of public footpaths across the farmland.</p>
+    <p>Many British people enjoy the peace and relaxation of life in the countryside where they can spend their free time walking, cycling, or going for a picnic or a pub lunch. In summer they can pick strawberries and other fruit in fruit farms. Nowadays, few rural people work on farms. Many of them commute to work in towns. Many others wish to live in the countryside so that they would have a better and healthier lifestyle.</p>
+  </div>
+</div>`,
     questionText: '1. The countryside of Britain is NOT famous for its _________.',
     options: [
       { text: 'farmland', isCorrect: true },
@@ -707,6 +855,19 @@ window.ENGLISH_DATABASE = [
     id: 'en_52',
     exKey: 'ex5',
     exTitle: 'Ex 5: Đọc hiểu văn bản',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn Đọc Hiểu: The British Countryside (Trang 26 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 5 • Đọc hiểu 5 câu</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>Besides its beauty, the countryside of Britain is well known for many contrasts: its bare mountains and moorland, its lakes, rivers and woods, and its long, often wild coastline. National parks which are protected from development by the government have the most beautiful and picturesque scenery. British people often associate the countryside with farmland, open spaces like fields of wheat and barley, green fields enclosed by hedges or stone walls in which cows or sheep are raised. Most farmland is now owned by individual people or independent companies. However, the government has built a network of public footpaths across the farmland.</p>
+    <p>Many British people enjoy the peace and relaxation of life in the countryside where they can spend their free time walking, cycling, or going for a picnic or a pub lunch. In summer they can pick strawberries and other fruit in fruit farms. Nowadays, few rural people work on farms. Many of them commute to work in towns. Many others wish to live in the countryside so that they would have a better and healthier lifestyle.</p>
+  </div>
+</div>`,
     questionText: '2. Individual people or independent companies own _________.',
     options: [
       { text: 'some of the farmland in Britain', isCorrect: false },
@@ -720,6 +881,19 @@ window.ENGLISH_DATABASE = [
     id: 'en_53',
     exKey: 'ex5',
     exTitle: 'Ex 5: Đọc hiểu văn bản',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn Đọc Hiểu: The British Countryside (Trang 26 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 5 • Đọc hiểu 5 câu</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>Besides its beauty, the countryside of Britain is well known for many contrasts: its bare mountains and moorland, its lakes, rivers and woods, and its long, often wild coastline. National parks which are protected from development by the government have the most beautiful and picturesque scenery. British people often associate the countryside with farmland, open spaces like fields of wheat and barley, green fields enclosed by hedges or stone walls in which cows or sheep are raised. Most farmland is now owned by individual people or independent companies. However, the government has built a network of public footpaths across the farmland.</p>
+    <p>Many British people enjoy the peace and relaxation of life in the countryside where they can spend their free time walking, cycling, or going for a picnic or a pub lunch. In summer they can pick strawberries and other fruit in fruit farms. Nowadays, few rural people work on farms. Many of them commute to work in towns. Many others wish to live in the countryside so that they would have a better and healthier lifestyle.</p>
+  </div>
+</div>`,
     questionText: '3. Many British people think the countryside goes with _________.',
     options: [
       { text: 'work in towns', isCorrect: false },
@@ -733,6 +907,19 @@ window.ENGLISH_DATABASE = [
     id: 'en_54',
     exKey: 'ex5',
     exTitle: 'Ex 5: Đọc hiểu văn bản',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn Đọc Hiểu: The British Countryside (Trang 26 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 5 • Đọc hiểu 5 câu</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>Besides its beauty, the countryside of Britain is well known for many contrasts: its bare mountains and moorland, its lakes, rivers and woods, and its long, often wild coastline. National parks which are protected from development by the government have the most beautiful and picturesque scenery. British people often associate the countryside with farmland, open spaces like fields of wheat and barley, green fields enclosed by hedges or stone walls in which cows or sheep are raised. Most farmland is now owned by individual people or independent companies. However, the government has built a network of public footpaths across the farmland.</p>
+    <p>Many British people enjoy the peace and relaxation of life in the countryside where they can spend their free time walking, cycling, or going for a picnic or a pub lunch. In summer they can pick strawberries and other fruit in fruit farms. Nowadays, few rural people work on farms. Many of them commute to work in towns. Many others wish to live in the countryside so that they would have a better and healthier lifestyle.</p>
+  </div>
+</div>`,
     questionText: '4. The word "commute" in the passage is CLOSEST in meaning to _________.',
     options: [
       { text: 'go on foot', isCorrect: false },
@@ -746,6 +933,19 @@ window.ENGLISH_DATABASE = [
     id: 'en_55',
     exKey: 'ex5',
     exTitle: 'Ex 5: Đọc hiểu văn bản',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn Đọc Hiểu: The British Countryside (Trang 26 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 5 • Đọc hiểu 5 câu</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>Besides its beauty, the countryside of Britain is well known for many contrasts: its bare mountains and moorland, its lakes, rivers and woods, and its long, often wild coastline. National parks which are protected from development by the government have the most beautiful and picturesque scenery. British people often associate the countryside with farmland, open spaces like fields of wheat and barley, green fields enclosed by hedges or stone walls in which cows or sheep are raised. Most farmland is now owned by individual people or independent companies. However, the government has built a network of public footpaths across the farmland.</p>
+    <p>Many British people enjoy the peace and relaxation of life in the countryside where they can spend their free time walking, cycling, or going for a picnic or a pub lunch. In summer they can pick strawberries and other fruit in fruit farms. Nowadays, few rural people work on farms. Many of them commute to work in towns. Many others wish to live in the countryside so that they would have a better and healthier lifestyle.</p>
+  </div>
+</div>`,
     questionText: '5. What does the word "they" in the passage refer to?',
     options: [
       { text: 'Those who commute to work in towns', isCorrect: false },
@@ -872,6 +1072,27 @@ window.ENGLISH_DATABASE = [
     id: 'en_61',
     exKey: 'ex7',
     exTitle: 'Ex 7: Điền câu vào đoạn văn',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn: Life In The Countryside (Trang 27 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 7 • Điền câu vào đoạn văn</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>Life in the countryside is often peaceful and quiet. Unlike cities, the pace of life is slower, and <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(1) _________ [Vị trí đang chọn]</span>. In addition, people living in rural areas are surrounded by nature, which helps reduce stress. It is also safer since the crime rate is much lower. <span class="font-bold text-indigo-700">(2) _________</span>, it also has its challenges. Access to healthcare, education, and job opportunities may be limited compared to urban areas. <span class="font-bold text-indigo-700">(3) _________</span>. Public transport is often lacking, making it difficult for people to commute or access services that are readily available in cities. <span class="font-bold text-indigo-700">(4) _________</span>, the countryside provides a strong sense of community, which appeals to many people. Many find the peace and connection to nature. For those seeking a simpler lifestyle, the countryside offers a refreshing alternative to the chaos of the city.</p>
+  </div>
+  <div class="bg-white/80 p-3 rounded-xl border border-indigo-100/90 text-xs text-slate-700 space-y-1">
+    <div class="font-bold text-indigo-900">4 câu / cụm từ cần điền vào các chỗ trống (A–D):</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
+      <div><strong>A.</strong> Despite these drawbacks</div>
+      <div><strong>B.</strong> it is easier to find fresh, locally-grown food</div>
+      <div><strong>C.</strong> Another difficulty is transportation</div>
+      <div><strong>D.</strong> While the countryside offers many benefits</div>
+    </div>
+  </div>
+</div>`,
     questionText: `
       <div class="space-y-2">
         <p class="text-xs text-slate-500 font-normal italic">Chọn phương án đúng nhất điền vào vị trí <strong>(1)</strong> trong đoạn văn sau:</p>
@@ -892,6 +1113,27 @@ window.ENGLISH_DATABASE = [
     id: 'en_62',
     exKey: 'ex7',
     exTitle: 'Ex 7: Điền câu vào đoạn văn',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn: Life In The Countryside (Trang 27 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 7 • Điền câu vào đoạn văn</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>Life in the countryside is often peaceful and quiet. Unlike cities, the pace of life is slower, and <span class="font-bold text-indigo-700">(1) _________</span>. In addition, people living in rural areas are surrounded by nature, which helps reduce stress. It is also safer since the crime rate is much lower. <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(2) _________ [Vị trí đang chọn]</span>, it also has its challenges. Access to healthcare, education, and job opportunities may be limited compared to urban areas. <span class="font-bold text-indigo-700">(3) _________</span>. Public transport is often lacking, making it difficult for people to commute or access services that are readily available in cities. <span class="font-bold text-indigo-700">(4) _________</span>, the countryside provides a strong sense of community, which appeals to many people. Many find the peace and connection to nature. For those seeking a simpler lifestyle, the countryside offers a refreshing alternative to the chaos of the city.</p>
+  </div>
+  <div class="bg-white/80 p-3 rounded-xl border border-indigo-100/90 text-xs text-slate-700 space-y-1">
+    <div class="font-bold text-indigo-900">4 câu / cụm từ cần điền vào các chỗ trống (A–D):</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
+      <div><strong>A.</strong> Despite these drawbacks</div>
+      <div><strong>B.</strong> it is easier to find fresh, locally-grown food</div>
+      <div><strong>C.</strong> Another difficulty is transportation</div>
+      <div><strong>D.</strong> While the countryside offers many benefits</div>
+    </div>
+  </div>
+</div>`,
     questionText: `
       <div class="space-y-2">
         <p class="text-xs text-slate-500 font-normal italic">Chọn phương án đúng nhất điền vào vị trí <strong>(2)</strong> trong đoạn văn sau:</p>
@@ -912,6 +1154,27 @@ window.ENGLISH_DATABASE = [
     id: 'en_63',
     exKey: 'ex7',
     exTitle: 'Ex 7: Điền câu vào đoạn văn',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn: Life In The Countryside (Trang 27 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 7 • Điền câu vào đoạn văn</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>Life in the countryside is often peaceful and quiet. Unlike cities, the pace of life is slower, and <span class="font-bold text-indigo-700">(1) _________</span>. In addition, people living in rural areas are surrounded by nature, which helps reduce stress. It is also safer since the crime rate is much lower. <span class="font-bold text-indigo-700">(2) _________</span>, it also has its challenges. Access to healthcare, education, and job opportunities may be limited compared to urban areas. <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(3) _________ [Vị trí đang chọn]</span>. Public transport is often lacking, making it difficult for people to commute or access services that are readily available in cities. <span class="font-bold text-indigo-700">(4) _________</span>, the countryside provides a strong sense of community, which appeals to many people. Many find the peace and connection to nature. For those seeking a simpler lifestyle, the countryside offers a refreshing alternative to the chaos of the city.</p>
+  </div>
+  <div class="bg-white/80 p-3 rounded-xl border border-indigo-100/90 text-xs text-slate-700 space-y-1">
+    <div class="font-bold text-indigo-900">4 câu / cụm từ cần điền vào các chỗ trống (A–D):</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
+      <div><strong>A.</strong> Despite these drawbacks</div>
+      <div><strong>B.</strong> it is easier to find fresh, locally-grown food</div>
+      <div><strong>C.</strong> Another difficulty is transportation</div>
+      <div><strong>D.</strong> While the countryside offers many benefits</div>
+    </div>
+  </div>
+</div>`,
     questionText: `
       <div class="space-y-2">
         <p class="text-xs text-slate-500 font-normal italic">Chọn phương án đúng nhất điền vào vị trí <strong>(3)</strong> trong đoạn văn sau:</p>
@@ -932,6 +1195,27 @@ window.ENGLISH_DATABASE = [
     id: 'en_64',
     exKey: 'ex7',
     exTitle: 'Ex 7: Điền câu vào đoạn văn',
+    readingContext: `<div class="my-3 p-4 sm:p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-slate-800 space-y-3 shadow-2xs">
+  <div class="flex items-center justify-between border-b border-indigo-100 pb-2.5 flex-wrap gap-2">
+    <div class="flex items-center gap-2 text-indigo-950 font-extrabold text-xs uppercase tracking-wider">
+      <span class="p-1 rounded-lg bg-indigo-600 text-white shadow-2xs"><i data-lucide="book-open" class="w-3.5 h-3.5"></i></span>
+      <span>Đoạn Văn: Life In The Countryside (Trang 27 PDF)</span>
+    </div>
+    <span class="text-[11px] font-bold text-indigo-700 bg-white px-2.5 py-0.5 rounded-full border border-indigo-200">Ex 7 • Điền câu vào đoạn văn</span>
+  </div>
+  <div class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5 font-normal">
+    <p>Life in the countryside is often peaceful and quiet. Unlike cities, the pace of life is slower, and <span class="font-bold text-indigo-700">(1) _________</span>. In addition, people living in rural areas are surrounded by nature, which helps reduce stress. It is also safer since the crime rate is much lower. <span class="font-bold text-indigo-700">(2) _________</span>, it also has its challenges. Access to healthcare, education, and job opportunities may be limited compared to urban areas. <span class="font-bold text-indigo-700">(3) _________</span>. Public transport is often lacking, making it difficult for people to commute or access services that are readily available in cities. <span class="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-200 text-amber-950 font-extrabold border border-amber-300 shadow-2xs animate-pulse">(4) _________ [Vị trí đang chọn]</span>, the countryside provides a strong sense of community, which appeals to many people. Many find the peace and connection to nature. For those seeking a simpler lifestyle, the countryside offers a refreshing alternative to the chaos of the city.</p>
+  </div>
+  <div class="bg-white/80 p-3 rounded-xl border border-indigo-100/90 text-xs text-slate-700 space-y-1">
+    <div class="font-bold text-indigo-900">4 câu / cụm từ cần điền vào các chỗ trống (A–D):</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
+      <div><strong>A.</strong> Despite these drawbacks</div>
+      <div><strong>B.</strong> it is easier to find fresh, locally-grown food</div>
+      <div><strong>C.</strong> Another difficulty is transportation</div>
+      <div><strong>D.</strong> While the countryside offers many benefits</div>
+    </div>
+  </div>
+</div>`,
     questionText: `
       <div class="space-y-2">
         <p class="text-xs text-slate-500 font-normal italic">Chọn phương án đúng nhất điền vào vị trí <strong>(4)</strong> trong đoạn văn sau:</p>
