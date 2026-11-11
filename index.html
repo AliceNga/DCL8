@@ -58,6 +58,9 @@
   <script src="data/tienganh.js?v=2.2.0"></script>
   <script src="data/tienganh_dethi.js?v=2.2.0"></script>
   <script src="data/tienganh_listening.js?v=2.2.0"></script>
+  <script src="data/tienganh_unit4_test1.js?v=10T11"></script>
+  <script src="data/tienganh_nouns_bo2.js?v=10T11"></script>
+  <script src="data/tienganh_unit4_bo3.js?v=10T11"></script>
   <script src="data/khoahoc.js?v=2.2.0"></script>
   <script src="data/tinhoc.js?v=2.2.0"></script>
   <script src="data/toan.js?v=2.2.0"></script>
@@ -292,7 +295,7 @@
   <section id="view-dashboard" class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-8 space-y-8">
     
     <!-- Hero Banner -->
-    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-950 via-slate-900 to-teal-950 p-6 sm:p-10 text-white shadow-xl">
+    <div id="dashboard-hero" class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-950 via-slate-900 to-teal-950 p-6 sm:p-10 text-white shadow-xl">
       <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
       <div class="max-w-3xl space-y-4 relative z-10">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-emerald-300 text-xs font-semibold backdrop-blur-md border border-white/10">
@@ -302,32 +305,70 @@
         <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
           Tích hợp <strong>phát âm có loa nghe từng đáp án</strong> (Tiếng Anh), <strong>chống học vẹt đảo đề ngẫu nhiên</strong> và phương pháp <strong>"Sơ đồ Cấu trúc Ý & Từ khóa cốt lõi"</strong> ghi nhớ bài tự luận sâu sắc nhất. Đã lưu trữ toàn bộ đề cương gốc và đáp án AI có versioning.
         </p>
-        <div class="flex flex-wrap items-center gap-3 pt-2">
-          <button onclick="selectSubject('en_802')" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-indigo-600 hover:to-blue-700 text-white font-bold text-xs shadow-md hover:shadow-lg transition flex items-center gap-2 cursor-pointer">
-            <i data-lucide="play" class="w-4 h-4 fill-white"></i>
-            <span>Luyện Đề 802 (Năm 2025-2026)</span>
+        <div id="dashboard-home-links" class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3 max-w-2xl">
+          <button onclick="openOutlineDashboard()" class="rounded-2xl bg-white/10 hover:bg-white/15 text-left p-4 sm:p-5 backdrop-blur-md border border-white/20 transition cursor-pointer">
+            <span class="flex items-center gap-2 font-extrabold"><i data-lucide="clipboard-list" class="w-5 h-5 text-indigo-200"></i> Đề cương ôn tập</span>
+            <span class="block mt-1.5 text-xs text-slate-300">Chọn kì thi và môn cần ôn</span>
           </button>
-          <button onclick="selectSubject('en_805')" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-600 text-white font-bold text-xs shadow-md hover:shadow-lg transition flex items-center gap-2 cursor-pointer">
-            <i data-lucide="pen-tool" class="w-4 h-4 text-white"></i>
-            <span>Luyện Đề 805 (Năm 2024-2025)</span>
-          </button>
-          <button onclick="selectSubject('en_listening')" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white font-bold text-xs shadow-md hover:shadow-lg transition flex items-center gap-2 cursor-pointer">
-            <i data-lucide="headphones" class="w-4 h-4 text-violet-200"></i>
-            <span>Luyện Nghe Units 1-2-3 (Kèm 6 Audio)</span>
-          </button>
-          <button onclick="document.getElementById('subjects-list-section')?.scrollIntoView({ behavior: 'smooth' })" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs backdrop-blur-md border border-white/20 transition flex items-center gap-2 cursor-pointer">
-            <i data-lucide="book-open" class="w-4 h-4 text-teal-300"></i>
-            <span>Xem Đề Cương 8 Môn Học</span>
+          <button onclick="openLearningDashboard()" class="rounded-2xl bg-white/10 hover:bg-white/15 text-left p-4 sm:p-5 backdrop-blur-md border border-white/20 transition cursor-pointer">
+            <span class="flex items-center gap-2 font-extrabold"><i data-lucide="book-open-check" class="w-5 h-5 text-teal-200"></i> Học &amp; Ôn Thi</span>
+            <span class="block mt-1.5 text-xs text-slate-300">Học theo môn, xem sách và phiếu cô giao</span>
           </button>
         </div>
       </div>
     </div>
 
+    <section id="dashboard-periods" class="hidden space-y-4">
+      <div class="flex items-center justify-between gap-3">
+        <div><h3 id="dashboard-period-title" class="text-lg font-bold text-slate-900">Chọn kì thi</h3><p class="text-xs text-slate-500 mt-1">Chọn học kì và đợt ôn tập.</p></div>
+        <button onclick="showDashboardHome()" class="px-3 py-2 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-600 hover:bg-slate-50">Về trang chính</button>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <button onclick="selectOutlinePeriod('mid_k1')" class="rounded-2xl border border-indigo-200 bg-white p-5 text-left shadow-xs hover:border-indigo-500 hover:shadow-md transition"><span class="text-xs font-bold text-indigo-600">HỌC KÌ 1</span><strong class="block mt-2 text-slate-900">Giữa kì 1</strong></button>
+        <button onclick="selectOutlinePeriod('final_k1')" class="rounded-2xl border border-indigo-200 bg-white p-5 text-left shadow-xs hover:border-indigo-500 hover:shadow-md transition"><span class="text-xs font-bold text-indigo-600">HỌC KÌ 1</span><strong class="block mt-2 text-slate-900">Cuối kì 1</strong></button>
+        <button onclick="selectOutlinePeriod('mid_k2')" class="rounded-2xl border border-teal-200 bg-white p-5 text-left shadow-xs hover:border-teal-500 hover:shadow-md transition"><span class="text-xs font-bold text-teal-600">HỌC KÌ 2</span><strong class="block mt-2 text-slate-900">Giữa kì 2</strong></button>
+        <button onclick="selectOutlinePeriod('final_k2')" class="rounded-2xl border border-teal-200 bg-white p-5 text-left shadow-xs hover:border-teal-500 hover:shadow-md transition"><span class="text-xs font-bold text-teal-600">HỌC KÌ 2</span><strong class="block mt-2 text-slate-900">Cuối kì 2</strong></button>
+      </div>
+    </section>
+
+    <section id="dashboard-empty-outline" class="hidden rounded-2xl border border-slate-200 bg-white p-6 text-center">
+      <i data-lucide="folder-open" class="w-8 h-8 mx-auto text-slate-400"></i><h3 class="mt-3 font-bold text-slate-800">Chưa có đề cương cho kì thi này</h3><p class="mt-1 text-sm text-slate-500">Khi có tài liệu, môn ôn tập sẽ được bổ sung tại đây.</p>
+      <button onclick="showDashboardPeriods()" class="mt-4 text-sm font-bold text-indigo-600 hover:text-indigo-700">Chọn kì thi khác</button>
+    </section>
+
+    <section id="learning-subjects-section" class="hidden space-y-4">
+      <div class="flex items-center justify-between gap-3">
+        <div><h3 class="text-lg font-bold text-slate-900">Chọn môn học</h3><p class="mt-1 text-xs text-slate-500">Mở khu vực học trên lớp và xem phiếu cô giáo theo học kì.</p></div>
+        <button onclick="showDashboardHome()" class="px-3 py-2 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-600 hover:bg-slate-50">Về trang chính</button>
+      </div>
+      <div id="learning-subject-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </section>
+
+    <section id="dashboard-subject-detail" class="hidden space-y-4">
+      <div class="flex items-center justify-between gap-3">
+        <div><p id="dashboard-detail-kicker" class="text-xs font-bold uppercase tracking-wide text-indigo-600"></p><h3 id="dashboard-detail-title" class="text-xl font-extrabold text-slate-900 mt-1"></h3></div>
+        <button onclick="backToSubjectList()" class="px-3 py-2 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-600 hover:bg-slate-50">Quay lại môn học</button>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="rounded-2xl border border-indigo-200 bg-white p-5 shadow-xs">
+          <span class="text-xs font-bold text-indigo-600">HỌC TRÊN LỚP</span><h4 id="dashboard-class-title" class="mt-2 font-extrabold text-slate-900">Sách giáo khoa &amp; bài tập</h4>
+          <p id="dashboard-class-description" class="mt-2 text-xs leading-relaxed text-slate-500">Nội dung sách học cả năm, không chia theo học kì.</p>
+          <button id="dashboard-class-button" class="mt-4 w-full rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white py-2.5 text-xs font-bold">Vào bộ bài tập trên lớp</button>
+        </div>
+        <div class="rounded-2xl border border-violet-200 bg-white p-5 shadow-xs lg:col-span-2">
+          <div class="flex flex-wrap items-center justify-between gap-3"><div><span class="text-xs font-bold text-violet-600">PHIẾU CÔ GIÁO</span><h4 class="mt-1 font-extrabold text-slate-900">Học thêm &amp; luyện đề</h4></div>
+            <div class="flex gap-1 rounded-xl bg-slate-100 p-1"><button onclick="setDashboardSemester('k1')" id="dashboard-sem-k1" class="rounded-lg px-3 py-1.5 text-xs font-bold">Kì 1</button><button onclick="setDashboardSemester('k2')" id="dashboard-sem-k2" class="rounded-lg px-3 py-1.5 text-xs font-bold">Kì 2</button></div>
+          </div>
+          <p id="dashboard-handout-empty" class="mt-4 text-xs text-slate-500">Chưa có phiếu cô giáo cho học kì này.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- =========================================================================
          PHÒNG THI THỬ & ÔN TẬP 2 BỘ ĐỀ THI GIỮA KÌ 1 CHÍNH THỨC - TIẾNG ANH 8
          (Trích xuất nguyên bản 100% từ 2 tệp PDF: Mã 802 và Mã 805)
          ========================================================================= -->
-    <div class="space-y-4">
+    <div id="english-exam-materials" class="hidden space-y-4">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-gradient-to-r from-indigo-900 via-indigo-950 to-slate-900 p-6 rounded-3xl text-white shadow-lg border border-indigo-800/80">
         <div class="space-y-1.5 max-w-2xl">
           <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/30">
@@ -549,13 +590,40 @@
       </div>
     </div>
 
+    <!-- BÀI TẬP TIẾNG ANH HỌC THÊM CÔ GIÁO -->
+    <section id="english-extra-materials" class="hidden space-y-4">
+      <div>
+        <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+          <i data-lucide="book-open-check" class="w-5 h-5 text-violet-600"></i> Bài Tập Tiếng Anh Học Thêm Cô Giáo
+        </h3>
+        <p class="text-xs text-slate-500 mt-1">Ba bộ tài liệu và bài tập đã giao; chọn một bộ để bắt đầu làm.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <button onclick="selectSubject('en_extra_u4_test1')" class="rounded-2xl border border-violet-200 bg-white p-5 text-left shadow-xs hover:border-violet-500 hover:shadow-md transition">
+          <span class="text-[10px] font-bold uppercase tracking-wide text-violet-700">10T11 • Học thêm</span>
+          <h4 class="mt-2 font-extrabold text-slate-900">Unit 4: Ethnic Groups in Viet Nam — Test 1</h4>
+          <p class="mt-2 text-xs leading-relaxed text-slate-600">40 câu trắc nghiệm về ngữ âm, từ vựng, ngữ pháp, biển báo và đọc hiểu.</p>
+        </button>
+        <button onclick="selectSubject('en_extra_nouns_bo2')" class="rounded-2xl border border-violet-200 bg-white p-5 text-left shadow-xs hover:border-violet-500 hover:shadow-md transition">
+          <span class="text-[10px] font-bold uppercase tracking-wide text-violet-700">10T11 • Chuyên đề</span>
+          <h4 class="mt-2 font-extrabold text-slate-900">Nouns & Quantifiers — Bộ 2</h4>
+          <p class="mt-2 text-xs leading-relaxed text-slate-600">Tài liệu danh từ đếm được/không đếm được, lượng từ và 55 câu luyện tập.</p>
+        </button>
+        <button onclick="selectSubject('en_extra_topic4_bo3')" class="rounded-2xl border border-violet-200 bg-white p-5 text-left shadow-xs hover:border-violet-500 hover:shadow-md transition">
+          <span class="text-[10px] font-bold uppercase tracking-wide text-violet-700">10T11 • Chủ đề 4</span>
+          <h4 class="mt-2 font-extrabold text-slate-900">Ethnic Groups of Viet Nam — Bộ 3</h4>
+          <p class="mt-2 text-xs leading-relaxed text-slate-600">Từ vựng, phát âm, ngữ pháp và 110 câu luyện tập nâng cao.</p>
+        </button>
+      </div>
+    </section>
+
     <!-- 8 SUBJECT CARDS SELECTION -->
-    <div id="subjects-list-section" class="space-y-4 scroll-mt-20">
+    <div id="subjects-list-section" class="hidden space-y-4 scroll-mt-20">
       <div class="flex items-center justify-between">
         <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
-          <i data-lucide="layout-grid" class="w-5 h-5 text-indigo-600"></i> Danh Sách Trọn Bộ 8 Môn Ôn Tập Giữa Kì 1
+          <i data-lucide="layout-grid" class="w-5 h-5 text-indigo-600"></i> <span id="subjects-list-title">Danh Sách Trọn Bộ 8 Môn Ôn Tập Giữa Kì 1</span>
         </h3>
-        <span class="text-xs text-slate-500 font-medium">Bấm chọn môn để bắt đầu ôn thi</span>
+        <button id="subjects-back-button" onclick="backFromSubjects()" class="px-3 py-2 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-600 hover:bg-slate-50">Quay lại</button>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -589,7 +657,7 @@
           </div>
 
           <div class="pt-5 flex items-center gap-2">
-            <button onclick="selectSubject('en')" class="flex-1 py-2.5 px-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
+            <button onclick="openDashboardSubject('en')" class="flex-1 py-2.5 px-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
               <i data-lucide="play" class="w-3.5 h-3.5 fill-white"></i> Vào Làm Bài
             </button>
             <button onclick="openHistoryModal('app_stats_tieng_anh_8', 'Tiếng Anh 8')" title="Xem lịch sử" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600 transition cursor-pointer">
@@ -627,7 +695,7 @@
           </div>
 
           <div class="pt-5 flex items-center gap-2">
-            <button onclick="selectSubject('sci')" class="flex-1 py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
+            <button onclick="openDashboardSubject('sci')" class="flex-1 py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
               <i data-lucide="play" class="w-3.5 h-3.5 fill-white"></i> Vào Làm Bài
             </button>
             <button onclick="openHistoryModal('app_stats_khtn_8', 'Khoa Học Tự Nhiên 8')" title="Xem lịch sử" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600 transition cursor-pointer">
@@ -665,7 +733,7 @@
           </div>
 
           <div class="pt-5 flex items-center gap-2">
-            <button onclick="selectSubject('tech')" class="flex-1 py-2.5 px-3 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
+            <button onclick="openDashboardSubject('tech')" class="flex-1 py-2.5 px-3 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
               <i data-lucide="play" class="w-3.5 h-3.5 fill-white"></i> Vào Làm Bài
             </button>
             <button onclick="openHistoryModal('app_stats_cong_nghe_8', 'Công Nghệ 8')" title="Xem lịch sử" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600 transition cursor-pointer">
@@ -703,7 +771,7 @@
           </div>
 
           <div class="pt-5 flex items-center gap-2">
-            <button onclick="selectSubject('his')" class="flex-1 py-2.5 px-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
+            <button onclick="openDashboardSubject('his')" class="flex-1 py-2.5 px-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
               <i data-lucide="play" class="w-3.5 h-3.5 fill-white"></i> Vào Làm Bài
             </button>
             <button onclick="openHistoryModal('app_stats_lich_su_8', 'Lịch Sử 8')" title="Xem lịch sử" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600 transition cursor-pointer">
@@ -741,7 +809,7 @@
           </div>
 
           <div class="pt-5 flex items-center gap-2">
-            <button onclick="selectSubject('geo')" class="flex-1 py-2.5 px-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
+            <button onclick="openDashboardSubject('geo')" class="flex-1 py-2.5 px-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
               <i data-lucide="play" class="w-3.5 h-3.5 fill-white"></i> Vào Làm Bài
             </button>
             <button onclick="openHistoryModal('app_stats_dia_li_8', 'Địa Lí 8')" title="Xem lịch sử" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600 transition cursor-pointer">
@@ -779,7 +847,7 @@
           </div>
 
           <div class="pt-5 flex items-center gap-2">
-            <button onclick="selectSubject('gdcd')" class="flex-1 py-2.5 px-3 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
+            <button onclick="openDashboardSubject('gdcd')" class="flex-1 py-2.5 px-3 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
               <i data-lucide="play" class="w-3.5 h-3.5 fill-white"></i> Vào Làm Bài
             </button>
             <button onclick="openHistoryModal('app_stats_gdcd_8', 'Giáo Dục Công Dân 8')" title="Xem lịch sử" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600 transition cursor-pointer">
@@ -817,7 +885,7 @@
           </div>
 
           <div class="pt-5 flex items-center gap-2">
-            <button onclick="selectSubject('tin')" class="flex-1 py-2.5 px-3 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
+            <button onclick="openDashboardSubject('tin')" class="flex-1 py-2.5 px-3 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
               <i data-lucide="play" class="w-3.5 h-3.5 fill-white"></i> Vào Làm Bài
             </button>
             <button onclick="openHistoryModal('app_stats_tin_hoc_8', 'Tin Học 8')" title="Xem lịch sử" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600 transition cursor-pointer">
@@ -855,7 +923,7 @@
           </div>
 
           <div class="pt-5 flex items-center gap-2">
-            <button onclick="selectSubject('math')" class="flex-1 py-2.5 px-3 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
+            <button onclick="openDashboardSubject('math')" class="flex-1 py-2.5 px-3 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
               <i data-lucide="play" class="w-3.5 h-3.5 fill-white"></i> Vào Làm Bài
             </button>
             <button onclick="openHistoryModal('app_stats_toan_8', 'Toán 8')" title="Xem lịch sử" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600 transition cursor-pointer">
@@ -893,7 +961,7 @@
           </div>
 
           <div class="pt-5 flex items-center gap-2">
-            <button onclick="selectSubject('van')" class="flex-1 py-2.5 px-3 rounded-xl bg-pink-600 hover:bg-pink-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
+            <button onclick="openDashboardSubject('van')" class="flex-1 py-2.5 px-3 rounded-xl bg-pink-600 hover:bg-pink-700 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
               <i data-lucide="play" class="w-3.5 h-3.5 fill-white"></i> Vào Làm Bài
             </button>
             <button onclick="openHistoryModal('app_stats_ngu_van_8', 'Ngữ Văn 8')" title="Xem lịch sử" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600 transition cursor-pointer">
@@ -1844,6 +1912,9 @@
       en_listening: 'app_stats_tieng_anh_listening',
       en_802: 'app_stats_tieng_anh_802',
       en_805: 'app_stats_tieng_anh_805',
+      en_extra_u4_test1: 'app_stats_tieng_anh_extra_u4_test1',
+      en_extra_nouns_bo2: 'app_stats_tieng_anh_extra_nouns_bo2',
+      en_extra_topic4_bo3: 'app_stats_tieng_anh_extra_topic4_bo3',
       sci: 'app_stats_khtn_8',
       tech: 'app_stats_cong_nghe_8',
       his: 'app_stats_lich_su_8',
@@ -1901,6 +1972,9 @@
     var LISTENING_PRACTICE_DATABASE = window.LISTENING_PRACTICE_DATABASE || [];
     var EXAM_802_DATABASE = window.EXAM_802_DATABASE || [];
     var EXAM_805_DATABASE = window.EXAM_805_DATABASE || [];
+    var EXAM_UNIT4_TEST1_DATABASE = window.EXAM_UNIT4_TEST1_DATABASE || [];
+    var EXAM_NOUNS_BO2_DATABASE = window.EXAM_NOUNS_BO2_DATABASE || [];
+    var EXAM_TOPIC4_BO3_DATABASE = window.EXAM_TOPIC4_BO3_DATABASE || [];
     var SCIENCE_DATABASE = window.SCIENCE_DATABASE || [];
     var TECH_DATABASE = window.TECH_DATABASE || [];
     var HISTORY_DATABASE = window.HISTORY_DATABASE || [];
@@ -1918,6 +1992,9 @@
       en_listening: { title: 'Đề Luyện Nghe Tiếng Anh 8 (Practice Listening Units 1-2-3)', badge: 'Luyện Nghe U1-2-3', dataset: LISTENING_PRACTICE_DATABASE, color: 'violet', isListeningTest: true },
       en_802: { title: 'Đề Thi Giữa Kì 1 - Mã Đề 802 (2025-2026)', badge: 'Mã đề 802', dataset: EXAM_802_DATABASE, color: 'indigo' },
       en_805: { title: 'Đề Thi Giữa Kì 1 - Mã Đề 805 (2024-2025)', badge: 'Mã đề 805', dataset: EXAM_805_DATABASE, color: 'emerald' },
+      en_extra_u4_test1: { title: 'Học Thêm Tiếng Anh - Unit 4 Test 1', badge: 'Học thêm • Test 1', dataset: EXAM_UNIT4_TEST1_DATABASE, color: 'violet' },
+      en_extra_nouns_bo2: { title: 'Học Thêm Tiếng Anh - Nouns & Quantifiers Bộ 2', badge: 'Học thêm • Bộ 2', dataset: EXAM_NOUNS_BO2_DATABASE, color: 'violet' },
+      en_extra_topic4_bo3: { title: 'Học Thêm Tiếng Anh - Topic 4 Ethnic Groups Bộ 3', badge: 'Học thêm • Bộ 3', dataset: EXAM_TOPIC4_BO3_DATABASE, color: 'violet' },
       sci: { title: 'Đề Cương Khoa Học Tự Nhiên 8', badge: 'KHTN 8', dataset: SCIENCE_DATABASE, color: 'emerald' },
       tech: { title: 'Đề Cương Công Nghệ 8 (Bản vẽ kĩ thuật)', badge: 'Công Nghệ 8', dataset: TECH_DATABASE, color: 'cyan' },
       his: { title: 'Đề Cương Lịch Sử 8 (Bài 1 -> Bài 5)', badge: 'Lịch Sử 8', dataset: HISTORY_DATABASE, color: 'amber' },
@@ -1950,6 +2027,169 @@
 
     let currentCompSubject = 'all';
 
+    // Dashboard navigation keeps the existing study and exam cards intact.
+    let dashboardFlow = 'home';
+    let dashboardPeriod = 'mid_k1';
+    let dashboardSubjectKey = 'en';
+    let dashboardSemester = 'k1';
+
+    function dashboardEl(id) { return document.getElementById(id); }
+    function setDashboardVisible(id, visible) {
+      const el = dashboardEl(id);
+      if (el) el.classList.toggle('hidden', !visible);
+    }
+
+    function renderLearningSubjectCards() {
+      const subjects = [
+        { key: 'en', name: 'Tiếng Anh 8', icon: '🇬🇧', iconTone: 'bg-indigo-50 text-indigo-600', hoverTone: 'hover:border-indigo-400', detail: 'SGK/SBT • Phiếu cô giáo' },
+        { key: 'sci', name: 'Khoa học tự nhiên 8', icon: '🧪', iconTone: 'bg-emerald-50 text-emerald-600', hoverTone: 'hover:border-emerald-400', detail: 'Chưa có SGK/SBT riêng' },
+        { key: 'tech', name: 'Công nghệ 8', icon: '⚙️', iconTone: 'bg-cyan-50 text-cyan-600', hoverTone: 'hover:border-cyan-400', detail: 'Chưa có SGK/SBT riêng' },
+        { key: 'his', name: 'Lịch sử 8', icon: '📜', iconTone: 'bg-amber-50 text-amber-600', hoverTone: 'hover:border-amber-400', detail: 'Chưa có SGK/SBT riêng' },
+        { key: 'geo', name: 'Địa lí 8', icon: '🌏', iconTone: 'bg-blue-50 text-blue-600', hoverTone: 'hover:border-blue-400', detail: 'Chưa có SGK/SBT riêng' },
+        { key: 'gdcd', name: 'Giáo dục công dân 8', icon: '⚖️', iconTone: 'bg-rose-50 text-rose-600', hoverTone: 'hover:border-rose-400', detail: 'Chưa có SGK/SBT riêng' },
+        { key: 'tin', name: 'Tin học 8', icon: '💻', iconTone: 'bg-purple-50 text-purple-600', hoverTone: 'hover:border-purple-400', detail: 'Chưa có SGK/SBT riêng' },
+        { key: 'math', name: 'Toán 8', icon: '📐', iconTone: 'bg-teal-50 text-teal-600', hoverTone: 'hover:border-teal-400', detail: 'Chưa có SGK/SBT riêng' },
+        { key: 'van', name: 'Ngữ văn 8', icon: '📖', iconTone: 'bg-pink-50 text-pink-600', hoverTone: 'hover:border-pink-400', detail: 'Chưa có SGK/SBT riêng' }
+      ];
+      const container = dashboardEl('learning-subject-cards');
+      if (!container) return;
+      container.innerHTML = subjects.map(subject => `
+        <button onclick="openDashboardSubject('${subject.key}')" class="rounded-2xl border border-slate-200 bg-white p-4 text-left shadow-xs ${subject.hoverTone} hover:shadow-md transition flex items-center gap-4">
+          <span class="w-12 h-12 flex-shrink-0 rounded-2xl ${subject.iconTone} text-xl flex items-center justify-center">${subject.icon}</span>
+          <span class="min-w-0"><strong class="block text-sm font-extrabold text-slate-900">${subject.name}</strong><span class="mt-1 block text-xs text-slate-500">${subject.detail}</span></span>
+          <i data-lucide="chevron-right" class="w-4 h-4 ml-auto flex-shrink-0 text-slate-400"></i>
+        </button>
+      `).join('');
+      if (window.lucide) window.lucide.createIcons({ attrs: { 'stroke-width': 2 } });
+    }
+
+    function arrangeDashboardSections() {
+      const root = dashboardEl('view-dashboard');
+      const ids = ['dashboard-periods', 'dashboard-empty-outline', 'subjects-list-section', 'learning-subjects-section', 'dashboard-subject-detail', 'english-extra-materials', 'english-exam-materials'];
+      ids.forEach(id => { const el = dashboardEl(id); if (el) root.appendChild(el); });
+    }
+
+    function showDashboardHome() {
+      dashboardFlow = 'home';
+      setDashboardVisible('dashboard-hero', true);
+      setDashboardVisible('dashboard-home-links', true);
+      ['dashboard-periods', 'dashboard-empty-outline', 'subjects-list-section', 'learning-subjects-section', 'dashboard-subject-detail', 'english-extra-materials', 'english-exam-materials'].forEach(id => setDashboardVisible(id, false));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function openOutlineDashboard() {
+      dashboardFlow = 'outline';
+      setDashboardVisible('dashboard-hero', false);
+      setDashboardVisible('dashboard-home-links', false);
+      setDashboardVisible('dashboard-periods', true);
+      setDashboardVisible('dashboard-empty-outline', false);
+      setDashboardVisible('subjects-list-section', false);
+      setDashboardVisible('learning-subjects-section', false);
+      setDashboardVisible('dashboard-subject-detail', false);
+      setDashboardVisible('english-extra-materials', false);
+      setDashboardVisible('english-exam-materials', false);
+      dashboardEl('dashboard-period-title').textContent = 'Đề cương ôn tập';
+      dashboardEl('subjects-back-button').textContent = 'Quay lại kì thi';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function openLearningDashboard() {
+      dashboardFlow = 'learning';
+      setDashboardVisible('dashboard-hero', false);
+      setDashboardVisible('dashboard-home-links', false);
+      setDashboardVisible('dashboard-periods', false);
+      setDashboardVisible('dashboard-empty-outline', false);
+      setDashboardVisible('subjects-list-section', false);
+      setDashboardVisible('learning-subjects-section', true);
+      setDashboardVisible('dashboard-subject-detail', false);
+      setDashboardVisible('english-extra-materials', false);
+      setDashboardVisible('english-exam-materials', false);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function backFromSubjects() {
+      if (dashboardFlow === 'outline') showDashboardPeriods();
+      else showDashboardHome();
+    }
+
+    function showDashboardPeriods() {
+      setDashboardVisible('dashboard-empty-outline', false);
+      setDashboardVisible('subjects-list-section', false);
+      setDashboardVisible('dashboard-periods', true);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function selectOutlinePeriod(period) {
+      dashboardPeriod = period;
+      const titles = { mid_k1: 'Giữa Kì 1', final_k1: 'Cuối Kì 1', mid_k2: 'Giữa Kì 2', final_k2: 'Cuối Kì 2' };
+      setDashboardVisible('dashboard-periods', false);
+      if (period === 'mid_k1') {
+        setDashboardVisible('dashboard-empty-outline', false);
+        setDashboardVisible('subjects-list-section', true);
+        dashboardEl('subjects-list-title').textContent = `Danh Sách Môn Ôn Tập ${titles[period]}`;
+      } else {
+        setDashboardVisible('subjects-list-section', false);
+        setDashboardVisible('dashboard-empty-outline', true);
+        dashboardEl('dashboard-empty-outline').querySelector('h3').textContent = `Chưa có đề cương ${titles[period]}`;
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function backToSubjectList() {
+      setDashboardVisible('dashboard-subject-detail', false);
+      setDashboardVisible('english-extra-materials', false);
+      setDashboardVisible('english-exam-materials', false);
+      setDashboardVisible('dashboard-handout-empty', false);
+      setDashboardVisible('learning-subjects-section', true);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function openDashboardSubject(subjectKey) {
+      if (dashboardFlow === 'outline') { selectSubject(subjectKey); return; }
+      if (dashboardFlow !== 'learning') { openLearningDashboard(); }
+      const subject = SUBJECT_MAP[subjectKey];
+      if (!subject) return;
+      dashboardSubjectKey = subjectKey;
+      dashboardSemester = 'k1';
+      setDashboardVisible('subjects-list-section', false);
+      setDashboardVisible('learning-subjects-section', false);
+      setDashboardVisible('dashboard-subject-detail', true);
+      dashboardEl('dashboard-detail-kicker').textContent = 'HỌC & ÔN THI • HỌC KÌ 1 / HỌC KÌ 2';
+      dashboardEl('dashboard-detail-title').textContent = subject.badge;
+      const hasClassExercises = subjectKey === 'en';
+      dashboardEl('dashboard-class-title').textContent = hasClassExercises ? 'Sách giáo khoa & bài tập' : 'Tài liệu học trên lớp';
+      dashboardEl('dashboard-class-description').textContent = hasClassExercises
+        ? 'Bộ bài tập SGK/SBT hiện có: Units 1–3. Khu vực học trên lớp không lọc theo học kì.'
+        : 'Chưa có nội dung SGK/SBT được tách riêng cho môn này trong khu vực Học & Ôn Thi.';
+      dashboardEl('dashboard-class-button').textContent = 'Vào bộ bài tập Units 1–3';
+      dashboardEl('dashboard-class-button').classList.toggle('hidden', !hasClassExercises);
+      dashboardEl('dashboard-class-button').onclick = hasClassExercises ? () => selectSubject(subjectKey) : null;
+      setDashboardVisible('english-extra-materials', subjectKey === 'en');
+      setDashboardVisible('english-exam-materials', subjectKey === 'en');
+      setDashboardVisible('dashboard-handout-empty', subjectKey !== 'en');
+      dashboardEl('dashboard-handout-empty').textContent = `Chưa có phiếu cô giáo cho ${subject.badge} ở kì 1.`;
+      dashboardEl('dashboard-sem-k1').className = 'rounded-lg px-3 py-1.5 text-xs font-bold bg-white text-violet-700 shadow-sm';
+      dashboardEl('dashboard-sem-k2').className = 'rounded-lg px-3 py-1.5 text-xs font-bold text-slate-500 hover:text-slate-800';
+      dashboardEl('english-extra-materials').querySelector('h3').textContent = 'Bài tập Tiếng Anh học thêm cô giáo';
+      dashboardEl('english-extra-materials').querySelector('p').textContent = 'Các phiếu được sắp theo mốc cô giao, mới nhất ở trên.';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function setDashboardSemester(semester) {
+      dashboardSemester = semester;
+      const isK1 = semester === 'k1';
+      dashboardEl('dashboard-sem-k1').className = `rounded-lg px-3 py-1.5 text-xs font-bold ${isK1 ? 'bg-white text-violet-700 shadow-sm' : 'text-slate-500 hover:text-slate-800'}`;
+      dashboardEl('dashboard-sem-k2').className = `rounded-lg px-3 py-1.5 text-xs font-bold ${!isK1 ? 'bg-white text-violet-700 shadow-sm' : 'text-slate-500 hover:text-slate-800'}`;
+      const hasEnglishHandouts = dashboardSubjectKey === 'en' && isK1;
+      setDashboardVisible('english-extra-materials', hasEnglishHandouts);
+      setDashboardVisible('english-exam-materials', hasEnglishHandouts);
+      setDashboardVisible('dashboard-handout-empty', !hasEnglishHandouts);
+      if (!hasEnglishHandouts) {
+        const subject = SUBJECT_MAP[dashboardSubjectKey];
+        dashboardEl('dashboard-handout-empty').textContent = `Chưa có phiếu cô giáo cho ${subject ? subject.badge : 'môn học'} ở kì ${isK1 ? '1' : '2'}.`;
+      }
+    }
+
     function navigateView(viewName) {
       const viewDash = document.getElementById('view-dashboard');
       const viewQuiz = document.getElementById('view-quiz');
@@ -1967,6 +2207,7 @@
         streakBox.classList.add('hidden');
         document.getElementById('header-subject-badge').textContent = '';
         if (timerInterval) clearInterval(timerInterval);
+        showDashboardHome();
         refreshDashboardStats();
       } else if (viewName === 'comparison') {
         viewDash.classList.add('hidden');
@@ -2065,6 +2306,9 @@
         en_listening: window.LISTENING_PRACTICE_DATABASE,
         en_802: window.EXAM_802_DATABASE,
         en_805: window.EXAM_805_DATABASE,
+        en_extra_u4_test1: window.EXAM_UNIT4_TEST1_DATABASE,
+        en_extra_nouns_bo2: window.EXAM_NOUNS_BO2_DATABASE,
+        en_extra_topic4_bo3: window.EXAM_TOPIC4_BO3_DATABASE,
         sci: window.SCIENCE_DATABASE,
         tech: window.TECH_DATABASE,
         his: window.HISTORY_DATABASE,
@@ -2076,10 +2320,8 @@
       };
       currentDataset = datasets[subjKey] || meta.dataset || [];
 
-      if (subjKey === 'en_listening') {
-        isOneByOneMode = true;
-        currentQuestionIndex = 0;
-      }
+      isOneByOneMode = subjKey === 'en_listening';
+      if (isOneByOneMode) currentQuestionIndex = 0;
       document.getElementById('header-subject-badge').textContent = `Môn: ${meta.badge}`;
       document.getElementById('quiz-header-title').textContent = meta.title;
       document.getElementById('quiz-mode-notice').innerHTML = mode === 'practice'
@@ -2470,7 +2712,10 @@
         cardBorder = isCorrect ? 'border-emerald-300 ring-1 ring-emerald-200 bg-white' : 'border-rose-300 ring-1 ring-rose-200 bg-white';
       }
 
-      const showOptionAudio = (currentSubject === 'en' && (q.isAudioQuiz || q.exKey === 'ex1' || q.exKey === 'ex2'));
+      const isLegacyEnglishPronunciation = currentSubject === 'en' && (q.isAudioQuiz || q.exKey === 'ex1' || q.exKey === 'ex2');
+      const isExtraEnglishPronunciation = ['en_extra_u4_test1', 'en_extra_topic4_bo3'].includes(currentSubject)
+        && ['phonetics', 'stress'].includes(q.exKey);
+      const showOptionAudio = isLegacyEnglishPronunciation || isExtraEnglishPronunciation;
 
       return `
         <div class="bg-white rounded-2xl p-5 sm:p-6 border ${cardBorder} shadow-xs space-y-4">
@@ -2544,7 +2789,10 @@
                 badgeStyle = 'bg-indigo-600 text-white border-indigo-600';
               }
 
-              const pronunciationWord = (opt.raw || opt.text).replace(/<[^>]*>/g, '').trim();
+              const pronunciationWord = (opt.raw || opt.text)
+                .replace(/<[^>]*>/g, '')
+                .replace(/^\s*[A-D]\s*[.)]\s*/i, '')
+                .trim();
 
               return `
                 <div class="flex items-center gap-2 p-2.5 sm:p-3 rounded-xl border transition-all ${btnStyle}">
@@ -2848,7 +3096,8 @@
 
       setTimeout(() => {
         // Verification assertions
-        const hasAllSubjects = Object.keys(SUBJECT_MAP).length === 9;
+        const coreSubjectKeys = ['en', 'sci', 'tech', 'his', 'geo', 'gdcd', 'tin', 'math', 'van'];
+        const hasAllSubjects = coreSubjectKeys.every(key => SUBJECT_MAP[key]);
         const hasEnglishCount = typeof ENGLISH_DATABASE !== 'undefined' && ENGLISH_DATABASE.length >= 83;
         const hasScienceCount = typeof SCIENCE_DATABASE !== 'undefined' && SCIENCE_DATABASE.length >= 38;
         const hasTechVisuals = typeof TECH_DATABASE !== 'undefined' && TECH_DATABASE.length === 20;
@@ -3043,6 +3292,9 @@
        INIT ON DOM LOAD
        ========================================================================= */
     window.addEventListener('DOMContentLoaded', () => {
+      renderLearningSubjectCards();
+      arrangeDashboardSections();
+      showDashboardHome();
       refreshDashboardStats();
       lucide.createIcons();
     });
